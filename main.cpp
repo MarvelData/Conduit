@@ -470,7 +470,7 @@ public:
 
         if (!file.is_open()) {
             FileProblems();
-            ofstream newFile(fileName);
+            ofstream newFile(GetFileName());
             newFile.close();
             return;
         }
@@ -602,7 +602,9 @@ public:
 
     string GetFileName() const
     {
-        return fileName;
+        if (fileName.find("/") == -1)
+            return fileName;
+        return fileName.substr(fileName.find_last_of("/") + 1);
     }
 
     void FileProblems()
