@@ -5,17 +5,26 @@
 #include <iostream>
 #include <iterator>
 #include <map>
+#include <random>
 #include <set>
 #include <stdexcept>
 #include <string>
 
 using namespace std;
 
+string GetRandomString(int n)
+{
+    string result;
+    for (size_t i = 0; i < n; i++)
+        result += rand() % ('z' - 'a' + 1) + 'a';
+    return result;
+}
+
 class Date
 {
     string date;
     int day, month, year;
-    const size_t daySymbols = 2, monthSymbols = 2, yearSymbols = 4, dotsAmount = 2;
+    size_t daySymbols = 2, monthSymbols = 2, yearSymbols = 4, dotsAmount = 2;
 
 public:
     explicit Date(const string &date) : date(date)
@@ -51,21 +60,31 @@ public:
 
         return true;
     }
+
+    friend ostream& operator<<(ostream& os, const Date& dt);
 };
+
+ostream& operator<<(ostream& os, const Date& date)
+{
+    os << date.date;
+    return os;
+}
 
 class Member
 {
     string shortName;
     string role;
     string rubric;
+    int frequency;
+    Date start;
     int postsAmount;
     map<string, vector<string>> posts;
 
 public:
-    Member() : postsAmount(0) {}
+    Member() : postsAmount(0), start("0000.01.01") {}
 
-    Member(string&& shortName, string &&role, string &&rubric) :
-            shortName(shortName), role(role), rubric(rubric), postsAmount(0)
+    Member(string&& shortName, string &&role, string &&rubric, int frequency, string &&start) :
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0)
     {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -128,17 +147,29 @@ public:
         }
     }
 
+    void PrintInfo() const
+    {
+        cout << endl << "Role: " << role << endl << "Rubric: " << rubric
+             << endl << "Frequency: " << frequency << endl << "Start date: " << start << endl;
+    }
+
     void Rename(const string &newShortName) { shortName = newShortName; }
 
     void ChangeRole(const string &newRole) { role = newRole; }
 
     void ChangeRubric(const string &newRubric) { rubric = newRubric; }
 
+    void ChangeFrequency(int newFrequency) { frequency = newFrequency; }
+
     string GetShortName() const { return shortName; }
 
     string GetRole() const { return role; }
 
     string GetRubric() const { return rubric; }
+
+    int GetFrequency() const { return frequency; }
+
+    Date GetDate() const { return start; }
 
     int GetPostsAmount() const {
         int counter = 0;
@@ -179,7 +210,8 @@ class Database
     void addMember()
     {
         printMembers();
-        string shortName, role, rubric;
+        string shortName, role, rubric, startDate;
+        int frequency;
         cout << endl << "NB: Input without spaces!" << endl;
         cout << endl << "Input member short name: ";
         cin >> shortName;
@@ -191,10 +223,14 @@ class Database
         cin >> role;
         cout << endl << "Input member rubric: ";
         cin >> rubric;
+        cout << endl << "Input frequency: ";
+        cin >> frequency;
+        cout << endl << "Input start date: ";
+        cin >> startDate;
         if (data.count(shortName))
             cout << endl << "This short name is already used :(" << endl;
         else {
-            Member member(move(shortName), move(role), move(rubric));
+            Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
             data[member.GetShortName()] = member;
             cout << endl << "New member is successfully added!" << endl;
         }
@@ -271,8 +307,7 @@ class Database
         cout << endl << "Would u like to learn something about exact member?" << endl;
         if (AskForDecision()) {
             string shortName = collectMemberName();
-            cout << endl << "Role: " << data[shortName].GetRole()
-                 << endl << "Rubric: " << data[shortName].GetRubric() << endl;
+            data[shortName].PrintInfo();
         }
     }
 
@@ -342,8 +377,7 @@ class Database
     void changeMemberRole()
     {
         string shortName = collectMemberName();
-        cout << endl << "Role: " << data[shortName].GetRole()
-             << endl << "Rubric: " << data[shortName].GetRubric() << endl;
+        data[shortName].PrintInfo();
         string newRole;
         cout << endl << "NB: Input without spaces!" << endl;
         cout << endl << "Input new role for this member: ";
@@ -355,13 +389,24 @@ class Database
     void changeMemberRubric()
     {
         string shortName = collectMemberName();
-        cout << endl << "Role: " << data[shortName].GetRole()
-             << endl << "Rubric: " << data[shortName].GetRubric() << endl;
+        data[shortName].PrintInfo();
         string newRubric;
         cout << endl << "NB: Input without spaces!" << endl;
         cout << endl << "Input new rubric for this member: ";
         cin >> newRubric;
         data[shortName].ChangeRubric(newRubric);
+        WriteDatabaseToFile();
+    }
+
+    void changeMemberFrequency()
+    {
+        string shortName = collectMemberName();
+        data[shortName].PrintInfo();
+        int newFrequency;
+        cout << endl << "NB: Input without spaces!" << endl;
+        cout << endl << "Input new frequency for this member: ";
+        cin >> newFrequency;
+        data[shortName].ChangeFrequency(newFrequency);
         WriteDatabaseToFile();
     }
 
@@ -372,6 +417,7 @@ class Database
         cout << "0. I would like to change member short name" << endl;
         cout << "1. I would like to change member role" << endl;
         cout << "2. I would like to change member rubric" << endl;
+        cout << "3. I would like to change member frequency" << endl;
         cout << endl << "Input appropriate number =)" << endl;
 
         int decision;
@@ -385,6 +431,9 @@ class Database
                 break;
             case 2:
                 changeMemberRubric();
+                break;
+            case 3:
+                changeMemberFrequency();
                 break;
             default:
                 cout << endl << "You made some mistake :(" << endl;
@@ -409,10 +458,12 @@ public:
         file >> buf >> buf;
         file >> membersAmount;
         for (int i = 0; i < membersAmount; i++) {
-            string shortName, role, rubric;
-            int postsDatesAmount;
+            string shortName, role, rubric, startDate;
+            int frequency, postsDatesAmount;
             file >> shortName >> role >> rubric;
-            Member member(move(shortName), move(role), move(rubric));
+            file >> frequency;
+            file >> startDate;
+            Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
             file >> buf >> buf >> buf >> buf >> buf >> buf >> buf;
             file >> postsDatesAmount;
             for (int j = 0; j < postsDatesAmount; j++) {
@@ -441,7 +492,8 @@ public:
 
         file << "Members amount: " << data.size() << endl << endl;
         for (auto &elem : data) {
-            file << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric() << endl;
+            file << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
+                 << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << endl;
             file << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                  << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << endl;
             elem.second.PrintPosts(file);
@@ -449,6 +501,21 @@ public:
         }
 
         file.close();
+    }
+
+    void AddMember(string shortName, string role, string rubric, int frequency, string startDate)
+    {
+        if (data.count(shortName))
+            cout << endl << "This short name is already used :(" << endl;
+        else {
+            Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
+            data[member.GetShortName()] = move(member);
+        }
+    }
+
+    void AddPost(const string &shortName, const string &date, string &link)
+    {
+        data.at(shortName).AddPost(date, link);
     }
 
     bool TalkToUser()
