@@ -462,6 +462,7 @@ public:
         cout << "5. I would like to delete a post from a member" << endl;
         cout << "6. I would like to delete a member" << endl;
         cout << "7. I would like to change member data" << endl;
+        cout << "8. I would like to quit" << endl;
         cout << endl << "Input appropriate number =)" << endl;
 
         int decision;
@@ -491,6 +492,8 @@ public:
             case 7:
                 changeMemberData();
                 break;
+            case 8:
+                return false;
             default:
                 cout << endl << "You made some mistake :(" << endl;
                 break;
@@ -527,7 +530,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    string regBookName = "Conduit.data";
+    string regBookName = "../data/Conduit.data";
     if (argc > 1)
         regBookName = argv[1];
 
