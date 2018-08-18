@@ -111,16 +111,16 @@ public:
         }
     }
 
-    void DeletePost(const string &date, const string &link)
+    void DeletePost(const string &date, int index)
     {
         if (Date::CheckDate(date)) {
             if (posts.count(date)) {
-                if (find(posts[date].begin(), posts[date].end(), link) == posts[date].end()) {
+                if (index >= posts[date].size() || index < 0) {
                     cout << endl << "There is no such post ..." << endl;
                     return;
                 }
                 if (posts[date].size() > 1)
-                    posts[date].erase(find(posts[date].begin(), posts[date].end(), link));
+                    posts[date].erase(posts[date].begin() + index);
                 else
                     posts.erase(date);
                 postsAmount--;
@@ -195,11 +195,12 @@ class Database
         string ShortName;
         string Date;
         string Link;
+        int Index;
         bool Correct;
 
         PostInfo() : Correct(false) {}
-        PostInfo(string&& shortName, string &&date, string &&link) :
-                ShortName(shortName), Date(date), Link(link), Correct(true)
+        PostInfo(string&& shortName, string &&date, string &&link, int index) :
+                ShortName(shortName), Date(date), Link(link), Index(index), Correct(true)
         {
             if (ShortName.find(' ') != -1 || Date.find(' ') != -1 || Link.find(' ') != -1) {
                 cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -272,9 +273,10 @@ class Database
         return shortName;
     }
 
-    PostInfo collectPostInfo()
+    PostInfo collectPostInfo(bool deleting)
     {
         string shortName, date, link;
+        int index = -1;
         shortName = collectMemberName();
         cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
         cin >> date;
@@ -288,18 +290,23 @@ class Database
                 date += '0';
             date += to_string(localtime(&time)->tm_mday);
         }
-        cout << endl << "Input link: ";
-        cin >> link;
+        if (deleting) {
+            cout << endl << "Input index: ";
+            cin >> index;
+        } else {
+            cout << endl << "Input link: ";
+            cin >> link;
+        }
         if (!data.count(shortName)) {
             cout << endl << "There is no such member!" << endl;
             return PostInfo();
         }
-        return PostInfo(move(shortName), move(date), move(link));
+        return PostInfo(move(shortName), move(date), move(link), index);
     }
 
     void addPost()
     {
-        PostInfo postInfo = collectPostInfo();
+        PostInfo postInfo = collectPostInfo(false);
         if (postInfo.Correct)
             data[postInfo.ShortName].AddPost(postInfo.Date, postInfo.Link);
         WriteDatabaseToFile();
@@ -355,9 +362,9 @@ class Database
 
     void deletePost()
     {
-        PostInfo postInfo = collectPostInfo();
+        PostInfo postInfo = collectPostInfo(true);
         if (postInfo.Correct)
-            data[postInfo.ShortName].DeletePost(postInfo.Date, postInfo.Link);
+            data[postInfo.ShortName].DeletePost(postInfo.Date, postInfo.Index);
         WriteDatabaseToFile();
     }
 
@@ -621,7 +628,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    string regBookName = "../data/Conduit.data";
+    string regBookName = "../data/Conduit.md";
     if (argc > 1)
         regBookName = argv[1];
 
