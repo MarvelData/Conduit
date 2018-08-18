@@ -20,6 +20,10 @@ string GetRandomString(int n)
     return result;
 }
 
+int GreatestCommonDivisor(int a, int b) { return b ? GreatestCommonDivisor(b, a % b) : a; }
+
+int LeastCommonMultiplier(int a, int b) { return a / GreatestCommonDivisor(a, b) * b; }
+
 class Date
 {
     string date;
@@ -323,12 +327,30 @@ class Database
 
     void learnAboutRubrics()
     {
-        set<string> rubrics;
-        for (auto &elem : data)
-            rubrics.emplace(elem.second.GetRubric());
+        map<string, pair<int, vector<int>>> rubrics;
+        for (auto &elem : data) {
+            if (rubrics.count(elem.second.GetRubric()))
+                rubrics[elem.second.GetRubric()].first++;
+            else
+                rubrics[elem.second.GetRubric()] = pair<int, vector<int>>(1, vector<int>());
+            rubrics[elem.second.GetRubric()].second.emplace_back(elem.second.GetFrequency());
+        }
+        vector<double> statistics;
+        for (auto &rubric : rubrics) {
+            int leastCommonMultiplier = 1, sum = 0;
+            for (auto frequency : rubric.second.second)
+                leastCommonMultiplier = LeastCommonMultiplier(leastCommonMultiplier, frequency);
+            for (auto frequency : rubric.second.second)
+                sum += leastCommonMultiplier / frequency;
+            statistics.emplace_back(double(leastCommonMultiplier) / sum);
+        }
         cout << endl << "Current rubrics list:" << endl;
-        for (auto &rubric : rubrics)
-            cout << rubric << endl;
+        int counter = 0;
+        for (auto &rubric : rubrics) {
+            cout << rubric.first << ": Editors amount: " << rubric.second.first
+                 << " Overall frequency: " << statistics[counter] << " (" << ceil(statistics[counter]) << ')' << endl;
+            counter++;
+        }
     }
 
     void deletePost()
