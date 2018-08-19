@@ -9,6 +9,7 @@
 #include <set>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ string GetRandomString(int n)
 {
     string result;
     for (size_t i = 0; i < n; i++)
-        result += rand() % ('z' - 'a' + 1) + 'a';
+        result += char(rand() % ('z' - 'a' + 1) + 'a');
     return result;
 }
 
@@ -83,48 +84,34 @@ public:
         {
             case 1:
                 return 31;
-                break;
             case 2:
                 if (year % 4)
                     return 28;
                 return 29;
-                break;
             case 3:
                 return 31;
-                break;
             case 4:
                 return 30;
-                break;
             case 5:
                 return 31;
-                break;
             case 6:
                 return 30;
-                break;
             case 7:
                 return 31;
-                break;
             case 8:
                 return 31;
-                break;
             case 9:
                 return 30;
-                break;
             case 10:
                 return 31;
-                break;
             case 11:
                 return 30;
-                break;
             case 12:
                 return 31;
-                break;
             default:
                 cout << endl << "There is some mistake with date management:(" << endl;
                 return -1;
-                break;
         }
-        return -1;
     }
 
     static void DateProblems()
@@ -173,7 +160,7 @@ public:
         return date;
     }
 
-    friend ostream& operator<<(ostream& os, const Date& dt);
+    friend ostream& operator<<(ostream& os, const Date& date);
 };
 
 ostream& operator<<(ostream& os, const Date& date)
@@ -309,7 +296,7 @@ class Database
         int Index;
         bool Correct;
 
-        PostInfo() : Correct(false) {}
+        PostInfo() : Index(-1), Correct(false) {}
         PostInfo(string&& shortName, string &&date, string &&link, int index) :
                 ShortName(shortName), Date(date), Link(link), Index(index), Correct(true)
         {
@@ -713,9 +700,9 @@ public:
 
     string GetFileName() const
     {
-        if (fileName.find("/") == -1)
+        if (fileName.find('/') == -1)
             return fileName;
-        return fileName.substr(fileName.find_last_of("/") + 1);
+        return fileName.substr(fileName.find_last_of('/') + 1);
     }
 
     void FileProblems()
