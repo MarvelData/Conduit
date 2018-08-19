@@ -43,6 +43,90 @@ public:
         }
     }
 
+    int Since(const Date &oldDate)
+    {
+        if (oldDate.year > year) {
+            cout << endl << "Wrong dates order!" << endl;
+            return -1;
+        }
+        int diff = 0;
+        if (year == oldDate.year) {
+            if (oldDate.month > month) {
+                cout << endl << "Wrong dates order!" << endl;
+                return -1;
+            }
+            if (month == oldDate.month) {
+                if (oldDate.day > day) {
+                    cout << endl << "Wrong dates order!" << endl;
+                    return -1;
+                }
+                return day - oldDate.day;
+            }
+            for (int i = oldDate.month + 1; i < month; i++)
+                diff += GetDaysInMonth(year, i);
+        } else {
+            for (int i = oldDate.year + 1; i < year; i++)
+                for (int j = 1; j <= 12; j++)
+                    diff += GetDaysInMonth(i, j);
+            for (int i = oldDate.month + 1; i <= 12; i++)
+                diff += GetDaysInMonth(oldDate.year, i);
+            for (int i = 1; i < month; i++)
+                diff += GetDaysInMonth(year, i);
+
+        }
+        return diff + GetDaysInMonth(oldDate.year, oldDate.month) - oldDate.day + day;
+    }
+
+    static int GetDaysInMonth(int year, int month)
+    {
+        switch (month)
+        {
+            case 1:
+                return 31;
+                break;
+            case 2:
+                if (year % 4)
+                    return 28;
+                return 29;
+                break;
+            case 3:
+                return 31;
+                break;
+            case 4:
+                return 30;
+                break;
+            case 5:
+                return 31;
+                break;
+            case 6:
+                return 30;
+                break;
+            case 7:
+                return 31;
+                break;
+            case 8:
+                return 31;
+                break;
+            case 9:
+                return 30;
+                break;
+            case 10:
+                return 31;
+                break;
+            case 11:
+                return 30;
+                break;
+            case 12:
+                return 31;
+                break;
+            default:
+                cout << endl << "There is some mistake with date management:(" << endl;
+                return -1;
+                break;
+        }
+        return -1;
+    }
+
     static void DateProblems()
     {
         cout << endl << "Something is wrong with your date, it should look like YYYY.MM.DD :)" << endl;
@@ -70,16 +154,22 @@ public:
         string date;
         cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
         cin >> date;
-        if (date == "0") {
-            auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
-            date = to_string(localtime(&time)->tm_year + 1900) + '.';
-            if (localtime(&time)->tm_mon + 1 < 10)
-                date += '0';
-            date += to_string(localtime(&time)->tm_mon + 1) + '.';
-            if (localtime(&time)->tm_mday < 10)
-                date += '0';
-            date += to_string(localtime(&time)->tm_mday);
-        }
+        if (date == "0")
+            return Now();
+        return date;
+    }
+
+    static string Now()
+    {
+        string date;
+        auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
+        date = to_string(localtime(&time)->tm_year + 1900) + '.';
+        if (localtime(&time)->tm_mon + 1 < 10)
+            date += '0';
+        date += to_string(localtime(&time)->tm_mon + 1) + '.';
+        if (localtime(&time)->tm_mday < 10)
+            date += '0';
+        date += to_string(localtime(&time)->tm_mday);
         return date;
     }
 
@@ -103,7 +193,7 @@ class Member
     map<string, vector<string>> posts;
 
 public:
-    Member() : postsAmount(0), start("0000.01.01") {}
+    Member() : postsAmount(0), frequency(-1), start("0000.01.01") {}
 
     Member(string&& shortName, string &&role, string &&rubric, int frequency, string &&start) :
             shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0)
@@ -279,7 +369,7 @@ class Database
         for (auto c : shortName)
             if (!isdigit(c)) {
                 cout << endl << "Here are his/her posts: " << endl;
-                data[shortName].PrintPosts(cout);
+                data.at(shortName).PrintPosts(cout);
                 return shortName;
             }
         int counter = 0;
@@ -323,12 +413,11 @@ class Database
 
     void learnAboutMembers()
     {
-        printMembers();
-        cout << endl << "Would u like to learn something about exact member?" << endl;
-        if (AskForDecision()) {
-            string shortName = collectMemberName();
-            data[shortName].PrintInfo();
-        }
+        string shortName = collectMemberName();
+        data[shortName].PrintInfo();
+        cout << "Actual posts amount: " << data[shortName].GetPostsAmount() << endl;
+        cout << "Anticipated posts amount: "
+                << Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency() << endl;
     }
 
     void learnAboutRoles()
