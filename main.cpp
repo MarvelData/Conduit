@@ -139,10 +139,15 @@ public:
     static string CollectDate()
     {
         string date;
-        cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
-        cin >> date;
-        if (date == "0")
-            return Now();
+        bool correct = true;
+        do {
+            if (!correct)
+                DateProblems();
+            cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
+            cin >> date;
+            if (date == "0")
+                return Now();
+        } while (!(correct = CheckDate(date)));
         return date;
     }
 
