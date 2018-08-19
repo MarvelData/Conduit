@@ -202,10 +202,7 @@ public:
         if (link.find("http") == -1)
             finalLink = "https://" + link;
         if (Date::CheckDate(date)) {
-            if (posts.count(date))
-                posts[date].emplace_back(finalLink);
-            else
-                posts[date] = vector<string>(1, finalLink);
+            posts[date].emplace_back(finalLink);
             postsAmount++;
             return true;
         } else {
@@ -356,20 +353,27 @@ class Database
     {
         string shortName;
         printMembers();
-        cout << endl << "Input member (u can also input according number): ";
-        cin >> shortName;
-        for (auto c : shortName)
-            if (!isdigit(c)) {
-                cout << endl << "Here are his/her posts: " << endl;
-                data.at(shortName).PrintPosts(cout);
-                return shortName;
+        bool correct = true;
+        do {
+            if (!correct)
+                cout << endl << "No such member! Try again.";
+            bool digits = true;
+            cout << endl << "Input member (u can also input according number): ";
+            cin >> shortName;
+            for (auto c : shortName)
+                if (!isdigit(c)) {
+                    digits = false;
+                    break;
+                }
+            if (digits) {
+                int counter = 0;
+                for (auto &elem : data)
+                    if (stoi(shortName) == counter++) {
+                        shortName = elem.first;
+                        break;
+                    }
             }
-        int counter = 0;
-        for (auto &elem : data)
-            if (stoi(shortName) == counter++) {
-                shortName = elem.first;
-                break;
-            }
+        } while (!(correct = bool(data.count(shortName))));
         cout << endl << "Here are his/her posts: " << endl;
         data.at(shortName).PrintPosts(cout);
         return shortName;
@@ -387,10 +391,6 @@ class Database
         } else {
             cout << endl << "Input link: ";
             cin >> link;
-        }
-        if (!data.count(shortName)) {
-            cout << endl << "There is no such member!" << endl;
-            return PostInfo();
         }
         return PostInfo(move(shortName), move(date), move(link), index);
     }
