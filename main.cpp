@@ -98,11 +98,14 @@ public:
 
     bool AddPost(const string &date, const string &link)
     {
+        string finalLink = link;
+        if (link.find("http") == -1)
+            finalLink = "https://" + link;
         if (Date::CheckDate(date)) {
             if (posts.count(date))
-                posts[date].emplace_back(link);
+                posts[date].emplace_back(finalLink);
             else
-                posts[date] = vector<string>(1, link);
+                posts[date] = vector<string>(1, finalLink);
             postsAmount++;
             return true;
         } else {
@@ -628,7 +631,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    string regBookName = "../data/Conduit.md";
+    string regBookName = "../data/Conduit.data";
     if (argc > 1)
         regBookName = argv[1];
 
