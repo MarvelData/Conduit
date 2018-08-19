@@ -265,7 +265,7 @@ public:
     void PrintInfo() const
     {
         cout << endl << "Role: " << role << endl << "Rubric: " << rubric
-             << endl << "Frequency: " << frequency << endl << "Start date: " << start << endl;
+             << endl << "Frequency (days needed for 1 post): " << frequency << endl << "Start date: " << start << endl;
     }
 
     void Rename(const string &newShortName) { shortName = newShortName; }
@@ -339,7 +339,7 @@ class Database
         cin >> role;
         cout << endl << "Input member rubric: ";
         cin >> rubric;
-        cout << endl << "Input frequency: ";
+        cout << endl << "Input frequency (days needed for 1 post, must be positive integer): ";
         cin >> frequency;
         startDate = Date::CollectDate();
         if (data.count(shortName))
@@ -453,7 +453,7 @@ class Database
         int counter = 0;
         for (auto &rubric : rubrics) {
             cout << rubric.first << ": Editors amount: " << rubric.second.first
-                 << " Overall frequency: " << statistics[counter] << " (" << ceil(statistics[counter]) << ')' << endl;
+                 << " Overall frequency (days needed for 1 post): " << statistics[counter] << " (" << ceil(statistics[counter]) << ')' << endl;
             counter++;
         }
     }
@@ -531,7 +531,7 @@ class Database
         data[shortName].PrintInfo();
         int newFrequency;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input new frequency for this member: ";
+        cout << endl << "Input new frequency for this member (days needed for 1 post, must be positive integer): ";
         cin >> newFrequency;
         data[shortName].ChangeFrequency(newFrequency);
         WriteDatabaseToFile();
@@ -636,7 +636,7 @@ public:
         file.close();
     }
 
-    void AddMember(string shortName, string role, string rubric, int frequency, string startDate)
+    void AddMemberTest(string shortName, string role, string rubric, int frequency, string startDate)
     {
         if (data.count(shortName))
             cout << endl << "This short name is already used :(" << endl;
@@ -646,7 +646,7 @@ public:
         }
     }
 
-    void AddPost(const string &shortName, const string &date, string &link)
+    void AddPostTest(const string &shortName, const string &date, string &link)
     {
         data.at(shortName).AddPost(date, link);
     }
