@@ -65,6 +65,24 @@ public:
         return true;
     }
 
+    static string CollectDate()
+    {
+        string date;
+        cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
+        cin >> date;
+        if (date == "0") {
+            auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
+            date = to_string(localtime(&time)->tm_year + 1900) + '.';
+            if (localtime(&time)->tm_mon + 1 < 10)
+                date += '0';
+            date += to_string(localtime(&time)->tm_mon + 1) + '.';
+            if (localtime(&time)->tm_mday < 10)
+                date += '0';
+            date += to_string(localtime(&time)->tm_mday);
+        }
+        return date;
+    }
+
     friend ostream& operator<<(ostream& os, const Date& dt);
 };
 
@@ -233,8 +251,7 @@ class Database
         cin >> rubric;
         cout << endl << "Input frequency: ";
         cin >> frequency;
-        cout << endl << "Input start date: ";
-        cin >> startDate;
+        startDate = Date::CollectDate();
         if (data.count(shortName))
             cout << endl << "This short name is already used :(" << endl;
         else {
@@ -281,18 +298,7 @@ class Database
         string shortName, date, link;
         int index = -1;
         shortName = collectMemberName();
-        cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
-        cin >> date;
-        if (date == "0") {
-            auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
-            date = to_string(localtime(&time)->tm_year + 1900) + '.';
-            if (localtime(&time)->tm_mon + 1 < 10)
-                date += '0';
-            date += to_string(localtime(&time)->tm_mon + 1) + '.';
-            if (localtime(&time)->tm_mday < 10)
-                date += '0';
-            date += to_string(localtime(&time)->tm_mday);
-        }
+        date = Date::CollectDate();
         if (deleting) {
             cout << endl << "Input index: ";
             cin >> index;
@@ -479,10 +485,16 @@ public:
         ifstream file(fileName);
 
         if (!file.is_open()) {
-            FileProblems();
-            ofstream newFile(GetFileName());
-            newFile.close();
-            return;
+            this->fileName = GetFileName();
+            ifstream tryFile(this->fileName);
+            if (!tryFile.is_open()) {
+                FileProblems();
+                ofstream newFile(this->fileName);
+                newFile.close();
+                return;
+            }
+            tryFile.close();
+            file.open(this->fileName);
         }
 
         string buf;
