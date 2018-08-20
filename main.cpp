@@ -13,6 +13,8 @@
 
 using namespace std;
 
+typedef pair<string, string> TwoStrings;
+
 string GetRandomString(int n)
 {
     string result;
@@ -174,41 +176,58 @@ ostream& operator<<(ostream& os, const Date& date)
     return os;
 }
 
-class Member
-{
+class Member {
     string shortName;
     string role;
     string rubric;
     int frequency;
     Date start;
     int postsAmount;
-    map<string, vector<string>> posts;
+    map<string, vector<TwoStrings>> posts;
 
 public:
     Member() : postsAmount(0), frequency(-1), start("0000.01.01") {}
 
-    Member(string&& shortName, string &&role, string &&rubric, int frequency, string &&start) :
-            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0)
-    {
+    Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0) {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
             throw exception();
         }
     }
 
-    bool AddPost(const string &date, const string &link)
-    {
+    bool AddPost(const string &date, const string &link, bool approved = false) {
         string finalLink = link;
         if (link.find("http") == -1)
             finalLink = "https://" + link;
         if (Date::CheckDate(date)) {
-            posts[date].emplace_back(finalLink);
+            if (approved)
+                posts[date].emplace_back(TwoStrings(finalLink, "+"));
+            else
+                posts[date].emplace_back(TwoStrings(finalLink, "-"));
             postsAmount++;
             return true;
         } else {
             Date::DateProblems();
             return false;
         }
+    }
+
+    void ApprovePost(const string &date, int index)
+    {
+        if (Date::CheckDate(date)) {
+            if (posts.count(date)) {
+                if (index >= posts[date].size() || index < 0) {
+                    cout << endl << "There is no such post ..." << endl;
+                    return;
+                }
+                posts[date][index].second = "+";
+            } else {
+                cout << endl << "There is no such post ..." << endl;
+                return;
+            }
+        } else
+            Date::DateProblems();
     }
 
     void DeletePost(const string &date, int index)
@@ -232,13 +251,13 @@ public:
             Date::DateProblems();
     }
 
-    vector<string> GetPosts(const string &date) const
+    vector<TwoStrings> GetPosts(const string &date) const
     {
         if (Date::CheckDate(date)) {
             return posts.at(date);
         }
         Date::DateProblems();
-        return vector<string>();
+        return vector<TwoStrings>();
     }
 
     void PrintPosts(ostream &os) const
@@ -246,7 +265,7 @@ public:
         for (auto &post : posts) {
             os << post.first << ' ' << post.second.size() << ' ';
             for (auto &link : post.second)
-                os << link << ' ';
+                os << link.first << ' ' << link.second << '\t';
             os << endl;
         }
     }
@@ -400,6 +419,14 @@ class Database
         PostInfo postInfo = collectPostInfo(false);
         if (postInfo.Correct)
             data[postInfo.ShortName].AddPost(postInfo.Date, postInfo.Link);
+        WriteDatabaseToFile();
+    }
+
+    void approvePost()
+    {
+        PostInfo postInfo = collectPostInfo(true);
+        if (postInfo.Correct)
+            data[postInfo.ShortName].ApprovePost(postInfo.Date, postInfo.Index);
         WriteDatabaseToFile();
     }
 
@@ -597,8 +624,11 @@ public:
                 file >> date;
                 file >> amount;
                 for (int k = 0; k < amount; k++) {
-                    file >> link;
-                    member.AddPost(date, link);
+                    file >> link >> buf;
+                    if (buf == "+")
+                        member.AddPost(date, link, true);
+                    else
+                        member.AddPost(date, link);
                 }
             }
             data[member.GetShortName()] = move(member);
@@ -654,7 +684,8 @@ public:
         cout << "5. I would like to delete a post from a member" << endl;
         cout << "6. I would like to delete a member" << endl;
         cout << "7. I would like to change member data" << endl;
-        cout << "8. I would like to quit" << endl;
+        cout << "8. I would like to approve post" << endl;
+        cout << "9. I would like to quit" << endl;
         cout << endl << "Input appropriate number =)" << endl;
 
         int decision;
@@ -685,6 +716,9 @@ public:
                 changeMemberData();
                 break;
             case 8:
+                approvePost();
+                break;
+            case 9:
                 return false;
             default:
                 cout << endl << "You made some mistake :(" << endl;
