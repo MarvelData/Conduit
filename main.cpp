@@ -189,14 +189,16 @@ public:
     Member() : postsAmount(0), frequency(-1), start("0000.01.01") {}
 
     Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
-            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0) {
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0)
+    {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
             throw exception();
         }
     }
 
-    bool AddPost(const string &date, const string &link, bool approved = false) {
+    bool AddPost(const string &date, const string &link, bool approved = false)
+    {
         string finalLink = link;
         if (link.find("http") == -1)
             finalLink = "https://" + link;
@@ -266,7 +268,7 @@ public:
             os << post.first << ' ' << post.second.size() << ' ';
             for (auto &link : post.second)
                 os << link.first << ' ' << link.second << '\t';
-            os << endl;
+            os << '\\' << endl;
         }
     }
 
@@ -609,15 +611,18 @@ public:
         int membersAmount;
         file >> buf >> buf;
         file >> membersAmount;
+        file >> buf >> buf;
         for (int i = 0; i < membersAmount; i++) {
             string shortName, role, rubric, startDate;
             int frequency, postsDatesAmount;
             file >> shortName >> role >> rubric;
             file >> frequency;
             file >> startDate;
+            startDate = startDate.substr(0, startDate.size() - 1);
             Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
             file >> buf >> buf >> buf >> buf >> buf >> buf >> buf;
             file >> postsDatesAmount;
+            file >> buf;
             for (int j = 0; j < postsDatesAmount; j++) {
                 string date, link;
                 int amount;
@@ -629,8 +634,11 @@ public:
                         member.AddPost(date, link, true);
                     else
                         member.AddPost(date, link);
+                    if (k == amount - 1)
+                        file >> buf;
                 }
             }
+            file >> buf;
             data[member.GetShortName()] = move(member);
         }
 
@@ -645,14 +653,14 @@ public:
             elem.second.GetPostsAmount();
         ofstream file(fileName);
 
-        file << "Members amount: " << data.size() << endl << endl;
+        file << "Members amount: " << data.size() << '\\' << endl << '\\' << endl;
         for (auto &elem : data) {
             file << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
-                 << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << endl;
+                 << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << '\\' << endl;
             file << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
-                 << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << endl;
+                 << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
             elem.second.PrintPosts(file);
-            file << endl;
+            file << '\\' << endl;
         }
 
         file.close();
@@ -758,7 +766,7 @@ public:
 
 int main(int argc, char **argv)
 {
-    string regBookName = "../data/Conduit.data";
+    string regBookName = "../data/Conduit.md";
     if (argc > 1)
         regBookName = argv[1];
 
