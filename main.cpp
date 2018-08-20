@@ -634,9 +634,8 @@ public:
                         member.AddPost(date, link, true);
                     else
                         member.AddPost(date, link);
-                    if (k == amount - 1)
-                        file >> buf;
                 }
+                file >> buf;
             }
             file >> buf;
             data[member.GetShortName()] = move(member);
