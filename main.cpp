@@ -176,6 +176,25 @@ ostream& operator<<(ostream& os, const Date& date)
     return os;
 }
 
+struct PostInfo
+{
+    string ShortName;
+    string Date;
+    string Link;
+    int Index;
+    bool Correct;
+
+    PostInfo() : Index(-1), Correct(false) {}
+    PostInfo(const string &shortName, const string &date, const string &link, int index) :
+            ShortName(shortName), Date(date), Link(link), Index(index), Correct(true)
+    {
+        if (ShortName.find(' ') != -1 || Date.find(' ') != -1 || Link.find(' ') != -1) {
+            cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
+            throw exception();
+        }
+    }
+};
+
 class Member {
     string shortName;
     string role;
@@ -253,13 +272,27 @@ public:
             Date::DateProblems();
     }
 
-    vector<TwoStrings> GetPosts(const string &date) const
+    vector<TwoStrings> GetPostsAtDate(const string &date) const
     {
         if (Date::CheckDate(date)) {
             return posts.at(date);
         }
         Date::DateProblems();
         return vector<TwoStrings>();
+    }
+
+    vector<PostInfo> GetNotApprovedPosts() const
+    {
+        vector<PostInfo> notApprovedPosts;
+        for (auto &post : posts) {
+            int counter = 0;
+            for (auto &link : post.second) {
+                if (link.second == "-")
+                    notApprovedPosts.emplace_back(PostInfo(shortName, post.first, link.first, counter));
+                counter++;
+            }
+        }
+        return notApprovedPosts;
     }
 
     void PrintPosts(ostream &os) const
@@ -311,25 +344,6 @@ public:
 
 class Database
 {
-    struct PostInfo
-    {
-        string ShortName;
-        string Date;
-        string Link;
-        int Index;
-        bool Correct;
-
-        PostInfo() : Index(-1), Correct(false) {}
-        PostInfo(string&& shortName, string &&date, string &&link, int index) :
-                ShortName(shortName), Date(date), Link(link), Index(index), Correct(true)
-        {
-            if (ShortName.find(' ') != -1 || Date.find(' ') != -1 || Link.find(' ') != -1) {
-                cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
-                throw exception();
-            }
-        }
-    };
-
     string fileName;
     map<string, Member> data;
 
@@ -413,7 +427,7 @@ class Database
             cout << endl << "Input link: ";
             cin >> link;
         }
-        return PostInfo(move(shortName), move(date), move(link), index);
+        return PostInfo(shortName, date, link, index);
     }
 
     void addPost()
@@ -426,9 +440,21 @@ class Database
 
     void approvePost()
     {
-        PostInfo postInfo = collectPostInfo(true);
-        if (postInfo.Correct)
-            data[postInfo.ShortName].ApprovePost(postInfo.Date, postInfo.Index);
+        size_t counter = 0;
+        vector<PostInfo> posts;
+        for (auto &member : data) {
+            vector<PostInfo> notApprovedPosts = member.second.GetNotApprovedPosts();
+            for (auto &post : notApprovedPosts) {
+                cout << counter++ << ". " << post.ShortName << ' ' << post.Date << ' ' << post.Link << endl;
+                posts.emplace_back(post);
+            }
+        }
+
+        cout << "Input number of the post u are approving: ";
+        cin >> counter;
+
+        data.at(posts[counter].ShortName).ApprovePost(posts[counter].Date, posts[counter].Index);
+
         WriteDatabaseToFile();
     }
 
