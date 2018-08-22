@@ -21,8 +21,9 @@ Sanadze	Editor Scenes 7 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Soloveychik	Editor FilmArt 2 2018.08.19\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.08.21 1 https://vk.com/wall-17592208_56358 +	\
+2018.08.23 1 https://vk.com/wall-17592208_56404 -	\
 \
 Soul	Editor Dossier 4 2018.08.20\
 Total posts amount: 1	Posts dates amount: 1\
