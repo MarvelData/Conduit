@@ -1,7 +1,8 @@
-Members amount: 8\
+Members amount: 9\
 \
 Baranov	Editor Humor 3 2018.08.19\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.21 1 https://vk.com/wall-17592208_56360 -	\
 \
 Kurteneva	Editor Humor 3 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
@@ -26,4 +27,7 @@ Total posts amount: 1	Posts dates amount: 1\
 Soul	Editor Dossier 4 2018.08.20\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/wall-17592208_56361 -	\
+\
+Zavileyskaya	Editor Scenes 3 2018.08.22\
+Total posts amount: 0	Posts dates amount: 0\
 \
