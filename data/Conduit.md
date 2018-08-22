@@ -1,11 +1,8 @@
-Members amount: 9\
+Members amount: 8\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/wall-17592208_56360 -	\
-\
-Kurteneva	Editor Humor 3 2018.08.19\
-Total posts amount: 0	Posts dates amount: 0\
 \
 Mahanova	Editor Heroes 5 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
