@@ -376,18 +376,20 @@ class Database
         WriteDatabaseToFile();
     }
 
-    void printMembers()
+    void printMembers(bool moreInfo = false)
     {
         cout << endl << "Current members list:" << endl;
         int counter = 0;
-        for (auto &elem : data)
-            cout << counter++ << ". " << elem.first << endl;
+        for (auto &elem : data) {
+            cout << counter++ << ". " << elem.first << '\t';
+            printPostsAmounts(elem.first);
+        }
     }
 
-    string collectMemberName()
+    string collectMemberName(bool moreInfo = false)
     {
         string shortName;
-        printMembers();
+        printMembers(moreInfo);
         bool correct = true;
         do {
             if (!correct)
@@ -458,13 +460,18 @@ class Database
         WriteDatabaseToFile();
     }
 
+    void printPostsAmounts(const string &shortName)
+    {
+        cout << "Actual posts amount: " << data[shortName].GetPostsAmount() << ' ';
+        cout << "Anticipated posts amount: "
+             << Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency() << endl;
+    }
+
     void learnAboutMembers()
     {
-        string shortName = collectMemberName();
+        string shortName = collectMemberName(true);
         data[shortName].PrintInfo();
-        cout << "Actual posts amount: " << data[shortName].GetPostsAmount() << endl;
-        cout << "Anticipated posts amount: "
-                << Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency() << endl;
+        printPostsAmounts(shortName);
     }
 
     void learnAboutRoles()
