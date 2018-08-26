@@ -1,9 +1,12 @@
-Members amount: 9\
+Members amount: 10\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
 2018.08.21 1 https://vk.com/wall-17592208_56360 -	\
 2018.08.26 1 https://vk.com/wall-17592208_56477 -	\
+\
+Guseinov	Editor History 3 2018.08.27\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Mahanova	Editor History 7 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
