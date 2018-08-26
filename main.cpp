@@ -458,7 +458,7 @@ class Database
         cout << "Input number of the post u are approving: ";
         cin >> counter;
 
-        data.at(posts[counter].ShortName).ApprovePost(posts[counter].Date, posts[counter].Index);
+        data.at(posts.at(counter).ShortName).ApprovePost(posts.at(counter).Date, posts.at(counter).Index);
 
         WriteDatabaseToFile();
     }
