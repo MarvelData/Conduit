@@ -1,27 +1,36 @@
-Members amount: 8\
+Members amount: 9\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/wall-17592208_56360 -	\
 \
-Mahanova	Editor Heroes 5 2018.08.19\
+Mahanova	Editor History 7 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Matveeva	Editor Dossier 5 2018.08.19\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.25 1 https://vk.com/wall-17592208_56438 -	\
 \
 Orlando	Editor Scenes 2 2018.08.19\
-Total posts amount: 2	Posts dates amount: 1\
+Total posts amount: 4	Posts dates amount: 3\
 2018.08.21 2 https://vk.com/wall-17592208_56334 +	https://vk.com/wall-17592208_56357 +	\
+2018.08.24 1 https://vk.com/wall-17592208_56423 -	\
+2018.08.25 1 https://vk.com/wall-17592208_56448 -	\
 \
 Sanadze	Editor Scenes 7 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.23 1 https://vk.com/wall-17592208_56410 -	\
 \
+Shenkova	Editor Stars 2 2018.08.25\
+Total posts amount: 3	Posts dates amount: 2\
+2018.08.25 1 https://vk.com/wall-17592208_56455 -	\
+2018.08.26 2 https://vk.com/wall-17592208_56462 -	https://vk.com/wall-17592208_56471 -	\
+\
 Soloveychik	Editor FilmArt 2 2018.08.19\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.08.21 1 https://vk.com/wall-17592208_56358 +	\
 2018.08.23 1 https://vk.com/wall-17592208_56404 -	\
+2018.08.25 1 https://vk.com/wall-17592208_56456 -	\
 \
 Soul	Editor Dossier 4 2018.08.20\
 Total posts amount: 1	Posts dates amount: 1\
