@@ -382,7 +382,10 @@ class Database
         int counter = 0;
         for (auto &elem : data) {
             cout << counter++ << ". " << elem.first << '\t';
-            printPostsAmounts(elem.first);
+            if (moreInfo)
+                printPostsAmounts(elem.first);
+            else
+                cout << endl;
         }
     }
 
