@@ -1,9 +1,12 @@
-Members amount: 12\
+Members amount: 14\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56360 -	\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 -	\
+\
+Grigoreva	Editor FilmArt 2 2018.08.27\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Guseinov	Editor History 3 2018.08.27\
 Total posts amount: 0	Posts dates amount: 0\
@@ -29,6 +32,9 @@ Sanadze	Editor Scenes 7 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56410 -	\
 \
+Sharvadze	Editor Stars 2 2018.08.27\
+Total posts amount: 0	Posts dates amount: 0\
+\
 Shenkova	Editor Stars 2 2018.08.25\
 Total posts amount: 4	Posts dates amount: 3\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 -	\
@@ -46,7 +52,8 @@ Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 -	\
 \
 Trofimov	Editor History 2 2018.08.27\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 -	\
 \
 Zavileyskaya	Editor Scenes 3 2018.08.22\
 Total posts amount: 2	Posts dates amount: 1\
