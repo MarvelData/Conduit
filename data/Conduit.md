@@ -1,4 +1,4 @@
-Members amount: 10\
+Members amount: 11\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
@@ -40,6 +40,9 @@ Total posts amount: 3	Posts dates amount: 3\
 Soul	Editor Dossier 4 2018.08.20\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/wall-17592208_56361 -	\
+\
+Trofimov	Editor History 2 2018.08.27\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Zavileyskaya	Editor Scenes 3 2018.08.22\
 Total posts amount: 2	Posts dates amount: 1\
