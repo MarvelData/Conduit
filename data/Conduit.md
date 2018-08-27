@@ -9,7 +9,8 @@ Guseinov	Editor History 3 2018.08.27\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Kadyrkazy	Editor Humor 2 2018.08.27\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 -	\
 \
 Mahanova	Editor History 7 2018.08.19\
 Total posts amount: 0	Posts dates amount: 0\
