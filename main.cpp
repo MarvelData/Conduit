@@ -221,6 +221,8 @@ public:
         string finalLink = link;
         if (link.find("http") == -1)
             finalLink = "https://" + link;
+        if (finalLink.find("mu_marveluniverse") == -1)
+            finalLink = finalLink.substr(0, 15) + "mu_marveluniverse?w=" + finalLink.substr(15);
         if (Date::CheckDate(date)) {
             if (approved)
                 posts[date].emplace_back(TwoStrings(finalLink, "+"));
