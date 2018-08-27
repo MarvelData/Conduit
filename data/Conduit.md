@@ -26,9 +26,10 @@ Total posts amount: 1	Posts dates amount: 1\
 2018.08.23 1 https://vk.com/wall-17592208_56410 -	\
 \
 Shenkova	Editor Stars 2 2018.08.25\
-Total posts amount: 3	Posts dates amount: 2\
+Total posts amount: 4	Posts dates amount: 3\
 2018.08.25 1 https://vk.com/wall-17592208_56455 -	\
 2018.08.26 2 https://vk.com/wall-17592208_56462 -	https://vk.com/wall-17592208_56471 -	\
+2018.08.27 1 https://vk.com/wall-17592208_56482 -	\
 \
 Soloveychik	Editor FilmArt 2 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
