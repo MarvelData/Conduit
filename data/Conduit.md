@@ -6,7 +6,8 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 -	\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56506 -	\
 \
 Guseinov	Editor History 3 2018.08.27\
 Total posts amount: 0	Posts dates amount: 0\
