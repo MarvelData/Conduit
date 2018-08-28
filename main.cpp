@@ -27,6 +27,20 @@ int GreatestCommonDivisor(int a, int b) { return b ? GreatestCommonDivisor(b, a 
 
 int LeastCommonMultiplier(int a, int b) { return a / GreatestCommonDivisor(a, b) * b; }
 
+class StreamControl
+{
+    ofstream out;
+
+public:
+    void Redirect(const string &name = "TempRegBookOut.txt")
+    {
+        out.open(name);
+        cout.rdbuf(out.rdbuf());
+    }
+
+    ~StreamControl() { out.close(); }
+};
+
 class Date
 {
     string date;
@@ -804,8 +818,13 @@ public:
 int main(int argc, char **argv)
 {
     string regBookName = "../data/Conduit.md";
-    if (argc > 1)
-        regBookName = argv[1];
+    StreamControl streamControl;
+    if (argc > 1) {
+        if (string(argv[1]) == "-silent")
+            streamControl.Redirect();
+        else
+            regBookName = argv[1];
+    }
 
     Database regBook(move(regBookName));
     while (regBook.TalkToUser());
