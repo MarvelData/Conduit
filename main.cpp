@@ -471,8 +471,11 @@ class Database
             }
         }
 
-        cout << "Input number of the post u are approving: ";
+        cout << "Input number of the post u are approving or -1 to avoid approving: ";
         cin >> counter;
+
+        if (counter == -1)
+            return;
 
         data.at(posts.at(counter).ShortName).ApprovePost(posts.at(counter).Date, posts.at(counter).Index);
 
