@@ -37,10 +37,11 @@ Sharvadze	Editor Stars 2 2018.08.27\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Shenkova	Editor Stars 2 2018.08.25\
-Total posts amount: 4	Posts dates amount: 3\
+Total posts amount: 5	Posts dates amount: 4\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 -	\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56462 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56471 -	\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56482 -	\
+2018.08.28 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56515 -	\
 \
 Soloveychik	Editor FilmArt 2 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
