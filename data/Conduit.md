@@ -27,7 +27,9 @@ Total posts amount: 1	Posts dates amount: 1\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56438 -	\
 \
 MatveevaStars	Editor Stars 3 2018.08.29\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 4	Posts dates amount: 2\
+2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 -	\
+2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 \
 Orlando	Editor Scenes 2 2018.08.19\
 Total posts amount: 4	Posts dates amount: 3\
