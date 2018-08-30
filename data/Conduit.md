@@ -1,4 +1,4 @@
-Members amount: 13\
+Members amount: 15\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
@@ -16,12 +16,12 @@ Total posts amount: 3	Posts dates amount: 2\
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 -	\
 \
 LostSoul	Editor Dossier 4 2018.08.20\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 +	\
+2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56543 -	\
 \
 Malishev	Editor History 2 2018.08.30\
-Total posts amount: 1	Posts dates amount: 1\
-2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56573 -	\
+Total posts amount: 0	Posts dates amount: 0\
 \
 MatveevaDossier	Editor Dossier 5 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
@@ -32,11 +32,17 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 -	\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 \
+Nguen	Editor Arts 2 2018.08.30\
+Total posts amount: 0	Posts dates amount: 0\
+\
 Orlando	Editor Scenes 2 2018.08.19\
 Total posts amount: 4	Posts dates amount: 3\
 2018.08.21 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56334 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56357 +	\
 2018.08.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56423 +	\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56448 +	\
+\
+Radionova	Editor Scenes 3 2018.08.30\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Sanadze	Editor Scenes 7 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
@@ -58,8 +64,9 @@ Total posts amount: 5	Posts dates amount: 4\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56544 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56553 -	\
 \
 Trofimov	Editor History 2 2018.08.27\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 +	\
+2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 -	\
 \
 Zavileysk	Editor Scenes 3 2018.08.22\
 Total posts amount: 3	Posts dates amount: 2\
