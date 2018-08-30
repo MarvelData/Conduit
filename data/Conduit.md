@@ -1,4 +1,4 @@
-Members amount: 13\
+Members amount: 14\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
@@ -21,6 +21,9 @@ Total posts amount: 3	Posts dates amount: 2\
 LostSoul	Editor Dossier 4 2018.08.20\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 +	\
+\
+Malishev	Editor History 2 2018.08.30\
+Total posts amount: 0	Posts dates amount: 0\
 \
 MatveevaDossier	Editor Dossier 5 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
