@@ -159,7 +159,7 @@ public:
         do {
             if (!correct)
                 DateProblems();
-            cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): ";
+            cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): " << endl;
             cin >> date;
             if (date == "0")
                 return Now();
@@ -369,17 +369,17 @@ class Database
         string shortName, role, rubric, startDate;
         int frequency;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input member short name: ";
+        cout << endl << "Input member short name: " << endl;
         cin >> shortName;
         if (shortName.empty()) {
             cout << endl << "You can't add empty short name :(" << endl;
             return;
         }
-        cout << endl << "Input member role: ";
+        cout << endl << "Input member role: " << endl;
         cin >> role;
-        cout << endl << "Input member rubric: ";
+        cout << endl << "Input member rubric: " << endl;
         cin >> rubric;
-        cout << endl << "Input frequency (days needed for 1 post, must be positive integer): ";
+        cout << endl << "Input frequency (days needed for 1 post, must be positive integer): " << endl;
         cin >> frequency;
         startDate = Date::CollectDate();
         if (data.count(shortName))
@@ -414,7 +414,7 @@ class Database
             if (!correct)
                 cout << endl << "No such member! Try again.";
             bool digits = true;
-            cout << endl << "Input member (u can also input according number): ";
+            cout << endl << "Input member (u can also input according number): " << endl;
             cin >> shortName;
             for (auto c : shortName)
                 if (!isdigit(c)) {
@@ -442,10 +442,10 @@ class Database
         shortName = collectMemberName();
         date = Date::CollectDate();
         if (deleting) {
-            cout << endl << "Input index: ";
+            cout << endl << "Input index: " << endl;
             cin >> index;
         } else {
-            cout << endl << "Input link: ";
+            cout << endl << "Input link: " << endl;
             cin >> link;
         }
         return PostInfo(shortName, date, link, index);
@@ -471,7 +471,7 @@ class Database
             }
         }
 
-        cout << "Input number of the post u are approving or -1 to avoid approving: ";
+        cout << "Input number of the post u are approving or -1 to avoid approving: " << endl;
         cin >> counter;
 
         if (counter == -1)
@@ -557,7 +557,7 @@ class Database
         string oldShortName = collectMemberName();
         string newShortName;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input new short name for this member: ";
+        cout << endl << "Input new short name for this member: " << endl;
         cin >> newShortName;
         if (newShortName.empty()) {
             cout << endl << "You can't add empty short name :(" << endl;
@@ -583,7 +583,7 @@ class Database
         data[shortName].PrintInfo();
         string newRole;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input new role for this member: ";
+        cout << endl << "Input new role for this member: " << endl;
         cin >> newRole;
         data[shortName].ChangeRole(newRole);
         WriteDatabaseToFile();
@@ -595,7 +595,7 @@ class Database
         data[shortName].PrintInfo();
         string newRubric;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input new rubric for this member: ";
+        cout << endl << "Input new rubric for this member: " << endl;
         cin >> newRubric;
         data[shortName].ChangeRubric(newRubric);
         WriteDatabaseToFile();
@@ -607,7 +607,7 @@ class Database
         data[shortName].PrintInfo();
         int newFrequency;
         cout << endl << "NB: Input without spaces!" << endl;
-        cout << endl << "Input new frequency for this member (days needed for 1 post, must be positive integer): ";
+        cout << endl << "Input new frequency for this member (days needed for 1 post, must be positive integer): " << endl;
         cin >> newFrequency;
         data[shortName].ChangeFrequency(newFrequency);
         WriteDatabaseToFile();
