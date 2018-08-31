@@ -1,9 +1,10 @@
-Members amount: 17\
+Members amount: 18\
 \
 Baranov	Editor Humor 3 2018.08.19\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56360 +	\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 +	\
+2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56634 -	\
 \
 Chekurov	Editor Arts 2 2018.08.30\
 Total posts amount: 0	Posts dates amount: 0\
@@ -23,7 +24,7 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 +	\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56543 -	\
 \
-Malishev	Editor History 2 2018.08.30\
+Malyshev	Editor History 2 2018.08.30\
 Total posts amount: 0	Posts dates amount: 0\
 \
 MatveevaDossier	Editor Dossier 5 2018.08.19\
@@ -35,10 +36,13 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 -	\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 \
-Nguen	Editor Arts 2 2018.08.30\
+NguenArts	Editor Arts 2 2018.08.30\
 Total posts amount: 7	Posts dates amount: 2\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56602 -	\
 2018.08.31 6 https://vk.com/mu_marveluniverse?w=wall-17592208_56612 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56613 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56614 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56615 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56616 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56617 -	\
+\
+NguenHistory	Editor History 6 2018.09.01\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Orlando	Editor Scenes 2 2018.08.19\
 Total posts amount: 4	Posts dates amount: 3\
