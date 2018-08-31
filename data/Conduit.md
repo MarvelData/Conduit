@@ -36,8 +36,9 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 \
 Nguen	Editor Arts 2 2018.08.30\
-Total posts amount: 1	Posts dates amount: 1\
-2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56602 -	\
+Total posts amount: 7	Posts dates amount: 2\
+2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56602 -	\
+2018.08.31 6 https://vk.com/mu_marveluniverse?w=wall-17592208_56612 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56613 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56614 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56615 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56616 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56617 -	\
 \
 Orlando	Editor Scenes 2 2018.08.19\
 Total posts amount: 4	Posts dates amount: 3\
