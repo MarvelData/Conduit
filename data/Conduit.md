@@ -1,10 +1,11 @@
 Members amount: 18\
 \
 Baranov	Editor Humor 3 2018.08.19\
-Total posts amount: 3	Posts dates amount: 3\
+Total posts amount: 4	Posts dates amount: 4\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56360 +	\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56634 -	\
+2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56695 -	\
 \
 Chekurov	Editor Arts 2 2018.08.30\
 Total posts amount: 5	Posts dates amount: 5\
@@ -30,7 +31,8 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56543 -	\
 \
 Malyshev	Editor History 2 2018.08.30\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56577 -	\
 \
 MatveevaDossier	Editor Dossier 5 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
@@ -48,12 +50,6 @@ Total posts amount: 7	Posts dates amount: 2\
 \
 NguenHistory	Editor History 6 2018.09.01\
 Total posts amount: 0	Posts dates amount: 0\
-\
-Orlando	Editor Scenes 2 2018.08.19\
-Total posts amount: 4	Posts dates amount: 3\
-2018.08.21 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56334 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56357 +	\
-2018.08.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56423 +	\
-2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56448 +	\
 \
 Radionova	Editor Scenes 3 2018.08.30\
 Total posts amount: 4	Posts dates amount: 2\
@@ -80,6 +76,13 @@ Total posts amount: 5	Posts dates amount: 4\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56404 +	\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56456 +	\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56544 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56553 -	\
+\
+Stepanov	Editor Scenes 2 2018.08.19\
+Total posts amount: 5	Posts dates amount: 4\
+2018.08.21 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56334 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56357 +	\
+2018.08.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56423 +	\
+2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56448 +	\
+2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56692 -	\
 \
 Tadjibaeva	Editor Stars 3 2018.08.31\
 Total posts amount: 0	Posts dates amount: 0\
