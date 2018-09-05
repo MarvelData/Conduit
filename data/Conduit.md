@@ -75,11 +75,12 @@ Total posts amount: 9	Posts dates amount: 8\
 2018.09.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56696 -	\
 \
 Soloveychik	Editor FilmArt 2 2018.08.19\
-Total posts amount: 5	Posts dates amount: 4\
+Total posts amount: 6	Posts dates amount: 5\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56358 +	\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56404 +	\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56456 +	\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56544 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56553 -	\
+2018.09.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56738 -	\
 \
 Stepanov	Editor Scenes 2 2018.08.19\
 Total posts amount: 5	Posts dates amount: 4\
