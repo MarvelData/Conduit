@@ -398,8 +398,10 @@ class Database
         int counter = 0;
         for (auto &elem : data) {
             cout << counter++ << ". " << elem.first << '\t';
-            if (moreInfo)
+            if (moreInfo) {
+                cout << "Rubric: "  << data[elem.first].GetRubric() << '\t';
                 printPostsAmounts(elem.first);
+            }
             else
                 cout << endl;
         }
