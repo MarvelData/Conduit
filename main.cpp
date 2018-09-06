@@ -486,9 +486,13 @@ class Database
 
     void printPostsAmounts(const string &shortName)
     {
-        cout << "Actual posts amount: " << data[shortName].GetPostsAmount() << ' ';
-        cout << "Anticipated posts amount: "
-             << Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency() << endl;
+        int postsAmount = data[shortName].GetPostsAmount();
+        int anticipatedPostsAmount = Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency();
+        cout << "Actual posts amount: " << postsAmount;
+        cout << " Anticipated posts amount: " << anticipatedPostsAmount;
+        if (anticipatedPostsAmount - postsAmount > 1)
+            cout << " Lag: " << anticipatedPostsAmount - postsAmount;
+        cout << endl;
     }
 
     void learnAboutMembers()
