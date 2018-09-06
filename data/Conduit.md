@@ -64,7 +64,7 @@ Total posts amount: 1	Posts dates amount: 1\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56410 +	\
 \
 Shenkova	Editor Stars 2 2018.08.25\
-Total posts amount: 9	Posts dates amount: 8\
+Total posts amount: 10	Posts dates amount: 9\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 +	\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56462 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56471 +	\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56482 -	\
@@ -73,6 +73,7 @@ Total posts amount: 9	Posts dates amount: 8\
 2018.09.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56640 -	\
 2018.09.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56678 -	\
 2018.09.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56696 -	\
+2018.09.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56763 -	\
 \
 Soloveychik	Editor FilmArt 2 2018.08.19\
 Total posts amount: 6	Posts dates amount: 5\
