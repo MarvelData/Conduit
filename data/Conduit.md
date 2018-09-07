@@ -1,4 +1,4 @@
-Members amount: 19\
+Members amount: 20\
 \
 Baranov	Editor Humor 3 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
@@ -16,6 +16,9 @@ Total posts amount: 5	Posts dates amount: 5\
 2018.09.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56650 -	\
 2018.09.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56651 -	\
 2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56652 -	\
+\
+Firsov	Editor History 2 2018.09.07\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 4	Posts dates amount: 2\
