@@ -25,7 +25,7 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56506 +	\
 2018.08.29 3 https://vk.com/mu_marveluniverse?w=wall-17592208_56542 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56545 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56548 -	\
 \
-Kadyrkazy	Editor Humor 1 2018.08.27\
+Kadyrkazy	Editor Humor 2 2018.08.27\
 Total posts amount: 3	Posts dates amount: 2\
 2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56508 -	\
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 -	\
@@ -109,7 +109,9 @@ Trushnikova	Editor Scenes 7 2018.09.05\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Zavileysk	Editor Scenes 3 2018.08.22\
-Total posts amount: 3	Posts dates amount: 2\
+Total posts amount: 5	Posts dates amount: 4\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56466 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56465 +	\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56504 +	\
+2018.09.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56724 -	\
+2018.09.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56701 -	\
 \
