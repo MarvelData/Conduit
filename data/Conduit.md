@@ -26,9 +26,10 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.29 3 https://vk.com/mu_marveluniverse?w=wall-17592208_56542 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56545 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56548 -	\
 \
 Kadyrkazy	Editor Humor 2 2018.08.27\
-Total posts amount: 3	Posts dates amount: 2\
+Total posts amount: 4	Posts dates amount: 3\
 2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56508 -	\
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 -	\
+2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56846 -	\
 \
 LostSoul	Editor Dossier 4 2018.08.20\
 Total posts amount: 3	Posts dates amount: 3\
