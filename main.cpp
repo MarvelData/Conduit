@@ -780,7 +780,6 @@ public:
     bool TalkToUser()
     {
         cout << endl << "Hello! What would u like to do?" << endl;
-        cout << "-1. I would like to quit" << endl;
         cout << "0. I would like to add new member" << endl;
         cout << "1. I would like to add a post for a member" << endl;
         cout << "2. I would like to learn something about members" << endl;
@@ -791,7 +790,7 @@ public:
         cout << "7. I would like to change member data" << endl;
         cout << "8. I would like to approve post" << endl;
         cout << "9. I would like to update deep data" << endl;
-        cout << endl << "Input appropriate number =)" << endl;
+        cout << endl << "Input appropriate number or -1 to exit =)" << endl;
 
         int decision;
         cin >> decision;
