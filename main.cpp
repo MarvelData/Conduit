@@ -214,15 +214,19 @@ class Member {
     string role;
     string rubric;
     int frequency;
-    Date start;
+    Date start, end;
+    map<string, string> rubricSwitches;
+    map<string, pair<int, int>> frequencySwitches;
+    map<string, string> vacations;
     int postsAmount;
     map<string, vector<TwoStrings>> posts;
+    bool changedDeepInfo;
 
 public:
-    Member() : postsAmount(0), frequency(-1), start("0000.01.01") {}
+    Member() : postsAmount(0), frequency(-1), start("0000.01.01"), end("0000.01.01"), changedDeepInfo(false) {}
 
     Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
-            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0)
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), end("0000.01.01"), postsAmount(0), changedDeepInfo(false)
     {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -280,6 +284,7 @@ public:
                 else
                     posts.erase(date);
                 postsAmount--;
+                changedDeepInfo = true;
             } else {
                 cout << endl << "There is no such post ..." << endl;
                 return;
@@ -327,13 +332,25 @@ public:
              << endl << "Frequency (days needed for 1 post): " << frequency << endl << "Start date: " << start << endl;
     }
 
-    void Rename(const string &newShortName) { shortName = newShortName; }
+    void Rename(const string &newShortName) { shortName = newShortName; changedDeepInfo = true; }
 
-    void ChangeRole(const string &newRole) { role = newRole; }
+    void ChangeRole(const string &newRole) { role = newRole; changedDeepInfo = true; }
 
-    void ChangeRubric(const string &newRubric) { rubric = newRubric; }
+    void ChangeRubric(const string &newRubric)
+    {
+        rubricSwitches[Date::Now()] = rubric + " changed to " + newRubric;
+        rubric = newRubric;
+        changedDeepInfo = true;
+    }
 
-    void ChangeFrequency(int newFrequency) { frequency = newFrequency; }
+    void ChangeFrequency(int newFrequency)
+    {
+        frequencySwitches[Date::Now()] = pair<int, int>(frequency, newFrequency);
+        frequency = newFrequency;
+        changedDeepInfo = true;
+    }
+
+    void ForceDeepInfoUpdate() { changedDeepInfo = true; }
 
     string GetShortName() const { return shortName; }
 
@@ -356,6 +373,13 @@ public:
     }
 
     size_t GetPostsDatesAmount() const { return posts.size(); }
+
+    void ReadSpecificInfo()
+    {
+
+    }
+
+    bool ChangedDeepInfo() const { return changedDeepInfo; }
 };
 
 class Database
@@ -389,7 +413,7 @@ class Database
             data[member.GetShortName()] = member;
             cout << endl << "New member is successfully added!" << endl;
         }
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void printMembers(bool moreInfo = false)
@@ -458,7 +482,7 @@ class Database
         PostInfo postInfo = collectPostInfo(false);
         if (postInfo.Correct)
             data[postInfo.ShortName].AddPost(postInfo.Date, postInfo.Link);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void approvePost()
@@ -481,7 +505,7 @@ class Database
 
         data.at(posts.at(counter).ShortName).ApprovePost(posts.at(counter).Date, posts.at(counter).Index);
 
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void printPostsAmounts(const string &shortName)
@@ -545,7 +569,7 @@ class Database
         PostInfo postInfo = collectPostInfo(true);
         if (postInfo.Correct)
             data[postInfo.ShortName].DeletePost(postInfo.Date, postInfo.Index);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void deleteMember()
@@ -555,7 +579,7 @@ class Database
             data.erase(shortName);
         else
             cout << endl << "There is no such member already!" << endl;
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void changeMemberShortName()
@@ -580,7 +604,7 @@ class Database
         data[oldShortName].Rename(newShortName);
         data[newShortName] = move(data[oldShortName]);
         data.erase(oldShortName);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void changeMemberRole()
@@ -592,7 +616,7 @@ class Database
         cout << endl << "Input new role for this member: " << endl;
         cin >> newRole;
         data[shortName].ChangeRole(newRole);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void changeMemberRubric()
@@ -604,7 +628,7 @@ class Database
         cout << endl << "Input new rubric for this member: " << endl;
         cin >> newRubric;
         data[shortName].ChangeRubric(newRubric);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void changeMemberFrequency()
@@ -616,7 +640,7 @@ class Database
         cout << endl << "Input new frequency for this member (days needed for 1 post, must be positive integer): " << endl;
         cin >> newFrequency;
         data[shortName].ChangeFrequency(newFrequency);
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 
     void changeMemberData()
@@ -707,7 +731,7 @@ public:
             elem.second.GetPostsAmount();
     }
 
-    void WriteDatabaseToFile()
+    void WriteDatabaseToFiles()
     {
         for (auto &elem : data)
             elem.second.GetPostsAmount();
@@ -721,6 +745,18 @@ public:
                  << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
             elem.second.PrintPosts(file);
             file << '\\' << endl;
+
+            if (elem.second.ChangedDeepInfo()) {
+                elem.second.ReadSpecificInfo();
+                ofstream memberFile("../data/" + elem.first + ".md");
+                memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
+                           << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << '\\' << endl;
+                memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
+                           << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
+
+                elem.second.PrintPosts(memberFile);
+                memberFile.close();
+            }
         }
 
         file.close();
@@ -744,6 +780,7 @@ public:
     bool TalkToUser()
     {
         cout << endl << "Hello! What would u like to do?" << endl;
+        cout << "-1. I would like to quit" << endl;
         cout << "0. I would like to add new member" << endl;
         cout << "1. I would like to add a post for a member" << endl;
         cout << "2. I would like to learn something about members" << endl;
@@ -753,12 +790,14 @@ public:
         cout << "6. I would like to delete a member" << endl;
         cout << "7. I would like to change member data" << endl;
         cout << "8. I would like to approve post" << endl;
-        cout << "9. I would like to quit" << endl;
+        cout << "9. I would like to update deep data" << endl;
         cout << endl << "Input appropriate number =)" << endl;
 
         int decision;
         cin >> decision;
         switch (decision) {
+            case -1:
+                return false;
             case 0:
                 addMember();
                 break;
@@ -787,7 +826,8 @@ public:
                 approvePost();
                 break;
             case 9:
-                return false;
+                data[collectMemberName()].ForceDeepInfoUpdate();
+                break;
             default:
                 cout << endl << "You made some mistake :(" << endl;
                 break;
@@ -820,7 +860,7 @@ public:
 
     ~Database()
     {
-        WriteDatabaseToFile();
+        WriteDatabaseToFiles();
     }
 };
 
