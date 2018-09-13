@@ -376,7 +376,27 @@ public:
 
     void ReadSpecificInfo()
     {
+        ifstream file("../data/" + shortName + ".md");
+        string buf;
+        int rubriSwitchesAmount;
+        file >> buf >> buf >> buf >> buf >> buf;
+        file >> rubriSwitchesAmount;
+        file >> buf >> buf;
+        for (int i = 0; i < rubriSwitchesAmount; i++) {
+            string date, oldRubric, newRubric, info;
+            file >> date >> oldRubric >> info >> buf >> newRubric;
+            rubricSwitches[date] = oldRubric + ' ' + info + ' ' + buf + ' ' + newRubric;
+            file >> buf;
+        }
+//        startDate = startDate.substr(0, startDate.size() - 1);
+        file.close();
+    }
 
+    void PrintSpecificInfo(ostream &os) const
+    {
+        os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
+        for (auto &rubricSwitch : rubricSwitches)
+            os << rubricSwitch.first << ' ' << rubricSwitch.second << " \\" << endl;
     }
 
     bool ChangedDeepInfo() const { return changedDeepInfo; }
@@ -523,6 +543,8 @@ class Database
     {
         string shortName = collectMemberName(true);
         data[shortName].PrintInfo();
+        data[shortName].ReadSpecificInfo();
+        data[shortName].PrintSpecificInfo(cout);
         printPostsAmounts(shortName);
     }
 
@@ -751,9 +773,9 @@ public:
                 ofstream memberFile("../data/" + elem.first + ".md");
                 memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
                            << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << '\\' << endl;
+                elem.second.PrintSpecificInfo(memberFile);
                 memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
-
                 elem.second.PrintPosts(memberFile);
                 memberFile.close();
             }
