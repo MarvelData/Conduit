@@ -6,7 +6,7 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56634 -	\
 \
-Chekurov	Editor OST 2 2018.08.30\
+Chekurov	Editor OST 4 2018.08.30\
 Total posts amount: 5	Posts dates amount: 5\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56608 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56677 +	\
@@ -73,7 +73,7 @@ Sanadze	Editor Scenes 7 2018.08.19\
 Total posts amount: 1	Posts dates amount: 1\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56410 +	\
 \
-Shenkova	Editor Stars 2 2018.08.25\
+Shenkova	Editor Stars 7 2018.08.25\
 Total posts amount: 12	Posts dates amount: 11\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 +	\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56462 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56471 +	\
