@@ -1,6 +1,7 @@
-Chekurov	Editor History 2 2018.08.30\
-1 rubric switches:\
+Chekurov	Editor OST 2 2018.08.30\
+2 rubric switches:\
 2018.09.08 Arts changed to History \
+2018.09.15 History changed to OST \
 Total posts amount: 5	Posts dates amount: 5\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56608 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56677 +	\
