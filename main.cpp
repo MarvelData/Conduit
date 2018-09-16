@@ -566,7 +566,7 @@ class Database
         cout << "Actual posts amount: " << postsAmount;
         cout << " Anticipated posts amount: " << anticipatedPostsAmount;
         if (anticipatedPostsAmount - postsAmount > 1)
-            cout << " Lag: " << anticipatedPostsAmount - postsAmount;
+            cout << "\t Lag: " << anticipatedPostsAmount - postsAmount;
         cout << endl;
     }
 
@@ -832,16 +832,17 @@ public:
     bool TalkToUser()
     {
         cout << endl << "Hello! What would u like to do?" << endl;
-        cout << "0. I would like to add new member" << endl;
-        cout << "1. I would like to add a post for a member" << endl;
-        cout << "2. I would like to learn something about members" << endl;
-        cout << "3. I would like to learn something about roles" << endl;
-        cout << "4. I would like to learn something about rubrics" << endl;
-        cout << "5. I would like to delete a post from a member" << endl;
-        cout << "6. I would like to delete a member" << endl;
-        cout << "7. I would like to change member data" << endl;
-        cout << "8. I would like to approve post" << endl;
-        cout << "9. I would like to update deep data" << endl;
+        cout << "0. \t I would like to add new member" << endl;
+        cout << "1. \t I would like to add a post for a member" << endl;
+        cout << "2. \t I would like to learn something about members" << endl;
+        cout << "3. \t I would like to learn something about roles" << endl;
+        cout << "4. \t I would like to learn something about rubrics" << endl;
+        cout << "5. \t I would like to delete a post from a member" << endl;
+        cout << "6. \t I would like to delete a member" << endl;
+        cout << "7. \t I would like to change member data" << endl;
+        cout << "8. \t I would like to approve post" << endl;
+        cout << "9. \t I would like to update deep data" << endl;
+        cout << "10. \t I would like to update deep data for all members" << endl;
         cout << endl << "Input appropriate number or -1 to exit =)" << endl;
 
         int decision;
@@ -878,6 +879,10 @@ public:
                 break;
             case 9:
                 data[collectMemberName()].ForceDeepInfoUpdate();
+                break;
+            case 10:
+                for (auto &member : data)
+                    member.second.ForceDeepInfoUpdate();
                 break;
             default:
                 cout << endl << "You made some mistake :(" << endl;
