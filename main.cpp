@@ -360,7 +360,7 @@ public:
 
     int GetFrequency() const { return frequency; }
 
-    Date GetDate() const { return start; }
+    Date GetStartDate() const { return start; }
 
     int GetPostsAmount() const {
         int counter = 0;
@@ -374,21 +374,47 @@ public:
 
     size_t GetPostsDatesAmount() const { return posts.size(); }
 
+    int GetAnticipatedPostsAmount() const
+    {
+        int anticipatedPostsAmount = 0;
+        Date lastDate = start;
+        for (auto &frequencySwitch : frequencySwitches) {
+            anticipatedPostsAmount += Date(frequencySwitch.first).Since(lastDate) / frequencySwitch.second.first;
+            lastDate = Date(frequencySwitch.first);
+        }
+        anticipatedPostsAmount += Date(Date::Now()).Since(lastDate) / frequency;
+        return anticipatedPostsAmount;
+    }
+
     void ReadSpecificInfo()
     {
         ifstream file("../data/" + shortName + ".md");
+
         string buf;
-        int rubriSwitchesAmount;
+        int rubricSwitchesAmount, frequencySwitchesAmount;
+
         file >> buf >> buf >> buf >> buf >> buf;
-        file >> rubriSwitchesAmount;
+        file >> rubricSwitchesAmount;
         file >> buf >> buf;
-        for (int i = 0; i < rubriSwitchesAmount; i++) {
+        for (int i = 0; i < rubricSwitchesAmount; i++) {
             string date, oldRubric, newRubric, info;
             file >> date >> oldRubric >> info >> buf >> newRubric;
             rubricSwitches[date] = oldRubric + ' ' + info + ' ' + buf + ' ' + newRubric;
             file >> buf;
         }
+
+        file >> frequencySwitchesAmount;
+        file >> buf >> buf;
+        for (int i = 0; i < frequencySwitchesAmount; i++) {
+            string date;
+            int oldFrequency, newFrequency;
+            file >> date >> oldFrequency >> buf >> buf >> newFrequency >> buf;
+            frequencySwitches[date].first = oldFrequency;
+            frequencySwitches[date].second = newFrequency;
+        }
+
 //        startDate = startDate.substr(0, startDate.size() - 1);
+
         file.close();
     }
 
@@ -397,6 +423,10 @@ public:
         os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
         for (auto &rubricSwitch : rubricSwitches)
             os << rubricSwitch.first << ' ' << rubricSwitch.second << " \\" << endl;
+        os << frequencySwitches.size() << " frequency switches:" << "\\" << endl;
+        for (auto &frequencySwitch : frequencySwitches)
+            os << frequencySwitch.first << ' ' << frequencySwitch.second.first
+               << " changed to " << frequencySwitch.second.second << " \\" << endl;
     }
 
     bool ChangedDeepInfo() const { return changedDeepInfo; }
@@ -444,6 +474,7 @@ class Database
             cout << counter++ << ". " << elem.first << '\t';
             if (moreInfo) {
                 cout << "Rubric: "  << data[elem.first].GetRubric() << '\t';
+                data[elem.first].ReadSpecificInfo();
                 printPostsAmounts(elem.first);
             }
             else
@@ -531,7 +562,7 @@ class Database
     void printPostsAmounts(const string &shortName)
     {
         int postsAmount = data[shortName].GetPostsAmount();
-        int anticipatedPostsAmount = Date(Date::Now()).Since(Date(data[shortName].GetDate())) / data[shortName].GetFrequency();
+        int anticipatedPostsAmount = data[shortName].GetAnticipatedPostsAmount();
         cout << "Actual posts amount: " << postsAmount;
         cout << " Anticipated posts amount: " << anticipatedPostsAmount;
         if (anticipatedPostsAmount - postsAmount > 1)
@@ -543,7 +574,6 @@ class Database
     {
         string shortName = collectMemberName(true);
         data[shortName].PrintInfo();
-        data[shortName].ReadSpecificInfo();
         data[shortName].PrintSpecificInfo(cout);
         printPostsAmounts(shortName);
     }
@@ -762,7 +792,7 @@ public:
         file << "Members amount: " << data.size() << '\\' << endl << '\\' << endl;
         for (auto &elem : data) {
             file << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
-                 << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << '\\' << endl;
+                 << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
             file << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                  << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
             elem.second.PrintPosts(file);
@@ -772,7 +802,7 @@ public:
                 elem.second.ReadSpecificInfo();
                 ofstream memberFile("../data/" + elem.first + ".md");
                 memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
-                           << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetDate() << '\\' << endl;
+                           << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
                 elem.second.PrintSpecificInfo(memberFile);
                 memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
