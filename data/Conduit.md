@@ -27,10 +27,11 @@ Total posts amount: 5	Posts dates amount: 4\
 2018.09.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56862 -	\
 \
 LostSoul	Editor Dossier 4 2018.08.20\
-Total posts amount: 3	Posts dates amount: 3\
+Total posts amount: 4	Posts dates amount: 4\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 +	\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56543 +	\
 2018.09.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56684 -	\
+2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56840 -	\
 \
 Malyshev	Editor History 2 2018.08.30\
 Total posts amount: 1	Posts dates amount: 1\
@@ -59,7 +60,8 @@ Total posts amount: 11	Posts dates amount: 6\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56797 -	\
 \
 NguenHistory	Editor History 6 2018.09.01\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
 \
 Nizov	Editor Facts 3 2018.09.11\
 Total posts amount: 0	Posts dates amount: 0\
@@ -109,7 +111,9 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 +	\
 \
 Trushnikova	Editor Scenes 7 2018.09.05\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 2	Posts dates amount: 2\
+2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56933 -	\
+2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56934 -	\
 \
 Zavileysk	Editor Scenes 3 2018.08.22\
 Total posts amount: 5	Posts dates amount: 4\
