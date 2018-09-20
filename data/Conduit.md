@@ -113,9 +113,10 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 +	\
 \
 Trushnikova	Editor Scenes 7 2018.09.05\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 4	Posts dates amount: 3\
 2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56933 -	\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56934 -	\
+2018.09.20 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57118 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57119 -	\
 \
 Zavileysk	Editor Scenes 3 2018.08.22\
 Total posts amount: 6	Posts dates amount: 5\
