@@ -185,8 +185,6 @@ public:
         return date;
     }
 
-    //dates comparison
-
     friend ostream& operator<<(ostream& os, const Date& date);
 };
 
@@ -388,11 +386,19 @@ public:
 
     int GetVacationLength(const string &startDate, const string &endDate) const
     {
-        return 0;
+        int length = 0;
+        for (auto &vacation : vacations)
+            if (vacation.first <= endDate && vacation.second >= startDate)
+                length += Date(min(vacation.second, endDate)).Since(Date(max(vacation.first, startDate)));
+        return length;
     }
 
-    bool OnVacation()
+    bool OnVacation() const
     {
+        if (vacations.empty())
+            return false;
+        else if (vacations.rbegin()->second >= Date::Now())
+            return true;
         return false;
     }
 
@@ -632,6 +638,7 @@ class Database
     {
         map<string, pair<int, vector<int>>> rubrics;
         for (auto &elem : data) {
+            elem.second.ReadSpecificInfo();
             if (!elem.second.OnVacation()) {
                 if (rubrics.count(elem.second.GetRubric()))
                     rubrics[elem.second.GetRubric()].first++;
@@ -779,6 +786,7 @@ class Database
                 break;
             case 4:
                 addVacation();
+                break;
             default:
                 cout << endl << "You made some mistake :(" << endl;
                 break;
