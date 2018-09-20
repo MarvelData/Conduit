@@ -94,6 +94,8 @@ public:
         return diff + GetDaysInMonth(oldDate.year, oldDate.month) - oldDate.day + day;
     }
 
+    string GetAsString() const { return date; }
+
     static int GetDaysInMonth(int year, int month)
     {
         switch (month)
@@ -152,7 +154,7 @@ public:
         return true;
     }
 
-    static string CollectDate()
+    static string CollectDate(bool unlimitedPossibility = false)
     {
         string date;
         bool correct = true;
@@ -161,6 +163,8 @@ public:
                 DateProblems();
             cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): " << endl;
             cin >> date;
+            if (unlimitedPossibility && date == "unlimited")
+                return date;
             if (date == "0")
                 return Now();
         } while (!(correct = CheckDate(date)));
@@ -180,6 +184,8 @@ public:
         date += to_string(localtime(&time)->tm_mday);
         return date;
     }
+
+    //dates comparison
 
     friend ostream& operator<<(ostream& os, const Date& date);
 };
@@ -350,6 +356,12 @@ public:
         changedDeepInfo = true;
     }
 
+    void AddVacation(const string &startDate, const string &endDate)
+    {
+        vacations[startDate] = endDate;
+        changedDeepInfo = true;
+    }
+
     void ForceDeepInfoUpdate() { changedDeepInfo = true; }
 
     string GetShortName() const { return shortName; }
@@ -374,15 +386,29 @@ public:
 
     size_t GetPostsDatesAmount() const { return posts.size(); }
 
+    int GetVacationLength(const string &startDate, const string &endDate) const
+    {
+        return 0;
+    }
+
+    bool OnVacation()
+    {
+        return false;
+    }
+
     int GetAnticipatedPostsAmount() const
     {
         int anticipatedPostsAmount = 0;
         Date lastDate = start;
         for (auto &frequencySwitch : frequencySwitches) {
-            anticipatedPostsAmount += Date(frequencySwitch.first).Since(lastDate) / frequencySwitch.second.first;
+            anticipatedPostsAmount += (Date(frequencySwitch.first).Since(lastDate)
+                                       - GetVacationLength(lastDate.GetAsString(), frequencySwitch.first))
+                                       / frequencySwitch.second.first;
             lastDate = Date(frequencySwitch.first);
         }
-        anticipatedPostsAmount += Date(Date::Now()).Since(lastDate) / frequency;
+        anticipatedPostsAmount += (Date(Date::Now()).Since(lastDate)
+                                   - GetVacationLength(lastDate.GetAsString(), Date::Now()))
+                                  / frequency;
         return anticipatedPostsAmount;
     }
 
@@ -391,7 +417,7 @@ public:
         ifstream file("../data/" + shortName + ".md");
 
         string buf;
-        int rubricSwitchesAmount, frequencySwitchesAmount;
+        int rubricSwitchesAmount, frequencySwitchesAmount, vacationsAmount;
 
         file >> buf >> buf >> buf >> buf >> buf;
         file >> rubricSwitchesAmount;
@@ -399,7 +425,7 @@ public:
         for (int i = 0; i < rubricSwitchesAmount; i++) {
             string date, oldRubric, newRubric, info;
             file >> date >> oldRubric >> info >> buf >> newRubric;
-            rubricSwitches[date] = oldRubric + ' ' + info + ' ' + buf + ' ' + newRubric;
+            rubricSwitches[date] = oldRubric.append(' ' + info).append(' ' + buf).append(' ' + newRubric);
             file >> buf;
         }
 
@@ -408,9 +434,18 @@ public:
         for (int i = 0; i < frequencySwitchesAmount; i++) {
             string date;
             int oldFrequency, newFrequency;
-            file >> date >> oldFrequency >> buf >> buf >> newFrequency >> buf;
+            file >> date >> oldFrequency >> buf >> buf;
+            file >> newFrequency >> buf;
             frequencySwitches[date].first = oldFrequency;
             frequencySwitches[date].second = newFrequency;
+        }
+
+        file >> vacationsAmount;
+        file >> buf;
+        for (int i = 0; i < vacationsAmount; i++) {
+            string startDate, endDate;
+            file >> startDate >> endDate >> buf;
+            AddVacation(startDate, endDate);
         }
 
 //        startDate = startDate.substr(0, startDate.size() - 1);
@@ -423,10 +458,15 @@ public:
         os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
         for (auto &rubricSwitch : rubricSwitches)
             os << rubricSwitch.first << ' ' << rubricSwitch.second << " \\" << endl;
+
         os << frequencySwitches.size() << " frequency switches:" << "\\" << endl;
         for (auto &frequencySwitch : frequencySwitches)
             os << frequencySwitch.first << ' ' << frequencySwitch.second.first
                << " changed to " << frequencySwitch.second.second << " \\" << endl;
+
+        os << vacations.size() << " vacations:" << "\\" << endl;
+        for (auto &vacation : vacations)
+            os << vacation.first << ' ' << vacation.second << " \\" << endl;
     }
 
     bool ChangedDeepInfo() const { return changedDeepInfo; }
@@ -592,11 +632,13 @@ class Database
     {
         map<string, pair<int, vector<int>>> rubrics;
         for (auto &elem : data) {
-            if (rubrics.count(elem.second.GetRubric()))
-                rubrics[elem.second.GetRubric()].first++;
-            else
-                rubrics[elem.second.GetRubric()] = pair<int, vector<int>>(1, vector<int>());
-            rubrics[elem.second.GetRubric()].second.emplace_back(elem.second.GetFrequency());
+            if (!elem.second.OnVacation()) {
+                if (rubrics.count(elem.second.GetRubric()))
+                    rubrics[elem.second.GetRubric()].first++;
+                else
+                    rubrics[elem.second.GetRubric()] = pair<int, vector<int>>(1, vector<int>());
+                rubrics[elem.second.GetRubric()].second.emplace_back(elem.second.GetFrequency());
+            }
         }
         vector<double> statistics;
         for (auto &rubric : rubrics) {
@@ -695,6 +737,20 @@ class Database
         WriteDatabaseToFiles();
     }
 
+    void addVacation()
+    {
+        string shortName = collectMemberName();
+        data[shortName].PrintInfo();
+        string start, end;
+        cout << endl << "NB: Input without spaces!" << endl;
+        cout << endl << "Input vacation start date: " << endl;
+        start = Date::CollectDate();
+        cout << endl << "Input vacation end date or \"unlimited\": " << endl;
+        end = Date::CollectDate(true);
+        data[shortName].AddVacation(start, end);
+        WriteDatabaseToFiles();
+    }
+
     void changeMemberData()
     {
         printMembers();
@@ -703,6 +759,7 @@ class Database
         cout << "1. I would like to change member role" << endl;
         cout << "2. I would like to change member rubric" << endl;
         cout << "3. I would like to change member frequency" << endl;
+        cout << "4. I would like to add vacation for member" << endl;
         cout << endl << "Input appropriate number =)" << endl;
 
         int decision;
@@ -720,6 +777,8 @@ class Database
             case 3:
                 changeMemberFrequency();
                 break;
+            case 4:
+                addVacation();
             default:
                 cout << endl << "You made some mistake :(" << endl;
                 break;
