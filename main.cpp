@@ -218,7 +218,7 @@ class Member {
     string role;
     string rubric;
     int frequency;
-    Date start, end;
+    Date start;
     map<string, string> rubricSwitches;
     map<string, pair<int, int>> frequencySwitches;
     map<string, string> vacations;
@@ -227,10 +227,10 @@ class Member {
     bool changedDeepInfo;
 
 public:
-    Member() : postsAmount(0), frequency(-1), start("0000.01.01"), end("0000.01.01"), changedDeepInfo(false) {}
+    Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false) {}
 
     Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
-            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), end("0000.01.01"), postsAmount(0), changedDeepInfo(false)
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0), changedDeepInfo(false)
     {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -454,12 +454,10 @@ public:
             AddVacation(startDate, endDate);
         }
 
-//        startDate = startDate.substr(0, startDate.size() - 1);
-
         file.close();
     }
 
-    void PrintSpecificInfo(ostream &os) const
+    void PrintSpecificInfo(ostream &os, bool dismission = false) const
     {
         os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
         for (auto &rubricSwitch : rubricSwitches)
@@ -473,6 +471,9 @@ public:
         os << vacations.size() << " vacations:" << "\\" << endl;
         for (auto &vacation : vacations)
             os << vacation.first << ' ' << vacation.second << " \\" << endl;
+
+        if (dismission)
+            os << "Finished on " << Date::Now() << "\\" << endl;
     }
 
     bool ChangedDeepInfo() const { return changedDeepInfo; }
@@ -676,9 +677,11 @@ class Database
     void deleteMember()
     {
         string shortName = collectMemberName();
-        if (data.count(shortName))
+        if (data.count(shortName)) {
+            data[shortName].ForceDeepInfoUpdate();
+            WriteDatabaseToFiles(true);
             data.erase(shortName);
-        else
+        } else
             cout << endl << "There is no such member already!" << endl;
         WriteDatabaseToFiles();
     }
@@ -850,7 +853,7 @@ public:
             elem.second.GetPostsAmount();
     }
 
-    void WriteDatabaseToFiles()
+    void WriteDatabaseToFiles(bool dismission = false)
     {
         for (auto &elem : data)
             elem.second.GetPostsAmount();
@@ -870,7 +873,7 @@ public:
                 ofstream memberFile("../data/" + elem.first + ".md");
                 memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
                            << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
-                elem.second.PrintSpecificInfo(memberFile);
+                elem.second.PrintSpecificInfo(memberFile, dismission);
                 memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
                 elem.second.PrintPosts(memberFile);
