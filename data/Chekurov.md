@@ -5,6 +5,9 @@ Chekurov	Editor OST 4 2018.08.30\
 1 frequency switches:\
 2018.09.15 2 changed to 4 \
 0 vacations:\
+Finished on 2018.09.22\
+Actual posts amount: 5 Anticipated posts amount: 9	 Lag: 4
+\
 Total posts amount: 5	Posts dates amount: 5\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56608 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56677 +	\

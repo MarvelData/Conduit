@@ -1,18 +1,10 @@
-Members amount: 20\
+Members amount: 19\
 \
 Baranov	Editor Humor 5 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56360 +	\
 2018.08.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56477 +	\
 2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56634 -	\
-\
-Chekurov	Editor OST 4 2018.08.30\
-Total posts amount: 5	Posts dates amount: 5\
-2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56608 +	\
-2018.08.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56677 +	\
-2018.09.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56650 +	\
-2018.09.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56651 +	\
-2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56652 +	\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 4	Posts dates amount: 2\
