@@ -606,15 +606,15 @@ class Database
         WriteDatabaseToFiles();
     }
 
-    void printPostsAmounts(const string &shortName)
+    void printPostsAmounts(const string &shortName, ostream &os = cout)
     {
         int postsAmount = data[shortName].GetPostsAmount();
         int anticipatedPostsAmount = data[shortName].GetAnticipatedPostsAmount();
-        cout << "Actual posts amount: " << postsAmount;
-        cout << " Anticipated posts amount: " << anticipatedPostsAmount;
+        os << "Actual posts amount: " << postsAmount;
+        os << " Anticipated posts amount: " << anticipatedPostsAmount;
         if (anticipatedPostsAmount - postsAmount > 1)
-            cout << "\t Lag: " << anticipatedPostsAmount - postsAmount;
-        cout << endl;
+            os << "\t Lag: " << anticipatedPostsAmount - postsAmount;
+        os << endl;
     }
 
     void learnAboutMembers()
@@ -874,6 +874,10 @@ public:
                 memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
                            << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
                 elem.second.PrintSpecificInfo(memberFile, dismission);
+                if (dismission) {
+                    printPostsAmounts(elem.first, memberFile);
+                    memberFile << "\\" << endl;
+                }
                 memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
                 elem.second.PrintPosts(memberFile);
