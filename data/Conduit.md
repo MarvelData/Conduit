@@ -1,4 +1,4 @@
-Members amount: 18\
+Members amount: 17\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 7	Posts dates amount: 5\
@@ -54,9 +54,6 @@ NguenHistory	Editor History 6 2018.09.01\
 Total posts amount: 1	Posts dates amount: 1\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
 \
-Nizov	Editor Facts 3 2018.09.11\
-Total posts amount: 0	Posts dates amount: 0\
-\
 Radionova	Editor Scenes 3 2018.08.30\
 Total posts amount: 4	Posts dates amount: 2\
 2018.09.02 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56661 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56662 +	\
@@ -101,9 +98,10 @@ Total posts amount: 5	Posts dates amount: 4\
 2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56692 +	\
 \
 Trofimov	Editor History 2 2018.08.27\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 +	\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 +	\
+2018.09.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57280 -	\
 \
 Trushnikova	Editor Scenes 7 2018.09.05\
 Total posts amount: 4	Posts dates amount: 3\
