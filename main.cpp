@@ -161,12 +161,14 @@ public:
         do {
             if (!correct)
                 DateProblems();
-            cout << endl << "Input date in format YYYY.MM.DD (if u want to use current date, just input 0): " << endl;
+            cout << endl << "Input date in format YYYY.MM.DD (to use current date, just input 0, yesterday : -1): " << endl;
             cin >> date;
             if (unlimitedPossibility && date == "unlimited")
                 return date;
             if (date == "0")
                 return Now();
+            if (date == "-1")
+                return Yesterday();
         } while (!(correct = CheckDate(date)));
         return date;
     }
@@ -175,6 +177,20 @@ public:
     {
         string date;
         auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
+        date = to_string(localtime(&time)->tm_year + 1900) + '.';
+        if (localtime(&time)->tm_mon + 1 < 10)
+            date += '0';
+        date += to_string(localtime(&time)->tm_mon + 1) + '.';
+        if (localtime(&time)->tm_mday < 10)
+            date += '0';
+        date += to_string(localtime(&time)->tm_mday);
+        return date;
+    }
+
+    static string Yesterday()
+    {
+        string date;
+        auto time = chrono::system_clock::to_time_t(chrono::system_clock::now()) - 86400;
         date = to_string(localtime(&time)->tm_year + 1900) + '.';
         if (localtime(&time)->tm_mon + 1 < 10)
             date += '0';
