@@ -523,6 +523,7 @@ class Database
             cout << endl << "This short name is already used :(" << endl;
         else {
             Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
+            member.ForceDeepInfoUpdate();
             data[member.GetShortName()] = member;
             cout << endl << "New member is successfully added!" << endl;
         }
