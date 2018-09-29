@@ -438,6 +438,9 @@ public:
     {
         ifstream file("../data/" + shortName + ".md");
 
+        if (!file.is_open())
+            return;
+
         string buf;
         int rubricSwitchesAmount, frequencySwitchesAmount, vacationsAmount;
 
