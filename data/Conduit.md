@@ -1,4 +1,4 @@
-Members amount: 19\
+Members amount: 18\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 0	Posts dates amount: 0\
@@ -97,13 +97,6 @@ Total posts amount: 9	Posts dates amount: 8\
 2018.09.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56834 -	\
 2018.09.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57010 -	\
 2018.09.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57239 -	\
-\
-Stepanov	Editor Scenes 7 2018.08.19\
-Total posts amount: 5	Posts dates amount: 4\
-2018.08.21 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56334 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56357 +	\
-2018.08.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56423 +	\
-2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56448 +	\
-2018.09.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56692 +	\
 \
 Trofimov	Editor History 2 2018.08.27\
 Total posts amount: 3	Posts dates amount: 3\
