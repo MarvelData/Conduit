@@ -46,7 +46,9 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 \
 Nefedova	Editor History 3 2018.09.13\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 2	Posts dates amount: 2\
+2018.09.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57535 -	\
+2018.09.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57536 -	\
 \
 NguenArts	Editor Arts 2 2018.08.30\
 Total posts amount: 11	Posts dates amount: 6\
