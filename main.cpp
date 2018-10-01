@@ -173,10 +173,9 @@ public:
         return date;
     }
 
-    static string Now()
+    static string TimeToDate(const time_t &time)
     {
         string date;
-        auto time = chrono::system_clock::to_time_t(chrono::system_clock::now());
         date = to_string(localtime(&time)->tm_year + 1900) + '.';
         if (localtime(&time)->tm_mon + 1 < 10)
             date += '0';
@@ -187,19 +186,9 @@ public:
         return date;
     }
 
-    static string Yesterday()
-    {
-        string date;
-        auto time = chrono::system_clock::to_time_t(chrono::system_clock::now()) - 86400;
-        date = to_string(localtime(&time)->tm_year + 1900) + '.';
-        if (localtime(&time)->tm_mon + 1 < 10)
-            date += '0';
-        date += to_string(localtime(&time)->tm_mon + 1) + '.';
-        if (localtime(&time)->tm_mday < 10)
-            date += '0';
-        date += to_string(localtime(&time)->tm_mday);
-        return date;
-    }
+    static string Now() { return TimeToDate(chrono::system_clock::to_time_t(chrono::system_clock::now())); }
+
+    static string Yesterday() { return TimeToDate(chrono::system_clock::to_time_t(chrono::system_clock::now()) - 86400); }
 
     friend ostream& operator<<(ostream& os, const Date& date);
 };
@@ -538,7 +527,9 @@ class Database
         cout << endl << "Current members list:" << endl;
         int counter = 0;
         for (auto &elem : data) {
-            cout << counter++ << ". " << elem.first << '\t';
+            cout << counter << ". " << elem.first << '\t';
+            if (string(to_string(counter++) + ". " + elem.first).size() < 16)
+                cout << '\t';
             if (moreInfo) {
                 cout << "Rubric: "  << data[elem.first].GetRubric() << '\t';
                 data[elem.first].ReadSpecificInfo();
@@ -631,7 +622,7 @@ class Database
         int postsAmount = data[shortName].GetPostsAmount();
         int anticipatedPostsAmount = data[shortName].GetAnticipatedPostsAmount();
         os << "Actual posts amount: " << postsAmount;
-        os << " Anticipated posts amount: " << anticipatedPostsAmount;
+        os << "\tAnticipated posts amount: " << anticipatedPostsAmount;
         if (anticipatedPostsAmount - postsAmount > 1)
             os << "\t Lag: " << anticipatedPostsAmount - postsAmount;
         os << endl;
