@@ -4,7 +4,7 @@ Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
-Total posts amount: 12	Posts dates amount: 9\
+Total posts amount: 15	Posts dates amount: 10\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56506 +	\
 2018.08.29 3 https://vk.com/mu_marveluniverse?w=wall-17592208_56542 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56545 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56548 +	\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57179 -	\
@@ -14,6 +14,7 @@ Total posts amount: 12	Posts dates amount: 9\
 2018.09.28 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57418 -	\
 2018.09.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57497 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57498 -	\
 2018.10.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57539 -	\
+2018.10.02 3 https://vk.com/mu_marveluniverse?w=wall-17592208_57587 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57588 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57589 -	\
 \
 Kadyrkazy	Editor Humor 2 2018.08.27\
 Total posts amount: 7	Posts dates amount: 6\
