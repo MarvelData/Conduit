@@ -1,4 +1,4 @@
-Members amount: 17\
+Members amount: 18\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 0	Posts dates amount: 0\
@@ -101,6 +101,9 @@ Total posts amount: 11	Posts dates amount: 10\
 2018.09.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57239 -	\
 2018.09.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57483 -	\
 2018.09.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57527 -	\
+\
+Terehin	Editor History 2 2018.10.05\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Trofimov	Editor History 2 2018.08.27\
 Total posts amount: 4	Posts dates amount: 4\
