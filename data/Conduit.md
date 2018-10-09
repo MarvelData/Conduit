@@ -68,8 +68,9 @@ Total posts amount: 4	Posts dates amount: 2\
 2018.09.03 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56663 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56665 +	\
 \
 Sanadze	Editor Scenes 5 2018.08.19\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56410 +	\
+2018.10.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57820 -	\
 \
 Sharvadze	Editor Moments 2 2018.09.29\
 Total posts amount: 2	Posts dates amount: 2\
