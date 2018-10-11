@@ -523,14 +523,19 @@ class Database
         WriteDatabaseToFiles();
     }
 
+    void tabulator(const string &str, int threshold)
+    {
+        if (str.size() < threshold)
+            cout << '\t';
+    }
+
     void printMembers(bool moreInfo = false)
     {
         cout << endl << "Current members list:" << endl;
         int counter = 0;
         for (auto &elem : data) {
             cout << counter << ". " << elem.first << '\t';
-            if (string(to_string(counter++) + ". " + elem.first).size() < 16)
-                cout << '\t';
+            tabulator(to_string(counter++) + ". " + elem.first, 16);
             if (moreInfo) {
                 cout << "Rubric: "  << data[elem.first].GetRubric() << '\t';
                 data[elem.first].ReadSpecificInfo();
@@ -672,8 +677,11 @@ class Database
         cout << endl << "Current rubrics list:" << endl;
         int counter = 0;
         for (auto &rubric : rubrics) {
-            cout << rubric.first << ": Editors amount: " << rubric.second.first
-                 << " Overall frequency (days needed for 1 post): " << statistics[counter] << " (" << ceil(statistics[counter]) << ')' << endl;
+            cout << rubric.first << ":\t";
+            tabulator(rubric.first, 7);
+            cout << "Editors amount: " << rubric.second.first
+                 << "\tOverall frequency (days needed for 1 post): " << statistics[counter]
+                 << " (" << ceil(statistics[counter]) << ')' << endl;
             counter++;
         }
     }
@@ -894,8 +902,11 @@ public:
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
                 elem.second.PrintPosts(memberFile);
                 memberFile.close();
-                string oldName = "../data/" + elem.first + ".md", newName = "../data/" + elem.first + "_dismissed.md";
-                rename(oldName.c_str(), newName.c_str());
+                if (dismission) {
+                    string oldName = "../data/" + elem.first + ".md",
+                           newName = "../data/" + elem.first + "_dismissed.md";
+                    rename(oldName.c_str(), newName.c_str());
+                }
             }
         }
 
