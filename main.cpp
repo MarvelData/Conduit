@@ -1,15 +1,16 @@
 #include <algorithm>
 #include <chrono>
 #include <ctime>
+#include <cstdio>
 #include <fstream>
 #include <iostream>
 #include <iterator>
 #include <map>
-#include <random>
 #include <set>
-#include <stdexcept>
 #include <string>
 #include <vector>
+#include <random>
+#include <stdexcept>
 
 using namespace std;
 
@@ -893,6 +894,8 @@ public:
                            << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
                 elem.second.PrintPosts(memberFile);
                 memberFile.close();
+                string oldName = "../data/" + elem.first + ".md", newName = "../data/" + elem.first + "_dismissed.md";
+                rename(oldName.c_str(), newName.c_str());
             }
         }
 
