@@ -73,9 +73,10 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.10.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57820 -	\
 \
 Sharvadze	Editor Moments 2 2018.09.29\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.09.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57489 -	\
-2018.10.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57718 -	\
+2018.10.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57890 -	\
+2018.10.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57892 -	\
 \
 Shenkova	Editor Stars 7 2018.08.25\
 Total posts amount: 16	Posts dates amount: 14\
