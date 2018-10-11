@@ -1,4 +1,4 @@
-Members amount: 18\
+Members amount: 17\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 1	Posts dates amount: 1\
@@ -61,11 +61,6 @@ Total posts amount: 11	Posts dates amount: 6\
 NguenHistory	Editor History 6 2018.09.01\
 Total posts amount: 1	Posts dates amount: 1\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
-\
-Radionova	Editor Scenes 3 2018.08.30\
-Total posts amount: 4	Posts dates amount: 2\
-2018.09.02 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56661 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56662 +	\
-2018.09.03 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56663 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56665 +	\
 \
 Sanadze	Editor Scenes 5 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
