@@ -3,7 +3,7 @@ Shenkova	Editor Stars 7 2018.08.25\
 1 frequency switches:\
 2018.09.11 2 changed to 7 \
 0 vacations:\
-Total posts amount: 15	Posts dates amount: 13\
+Total posts amount: 16	Posts dates amount: 14\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 +	\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56462 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56471 +	\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56482 +	\
@@ -17,3 +17,4 @@ Total posts amount: 15	Posts dates amount: 13\
 2018.09.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56859 +	\
 2018.09.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57245 -	\
 2018.09.23 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57246 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57247 -	\
+2018.10.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57761 -	\
