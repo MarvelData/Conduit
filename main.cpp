@@ -6,7 +6,6 @@
 #include <iostream>
 #include <iterator>
 #include <map>
-#include <set>
 #include <string>
 #include <vector>
 #include <random>
@@ -230,13 +229,13 @@ class Member {
     map<string, string> vacations;
     int postsAmount;
     map<string, vector<TwoStrings>> posts;
-    bool changedDeepInfo;
+    bool changedDeepInfo, loadedDeepInfo;
 
 public:
-    Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false) {}
+    Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false), loadedDeepInfo(false) {}
 
     Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
-            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0), changedDeepInfo(false)
+            shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0), changedDeepInfo(false), loadedDeepInfo(false)
     {
         if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
             cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -426,6 +425,8 @@ public:
 
     void ReadSpecificInfo()
     {
+        if (loadedDeepInfo)
+            return;
         ifstream file("../data/" + shortName + ".md");
 
         if (!file.is_open())
@@ -464,6 +465,8 @@ public:
         }
 
         file.close();
+
+        loadedDeepInfo = true;
     }
 
     void PrintSpecificInfo(ostream &os, bool dismission = false) const
@@ -492,6 +495,38 @@ class Database
 {
     string fileName;
     map<string, Member> data;
+
+    template <typename IterableContainer>
+    string chooseElem(const IterableContainer &elems, bool exitPossible = false)
+    {
+        string elemName;
+        bool correct = true;
+        do {
+            if (!correct)
+                cout << endl << "No such element! Try again.";
+            bool digits = true;
+            cout << endl << "Input element name (u can also input according number)" << endl;
+            if (exitPossible)
+                cout << endl << "Or input -1 to return =)" << endl;
+            cin >> elemName;
+            if (exitPossible && elemName == "-1")
+                return "";
+            for (auto c : elemName)
+                if (!isdigit(c)) {
+                    digits = false;
+                    break;
+                }
+            if (digits) {
+                int counter = 0;
+                for (auto &elem : elems)
+                    if (stoi(elemName) == counter++) {
+                        elemName = elem.first;
+                        break;
+                    }
+            }
+        } while (!(correct = bool(elems.count(elemName))));
+        return elemName;
+    }
 
     void addMember()
     {
@@ -529,48 +564,34 @@ class Database
             cout << '\t';
     }
 
+    void printMember(Member &member, int counter = 0, bool moreInfo = false)
+    {
+        cout << counter << ". " << member.GetShortName() << '\t';
+        tabulator(to_string(counter++) + ". " + member.GetShortName(), 16);
+        if (moreInfo) {
+            cout << "Rubric: "  << member.GetRubric() << '\t';
+            cout << "Frequency: " << member.GetFrequency() << '\t';
+            member.ReadSpecificInfo();
+            printPostsAmounts(member.GetShortName());
+        }
+        else
+            cout << endl;
+    }
+
     void printMembers(bool moreInfo = false)
     {
         cout << endl << "Current members list:" << endl;
         int counter = 0;
-        for (auto &elem : data) {
-            cout << counter << ". " << elem.first << '\t';
-            tabulator(to_string(counter++) + ". " + elem.first, 16);
-            if (moreInfo) {
-                cout << "Rubric: "  << data[elem.first].GetRubric() << '\t';
-                data[elem.first].ReadSpecificInfo();
-                printPostsAmounts(elem.first);
-            }
-            else
-                cout << endl;
-        }
+        for (auto &elem : data)
+            printMember(elem.second, counter++, moreInfo);
     }
 
     string collectMemberName(bool moreInfo = false)
     {
-        string shortName;
         printMembers(moreInfo);
-        bool correct = true;
-        do {
-            if (!correct)
-                cout << endl << "No such member! Try again.";
-            bool digits = true;
-            cout << endl << "Input member (u can also input according number): " << endl;
-            cin >> shortName;
-            for (auto c : shortName)
-                if (!isdigit(c)) {
-                    digits = false;
-                    break;
-                }
-            if (digits) {
-                int counter = 0;
-                for (auto &elem : data)
-                    if (stoi(shortName) == counter++) {
-                        shortName = elem.first;
-                        break;
-                    }
-            }
-        } while (!(correct = bool(data.count(shortName))));
+        string shortName = chooseElem(data, moreInfo);
+        if (shortName.empty())
+            return shortName;
         cout << endl << "Here are his/her posts: " << endl;
         data.at(shortName).PrintPosts(cout);
         return shortName;
@@ -637,6 +658,8 @@ class Database
     void learnAboutMembers()
     {
         string shortName = collectMemberName(true);
+        if (shortName.empty())
+            return;
         data[shortName].PrintInfo();
         data[shortName].PrintSpecificInfo(cout);
         printPostsAmounts(shortName);
@@ -644,45 +667,59 @@ class Database
 
     void learnAboutRoles()
     {
-        set<string> roles;
+        map<string, vector<string>> roles;
         for (auto &elem : data)
-            roles.emplace(elem.second.GetRole());
+            roles[elem.second.GetRole()].emplace_back(elem.first);
         cout << endl << "Current roles list:" << endl;
+        int counter = 0;
         for (auto &role : roles)
-            cout << role << endl;
+            cout << counter << ". " << role.first << endl;
+
+        string chosenRole = chooseElem(roles, true);
+        if (chosenRole.empty())
+            return;
+        counter = 0;
+        for (auto &shortName : roles[chosenRole])
+            printMember(data[shortName], counter++, true);
     }
 
     void learnAboutRubrics()
     {
-        map<string, pair<int, vector<int>>> rubrics;
+        map<string, vector<int>> rubrics;
         for (auto &elem : data) {
             elem.second.ReadSpecificInfo();
-            if (!elem.second.OnVacation()) {
-                if (rubrics.count(elem.second.GetRubric()))
-                    rubrics[elem.second.GetRubric()].first++;
-                else
-                    rubrics[elem.second.GetRubric()] = pair<int, vector<int>>(1, vector<int>());
-                rubrics[elem.second.GetRubric()].second.emplace_back(elem.second.GetFrequency());
-            }
+            if (!elem.second.OnVacation())
+                rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
         }
+
         vector<double> statistics;
         for (auto &rubric : rubrics) {
             int leastCommonMultiplier = 1, sum = 0;
-            for (auto frequency : rubric.second.second)
+            for (auto frequency : rubric.second)
                 leastCommonMultiplier = LeastCommonMultiplier(leastCommonMultiplier, frequency);
-            for (auto frequency : rubric.second.second)
+            for (auto frequency : rubric.second)
                 sum += leastCommonMultiplier / frequency;
             statistics.emplace_back(double(leastCommonMultiplier) / sum);
         }
+
         cout << endl << "Current rubrics list:" << endl;
         int counter = 0;
         for (auto &rubric : rubrics) {
-            cout << rubric.first << ":\t";
-            tabulator(rubric.first, 7);
-            cout << "Editors amount: " << rubric.second.first
+            cout << counter << ". " << rubric.first << ":\t";
+            tabulator(to_string(counter) + ". " + rubric.first, 7);
+            cout << "Editors amount: " << rubric.second.size()
                  << "\tOverall frequency (days needed for 1 post): " << statistics[counter]
                  << " (" << ceil(statistics[counter]) << ')' << endl;
             counter++;
+        }
+
+        string chosenRubric = chooseElem(rubrics, true);
+        if (chosenRubric.empty())
+            return;
+        counter = 0;
+        for (auto &elem : data) {
+            if (elem.second.GetRubric() == chosenRubric && !elem.second.OnVacation())
+                printMember(elem.second, counter++, true);
         }
     }
 
