@@ -629,7 +629,7 @@ class Database
         int anticipatedPostsAmount = data[shortName].GetAnticipatedPostsAmount();
         os << "Actual posts amount: " << postsAmount;
         os << "\tAnticipated posts amount: " << anticipatedPostsAmount;
-        if (anticipatedPostsAmount - postsAmount > 1)
+        if (anticipatedPostsAmount - postsAmount > 1 & !data[shortName].OnVacation())
             os << "\t Lag: " << anticipatedPostsAmount - postsAmount;
         os << endl;
     }
