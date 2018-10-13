@@ -1,7 +1,8 @@
 Zavileysk	Editor Scenes 3 2018.08.22\
 0 rubric switches:\
 0 frequency switches:\
-0 vacations:\
+1 vacations:\
+2018.10.01 2018.11.07 \
 Total posts amount: 6	Posts dates amount: 5\
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56466 +	https://vk.com/mu_marveluniverse?w=wall-17592208_56465 +	\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56504 +	\
