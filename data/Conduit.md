@@ -1,4 +1,4 @@
-Members amount: 19\
+Members amount: 18\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 1	Posts dates amount: 1\
@@ -7,9 +7,10 @@ Total posts amount: 1	Posts dates amount: 1\
 Doroganov	Editor Scenes 3 2018.10.13\
 Total posts amount: 0	Posts dates amount: 0\
 \
-Evdokimov	Editor Scenes 2 2018.10.12\
-Total posts amount: 2	Posts dates amount: 1\
+Evdokimov	Editor Scenes 1 2018.10.12\
+Total posts amount: 3	Posts dates amount: 2\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
+2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 15	Posts dates amount: 10\
@@ -33,13 +34,6 @@ Total posts amount: 8	Posts dates amount: 7\
 2018.09.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57109 -	\
 2018.09.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57184 -	\
 2018.10.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57778 -	\
-\
-LostSoul	Editor Dossier 4 2018.08.20\
-Total posts amount: 4	Posts dates amount: 4\
-2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56361 +	\
-2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56543 +	\
-2018.09.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56684 -	\
-2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56840 -	\
 \
 MatveevaDossier	Editor Dossier 5 2018.08.19\
 Total posts amount: 2	Posts dates amount: 2\
