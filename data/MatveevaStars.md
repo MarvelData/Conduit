@@ -2,7 +2,7 @@ MatveevaStars	Editor Stars 3 2018.08.29\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 13	Posts dates amount: 9\
+Total posts amount: 14	Posts dates amount: 10\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 +	\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 2018.09.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57384 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57392 -	\
@@ -12,3 +12,4 @@ Total posts amount: 13	Posts dates amount: 9\
 2018.10.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57582 -	\
 2018.10.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57597 -	\
 2018.10.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57881 -	\
+2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58037 -	\

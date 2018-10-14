@@ -43,7 +43,7 @@ Total posts amount: 2	Posts dates amount: 2\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56555 +	\
 \
 MatveevaStars	Editor Stars 3 2018.08.29\
-Total posts amount: 13	Posts dates amount: 9\
+Total posts amount: 14	Posts dates amount: 10\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 +	\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 2018.09.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57384 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57392 -	\
@@ -53,6 +53,7 @@ Total posts amount: 13	Posts dates amount: 9\
 2018.10.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57582 -	\
 2018.10.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57597 -	\
 2018.10.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57881 -	\
+2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58037 -	\
 \
 Nefedova	Editor History 3 2018.09.13\
 Total posts amount: 2	Posts dates amount: 2\
@@ -117,13 +118,14 @@ Total posts amount: 12	Posts dates amount: 11\
 Terehin	Editor History 2 2018.10.05\
 Total posts amount: 0	Posts dates amount: 0\
 \
-Trofimov	Editor History 2 2018.08.27\
-Total posts amount: 5	Posts dates amount: 5\
+Trofimov	Editor History 7 2018.08.27\
+Total posts amount: 6	Posts dates amount: 6\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 +	\
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 +	\
 2018.09.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57280 -	\
 2018.09.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57493 -	\
 2018.10.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56573 -	\
+2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57757 -	\
 \
 Trushnikova	Editor Scenes 7 2018.09.05\
 Total posts amount: 4	Posts dates amount: 3\
