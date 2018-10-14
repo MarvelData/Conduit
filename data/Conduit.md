@@ -5,7 +5,8 @@ Total posts amount: 1	Posts dates amount: 1\
 2018.10.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57832 -	\
 \
 Doroganov	Editor Scenes 3 2018.10.13\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58038 -	\
 \
 Evdokimov	Editor Scenes 1 2018.10.12\
 Total posts amount: 5	Posts dates amount: 3\

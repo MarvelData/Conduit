@@ -1,7 +1,7 @@
 Trofimov	Editor History 7 2018.08.27\
 0 rubric switches:\
 1 frequency switches:\
-2018.10.14 2 changed to 7 \
+2018.09.24 2 changed to 7 \
 0 vacations:\
 Total posts amount: 6	Posts dates amount: 6\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 +	\
