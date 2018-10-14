@@ -8,9 +8,10 @@ Doroganov	Editor Scenes 3 2018.10.13\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Evdokimov	Editor Scenes 1 2018.10.12\
-Total posts amount: 3	Posts dates amount: 2\
+Total posts amount: 4	Posts dates amount: 3\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
+2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
