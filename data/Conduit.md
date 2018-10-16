@@ -1,8 +1,9 @@
 Members amount: 18\
 \
 Bondarenko	Editor History 4 2018.09.28\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.10.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57832 -	\
+2018.10.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57706 -	\
 \
 Doroganov	Editor Scenes 3 2018.10.13\
 Total posts amount: 1	Posts dates amount: 1\
