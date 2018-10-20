@@ -2,7 +2,6 @@
 
 Plans:\
 \
-V2.17 - allow choosing from existing roles/rubrics when adding new member\
 V2.18 - drop out index asking when removing post if not needed & give up on "not touching deep info" principle\
 V2.19 - move classes to separate .hpp sources\
 V2.20 - split class Database on backend & frontend\
