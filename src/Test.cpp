@@ -18,7 +18,7 @@ Test::Test(size_t membersAmount = 1000, size_t postsAmount = 1000) : database(".
         }
     }
     database.WriteDatabaseToFiles();
-    database.TalkToUser();
+    while (database.TalkToUser());
 }
 
 string Test::GetRandomString(int n)
