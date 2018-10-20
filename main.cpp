@@ -407,6 +407,12 @@ public:
         return false;
     }
 
+    void EndVacation()
+    {
+        vacations.rbegin()->second = Date::Yesterday();
+        changedDeepInfo = true;
+    }
+
     int GetAnticipatedPostsAmount() const
     {
         int anticipatedPostsAmount = 0;
@@ -524,14 +530,14 @@ class Database
                         break;
                     }
             }
-        } while (!(correct = bool(elems.count(elemName))));
+        } while (exitPossible && !(correct = bool(elems.count(elemName))));
         return elemName;
     }
 
     void addMember()
     {
         printMembers();
-        string shortName, role, rubric, startDate;
+        string shortName, startDate;
         int frequency;
         cout << endl << "NB: Input without spaces!" << endl;
         cout << endl << "Input member short name: " << endl;
@@ -541,9 +547,13 @@ class Database
             return;
         }
         cout << endl << "Input member role: " << endl;
-        cin >> role;
+        auto roles = getRoles();
+        printRoles(roles);
+        string role = chooseElem(roles);
         cout << endl << "Input member rubric: " << endl;
-        cin >> rubric;
+        auto rubrics = getRubrics();
+        printRubrics(rubrics);
+        string rubric = chooseElem(rubrics);
         cout << endl << "Input frequency (days needed for 1 post, must be positive integer): " << endl;
         cin >> frequency;
         startDate = Date::CollectDate();
@@ -571,7 +581,6 @@ class Database
         if (moreInfo) {
             cout << "Rubric: "  << member.GetRubric() << '\t';
             cout << "Frequency: " << member.GetFrequency() << '\t';
-            member.ReadSpecificInfo();
             printPostsAmounts(member.GetShortName());
         }
         else
@@ -646,12 +655,16 @@ class Database
 
     void printPostsAmounts(const string &shortName, ostream &os = cout)
     {
-        int postsAmount = data[shortName].GetPostsAmount();
-        int anticipatedPostsAmount = data[shortName].GetAnticipatedPostsAmount();
+        auto &member = data[shortName];
+        member.ReadSpecificInfo();
+        int postsAmount = member.GetPostsAmount();
+        int anticipatedPostsAmount = member.GetAnticipatedPostsAmount();
         os << "Actual posts amount: " << postsAmount;
         os << "\tAnticipated posts amount: " << anticipatedPostsAmount;
-        if (anticipatedPostsAmount - postsAmount > 1 & !data[shortName].OnVacation())
+        if (anticipatedPostsAmount - postsAmount > 1 & !member.OnVacation())
             os << "\t Lag: " << anticipatedPostsAmount - postsAmount;
+        if (member.OnVacation())
+            os << "\t On vacation";
         os << endl;
     }
 
@@ -665,33 +678,52 @@ class Database
         printPostsAmounts(shortName);
     }
 
-    void learnAboutRoles()
+    map<string, vector<string>> getRoles()
     {
         map<string, vector<string>> roles;
         for (auto &elem : data)
             roles[elem.second.GetRole()].emplace_back(elem.first);
+        return roles;
+    }
+
+    void printRoles(const map<string, vector<string>> &roles)
+    {
         cout << endl << "Current roles list:" << endl;
         int counter = 0;
         for (auto &role : roles)
             cout << counter << ". " << role.first << endl;
+    }
+
+    void learnAboutRoles()
+    {
+        auto roles = getRoles();
+        printRoles(roles);
 
         string chosenRole = chooseElem(roles, true);
         if (chosenRole.empty())
             return;
-        counter = 0;
+        int counter = 0;
         for (auto &shortName : roles[chosenRole])
             printMember(data[shortName], counter++, true);
     }
 
-    void learnAboutRubrics()
+    map<string, vector<int>> getRubrics(bool consideringVacations = false)
     {
         map<string, vector<int>> rubrics;
-        for (auto &elem : data) {
-            elem.second.ReadSpecificInfo();
-            if (!elem.second.OnVacation())
+        if (consideringVacations)
+            for (auto &elem : data) {
+                elem.second.ReadSpecificInfo();
+                if (!elem.second.OnVacation())
+                    rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
+            }
+        else
+            for (auto &elem : data)
                 rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
-        }
+        return rubrics;
+    }
 
+    void printRubrics(const map<string, vector<int>> &rubrics)
+    {
         vector<double> statistics;
         for (auto &rubric : rubrics) {
             int leastCommonMultiplier = 1, sum = 0;
@@ -712,15 +744,22 @@ class Database
                  << " (" << ceil(statistics[counter]) << ')' << endl;
             counter++;
         }
+    }
+
+    void learnAboutRubrics()
+    {
+        cout << endl << "Would u like to get rubrics info considering vacations?" << endl;
+        auto consideringVacations = bool(AskForDecision());
+        auto rubrics = getRubrics(consideringVacations);
+        printRubrics(rubrics);
 
         string chosenRubric = chooseElem(rubrics, true);
         if (chosenRubric.empty())
             return;
-        counter = 0;
-        for (auto &elem : data) {
-            if (elem.second.GetRubric() == chosenRubric && !elem.second.OnVacation())
+        int counter = 0;
+        for (auto &elem : data)
+            if (elem.second.GetRubric() == chosenRubric)
                 printMember(elem.second, counter++, true);
-        }
     }
 
     void deletePost()
@@ -735,7 +774,11 @@ class Database
     {
         string shortName = collectMemberName();
         if (data.count(shortName)) {
-            data[shortName].ForceDeepInfoUpdate();
+            auto &member = data[shortName];
+            member.ReadSpecificInfo();
+            if (member.OnVacation())
+                member.EndVacation();
+            member.ForceDeepInfoUpdate();
             WriteDatabaseToFiles(true);
             data.erase(shortName);
         } else
