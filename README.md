@@ -10,6 +10,7 @@ V3.01 - allow getting anticipated & actual posts amounts for specified date\
 V3.02 - allow dismission on specified date\
 V3.03 - implement real rubric frequency & editors amount printing after choosing it\
 V3.04 - implement approved post deletion confirmation\
+V3.05 - implement memoization in class Math\
 V4.0 - russian language support\
 \
 \
