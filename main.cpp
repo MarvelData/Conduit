@@ -284,7 +284,7 @@ public:
     {
         if (Date::CheckDate(date)) {
             if (posts.count(date)) {
-                if (index >= posts[date].size() || index < 0) {
+                if (index >= int(posts[date].size()) || (index < 0 && index != -2)) {
                     cout << endl << "There is no such post ..." << endl;
                     return;
                 }
@@ -300,6 +300,18 @@ public:
             }
         } else
             Date::DateProblems();
+    }
+
+    int GetPostsAmountAtDate(const string &date) const
+    {
+        if (Date::CheckDate(date)) {
+            if (posts.count(date))
+                return int(posts.at(date).size());
+            else
+                return 0;
+        }
+        Date::DateProblems();
+        return -1;
     }
 
     vector<TwoStrings> GetPostsAtDate(const string &date) const
@@ -359,11 +371,7 @@ public:
         changedDeepInfo = true;
     }
 
-    void AddVacation(const string &startDate, const string &endDate)
-    {
-        vacations[startDate] = endDate;
-        changedDeepInfo = true;
-    }
+    void AddVacation(const string &startDate, const string &endDate) { vacations[startDate] = endDate; }
 
     void ForceDeepInfoUpdate() { changedDeepInfo = true; }
 
@@ -380,8 +388,7 @@ public:
     int GetPostsAmount() const {
         int counter = 0;
         for (auto &post : posts)
-            for (auto &link : post.second)
-                counter++;
+            counter += post.second.size();
         if (counter != postsAmount)
             cout << endl << "DATABASE HAS PROBLEMS!!! AT LEAST WITH POSTS AMOUNTS!" << endl;
         return postsAmount;
@@ -613,8 +620,13 @@ class Database
         shortName = collectMemberName();
         date = Date::CollectDate();
         if (deleting) {
-            cout << endl << "Input index: " << endl;
-            cin >> index;
+            int amount = data[shortName].GetPostsAmountAtDate(date);
+            if (amount == 1)
+                index = -2;
+            else if (amount > 1) {
+                cout << endl << "Input index: " << endl;
+                cin >> index;
+            }
         } else {
             cout << endl << "Input link: " << endl;
             cin >> link;
@@ -625,8 +637,11 @@ class Database
     void addPost()
     {
         PostInfo postInfo = collectPostInfo(false);
-        if (postInfo.Correct)
-            data[postInfo.ShortName].AddPost(postInfo.Date, postInfo.Link);
+        if (postInfo.Correct) {
+            auto &member = data[postInfo.ShortName];
+            member.AddPost(postInfo.Date, postInfo.Link);
+            member.ForceDeepInfoUpdate();
+        }
         WriteDatabaseToFiles();
     }
 
@@ -850,14 +865,16 @@ class Database
     void addVacation()
     {
         string shortName = collectMemberName();
-        data[shortName].PrintInfo();
+        auto &member = data[shortName];
+        member.PrintInfo();
         string start, end;
         cout << endl << "NB: Input without spaces!" << endl;
         cout << endl << "Input vacation start date: " << endl;
         start = Date::CollectDate();
         cout << endl << "Input vacation end date or \"unlimited\": " << endl;
         end = Date::CollectDate(true);
-        data[shortName].AddVacation(start, end);
+        member.AddVacation(start, end);
+        member.ForceDeepInfoUpdate();
         WriteDatabaseToFiles();
     }
 
