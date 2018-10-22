@@ -2,7 +2,7 @@
 
 Plans:\
 \
-V2.20 - implement searching posts by link & duplicates detection\
+V2.21 - implement searching posts by link & duplicates detection\
 V3.0 - store posts in separate files, while leaving general statistics in Conduit (posts dates and/or text chart)\
 V3.01 - allow denied posts management\
 V3.02 - allow getting anticipated & actual posts amounts for specified date\
