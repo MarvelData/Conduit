@@ -1,4 +1,4 @@
-Members amount: 18\
+Members amount: 20\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 3	Posts dates amount: 3\
@@ -12,8 +12,14 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58238 -	\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 -	\
 \
-Evdokimov	Editor Scenes 1 2018.10.12\
-Total posts amount: 21	Posts dates amount: 10\
+Ermolova	Editor FilmArt 2 2018.10.22\
+Total posts amount: 0	Posts dates amount: 0\
+\
+EvdokimovFragments	Editor Fragments 7 2018.10.22\
+Total posts amount: 0	Posts dates amount: 0\
+\
+EvdokimovScenes	Editor Scenes 1 2018.10.12\
+Total posts amount: 23	Posts dates amount: 11\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58012 -	\
@@ -24,6 +30,7 @@ Total posts amount: 21	Posts dates amount: 10\
 2018.10.19 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58218 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58232 -	\
 2018.10.20 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58259 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58254 -	\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58279 -	\
+2018.10.22 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58304 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58306 -	\
 \
 Grigoreva	Editor FilmArt 2 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
