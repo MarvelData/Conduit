@@ -51,6 +51,7 @@ void Database::printMember(Member &member, int counter, bool moreInfo)
     tabulator(to_string(counter) + ". " + member.GetShortName(), 16);
     if (moreInfo) {
         cout << "Rubric: "  << member.GetRubric() << '\t';
+        tabulator(member.GetRubric(), 8);
         cout << "Frequency: " << member.GetFrequency() << '\t';
         printPostsAmounts(member.GetShortName());
     }
@@ -321,6 +322,9 @@ void Database::changeMemberShortName()
     data[oldShortName].Rename(newShortName);
     data[newShortName] = move(data[oldShortName]);
     data.erase(oldShortName);
+    string oldName = GetPath() + oldShortName + ".md",
+           newName = GetPath() + newShortName + ".md";
+    rename(oldName.c_str(), newName.c_str());
     WriteDatabaseToFiles();
 }
 
@@ -495,7 +499,7 @@ void Database::WriteDatabaseToFiles(bool dismission)
             memberFile.close();
             if (dismission) {
                 string oldName = GetPath() + elem.first + ".md",
-                        newName = GetPath() + elem.first + "_dismissed.md";
+                       newName = GetPath() + elem.first + "_dismissed.md";
                 rename(oldName.c_str(), newName.c_str());
             }
         }
