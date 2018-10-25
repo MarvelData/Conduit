@@ -3,6 +3,7 @@ MatveevaDossier	Editor Dossier 8 2018.08.19\
 1 frequency switches:\
 2018.09.07 5 changed to 8 \
 0 vacations:\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56438 +	\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56555 +	\
+2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57381 -	\

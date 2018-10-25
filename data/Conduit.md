@@ -64,9 +64,10 @@ Total posts amount: 10	Posts dates amount: 9\
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58462 -	\
 \
 MatveevaDossier	Editor Dossier 8 2018.08.19\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56438 +	\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56555 +	\
+2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57381 -	\
 \
 MatveevaStars	Editor Stars 3 2018.08.29\
 Total posts amount: 14	Posts dates amount: 10\
