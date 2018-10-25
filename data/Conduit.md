@@ -70,7 +70,7 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57381 -	\
 \
 MatveevaStars	Editor Stars 3 2018.08.29\
-Total posts amount: 15	Posts dates amount: 11\
+Total posts amount: 16	Posts dates amount: 11\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56559 +	\
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56561 -	\
 2018.09.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57384 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57392 -	\
@@ -81,7 +81,7 @@ Total posts amount: 15	Posts dates amount: 11\
 2018.10.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57597 -	\
 2018.10.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57881 -	\
 2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58037 -	\
-2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58465 -	\
+2018.10.25 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58465 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58466 -	\
 \
 Nefedova	Editor History 3 2018.09.13\
 Total posts amount: 2	Posts dates amount: 2\
