@@ -1,5 +1,6 @@
-Trushnikova	Editor Scenes 7 2018.09.05\
-0 rubric switches:\
+Trushnikova	Editor Stars 7 2018.09.05\
+1 rubric switches:\
+2018.10.27 Scenes changed to Stars \
 0 frequency switches:\
 1 vacations:\
 2018.09.21 2018.10.12 \

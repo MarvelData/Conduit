@@ -13,15 +13,16 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 -	\
 \
 Ermolova	Editor FilmArt 2 2018.10.22\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.10.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58406 -	\
+2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58533 -	\
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
 Total posts amount: 1	Posts dates amount: 1\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58331 -	\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
-Total posts amount: 30	Posts dates amount: 15\
+Total posts amount: 32	Posts dates amount: 16\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58012 -	\
@@ -36,7 +37,8 @@ Total posts amount: 30	Posts dates amount: 15\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58363 -	\
 2018.10.24 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58415 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58430 -	\
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58438 -	\
-2018.10.26 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58487 -	\
+2018.10.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58487 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58520 -	\
+2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58538 -	\
 \
 Grigoreva	Editor FilmArt 5 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
@@ -160,7 +162,7 @@ Total posts amount: 6	Posts dates amount: 6\
 2018.10.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56573 -	\
 2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57757 -	\
 \
-Trushnikova	Editor Scenes 7 2018.09.05\
+Trushnikova	Editor Stars 7 2018.09.05\
 Total posts amount: 5	Posts dates amount: 4\
 2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56933 -	\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56934 -	\
