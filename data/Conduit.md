@@ -1,4 +1,4 @@
-Members amount: 21\
+Members amount: 23\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 3	Posts dates amount: 3\
@@ -6,20 +6,22 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57706 -	\
 2018.10.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58096 -	\
 \
-Doroganov	Editor Scenes 3 2018.10.13\
+Doroganov	Editor History 3 2018.10.13\
 Total posts amount: 3	Posts dates amount: 3\
 2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58038 -	\
 2018.10.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58238 -	\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 -	\
 \
 Ermolova	Editor FilmArt 2 2018.10.22\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.10.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58406 -	\
 2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58533 -	\
+2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58682 -	\
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58331 -	\
+2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58711 -	\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
 Total posts amount: 35	Posts dates amount: 17\
@@ -106,6 +108,9 @@ NguenHistory	Editor History 6 2018.09.01\
 Total posts amount: 1	Posts dates amount: 1\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
 \
+Nizov	Editor Facts 3 2018.10.30\
+Total posts amount: 0	Posts dates amount: 0\
+\
 Rechmedin	Editor Humor 4 2018.10.24\
 Total posts amount: 0	Posts dates amount: 0\
 \
@@ -151,6 +156,9 @@ Total posts amount: 12	Posts dates amount: 11\
 2018.09.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57483 -	\
 2018.09.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57527 -	\
 2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58025 -	\
+\
+Tabulin	Editor History 2 2018.10.30\
+Total posts amount: 0	Posts dates amount: 0\
 \
 Terehin	Editor History 7 2018.10.05\
 Total posts amount: 0	Posts dates amount: 0\
