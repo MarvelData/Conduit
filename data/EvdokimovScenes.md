@@ -3,7 +3,7 @@ EvdokimovScenes	Editor Scenes 1 2018.10.12\
 1 frequency switches:\
 2018.10.13 2 changed to 1 \
 0 vacations:\
-Total posts amount: 35	Posts dates amount: 17\
+Total posts amount: 36	Posts dates amount: 18\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58012 -	\
@@ -21,3 +21,4 @@ Total posts amount: 35	Posts dates amount: 17\
 2018.10.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58487 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58520 -	\
 2018.10.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58538 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58542 -	\
 2018.10.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58660 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58668 -	\
+2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58715 -	\
