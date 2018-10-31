@@ -109,7 +109,7 @@ NguenHistory	Editor History 6 2018.09.01\
 Total posts amount: 1	Posts dates amount: 1\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
 \
-Nizov	Editor Facts 3 2018.10.30\
+Nizov	Editor Humor 3 2018.10.30\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Rechmedin	Editor Humor 4 2018.10.24\

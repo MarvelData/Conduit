@@ -1,4 +1,4 @@
-Nizov	Editor Facts 3 2018.10.30\
+Nizov	Editor Humor 3 2018.10.30\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
