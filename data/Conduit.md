@@ -1,4 +1,4 @@
-Members amount: 23\
+Members amount: 22\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 3	Posts dates amount: 3\
@@ -116,11 +116,6 @@ Total posts amount: 0	Posts dates amount: 0\
 \
 Rechmedin	Editor Humor 4 2018.10.24\
 Total posts amount: 0	Posts dates amount: 0\
-\
-Sanadze	Editor Scenes 5 2018.08.19\
-Total posts amount: 2	Posts dates amount: 2\
-2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56410 +	\
-2018.10.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57820 -	\
 \
 Sharvadze	Editor Moments 5 2018.09.29\
 Total posts amount: 4	Posts dates amount: 4\
