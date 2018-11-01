@@ -19,9 +19,10 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58682 -	\
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
-Total posts amount: 2	Posts dates amount: 2\
+Total posts amount: 3	Posts dates amount: 3\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58331 -	\
 2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58711 -	\
+2018.11.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58748 -	\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
 Total posts amount: 36	Posts dates amount: 18\
