@@ -1,4 +1,4 @@
-Members amount: 22\
+Members amount: 21\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 3	Posts dates amount: 3\
@@ -13,19 +13,21 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 -	\
 \
 Ermolova	Editor FilmArt 2 2018.10.22\
-Total posts amount: 3	Posts dates amount: 3\
+Total posts amount: 4	Posts dates amount: 4\
 2018.10.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58406 -	\
 2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58533 -	\
 2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58682 -	\
+2018.11.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58867 -	\
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
-Total posts amount: 3	Posts dates amount: 3\
+Total posts amount: 4	Posts dates amount: 4\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58331 -	\
 2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58711 -	\
 2018.11.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58748 -	\
+2018.11.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58882 -	\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
-Total posts amount: 45	Posts dates amount: 21\
+Total posts amount: 46	Posts dates amount: 22\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58012 -	\
@@ -47,6 +49,7 @@ Total posts amount: 45	Posts dates amount: 21\
 2018.11.01 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58768 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58784 -	\
 2018.11.02 3 https://vk.com/mu_marveluniverse?w=wall-17592208_58838 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58839 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58841 -	\
 2018.11.03 4 https://vk.com/mu_marveluniverse?w=wall-17592208_58842 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58844 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58851 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58852 -	\
+2018.11.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58883 -	\
 \
 Grigoreva	Editor FilmArt 5 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
@@ -63,7 +66,7 @@ Total posts amount: 16	Posts dates amount: 11\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57983 -	\
 \
 Kadyrkazy	Editor Humor 7 2018.08.27\
-Total posts amount: 11	Posts dates amount: 10\
+Total posts amount: 13	Posts dates amount: 12\
 2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 -	https://vk.com/mu_marveluniverse?w=wall-17592208_56508 -	\
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 -	\
 2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56846 -	\
@@ -74,6 +77,8 @@ Total posts amount: 11	Posts dates amount: 10\
 2018.10.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58067 -	\
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58462 -	\
 2018.10.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58618 -	\
+2018.11.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58889 -	\
+2018.11.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58890 -	\
 \
 MatveevaDossier	Editor Dossier 8 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
@@ -118,13 +123,6 @@ Total posts amount: 0	Posts dates amount: 0\
 \
 Rechmedin	Editor Humor 4 2018.10.24\
 Total posts amount: 0	Posts dates amount: 0\
-\
-Sharvadze	Editor Moments 5 2018.09.29\
-Total posts amount: 4	Posts dates amount: 4\
-2018.09.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57489 -	\
-2018.10.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57890 -	\
-2018.10.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57892 -	\
-2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58042 -	\
 \
 Shenkova	Editor Stars 7 2018.08.25\
 Total posts amount: 16	Posts dates amount: 14\
