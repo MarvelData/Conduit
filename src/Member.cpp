@@ -2,6 +2,8 @@
 
 #include <fstream>
 
+#include "Database.hpp"
+
 using namespace std;
 
 Member::Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false), loadedDeepInfo(false) {}
@@ -17,11 +19,7 @@ shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(st
 
 bool Member::AddPost(const string &date, const string &link, const string &status)
 {
-    string finalLink = link;
-    if (link.find("http") == -1)
-        finalLink = "https://" + link;
-    if (finalLink.find("mu_marveluniverse") == -1)
-        finalLink = finalLink.substr(0, 15) + "mu_marveluniverse?w=" + finalLink.substr(15);
+    string finalLink = Database::ProceedLink(link);
     if (Date::CheckDate(date)) {
         if (!status.empty())
             posts[date].emplace_back(TwoStrings(finalLink, status));
@@ -93,6 +91,16 @@ vector<TwoStrings> Member::GetPostsAtDate(const string &date) const
     }
     Date::DateProblems();
     return vector<TwoStrings>();
+}
+
+std::vector<TwoStrings> Member::GetAllPosts() const
+{
+    vector<TwoStrings> allPosts;
+
+    for (auto &dates : posts)
+        allPosts.insert(allPosts.end(), dates.second.begin(), dates.second.end());
+
+    return allPosts;
 }
 
 vector<PostInfo> Member::GetNotApprovedPosts() const

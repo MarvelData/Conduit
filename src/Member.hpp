@@ -38,6 +38,8 @@ public:
 
     std::vector<TwoStrings> GetPostsAtDate(const std::string &date) const;
 
+    std::vector<TwoStrings> GetAllPosts() const;
+
     std::vector<PostInfo> GetNotApprovedPosts() const;
 
     void PrintPosts(std::ostream &os) const;

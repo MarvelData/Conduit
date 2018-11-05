@@ -415,6 +415,80 @@ void Database::changeMemberData()
     }
 }
 
+pair<map<string, vector<string>>, int> Database::collectAllPosts()
+{
+    map<string, vector<string>> posts;
+
+    int allPostsAmount = 0;
+    for (auto &member : data) {
+        auto memberPosts = member.second.GetAllPosts();
+        for (auto &post : memberPosts)
+            posts[post.first].emplace_back(member.first);
+        allPostsAmount += member.second.GetPostsAmount();
+    }
+
+    return make_pair(posts, allPostsAmount);
+}
+
+void Database::checkDuplicates()
+{
+    auto posts = collectAllPosts();
+
+    cout << endl;
+    bool duplicates = false;
+    for (auto &post : posts.first)
+        if (post.second.size() > 1) {
+            duplicates = true;
+            cout << "Duplicated post record: " << post.first;
+            for (auto &member : post.second)
+                cout << ' ' << member;
+            cout << endl;
+        }
+
+    if (posts.first.size() != posts.second && !duplicates)
+        cout << endl << "DATABASE HAS PROBLEMS!!! AT LEAST WITH POSTS AMOUNTS!" << endl;
+
+    cout << "Total unique posts amount: " << posts.first.size() << endl;
+    if (duplicates)
+        cout << "Total        posts amount: " << posts.second << endl;
+
+    if (!duplicates)
+        cout << "No duplicates!" << endl;
+}
+
+void Database::findPosts()
+{
+    auto posts = collectAllPosts();
+    string search;
+
+    cout << endl << "What do u search for (input without spaces)?" << endl;
+    cin >> search;
+
+    if (posts.first.count(search)) {
+        cout << endl << search << " is posted by " << posts.first[search].back() << endl;
+        return;
+    }
+
+    if (search.find("vk.com/wall") != -1) {
+        string finalLink = ProceedLink(search);
+        if (posts.first.count(finalLink)) {
+            cout << endl << finalLink << " is posted by " << posts.first[finalLink].back() << endl;
+            return;
+        }
+    }
+
+    cout << endl;
+    bool found = false;
+    for (auto &post : posts.first)
+        if (post.first.find(search) != -1) {
+            cout << post.first << " is posted by " << post.second.back() << endl;
+            found = true;
+        }
+
+    if (!found)
+        cout << "Didn't found anything similar :(" << endl;
+}
+
 Database::Database(string &&fileName) : fileName(fileName)
 {
     ifstream file(fileName);
@@ -510,18 +584,22 @@ void Database::WriteDatabaseToFiles(bool dismission)
 
 bool Database::TalkToUser()
 {
+    int i = 0;
+    string divider = ".  ";
     cout << endl << "Hello! What would u like to do?" << endl;
-    cout << "0. \t I would like to add new member" << endl;
-    cout << "1. \t I would like to add a post for a member" << endl;
-    cout << "2. \t I would like to learn something about members" << endl;
-    cout << "3. \t I would like to learn something about roles" << endl;
-    cout << "4. \t I would like to learn something about rubrics" << endl;
-    cout << "5. \t I would like to delete a post from a member" << endl;
-    cout << "6. \t I would like to delete a member" << endl;
-    cout << "7. \t I would like to change member data" << endl;
-    cout << "8. \t I would like to approve post" << endl;
-    cout << "9. \t I would like to update deep data" << endl;
-    cout << "10. \t I would like to update deep data for all members" << endl;
+    cout << i++ << divider << "I would like to add new member" << endl;
+    cout << i++ << divider << "I would like to add a post for a member" << endl;
+    cout << i++ << divider << "I would like to learn something about members" << endl;
+    cout << i++ << divider << "I would like to learn something about roles" << endl;
+    cout << i++ << divider << "I would like to learn something about rubrics" << endl;
+    cout << i++ << divider << "I would like to delete a post from a member" << endl;
+    cout << i++ << divider << "I would like to delete a member" << endl;
+    cout << i++ << divider << "I would like to change member data" << endl;
+    cout << i++ << divider << "I would like to approve post" << endl;
+    cout << i++ << divider << "I would like to update deep data for all members" << endl;
+    divider = ". ";
+    cout << i++ << divider << "I would like to check duplicates" << endl;
+    cout << i++ << divider << "I would like to find post (posts)" << endl;
     cout << endl << "Input appropriate number or -1 to exit =)" << endl;
 
     int decision;
@@ -557,11 +635,14 @@ bool Database::TalkToUser()
             approvePost();
             break;
         case 9:
-            data[collectMemberName()].ForceDeepInfoUpdate();
-            break;
-        case 10:
             for (auto &member : data)
                 member.second.ForceDeepInfoUpdate();
+            break;
+        case 10:
+            checkDuplicates();
+            break;
+        case 11:
+            findPosts();
             break;
         default:
             cout << endl << "You made some mistake :(" << endl;
@@ -598,6 +679,16 @@ void Database::FileProblems()
 {
     cout << endl << "Something is wrong with your database file, it should be near your executable & be named "
          << GetFileName() << " :)" << endl << "Proper file is being created now!" << endl;
+}
+
+string Database::ProceedLink(const std::string &link)
+{
+    string finalLink = link;
+    if (link.find("http") == -1)
+        finalLink = "https://" + link;
+    if (finalLink.find("mu_marveluniverse") == -1)
+        finalLink = finalLink.substr(0, 15) + "mu_marveluniverse?w=" + finalLink.substr(15);
+    return finalLink;
 }
 
 Database::~Database() { WriteDatabaseToFiles(); }

@@ -63,6 +63,12 @@ class Database
 
     void changeMemberData();
 
+    std::pair<std::map<std::string, std::vector<std::string>>, int> collectAllPosts();
+
+    void checkDuplicates();
+
+    void findPosts();
+
 public:
     explicit Database(std::string &&fileName);
 
@@ -81,6 +87,8 @@ public:
     std::string GetPath() const;
     
     void FileProblems();
+
+    static std::string ProceedLink(const std::string &link);
 
     ~Database();
 };
