@@ -2,7 +2,6 @@
 
 Plans:\
 \
-V2.21 - implement searching posts by link & duplicates detection, remove extra menu option\
 V2.22 - implement Communication class for Database class\
 V3.0 - store posts in separate files, while leaving general statistics in Conduit (posts dates and/or text chart)\
 V3.01 - allow denied posts management (3 more menu options)\
