@@ -2,6 +2,7 @@
 
 #include <fstream>
 
+#include "Communication.hpp"
 #include "Database.hpp"
 
 using namespace std;
@@ -19,7 +20,7 @@ shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(st
 
 bool Member::AddPost(const string &date, const string &link, const string &status)
 {
-    string finalLink = Database::ProceedLink(link);
+    string finalLink = Communication::ProceedLink(link);
     if (Date::CheckDate(date)) {
         if (!status.empty())
             posts[date].emplace_back(TwoStrings(finalLink, status));
