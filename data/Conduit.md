@@ -29,7 +29,7 @@ Total posts amount: 5	Posts dates amount: 5\
 2018.11.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58927 -	\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
-Total posts amount: 50	Posts dates amount: 23\
+Total posts amount: 51	Posts dates amount: 24\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 -	https://vk.com/mu_marveluniverse?w=wall-17592208_57955 -	\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 -	\
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58012 -	\
@@ -53,6 +53,7 @@ Total posts amount: 50	Posts dates amount: 23\
 2018.11.03 4 https://vk.com/mu_marveluniverse?w=wall-17592208_58842 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58844 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58851 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58852 -	\
 2018.11.04 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58883 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58909 -	\
 2018.11.05 3 https://vk.com/mu_marveluniverse?w=wall-17592208_58926 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58932 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58935 -	\
+2018.11.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58966 -	\
 \
 Grigoreva	Editor FilmArt 5 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
