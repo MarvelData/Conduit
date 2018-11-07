@@ -119,7 +119,7 @@ Total posts amount: 11	Posts dates amount: 6\
 2018.09.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56796 -	\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56797 -	\
 \
-NguenHistory	Editor History 6 2018.09.01\
+NguenScenes	Editor Scenes 6 2018.09.01\
 Total posts amount: 1	Posts dates amount: 1\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
 \
