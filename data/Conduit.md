@@ -105,10 +105,12 @@ Total posts amount: 18	Posts dates amount: 12\
 2018.10.25 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58465 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58466 -	\
 2018.11.05 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58913 -	https://vk.com/mu_marveluniverse?w=wall-17592208_58914 -	\
 \
-Nefedova	Editor History 3 2018.09.13\
-Total posts amount: 2	Posts dates amount: 2\
+Nefedova	Editor History 7 2018.09.13\
+Total posts amount: 4	Posts dates amount: 4\
 2018.09.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57535 -	\
 2018.09.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57536 -	\
+2018.09.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58093 -	\
+2018.11.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59031 -	\
 \
 NguenArts	Editor Arts 2 2018.08.30\
 Total posts amount: 11	Posts dates amount: 6\
@@ -120,8 +122,9 @@ Total posts amount: 11	Posts dates amount: 6\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56797 -	\
 \
 NguenScenes	Editor Scenes 6 2018.09.01\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 3	Posts dates amount: 2\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 -	\
+2018.11.07 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59050 -	https://vk.com/mu_marveluniverse?w=wall-17592208_59051 -	\
 \
 Nizov	Editor Humor 3 2018.10.30\
 Total posts amount: 0	Posts dates amount: 0\

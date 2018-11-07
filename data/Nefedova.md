@@ -1,7 +1,11 @@
-Nefedova	Editor History 3 2018.09.13\
+Nefedova	Editor History 7 2018.09.13\
 0 rubric switches:\
-0 frequency switches:\
-0 vacations:\
-Total posts amount: 2	Posts dates amount: 2\
+1 frequency switches:\
+2018.09.30 3 changed to 7 \
+1 vacations:\
+2018.10.01 2018.11.01 \
+Total posts amount: 4	Posts dates amount: 4\
 2018.09.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57535 -	\
 2018.09.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57536 -	\
+2018.09.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58093 -	\
+2018.11.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59031 -	\
