@@ -1,4 +1,4 @@
-Members amount: 21\
+Members amount: 20\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 4	Posts dates amount: 4\
@@ -74,22 +74,6 @@ Total posts amount: 16	Posts dates amount: 11\
 2018.10.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57539 - \
 2018.10.02 3 https://vk.com/mu_marveluniverse?w=wall-17592208_57587 - https://vk.com/mu_marveluniverse?w=wall-17592208_57588 - https://vk.com/mu_marveluniverse?w=wall-17592208_57589 - \
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57983 - \
-\
-Kadyrkazy	Editor Humor 7 2018.08.27\
-Total posts amount: 14	Posts dates amount: 13\
-2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 - https://vk.com/mu_marveluniverse?w=wall-17592208_56508 - \
-2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 - \
-2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56846 - \
-2018.09.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56862 - \
-2018.09.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57109 - \
-2018.09.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57184 - \
-2018.10.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57778 - \
-2018.10.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58067 - \
-2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58462 - \
-2018.10.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58618 - \
-2018.11.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58889 - \
-2018.11.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58890 - \
-2018.11.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59177 - \
 \
 MatveevaDossier	Editor Dossier 8 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\

@@ -4,6 +4,9 @@ Kadyrkazy	Editor Humor 7 2018.08.27\
 2018.09.10 2 changed to 7 \
 1 vacations:\
 2018.10.16 2018.10.23 \
+Finished on 2018.11.10\
+Actual posts amount: 14	Anticipated posts amount: 14
+\
 Total posts amount: 14	Posts dates amount: 13\
 2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 - https://vk.com/mu_marveluniverse?w=wall-17592208_56508 - \
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 - \
