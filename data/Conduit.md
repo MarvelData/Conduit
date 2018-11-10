@@ -75,7 +75,7 @@ Total posts amount: 16	Posts dates amount: 11\
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57983 - \
 \
 Kadyrkazy	Editor Humor 7 2018.08.27\
-Total posts amount: 13	Posts dates amount: 12\
+Total posts amount: 14	Posts dates amount: 13\
 2018.08.27 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56495 - https://vk.com/mu_marveluniverse?w=wall-17592208_56508 - \
 2018.08.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56530 - \
 2018.09.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56846 - \
@@ -88,6 +88,7 @@ Total posts amount: 13	Posts dates amount: 12\
 2018.10.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58618 - \
 2018.11.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58889 - \
 2018.11.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58890 - \
+2018.11.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59177 - \
 \
 MatveevaDossier	Editor Dossier 8 2018.08.19\
 Total posts amount: 3	Posts dates amount: 3\
