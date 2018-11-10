@@ -121,7 +121,8 @@ Nizov	Editor Humor 3 2018.10.30\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Rechmedin	Editor Humor 4 2018.10.24\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2018.11.10 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59192 - \
 \
 Shenkova	Editor Stars 7 2018.08.25\
 Total posts amount: 16	Posts dates amount: 14\
