@@ -8,7 +8,7 @@ V3.02 - allow getting anticipated & actual posts amounts for specified date\
 V3.03 - allow dismission on specified date\
 V3.04 - implement approved post deletion confirmation\
 V3.05 - implement comments field for each member\
-V3.06 - continue refactorting Database class through Communication class improvement\
+V3.06 - refactor "TalkToUser" feature\
 V3.07 - enable unlimited vacations editing\
 V3.08 - implement real rubric frequency & editors amount printing after choosing it\
 V3.09 - implement memoization in class Math\
