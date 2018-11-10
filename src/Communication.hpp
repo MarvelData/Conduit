@@ -1,7 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include <map>
 #include <string>
+#include <vector>
 
 #include "Member.hpp"
 
@@ -11,7 +13,7 @@ class Communication
 {
     Database *database;
 
-    void changeMemberData();
+    void changeMemberDataDialog();
 
 public:
     explicit Communication(Database *database);
@@ -22,6 +24,14 @@ public:
 
     void PrintMember(Member &member, int counter = 0, bool moreInfo = false);
 
+    void PrintRoles(const std::map<std::string, std::vector<std::string>> &roles);
+
+    void PrintRubrics(const std::map<std::string, std::vector<int>> &rubrics);
+
+    std::string CollectNewMemberName(const std::string &oldShortName = "");
+
+    PostInfo CollectPostInfo(bool deleting);
+
     static void Tabulator(const std::string &str, int threshold);
 
     static std::string ProceedLink(const std::string &link);
@@ -29,7 +39,7 @@ public:
     static int AskForDecision();
 
     template <typename IterableContainer>
-    static std::string ChooseElem(const IterableContainer &elems, bool exitPossible = false)
+    static std::string ChooseElem(const IterableContainer &elems, bool exitPossible = true)
     {
         std::string elemName;
         bool correct = true;

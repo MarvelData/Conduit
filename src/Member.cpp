@@ -123,14 +123,14 @@ void Member::PrintPosts(ostream &os) const
     for (auto &post : posts) {
         os << post.first << ' ' << post.second.size() << ' ';
         for (auto &link : post.second)
-            os << link.first << ' ' << link.second << '\t';
+            os << link.first << ' ' << link.second << ' ';
         os << '\\' << endl;
     }
 }
 
 void Member::PrintInfo() const
 {
-    cout << endl << "Role: " << role << endl << "Rubric: " << rubric
+    cout << endl << "Short name: " << shortName << endl << "Role: " << role << endl << "Rubric: " << rubric
          << endl << "Frequency (days needed for 1 post): " << frequency << endl << "Start date: " << start << endl;
 }
 

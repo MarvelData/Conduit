@@ -1,12 +1,14 @@
 #include "Communication.hpp"
 
 #include <iostream>
+#include <cmath>
 
 #include "Database.hpp"
+#include "Math.hpp"
 
 using namespace std;
 
-void Communication::changeMemberData()
+void Communication::changeMemberDataDialog()
 {
     database->PrintMembers();
 
@@ -99,7 +101,7 @@ bool Communication::TalkToUser()
             database->DeleteMember();
             break;
         case 7:
-            changeMemberData();
+            changeMemberDataDialog();
             break;
         case 8:
             database->ApprovePost();
@@ -134,6 +136,80 @@ void Communication::PrintMember(Member &member, int counter, bool moreInfo)
     }
     else
         cout << endl;
+}
+
+void Communication::PrintRoles(const map<string, vector<string>> &roles)
+{
+    cout << endl << "Current roles list:" << endl;
+    int counter = 0;
+    for (auto &role : roles)
+        cout << counter << ". " << role.first << endl;
+}
+
+void Communication::PrintRubrics(const map<string, vector<int>> &rubrics)
+{
+    vector<double> statistics;
+    for (auto &rubric : rubrics) {
+        int leastCommonMultiplier = 1, sum = 0;
+        for (auto frequency : rubric.second)
+            leastCommonMultiplier = Math::LeastCommonMultiplier(leastCommonMultiplier, frequency);
+        for (auto frequency : rubric.second)
+            sum += leastCommonMultiplier / frequency;
+        statistics.emplace_back(double(leastCommonMultiplier) / sum);
+    }
+
+    cout << endl << "Current rubrics list:" << endl;
+    int counter = 0;
+    for (auto &rubric : rubrics) {
+        cout << counter << ". " << rubric.first << ":\t";
+        Tabulator(to_string(counter) + ". " + rubric.first, 7);
+        cout << "Editors amount: " << rubric.second.size()
+             << "\tOverall frequency (days needed for 1 post): " << statistics[counter]
+             << " (" << ceil(statistics[counter]) << ')' << endl;
+        counter++;
+    }
+}
+
+string Communication::CollectNewMemberName(const string &oldShortName)
+{
+    string shortName;
+    cin >> shortName;
+    if (shortName.empty()) {
+        cout << endl << "You can't use empty short name :(" << endl;
+        return "";
+    }
+    if (shortName == oldShortName) {
+        cout << endl << "U made no changes :D" << endl;
+        return "";
+    }
+    if (database->ContainsMember(shortName)) {
+        cout << endl << "This short name is already used" << endl;
+        return "";
+    }
+    return shortName;
+}
+
+PostInfo Communication::CollectPostInfo(bool deleting)
+{
+    string shortName, date, link;
+    int index = -1;
+    shortName = database->CollectMemberName();
+    if (shortName.empty())
+        return PostInfo();
+    date = Date::CollectDate();
+    if (deleting) {
+        int amount = database->GetPostsAmount(shortName, date);
+        if (amount == 1)
+            index = -2;
+        else if (amount > 1) {
+            cout << endl << "Input index: " << endl;
+            cin >> index;
+        }
+    } else {
+        cout << endl << "Input link: " << endl;
+        cin >> link;
+    }
+    return PostInfo(shortName, date, link, index);
 }
 
 void Communication::Tabulator(const string &str, int threshold)

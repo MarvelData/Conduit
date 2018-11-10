@@ -15,17 +15,9 @@ class Database
     std::map<std::string, Member> data;
     Communication *communicator;
 
-    std::string collectMemberName(bool moreInfo = false);
-
-    PostInfo collectPostInfo(bool deleting);
-
     std::map<std::string, std::vector<std::string>> getRoles();
 
-    void printRoles(const std::map<std::string, std::vector<std::string>> &roles);
-
     std::map<std::string, std::vector<int>> getRubrics(bool consideringVacations = false);
-
-    void printRubrics(const std::map<std::string, std::vector<int>> &rubrics);
 
     std::pair<std::map<std::string, std::vector<std::string>>, int> collectAllPosts();
 
@@ -37,6 +29,12 @@ public:
     void PrintMembers(bool moreInfo = false);
 
     void PrintPostsAmounts(const std::string &shortName, std::ostream &os = std::cout);
+
+    int GetPostsAmount(const std::string &shortName, const std::string &date);
+
+    std::string CollectMemberName(bool moreInfo = false);
+
+    bool ContainsMember(const std::string &shortName);
 
     void AddMember();
 

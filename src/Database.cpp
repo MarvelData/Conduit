@@ -1,44 +1,10 @@
 #include "Database.hpp"
 
-#include <cmath>
 #include <fstream>
 
 #include "Communication.hpp"
-#include "Math.hpp"
 
 using namespace std;
-
-string Database::collectMemberName(bool moreInfo)
-{
-    PrintMembers(moreInfo);
-    string shortName = Communication::ChooseElem(data, moreInfo);
-    if (shortName.empty())
-        return shortName;
-    cout << endl << "Here are his/her posts: " << endl;
-    data.at(shortName).PrintPosts(cout);
-    return shortName;
-}
-
-PostInfo Database::collectPostInfo(bool deleting)
-{
-    string shortName, date, link;
-    int index = -1;
-    shortName = collectMemberName();
-    date = Date::CollectDate();
-    if (deleting) {
-        int amount = data[shortName].GetPostsAmountAtDate(date);
-        if (amount == 1)
-            index = -2;
-        else if (amount > 1) {
-            cout << endl << "Input index: " << endl;
-            cin >> index;
-        }
-    } else {
-        cout << endl << "Input link: " << endl;
-        cin >> link;
-    }
-    return PostInfo(shortName, date, link, index);
-}
 
 map<string, vector<string>> Database::getRoles()
 {
@@ -46,14 +12,6 @@ map<string, vector<string>> Database::getRoles()
     for (auto &elem : data)
         roles[elem.second.GetRole()].emplace_back(elem.first);
     return roles;
-}
-
-void Database::printRoles(const map<string, vector<string>> &roles)
-{
-    cout << endl << "Current roles list:" << endl;
-    int counter = 0;
-    for (auto &role : roles)
-        cout << counter << ". " << role.first << endl;
 }
 
 map<string, vector<int>> Database::getRubrics(bool consideringVacations)
@@ -69,30 +27,6 @@ map<string, vector<int>> Database::getRubrics(bool consideringVacations)
         for (auto &elem : data)
             rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
     return rubrics;
-}
-
-void Database::printRubrics(const map<string, vector<int>> &rubrics)
-{
-    vector<double> statistics;
-    for (auto &rubric : rubrics) {
-        int leastCommonMultiplier = 1, sum = 0;
-        for (auto frequency : rubric.second)
-            leastCommonMultiplier = Math::LeastCommonMultiplier(leastCommonMultiplier, frequency);
-        for (auto frequency : rubric.second)
-            sum += leastCommonMultiplier / frequency;
-        statistics.emplace_back(double(leastCommonMultiplier) / sum);
-    }
-
-    cout << endl << "Current rubrics list:" << endl;
-    int counter = 0;
-    for (auto &rubric : rubrics) {
-        cout << counter << ". " << rubric.first << ":\t";
-        Communication::Tabulator(to_string(counter) + ". " + rubric.first, 7);
-        cout << "Editors amount: " << rubric.second.size()
-             << "\tOverall frequency (days needed for 1 post): " << statistics[counter]
-             << " (" << ceil(statistics[counter]) << ')' << endl;
-        counter++;
-    }
 }
 
 pair<map<string, vector<string>>, int> Database::collectAllPosts()
@@ -213,7 +147,7 @@ void Database::PrintMembers(bool moreInfo)
 
 void Database::PrintPostsAmounts(const string &shortName, ostream &os)
 {
-    auto &member = data[shortName];
+    auto &member = data.at(shortName);
     member.ReadSpecificInfo(GetPath());
     int postsAmount = member.GetPostsAmount();
     int anticipatedPostsAmount = member.GetAnticipatedPostsAmount();
@@ -226,45 +160,56 @@ void Database::PrintPostsAmounts(const string &shortName, ostream &os)
     os << endl;
 }
 
+int Database::GetPostsAmount(const string &shortName, const string &date)
+{
+    return data.at(shortName).GetPostsAmountAtDate(date);
+}
+
+string Database::CollectMemberName(bool moreInfo)
+{
+    PrintMembers(moreInfo);
+    string shortName = Communication::ChooseElem(data);
+    if (shortName.empty())
+        return shortName;
+    cout << endl << "Here are " << shortName << "'s posts: " << endl;
+    data.at(shortName).PrintPosts(cout);
+    return shortName;
+}
+
+bool Database::ContainsMember(const string &shortName) { return bool(data.count(shortName)); }
+
 void Database::AddMember()
 {
     PrintMembers();
-    string shortName, startDate;
-    int frequency;
     cout << endl << "NB: Input without spaces!" << endl;
     cout << endl << "Input member short name: " << endl;
-    cin >> shortName;
-    if (shortName.empty()) {
-        cout << endl << "You can't add empty short name :(" << endl;
+    string shortName = communicator->CollectNewMemberName();
+    if (shortName.empty())
         return;
-    }
-    cout << endl << "Input member role: " << endl;
+    cout << endl << "Input " << shortName << "'s role: " << endl;
     auto roles = getRoles();
-    printRoles(roles);
-    string role = Communication::ChooseElem(roles);
-    cout << endl << "Input member rubric: " << endl;
+    communicator->PrintRoles(roles);
+    string role = Communication::ChooseElem(roles, false);
+    cout << endl << "Input " << shortName << "'s rubric: " << endl;
     auto rubrics = getRubrics();
-    printRubrics(rubrics);
-    string rubric = Communication::ChooseElem(rubrics);
-    cout << endl << "Input frequency (days needed for 1 post, must be positive integer): " << endl;
+    communicator->PrintRubrics(rubrics);
+    string rubric = Communication::ChooseElem(rubrics, false);
+    cout << endl << "Input " << shortName << "'s frequency (days needed for 1 post, must be positive integer): " << endl;
+    int frequency;
     cin >> frequency;
-    startDate = Date::CollectDate();
-    if (data.count(shortName))
-        cout << endl << "This short name is already used :(" << endl;
-    else {
-        Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
-        member.ForceDeepInfoUpdate();
-        data[member.GetShortName()] = member;
-        cout << endl << "New member is successfully added!" << endl;
-    }
+    string startDate = Date::CollectDate();
+    Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
+    member.ForceDeepInfoUpdate();
+    data[member.GetShortName()] = move(member);
+    cout << endl << "New member is successfully added!" << endl;
     WriteDatabaseToFiles();
 }
 
 void Database::AddPost()
 {
-    PostInfo postInfo = collectPostInfo(false);
+    PostInfo postInfo = communicator->CollectPostInfo(false);
     if (postInfo.Correct) {
-        auto &member = data[postInfo.ShortName];
+        auto &member = data.at(postInfo.ShortName);
         member.AddPost(postInfo.Date, postInfo.Link);
         member.ForceDeepInfoUpdate();
     }
@@ -273,25 +218,26 @@ void Database::AddPost()
 
 void Database::LearnAboutMembers()
 {
-    string shortName = collectMemberName(true);
+    string shortName = CollectMemberName(true);
     if (shortName.empty())
         return;
-    data[shortName].PrintInfo();
-    data[shortName].PrintSpecificInfo(cout);
+    auto &member = data.at(shortName);
+    member.PrintInfo();
+    member.PrintSpecificInfo(cout);
     PrintPostsAmounts(shortName);
 }
 
 void Database::LearnAboutRoles()
 {
     auto roles = getRoles();
-    printRoles(roles);
+    communicator->PrintRoles(roles);
 
-    string chosenRole = Communication::ChooseElem(roles, true);
+    string chosenRole = Communication::ChooseElem(roles);
     if (chosenRole.empty())
         return;
     int counter = 0;
     for (auto &shortName : roles[chosenRole])
-        communicator->PrintMember(data[shortName], counter++, true);
+        communicator->PrintMember(data.at(shortName), counter++, true);
 }
 
 void Database::LearnAboutRubrics()
@@ -299,9 +245,9 @@ void Database::LearnAboutRubrics()
     cout << endl << "Would u like to get rubrics info considering vacations?" << endl;
     auto consideringVacations = bool(Communication::AskForDecision());
     auto rubrics = getRubrics(consideringVacations);
-    printRubrics(rubrics);
+    communicator->PrintRubrics(rubrics);
 
-    string chosenRubric = Communication::ChooseElem(rubrics, true);
+    string chosenRubric = Communication::ChooseElem(rubrics);
     if (chosenRubric.empty())
         return;
     int counter = 0;
@@ -312,17 +258,19 @@ void Database::LearnAboutRubrics()
 
 void Database::DeletePost()
 {
-    PostInfo postInfo = collectPostInfo(true);
+    PostInfo postInfo = communicator->CollectPostInfo(true);
     if (postInfo.Correct)
-        data[postInfo.ShortName].DeletePost(postInfo.Date, postInfo.Index);
+        data.at(postInfo.ShortName).DeletePost(postInfo.Date, postInfo.Index);
     WriteDatabaseToFiles();
 }
 
 void Database::DeleteMember()
 {
-    string shortName = collectMemberName();
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
     if (data.count(shortName)) {
-        auto &member = data[shortName];
+        auto &member = data.at(shortName);
         member.ReadSpecificInfo(GetPath());
         if (member.OnVacation())
             member.EndVacation();
@@ -394,6 +342,7 @@ void Database::FindPosts()
     auto posts = collectAllPosts();
     string search;
 
+    cout << endl << "NB: Input without spaces!" << endl;
     cout << endl << "What do u search for (input without spaces)?" << endl;
     cin >> search;
 
@@ -424,24 +373,15 @@ void Database::FindPosts()
 
 void Database::ChangeMemberShortName()
 {
-    string oldShortName = collectMemberName();
-    string newShortName;
+    string oldShortName = CollectMemberName();
+    if (oldShortName.empty())
+        return;
     cout << endl << "NB: Input without spaces!" << endl;
-    cout << endl << "Input new short name for this member: " << endl;
-    cin >> newShortName;
-    if (newShortName.empty()) {
-        cout << endl << "You can't add empty short name :(" << endl;
+    cout << endl << "Input new short name for " << oldShortName << endl;
+    string newShortName = communicator->CollectNewMemberName(oldShortName);
+    if (newShortName.empty())
         return;
-    }
-    if (newShortName == oldShortName) {
-        cout << endl << "U made no changes :D" << endl;
-        return;
-    }
-    if (data.count(newShortName)) {
-        cout << endl << "This new short name is already used" << endl;
-        return;
-    }
-    data[oldShortName].Rename(newShortName);
+    data.at(oldShortName).Rename(newShortName);
     data[newShortName] = move(data[oldShortName]);
     data.erase(oldShortName);
     string oldName = GetPath() + oldShortName + ".md",
@@ -452,44 +392,57 @@ void Database::ChangeMemberShortName()
 
 void Database::ChangeMemberRole()
 {
-    string shortName = collectMemberName();
-    data[shortName].PrintInfo();
-    string newRole;
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
+    auto &member = data.at(shortName);
+    member.PrintInfo();
     cout << endl << "NB: Input without spaces!" << endl;
-    cout << endl << "Input new role for this member: " << endl;
-    cin >> newRole;
-    data[shortName].ChangeRole(newRole);
+    cout << endl << "Input new role for " << shortName << endl;
+    auto roles = getRoles();
+    communicator->PrintRoles(roles);
+    string newRole = Communication::ChooseElem(roles, false);
+    member.ChangeRole(newRole);
     WriteDatabaseToFiles();
 }
 
 void Database::ChangeMemberRubric()
 {
-    string shortName = collectMemberName();
-    data[shortName].PrintInfo();
-    string newRubric;
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
+    auto &member = data.at(shortName);
+    member.PrintInfo();
     cout << endl << "NB: Input without spaces!" << endl;
-    cout << endl << "Input new rubric for this member: " << endl;
-    cin >> newRubric;
-    data[shortName].ChangeRubric(newRubric);
+    cout << endl << "Input new rubric for " << shortName << endl;
+    auto rubrics = getRubrics();
+    communicator->PrintRubrics(rubrics);
+    string newRubric = Communication::ChooseElem(rubrics, false);
+    member.ChangeRubric(newRubric);
     WriteDatabaseToFiles();
 }
 
 void Database::ChangeMemberFrequency()
 {
-    string shortName = collectMemberName();
-    data[shortName].PrintInfo();
-    int newFrequency;
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
+    auto &member = data.at(shortName);
+    member.PrintInfo();
     cout << endl << "NB: Input without spaces!" << endl;
-    cout << endl << "Input new frequency for this member (days needed for 1 post, must be positive integer): " << endl;
+    cout << endl << "Input new frequency for " << shortName << " (days needed for 1 post, must be positive integer): " << endl;
+    int newFrequency;
     cin >> newFrequency;
-    data[shortName].ChangeFrequency(newFrequency);
+    member.ChangeFrequency(newFrequency);
     WriteDatabaseToFiles();
 }
 
 void Database::AddVacation()
 {
-    string shortName = collectMemberName();
-    auto &member = data[shortName];
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
+    auto &member = data.at(shortName);
     member.PrintInfo();
     string start, end;
     cout << endl << "NB: Input without spaces!" << endl;
