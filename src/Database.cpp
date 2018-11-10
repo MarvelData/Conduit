@@ -457,8 +457,8 @@ void Database::AddVacation()
 
 bool Database::TalkToUser()
 {
-    if (!communicator)
-        communicator = new Communication(this);
+    if (communicator == nullptr)
+        communicator = unique_ptr<Communication>(new Communication(this));
     return communicator->TalkToUser();
 }
 
@@ -476,8 +476,4 @@ string Database::GetPath() const
     return fileName.substr(0, fileName.find_last_of('/') + 1);
 }
 
-Database::~Database()
-{
-    delete communicator;
-    WriteDatabaseToFiles();
-}
+Database::~Database() {}

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <memory>
 #include <map>
 #include <string>
 #include <vector>
@@ -13,7 +14,7 @@ class Database
 {
     std::string fileName;
     std::map<std::string, Member> data;
-    Communication *communicator;
+    std::unique_ptr<Communication> communicator;
 
     std::map<std::string, std::vector<std::string>> getRoles();
 
@@ -78,5 +79,7 @@ public:
 
     std::string GetPath() const;
 
-    ~Database();
+    Database(const Database &) = delete;
+    Database(Database &&) = delete;
+    virtual ~Database();
 };
