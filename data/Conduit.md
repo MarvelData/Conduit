@@ -1,4 +1,4 @@
-Members amount: 20\
+Members amount: 21\
 \
 Bondarenko	Editor History 4 2018.09.28\
 Total posts amount: 4	Posts dates amount: 4\
@@ -121,6 +121,9 @@ Total posts amount: 3	Posts dates amount: 2\
 2018.11.07 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59050 - https://vk.com/mu_marveluniverse?w=wall-17592208_59051 - \
 \
 Nizov	Editor Humor 3 2018.10.30\
+Total posts amount: 0	Posts dates amount: 0\
+\
+Pislar	Editor Humor 2 2018.11.15\
 Total posts amount: 0	Posts dates amount: 0\
 \
 Rechmedin	Editor Humor 4 2018.10.24\
