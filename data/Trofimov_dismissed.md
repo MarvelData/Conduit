@@ -3,6 +3,9 @@ Trofimov	Editor History 7 2018.08.27\
 1 frequency switches:\
 2018.09.24 2 changed to 7 \
 0 vacations:\
+Finished on 2018.11.15\
+Actual posts amount: 6	Anticipated posts amount: 21	 Lag: 15
+\
 Total posts amount: 6	Posts dates amount: 6\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56498 + \
 2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56583 + \
