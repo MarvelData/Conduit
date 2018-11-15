@@ -1,10 +1,7 @@
-
 \.idea/
+
+cmake-build-debug/
 
 build/ConEmuPack\.180626/
 
 build/Terminal\.lnk
-
-build/main\.cxx
-
-cmake-build-debug/
