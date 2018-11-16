@@ -1,4 +1,4 @@
-Members amount: 17\
+Members amount: 16\
 \
 Doroganov	Editor History 3 2018.10.13\
 Total posts amount: 3	Posts dates amount: 3\
@@ -155,10 +155,6 @@ Total posts amount: 14	Posts dates amount: 13\
 2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58025 - \
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59063 - \
 2018.11.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59064 - \
-\
-Tabulin	Editor History 5 2018.10.30\
-Total posts amount: 1	Posts dates amount: 1\
-2018.11.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59074 - \
 \
 Trushnikova	Editor Stars 7 2018.09.05\
 Total posts amount: 5	Posts dates amount: 4\
