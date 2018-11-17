@@ -16,7 +16,7 @@ Total posts amount: 8	Posts dates amount: 6\
 2018.11.09 3 https://vk.com/mu_marveluniverse?w=wall-17592208_59146 - https://vk.com/mu_marveluniverse?w=wall-17592208_59147 - https://vk.com/mu_marveluniverse?w=wall-17592208_59148 - \
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
-Total posts amount: 7	Posts dates amount: 7\
+Total posts amount: 8	Posts dates amount: 8\
 2018.10.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58331 - \
 2018.10.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58711 - \
 2018.11.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58748 - \
@@ -24,9 +24,10 @@ Total posts amount: 7	Posts dates amount: 7\
 2018.11.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58927 - \
 2018.11.09 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59108 - \
 2018.11.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59235 - \
+2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59421 - \
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
-Total posts amount: 63	Posts dates amount: 30\
+Total posts amount: 64	Posts dates amount: 31\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 - https://vk.com/mu_marveluniverse?w=wall-17592208_57955 - \
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 - \
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 - https://vk.com/mu_marveluniverse?w=wall-17592208_58012 - \
@@ -57,6 +58,7 @@ Total posts amount: 63	Posts dates amount: 30\
 2018.11.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59299 - \
 2018.11.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59390 - \
 2018.11.16 4 https://vk.com/mu_marveluniverse?w=wall-17592208_59391 - https://vk.com/mu_marveluniverse?w=wall-17592208_59392 - https://vk.com/mu_marveluniverse?w=wall-17592208_59393 - https://vk.com/mu_marveluniverse?w=wall-17592208_59394 - \
+2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59425 - \
 \
 Grigoreva	Editor FilmArt 5 2018.08.27\
 Total posts amount: 16	Posts dates amount: 11\
