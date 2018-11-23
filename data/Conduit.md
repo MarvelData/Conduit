@@ -121,9 +121,13 @@ Total posts amount: 11	Posts dates amount: 6\
 2018.09.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56797 - \
 \
 NguenScenes	Editor Scenes 6 2018.09.01\
-Total posts amount: 3	Posts dates amount: 2\
+Total posts amount: 7	Posts dates amount: 6\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 - \
 2018.11.07 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59050 - https://vk.com/mu_marveluniverse?w=wall-17592208_59051 - \
+2018.11.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59643 - \
+2018.11.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59645 - \
+2018.11.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59646 - \
+2018.11.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59647 - \
 \
 Pislar	Editor Humor 2 2018.11.15\
 Total posts amount: 5	Posts dates amount: 5\
