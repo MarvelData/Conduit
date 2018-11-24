@@ -9,7 +9,7 @@ V3.03 - allow denied posts management (3 more menu options)\
 V3.04 - allow getting anticipated & actual posts amounts for specified date\
 V3.05 - allow dismission on specified date\
 V3.06 - implement approved post deletion confirmation\
-V3.07 - implement add vacation insertion check\
+V3.07 - implement vacation insertion check, make rubric/frequency switch more careful\
 V3.08 - implement bonus system & comments field for each member\
 V3.09 - refactor "TalkToUser" feature\
 V3.10 - enable unlimited vacations editing\
