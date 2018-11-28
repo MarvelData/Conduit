@@ -94,7 +94,7 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57381 - \
 \
 MatveevaStars	Editor Stars 6 2018.08.29\
-Total posts amount: 19	Posts dates amount: 13\
+Total posts amount: 20	Posts dates amount: 14\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 - https://vk.com/mu_marveluniverse?w=wall-17592208_56559 + \
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 - https://vk.com/mu_marveluniverse?w=wall-17592208_56561 - \
 2018.09.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57384 - https://vk.com/mu_marveluniverse?w=wall-17592208_57392 - \
@@ -108,6 +108,7 @@ Total posts amount: 19	Posts dates amount: 13\
 2018.10.25 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58465 - https://vk.com/mu_marveluniverse?w=wall-17592208_58466 - \
 2018.11.05 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58913 - https://vk.com/mu_marveluniverse?w=wall-17592208_58914 - \
 2018.11.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59417 - \
+2018.11.28 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59784 - \
 \
 Nefedova	Editor History 7 2018.09.13\
 Total posts amount: 6	Posts dates amount: 6\
@@ -136,7 +137,7 @@ Total posts amount: 7	Posts dates amount: 6\
 2018.11.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59646 - \
 2018.11.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59647 - \
 \
-Pislar	Editor Humor 2 2018.11.15\
+Pyslar	Editor Humor 2 2018.11.15\
 Total posts amount: 5	Posts dates amount: 5\
 2018.11.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59507 - \
 2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59508 - \
