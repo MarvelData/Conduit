@@ -1,4 +1,4 @@
-Members amount: 16\
+Members amount: 17\
 \
 Doroganov	Editor History 3 2018.10.13\
 Total posts amount: 3	Posts dates amount: 3\
@@ -31,6 +31,9 @@ Total posts amount: 9	Posts dates amount: 9\
 2018.11.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59235 - \
 2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59421 - \
 2018.11.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59563 - \
+\
+EvdokimovHistory	Editor History 7 2018.12.01\
+Total posts amount: 0	Posts dates amount: 0\
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
 Total posts amount: 79	Posts dates amount: 39\
