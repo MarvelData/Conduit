@@ -152,7 +152,7 @@ Total posts amount: 8	Posts dates amount: 8\
 2018.11.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59549 - \
 2018.11.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59836 - \
 2018.11.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59837 - \
-2018.12.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59838 - \
+2018.12.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59851 - \
 \
 Rechmedin	Editor Humor 4 2018.10.24\
 Total posts amount: 1	Posts dates amount: 1\
