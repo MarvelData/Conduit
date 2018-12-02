@@ -143,13 +143,16 @@ Total posts amount: 7	Posts dates amount: 6\
 2018.11.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59646 - \
 2018.11.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59647 - \
 \
-Pyslar	Editor Humor 2 2018.11.15\
-Total posts amount: 5	Posts dates amount: 5\
+Pyslar	Editor Humor 4 2018.11.15\
+Total posts amount: 8	Posts dates amount: 8\
 2018.11.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59507 - \
 2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59508 - \
 2018.11.18 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59509 - \
 2018.11.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59510 - \
 2018.11.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59549 - \
+2018.11.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59836 - \
+2018.11.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59837 - \
+2018.12.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59838 - \
 \
 Rechmedin	Editor Humor 4 2018.10.24\
 Total posts amount: 1	Posts dates amount: 1\
