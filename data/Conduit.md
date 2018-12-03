@@ -33,8 +33,9 @@ Total posts amount: 9	Posts dates amount: 9\
 2018.11.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59563 - \
 \
 EvdokimovHistory	Editor History 7 2018.12.01\
-Total posts amount: 1	Posts dates amount: 1\
+Total posts amount: 2	Posts dates amount: 2\
 2018.12.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59835 - \
+2018.12.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59857 - \
 \
 EvdokimovScenes	Editor Scenes 1 2018.10.12\
 Total posts amount: 80	Posts dates amount: 40\
