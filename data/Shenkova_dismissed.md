@@ -4,6 +4,9 @@ Shenkova	Editor Stars 7 2018.08.25\
 2018.09.11 2 changed to 7 \
 1 vacations:\
 2018.11.03 2018.12.01 \
+Finished on 2018.12.06\
+Actual posts amount: 16	Anticipated posts amount: 16
+\
 Total posts amount: 16	Posts dates amount: 14\
 2018.08.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56455 + \
 2018.08.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56462 + https://vk.com/mu_marveluniverse?w=wall-17592208_56471 + \
