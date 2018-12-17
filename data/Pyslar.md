@@ -2,7 +2,8 @@ Pyslar	Editor Humor 4 2018.11.15\
 0 rubric switches:\
 1 frequency switches:\
 2018.11.24 2 changed to 4 \
-0 vacations:\
+1 vacations:\
+2018.12.10 2019.01.01 \
 Total posts amount: 8	Posts dates amount: 8\
 2018.11.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59507 - \
 2018.11.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59508 - \
