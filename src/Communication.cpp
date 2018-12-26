@@ -127,10 +127,10 @@ bool Communication::TalkToUser()
 void Communication::PrintMember(Member &member, int counter, bool moreInfo)
 {
     cout << counter << ". " << member.GetShortName() << '\t';
-    Communication::Tabulator(to_string(counter) + ". " + member.GetShortName(), 16);
+    Tabulator(to_string(counter) + ". " + member.GetShortName(), 16);
     if (moreInfo) {
         cout << "Rubric: "  << member.GetRubric() << '\t';
-        Communication::Tabulator(member.GetRubric(), 8);
+        Tabulator(member.GetRubric(), 8);
         cout << "Frequency: " << member.GetFrequency() << '\t';
         database->PrintPostsAmounts(member.GetShortName());
     }

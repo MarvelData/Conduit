@@ -151,7 +151,9 @@ void Database::PrintPostsAmounts(const string &shortName, ostream &os)
     member.ReadSpecificInfo(GetPath());
     int postsAmount = member.GetPostsAmount();
     int anticipatedPostsAmount = member.GetAnticipatedPostsAmount();
-    os << "Actual posts amount: " << postsAmount;
+    string actualPosts =  "Actual posts amount: ";
+    os << actualPosts << postsAmount;
+    Communication::Tabulator(actualPosts + to_string(postsAmount), 24);
     os << "\tAnticipated posts amount: " << anticipatedPostsAmount;
     if (anticipatedPostsAmount - postsAmount > 1 & !member.OnVacation())
         os << "\t Lag: " << anticipatedPostsAmount - postsAmount;
