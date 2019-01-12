@@ -7,7 +7,7 @@ Total posts amount: 3	Posts dates amount: 3\
 2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 - \
 \
 Ermolova	Editor FilmArt 4 2018.10.22\
-Total posts amount: 17	Posts dates amount: 13\
+Total posts amount: 23	Posts dates amount: 19\
 2018.10.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58406 - \
 2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58533 - \
 2018.11.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58867 - \
@@ -21,6 +21,12 @@ Total posts amount: 17	Posts dates amount: 13\
 2018.11.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59675 - \
 2018.12.06 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59929 - https://vk.com/mu_marveluniverse?w=wall-17592208_59930 - \
 2018.12.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59928 - \
+2018.12.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60574 - \
+2018.12.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60575 - \
+2018.12.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60576 - \
+2018.12.31 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60577 - \
+2019.01.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60578 - \
+2019.01.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60579 - \
 \
 EvdokimovFragments	Editor Fragments 7 2018.10.22\
 Total posts amount: 13	Posts dates amount: 13\
