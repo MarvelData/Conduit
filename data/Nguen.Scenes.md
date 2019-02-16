@@ -1,4 +1,4 @@
-NguenScenes	Editor Scenes 6 2018.09.01\
+Nguen.Scenes	Editor Scenes 6 2018.09.01\
 1 rubric switches:\
 2018.11.07 History changed to Scenes \
 0 frequency switches:\

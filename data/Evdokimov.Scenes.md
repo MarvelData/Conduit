@@ -1,10 +1,11 @@
-EvdokimovScenes	Editor Scenes 1 2018.10.12\
+Evdokimov.Scenes	Editor Scenes 3 2018.10.12\
 0 rubric switches:\
-1 frequency switches:\
+2 frequency switches:\
 2018.10.13 2 changed to 1 \
+2019.01.11 1 changed to 3 \
 1 vacations:\
 2018.12.30 2019.01.10 \
-Total posts amount: 112	Posts dates amount: 63\
+Total posts amount: 114	Posts dates amount: 65\
 2018.10.12 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57944 - https://vk.com/mu_marveluniverse?w=wall-17592208_57955 - \
 2018.10.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_57969 - \
 2018.10.14 2 https://vk.com/mu_marveluniverse?w=wall-17592208_58010 - https://vk.com/mu_marveluniverse?w=wall-17592208_58012 - \
@@ -68,3 +69,5 @@ Total posts amount: 112	Posts dates amount: 63\
 2019.01.29 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61006 - \
 2019.01.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61007 - \
 2019.02.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61102 - \
+2019.02.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61336 - \
+2019.02.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61360 - \

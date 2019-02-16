@@ -1,4 +1,4 @@
-MatveevaStars	Editor Stars 6 2018.08.29\
+Matveeva.Stars	Editor Stars 6 2018.08.29\
 0 rubric switches:\
 1 frequency switches:\
 2018.09.26 3 changed to 6 \

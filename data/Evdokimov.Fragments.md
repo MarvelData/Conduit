@@ -1,4 +1,4 @@
-EvdokimovFragments	Editor Fragments 7 2018.10.22\
+Evdokimov.Fragments	Editor Fragments 7 2018.10.22\
 0 rubric switches:\
 0 frequency switches:\
 1 vacations:\

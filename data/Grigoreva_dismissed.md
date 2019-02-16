@@ -3,7 +3,10 @@ Grigoreva	Editor FilmArt 5 2018.08.27\
 1 frequency switches:\
 2018.09.14 2 changed to 5 \
 1 vacations:\
-2018.10.20 unlimited \
+2018.10.20 2019.02.12 \
+Finished on 2019.02.13\
+Actual posts amount: 16	Anticipated posts amount: 16
+\
 Total posts amount: 16	Posts dates amount: 11\
 2018.08.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56506 + \
 2018.08.29 3 https://vk.com/mu_marveluniverse?w=wall-17592208_56542 - https://vk.com/mu_marveluniverse?w=wall-17592208_56545 + https://vk.com/mu_marveluniverse?w=wall-17592208_56548 + \
