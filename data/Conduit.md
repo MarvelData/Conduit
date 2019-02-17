@@ -1,13 +1,8 @@
-Members amount: 15\
-\
-Doroganov	Editor History 3 2018.10.13\
-Total posts amount: 3	Posts dates amount: 3\
-2018.10.14 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58038 - \
-2018.10.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58238 - \
-2018.10.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58275 - \
+Members amount: 14\
 \
 Drannikov	Editor History 2 2019.02.16\
-Total posts amount: 0	Posts dates amount: 0\
+Total posts amount: 1	Posts dates amount: 1\
+2019.02.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61354 - \
 \
 Ermolova	Editor FilmArt 4 2018.10.22\
 Total posts amount: 23	Posts dates amount: 19\
