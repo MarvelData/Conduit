@@ -2,10 +2,11 @@ Matveeva.Stars	Editor Stars 6 2018.08.29\
 0 rubric switches:\
 1 frequency switches:\
 2018.09.26 3 changed to 6 \
-2 vacations:\
+3 vacations:\
 2018.12.01 2018.12.15 \
 2018.12.20 2019.01.15 \
-Total posts amount: 24	Posts dates amount: 18\
+2019.01.20 2019.02.10 \
+Total posts amount: 25	Posts dates amount: 19\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 - https://vk.com/mu_marveluniverse?w=wall-17592208_56559 + \
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 - https://vk.com/mu_marveluniverse?w=wall-17592208_56561 - \
 2018.09.26 2 https://vk.com/mu_marveluniverse?w=wall-17592208_57384 - https://vk.com/mu_marveluniverse?w=wall-17592208_57392 - \
@@ -24,3 +25,4 @@ Total posts amount: 24	Posts dates amount: 18\
 2019.01.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60759 - \
 2019.01.18 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60761 - \
 2019.01.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_60762 - \
+2019.02.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61371 - \
