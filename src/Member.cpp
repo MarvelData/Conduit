@@ -9,8 +9,9 @@ using namespace std;
 
 Member::Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false), loadedDeepInfo(false) {}
 
-Member::Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start) :
-shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start), postsAmount(0), changedDeepInfo(false), loadedDeepInfo(false)
+Member::Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start, string &&path) :
+shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start),
+postsAmount(0), postsDatesAmount(0), changedDeepInfo(false), loadedDeepInfo(false), path(path)
 {
     if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
         cout << endl << "Short names, roles and rubrics can't contain spaces, srry :D" << endl;
@@ -34,8 +35,24 @@ bool Member::AddPost(const string &date, const string &link, const string &statu
     }
 }
 
+bool Member::AddPostLight(const string &date, const string &status)
+{
+    if (Date::CheckDate(date)) {
+        if (!status.empty())
+            lightPosts[date].emplace_back(TwoStrings("", status));
+        else
+            lightPosts[date].emplace_back(TwoStrings("", status));
+        return true;
+    } else {
+        Date::DateProblems();
+        return false;
+    }
+}
+
 void Member::ApprovePost(const string &date, int index)
 {
+    ReadSpecificInfo(path);
+    changedDeepInfo = true;
     if (Date::CheckDate(date)) {
         if (posts.count(date)) {
             if (index >= posts[date].size() || index < 0) {
@@ -53,6 +70,7 @@ void Member::ApprovePost(const string &date, int index)
 
 void Member::DeletePost(const string &date, int index)
 {
+    ReadSpecificInfo(path);
     if (Date::CheckDate(date)) {
         if (posts.count(date)) {
             if (index >= int(posts[date].size()) || (index < 0 && index != -2)) {
@@ -73,8 +91,9 @@ void Member::DeletePost(const string &date, int index)
         Date::DateProblems();
 }
 
-int Member::GetPostsAmountAtDate(const string &date) const
+int Member::GetPostsAmountAtDate(const string &date)
 {
+    ReadSpecificInfo(path);
     if (Date::CheckDate(date)) {
         if (posts.count(date))
             return int(posts.at(date).size());
@@ -85,8 +104,9 @@ int Member::GetPostsAmountAtDate(const string &date) const
     return -1;
 }
 
-vector<TwoStrings> Member::GetPostsAtDate(const string &date) const
+vector<TwoStrings> Member::GetPostsAtDate(const string &date)
 {
+    ReadSpecificInfo(path);
     if (Date::CheckDate(date)) {
         return posts.at(date);
     }
@@ -94,8 +114,9 @@ vector<TwoStrings> Member::GetPostsAtDate(const string &date) const
     return vector<TwoStrings>();
 }
 
-std::vector<TwoStrings> Member::GetAllPosts() const
+std::vector<TwoStrings> Member::GetAllPosts()
 {
+    ReadSpecificInfo(path);
     vector<TwoStrings> allPosts;
 
     for (auto &dates : posts)
@@ -104,8 +125,9 @@ std::vector<TwoStrings> Member::GetAllPosts() const
     return allPosts;
 }
 
-vector<PostInfo> Member::GetNotApprovedPosts() const
+vector<PostInfo> Member::GetNotApprovedPosts()
 {
+    ReadSpecificInfo(path);
     vector<PostInfo> notApprovedPosts;
     for (auto &post : posts) {
         int counter = 0;
@@ -118,14 +140,35 @@ vector<PostInfo> Member::GetNotApprovedPosts() const
     return notApprovedPosts;
 }
 
-void Member::PrintPosts(ostream &os) const
+void Member::PrintPosts(ostream &os)
 {
+    ReadSpecificInfo(path);
     for (auto &post : posts) {
         os << post.first << ' ' << post.second.size() << ' ';
         for (auto &link : post.second)
             os << link.first << ' ' << link.second << ' ';
         os << '\\' << endl;
     }
+}
+
+void Member::PrintPostsLight(ostream &os)
+{
+    map<std::string, std::vector<TwoStrings>> lastPosts;
+    if (!posts.empty())
+        lightPosts = posts;
+    int counter = 0;
+    for (auto post = lightPosts.rbegin(); counter++ < GetLastDatesAmount(); post++)
+        lastPosts.insert(*post);
+    for (auto &post : lastPosts)
+        os << post.first << ' ';
+    os << endl;
+    for (auto &post : lastPosts) {
+        for (auto &link : post.second)
+            os << link.second;
+        string buf(post.first.size() - post.second.size(), ' ');
+        os << buf << ' ';
+    }
+    os << endl;
 }
 
 void Member::PrintInfo() const
@@ -166,19 +209,24 @@ int Member::GetFrequency() const { return frequency; }
 
 Date Member::GetStartDate() const { return start; }
 
-int Member::GetPostsAmount() const {
-    int counter = 0;
-    for (auto &post : posts)
-        counter += post.second.size();
-    if (counter != postsAmount)
-        cout << endl << "DATABASE HAS PROBLEMS!!! AT LEAST WITH POSTS AMOUNTS!" << endl;
-    return postsAmount;
+void Member::SetPostsAmount(int amount) { postsAmount = amount; }
+
+void Member::SetPostsDatesAmount(int amount) { postsDatesAmount = amount; }
+
+int Member::GetPostsAmount() const { return postsAmount; }
+
+size_t Member::GetPostsDatesAmount() const
+{
+    if (!posts.empty())
+        return posts.size();
+    return size_t(postsDatesAmount);
 }
 
-size_t Member::GetPostsDatesAmount() const { return posts.size(); }
+int Member::GetLastDatesAmount() const { return min(8, int(GetPostsDatesAmount())); }
 
-int Member::GetVacationLength(const string &startDate, const string &endDate) const
+int Member::GetVacationLength(const string &startDate, const string &endDate)
 {
+    ReadSpecificInfo(path);
     int length = 0;
     for (auto &vacation : vacations)
         if (vacation.first <= endDate && vacation.second >= startDate)
@@ -186,8 +234,9 @@ int Member::GetVacationLength(const string &startDate, const string &endDate) co
     return length;
 }
 
-bool Member::OnVacation() const
+bool Member::OnVacation()
 {
+    ReadSpecificInfo(path);
     if (vacations.empty())
         return false;
     else if (vacations.rbegin()->second >= Date::Now())
@@ -201,8 +250,9 @@ void Member::EndVacation()
     changedDeepInfo = true;
 }
 
-int Member::GetAnticipatedPostsAmount() const
+int Member::GetAnticipatedPostsAmount()
 {
+    ReadSpecificInfo(path);
     int anticipatedPostsAmount = 0;
     Date lastDate = start;
     for (auto &frequencySwitch : frequencySwitches) {
@@ -227,7 +277,7 @@ void Member::ReadSpecificInfo(const string &path)
         return;
 
     string buf;
-    int rubricSwitchesAmount, frequencySwitchesAmount, vacationsAmount;
+    int rubricSwitchesAmount, frequencySwitchesAmount, vacationsAmount, postsDatesAmount;
 
     file >> buf >> buf >> buf >> buf >> buf;
     file >> rubricSwitchesAmount;
@@ -258,12 +308,30 @@ void Member::ReadSpecificInfo(const string &path)
         AddVacation(startDate, endDate);
     }
 
+    file >> buf >> buf >> buf >> buf >> buf >> buf >> buf;
+    file >> postsDatesAmount;
+    file >> buf;
+    for (int j = 0; j < postsDatesAmount; j++) {
+        string date, link;
+        int amount;
+        file >> date;
+        file >> amount;
+        for (int k = 0; k < amount; k++) {
+            file >> link >> buf;
+            if (Date::CheckDate(date))
+                posts[date].emplace_back(TwoStrings(link, buf));
+            else
+                Date::DateProblems();
+        }
+        file >> buf;
+    }
+
     file.close();
 
     loadedDeepInfo = true;
 }
 
-void Member::PrintSpecificInfo(ostream &os, bool dismission) const
+void Member::PrintSpecificInfo(ostream &os, bool dismission)
 {
     os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
     for (auto &rubricSwitch : rubricSwitches)

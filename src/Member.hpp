@@ -19,30 +19,35 @@ class Member {
     std::map<std::string, std::string> rubricSwitches;
     std::map<std::string, std::pair<int, int>> frequencySwitches;
     std::map<std::string, std::string> vacations;
-    int postsAmount;
-    std::map<std::string, std::vector<TwoStrings>> posts;
+    int postsAmount, postsDatesAmount;
+    std::map<std::string, std::vector<TwoStrings>> posts, lightPosts;
     bool changedDeepInfo, loadedDeepInfo;
+    std::string path;
 
 public:
     Member();
 
-    Member(std::string &&shortName, std::string &&role, std::string &&rubric, int frequency, std::string &&start);
+    Member(std::string &&shortName, std::string &&role, std::string &&rubric, int frequency, std::string &&start, std::string &&path);
 
-    bool AddPost(const std::string &date, const std::string &link, const std::string &status = "");
+    bool AddPost(const std::string &date, const std::string &link = "", const std::string &status = "");
+
+    bool AddPostLight(const std::string &date, const std::string &status = "");
 
     void ApprovePost(const std::string &date, int index);
 
     void DeletePost(const std::string &date, int index);
 
-    int GetPostsAmountAtDate(const std::string &date) const;
+    int GetPostsAmountAtDate(const std::string &date);
 
-    std::vector<TwoStrings> GetPostsAtDate(const std::string &date) const;
+    std::vector<TwoStrings> GetPostsAtDate(const std::string &date);
 
-    std::vector<TwoStrings> GetAllPosts() const;
+    std::vector<TwoStrings> GetAllPosts();
 
-    std::vector<PostInfo> GetNotApprovedPosts() const;
+    std::vector<PostInfo> GetNotApprovedPosts();
 
-    void PrintPosts(std::ostream &os) const;
+    void PrintPosts(std::ostream &os);
+
+    void PrintPostsLight(std::ostream &os);
 
     void PrintInfo() const;
 
@@ -68,21 +73,27 @@ public:
 
     Date GetStartDate() const;
 
+    void SetPostsAmount(int amount);
+
+    void SetPostsDatesAmount(int amount);
+
     int GetPostsAmount() const;
 
     size_t GetPostsDatesAmount() const;
 
-    int GetVacationLength(const std::string &startDate, const std::string &endDate) const;
+    int GetLastDatesAmount() const;
 
-    bool OnVacation() const;
+    int GetVacationLength(const std::string &startDate, const std::string &endDate);
+
+    bool OnVacation();
 
     void EndVacation();
 
-    int GetAnticipatedPostsAmount() const;
+    int GetAnticipatedPostsAmount();
 
     void ReadSpecificInfo(const std::string &path);
 
-    void PrintSpecificInfo(std::ostream &os, bool dismission = false) const;
+    void PrintSpecificInfo(std::ostream &os, bool dismission = false);
 
     bool ChangedDeepInfo() const ;
 };

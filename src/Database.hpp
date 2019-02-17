@@ -25,7 +25,7 @@ class Database
 public:
     explicit Database(std::string &&fileName);
 
-    void WriteDatabaseToFiles(bool dismission = false);
+    void WriteDatabaseToFiles(bool dismission = false, const std::string &shortNameDismissed = std::string());
 
     void PrintMembers(bool moreInfo = false);
 

@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    string regBookName = "../data/Conduit.md";
+    string regBookName = "../data/Conduit.data";
     StreamControl streamControl;
     if (argc > 1) {
         if (string(argv[1]) == "-silent")

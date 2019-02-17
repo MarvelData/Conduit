@@ -19,7 +19,6 @@ map<string, vector<int>> Database::getRubrics(bool consideringVacations)
     map<string, vector<int>> rubrics;
     if (consideringVacations)
         for (auto &elem : data) {
-            elem.second.ReadSpecificInfo(GetPath());
             if (!elem.second.OnVacation())
                 rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
         }
@@ -65,70 +64,70 @@ Database::Database(string &&fileName) : fileName(fileName), communicator(nullptr
     int membersAmount;
     file >> buf >> buf;
     file >> membersAmount;
-    file >> buf >> buf;
     for (int i = 0; i < membersAmount; i++) {
         string shortName, role, rubric, startDate;
-        int frequency, postsDatesAmount;
+        int frequency, postsAmount, postsDatesAmount;
+        size_t lastDatesAmount;
         file >> shortName >> role >> rubric;
         file >> frequency;
         file >> startDate;
-        startDate = startDate.substr(0, startDate.size() - 1);
-        Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
-        file >> buf >> buf >> buf >> buf >> buf >> buf >> buf;
+        Member member(move(shortName), move(role), move(rubric), frequency, move(startDate), GetPath());
+        file >> buf >> buf >> buf;
+        file >> postsAmount;
+        file >> buf >> buf >> buf;
         file >> postsDatesAmount;
-        file >> buf;
-        for (int j = 0; j < postsDatesAmount; j++) {
-            string date, link;
-            int amount;
-            file >> date;
-            file >> amount;
-            for (int k = 0; k < amount; k++) {
-                file >> link >> buf;
-                member.AddPost(date, link, buf);
-            }
+        file >> buf >> buf >> buf;
+        file >> lastDatesAmount;
+        vector<string> lastDates(lastDatesAmount);
+        for (size_t j = 0; j < lastDatesAmount; j++)
+            file >> lastDates[j];
+        for (auto &date : lastDates) {
             file >> buf;
+            for (auto status : buf)
+                member.AddPostLight(date, string(1, status));
         }
-        file >> buf;
+        member.SetPostsAmount(postsAmount);
+        member.SetPostsDatesAmount(postsDatesAmount);
         data[member.GetShortName()] = move(member);
     }
 
     file.close();
-    for (auto &elem : data)
-    elem.second.GetPostsAmount();
 }
 
-void Database::WriteDatabaseToFiles(bool dismission)
+void Database::WriteDatabaseToFiles(bool dismission, const string &shortNameDismissed)
 {
     for (auto &elem : data)
         elem.second.GetPostsAmount();
     ofstream file(fileName);
 
-    file << "Members amount: " << data.size() << '\\' << endl << '\\' << endl;
+    file << "Members amount: " << data.size() << endl << endl << endl;
     for (auto &elem : data) {
-        file << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
-             << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
-        file << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
-             << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
-        elem.second.PrintPosts(file);
-        file << '\\' << endl;
+        auto shortName = elem.first;
+        auto &member = elem.second;
+        file << shortName << '\t' << member.GetRole() << ' ' << member.GetRubric()
+             << ' ' << member.GetFrequency() << ' ' << member.GetStartDate() << endl;
+        file << "Total posts amount: " << member.GetPostsAmount() << '\t'
+             << "Posts dates amount: " << member.GetPostsDatesAmount() << '\t'
+             << "Last dates amount: " << member.GetLastDatesAmount() << endl << endl;
+        member.PrintPostsLight(file);
+        file << endl << endl;
 
-        if (elem.second.ChangedDeepInfo()) {
-            elem.second.ReadSpecificInfo(GetPath());
-            ofstream memberFile(GetPath() + elem.first + ".md");
-            memberFile << elem.first << '\t' << elem.second.GetRole() << ' ' << elem.second.GetRubric()
-                       << ' ' << elem.second.GetFrequency() << ' ' << elem.second.GetStartDate() << '\\' << endl;
-            elem.second.PrintSpecificInfo(memberFile, dismission);
-            if (dismission) {
-                PrintPostsAmounts(elem.first, memberFile);
+        if (member.ChangedDeepInfo()) {
+            ofstream memberFile(GetPath() + shortName + ".md");
+            memberFile << shortName << '\t' << member.GetRole() << ' ' << member.GetRubric()
+                       << ' ' << member.GetFrequency() << ' ' << member.GetStartDate() << '\\' << endl;
+            member.PrintSpecificInfo(memberFile, dismission);
+            if (dismission & shortName == shortNameDismissed) {
+                PrintPostsAmounts(shortName, memberFile);
                 memberFile << "\\" << endl;
             }
-            memberFile << "Total posts amount: " << elem.second.GetPostsAmount() << '\t'
-                       << "Posts dates amount: " << elem.second.GetPostsDatesAmount() << '\\' << endl;
-            elem.second.PrintPosts(memberFile);
+            memberFile << "Total posts amount: " << member.GetPostsAmount() << '\t'
+                       << "Posts dates amount: " << member.GetPostsDatesAmount() << '\\' << endl;
+            member.PrintPosts(memberFile);
             memberFile.close();
-            if (dismission) {
-                string oldName = GetPath() + elem.first + ".md",
-                       newName = GetPath() + elem.first + "_dismissed.md";
+            if (dismission & shortName == shortNameDismissed) {
+                string oldName = GetPath() + shortName + ".md",
+                       newName = GetPath() + shortName + "_dismissed.md";
                 rename(oldName.c_str(), newName.c_str());
             }
         }
@@ -148,7 +147,6 @@ void Database::PrintMembers(bool moreInfo)
 void Database::PrintPostsAmounts(const string &shortName, ostream &os)
 {
     auto &member = data.at(shortName);
-    member.ReadSpecificInfo(GetPath());
     int postsAmount = member.GetPostsAmount();
     int anticipatedPostsAmount = member.GetAnticipatedPostsAmount();
     string actualPosts =  "Actual posts amount: ";
@@ -200,7 +198,7 @@ void Database::AddMember()
     int frequency;
     cin >> frequency;
     string startDate = Date::CollectDate();
-    Member member(move(shortName), move(role), move(rubric), frequency, move(startDate));
+    Member member(move(shortName), move(role), move(rubric), frequency, move(startDate), GetPath());
     member.ForceDeepInfoUpdate();
     data[member.GetShortName()] = move(member);
     cout << endl << "New member is successfully added!" << endl;
@@ -224,6 +222,7 @@ void Database::LearnAboutMembers()
     if (shortName.empty())
         return;
     auto &member = data.at(shortName);
+    member.ReadSpecificInfo(GetPath());
     member.PrintInfo();
     member.PrintSpecificInfo(cout);
     PrintPostsAmounts(shortName);
@@ -273,11 +272,10 @@ void Database::DeleteMember()
         return;
     if (data.count(shortName)) {
         auto &member = data.at(shortName);
-        member.ReadSpecificInfo(GetPath());
         if (member.OnVacation())
             member.EndVacation();
         member.ForceDeepInfoUpdate();
-        WriteDatabaseToFiles(true);
+        WriteDatabaseToFiles(true, shortName);
         data.erase(shortName);
     } else
         cout << endl << "There is no such member already!" << endl;
@@ -460,7 +458,7 @@ void Database::AddVacation()
 bool Database::TalkToUser()
 {
     if (communicator == nullptr)
-        communicator = unique_ptr<Communication>(new Communication(this));
+        communicator = make_unique<Communication>(Communication(this));
     return communicator->TalkToUser();
 }
 
