@@ -4,6 +4,9 @@ Ermolova	Editor FilmArt 4 2018.10.22\
 2018.10.30 2 changed to 4 \
 1 vacations:\
 2018.12.10 2018.12.15 \
+Finished on 2019.02.17\
+Actual posts amount: 23	Anticipated posts amount: 30	 Lag: 7
+\
 Total posts amount: 23	Posts dates amount: 19\
 2018.10.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58406 - \
 2018.10.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_58533 - \
