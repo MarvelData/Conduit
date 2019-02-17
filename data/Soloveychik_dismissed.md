@@ -3,6 +3,9 @@ Soloveychik	Editor FilmArt 14 2018.08.19\
 1 frequency switches:\
 2018.09.09 2 changed to 14 \
 0 vacations:\
+Finished on 2019.02.17\
+Actual posts amount: 15	Anticipated posts amount: 21	 Lag: 6
+\
 Total posts amount: 15	Posts dates amount: 14\
 2018.08.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56358 + \
 2018.08.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56404 + \
