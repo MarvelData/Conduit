@@ -9,8 +9,8 @@ using namespace std;
 map<string, vector<string>> Database::getRoles()
 {
     map<string, vector<string>> roles;
-    for (auto &elem : data)
-        roles[elem.second.GetRole()].emplace_back(elem.first);
+    for (auto &memberMetaPair : data)
+        roles[memberMetaPair.second.GetRole()].emplace_back(memberMetaPair.first);
     return roles;
 }
 
@@ -18,13 +18,13 @@ map<string, vector<int>> Database::getRubrics(bool consideringVacations)
 {
     map<string, vector<int>> rubrics;
     if (consideringVacations)
-        for (auto &elem : data) {
-            if (!elem.second.OnVacation())
-                rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
+        for (auto &memberMetaPair : data) {
+            if (!memberMetaPair.second.OnVacation())
+                rubrics[memberMetaPair.second.GetRubric()].emplace_back(memberMetaPair.second.GetFrequency());
         }
     else
-        for (auto &elem : data)
-            rubrics[elem.second.GetRubric()].emplace_back(elem.second.GetFrequency());
+        for (auto &memberMetaPair : data)
+            rubrics[memberMetaPair.second.GetRubric()].emplace_back(memberMetaPair.second.GetFrequency());
     return rubrics;
 }
 
@@ -96,14 +96,14 @@ Database::Database(string &&fileName) : fileName(fileName), communicator(nullptr
 
 void Database::WriteDatabaseToFiles(bool dismission, const string &shortNameDismissed)
 {
-    for (auto &elem : data)
-        elem.second.GetPostsAmount();
+    for (auto &memberMetaPair : data)
+        memberMetaPair.second.GetPostsAmount();
     ofstream file(fileName);
 
     file << "Members amount: " << data.size() << endl << endl << endl;
-    for (auto &elem : data) {
-        auto shortName = elem.first;
-        auto &member = elem.second;
+    for (auto &memberMetaPair : data) {
+        auto shortName = memberMetaPair.first;
+        auto &member = memberMetaPair.second;
         file << shortName << '\t' << member.GetRole() << ' ' << member.GetRubric()
              << ' ' << member.GetFrequency() << ' ' << member.GetStartDate() << endl;
         file << "Total posts amount: " << member.GetPostsAmount() << '\t'
@@ -140,8 +140,8 @@ void Database::PrintMembers(bool moreInfo)
 {
     cout << endl << "Current members list:" << endl;
     int counter = 0;
-    for (auto &elem : data)
-        communicator->PrintMember(elem.second, counter++, moreInfo);
+    for (auto &memberMetaPair : data)
+        communicator->PrintMember(memberMetaPair.second, counter++, moreInfo);
 }
 
 void Database::PrintPostsAmounts(const string &shortName, ostream &os)
@@ -252,9 +252,9 @@ void Database::LearnAboutRubrics()
     if (chosenRubric.empty())
         return;
     int counter = 0;
-    for (auto &elem : data)
-        if (elem.second.GetRubric() == chosenRubric)
-            communicator->PrintMember(elem.second, counter++, true);
+    for (auto &memberMetaPair : data)
+        if (memberMetaPair.second.GetRubric() == chosenRubric)
+            communicator->PrintMember(memberMetaPair.second, counter++, true);
 }
 
 void Database::DeletePost()
@@ -368,7 +368,7 @@ void Database::FindPosts()
         }
 
     if (!found)
-        cout << "Didn't found anything similar :(" << endl;
+        cout << "Didn't find anything similar :(" << endl;
 }
 
 void Database::ChangeMemberShortName()
