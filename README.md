@@ -2,7 +2,6 @@
 
 Plans:\
 \
-V3.02 - allow denied posts management (3 more menu options)\
 V3.03 - allow getting anticipated & actual posts amounts and dismission on specified date\
 V3.04 - implement approved post deletion confirmation\
 V3.05 - implement vacation insertion check, make rubric & frequency switch more careful and on specified date\
