@@ -49,17 +49,16 @@ bool Member::AddPostLight(const string &date, const string &status)
     }
 }
 
-void Member::ApprovePost(const string &date, int index)
+void Member::SetPostStatus(const string &date, int index, char status)
 {
-    ReadSpecificInfo(path);
-    changedDeepInfo = true;
+    ForceDeepInfoUpdate();
     if (Date::CheckDate(date)) {
         if (posts.count(date)) {
             if (index >= posts[date].size() || index < 0) {
                 cout << endl << "There is no such post ..." << endl;
                 return;
             }
-            posts[date][index].second = "+";
+            posts[date][index].second = string(1, status);
         } else {
             cout << endl << "There is no such post ..." << endl;
             return;
@@ -70,7 +69,7 @@ void Member::ApprovePost(const string &date, int index)
 
 void Member::DeletePost(const string &date, int index)
 {
-    ReadSpecificInfo(path);
+    ForceDeepInfoUpdate();
     if (Date::CheckDate(date)) {
         if (posts.count(date)) {
             if (index >= int(posts[date].size()) || (index < 0 && index != -2)) {
@@ -82,7 +81,6 @@ void Member::DeletePost(const string &date, int index)
             else
                 posts.erase(date);
             postsAmount--;
-            changedDeepInfo = true;
         } else {
             cout << endl << "There is no such post ..." << endl;
             return;
@@ -125,19 +123,19 @@ std::vector<TwoStrings> Member::GetAllPosts()
     return allPosts;
 }
 
-vector<PostInfo> Member::GetNotApprovedPosts()
+vector<PostInfo> Member::GetPostsWithStatus(char status)
 {
     ReadSpecificInfo(path);
-    vector<PostInfo> notApprovedPosts;
+    vector<PostInfo> postsWithSomeStatus;
     for (auto &post : posts) {
         int counter = 0;
         for (auto &link : post.second) {
-            if (link.second == "-")
-                notApprovedPosts.emplace_back(PostInfo(shortName, post.first, link.first, counter));
+            if (link.second == string(1, status))
+                postsWithSomeStatus.emplace_back(PostInfo(shortName, post.first, link.first, counter));
             counter++;
         }
     }
-    return notApprovedPosts;
+    return postsWithSomeStatus;
 }
 
 void Member::PrintPosts(ostream &os)
@@ -177,27 +175,31 @@ void Member::PrintInfo() const
          << endl << "Frequency (days needed for 1 post): " << frequency << endl << "Start date: " << start << endl;
 }
 
-void Member::Rename(const string &newShortName) { shortName = newShortName; changedDeepInfo = true; }
+void Member::Rename(const string &newShortName) { shortName = newShortName; ForceDeepInfoUpdate(); }
 
-void Member::ChangeRole(const string &newRole) { role = newRole; changedDeepInfo = true; }
+void Member::ChangeRole(const string &newRole) { role = newRole; ForceDeepInfoUpdate(); }
 
 void Member::ChangeRubric(const string &newRubric)
 {
     rubricSwitches[Date::Now()] = rubric + " changed to " + newRubric;
     rubric = newRubric;
-    changedDeepInfo = true;
+    ForceDeepInfoUpdate();
 }
 
 void Member::ChangeFrequency(int newFrequency)
 {
     frequencySwitches[Date::Now()] = pair<int, int>(frequency, newFrequency);
     frequency = newFrequency;
-    changedDeepInfo = true;
+    ForceDeepInfoUpdate();
 }
 
 void Member::AddVacation(const string &startDate, const string &endDate) { vacations[startDate] = endDate; }
 
-void Member::ForceDeepInfoUpdate() { changedDeepInfo = true; }
+void Member::ForceDeepInfoUpdate()
+{
+    changedDeepInfo = true;
+    ReadSpecificInfo(path);
+}
 
 string Member::GetShortName() const { return shortName; }
 
@@ -247,7 +249,7 @@ bool Member::OnVacation()
 void Member::EndVacation()
 {
     vacations.rbegin()->second = Date::Yesterday();
-    changedDeepInfo = true;
+    ForceDeepInfoUpdate();
 }
 
 int Member::GetAnticipatedPostsAmount()
@@ -314,13 +316,17 @@ void Member::ReadSpecificInfo(const string &path)
     for (int j = 0; j < postsDatesAmount; j++) {
         string date, link;
         int amount;
+        bool acquireStatus = false;
         file >> date;
         file >> amount;
+        if (lightPosts.count(date))
+            acquireStatus = true;
         for (int k = 0; k < amount; k++) {
             file >> link >> buf;
-            if (Date::CheckDate(date))
+            if (Date::CheckDate(date)) {
+                if (acquireStatus) buf = lightPosts[date][k].second;
                 posts[date].emplace_back(TwoStrings(link, buf));
-            else
+            } else
                 Date::DateProblems();
         }
         file >> buf;
@@ -331,7 +337,7 @@ void Member::ReadSpecificInfo(const string &path)
     loadedDeepInfo = true;
 }
 
-void Member::PrintSpecificInfo(ostream &os, bool dismission)
+void Member::PrintSpecificInfo(ostream &os, bool dismission) const
 {
     os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
     for (auto &rubricSwitch : rubricSwitches)

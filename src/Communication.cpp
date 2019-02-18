@@ -69,8 +69,11 @@ bool Communication::TalkToUser()
     cout << i++ << divider << "I would like to delete a member" << endl;
     cout << i++ << divider << "I would like to change member data" << endl;
     cout << i++ << divider << "I would like to approve post" << endl;
-    cout << i++ << divider << "I would like to update deep data for all members" << endl;
+    cout << i++ << divider << "I would like to reject post" << endl;
     divider = ". ";
+    cout << i++ << divider << "I would like to see approved posts" << endl;
+    cout << i++ << divider << "I would like to see rejected posts" << endl;
+    cout << i++ << divider << "I would like to update deep data for all members" << endl;
     cout << i++ << divider << "I would like to check duplicates" << endl;
     cout << i++ << divider << "I would like to find post (posts)" << endl;
     cout << endl << "Input appropriate number or -1 to exit =)" << endl;
@@ -107,12 +110,21 @@ bool Communication::TalkToUser()
             database->ApprovePost();
             break;
         case 9:
-            database->UpdateDeepInfo();
+            database->RejectPost();
             break;
         case 10:
-            database->CheckDuplicates();
+            database->GetPostsWithStatus('+');
             break;
         case 11:
+            database->GetPostsWithStatus('!');
+            break;
+        case 12:
+            database->UpdateDeepInfo();
+            break;
+        case 13:
+            database->CheckDuplicates();
+            break;
+        case 14:
             database->FindPosts();
             break;
         default:

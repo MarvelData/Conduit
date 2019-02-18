@@ -33,7 +33,7 @@ public:
 
     bool AddPostLight(const std::string &date, const std::string &status = "");
 
-    void ApprovePost(const std::string &date, int index);
+    void SetPostStatus(const std::string &date, int index, char status);
 
     void DeletePost(const std::string &date, int index);
 
@@ -43,7 +43,7 @@ public:
 
     std::vector<TwoStrings> GetAllPosts();
 
-    std::vector<PostInfo> GetNotApprovedPosts();
+    std::vector<PostInfo> GetPostsWithStatus(char status);
 
     void PrintPosts(std::ostream &os);
 
@@ -93,7 +93,7 @@ public:
 
     void ReadSpecificInfo(const std::string &path);
 
-    void PrintSpecificInfo(std::ostream &os, bool dismission = false);
+    void PrintSpecificInfo(std::ostream &os, bool dismission = false) const;
 
     bool ChangedDeepInfo() const ;
 };

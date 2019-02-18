@@ -55,7 +55,11 @@ public:
 
     void DeleteMember();
 
+    std::vector<PostInfo> GetPostsWithStatus(char status);
+
     void ApprovePost();
+
+    void RejectPost();
 
     void UpdateDeepInfo();
 

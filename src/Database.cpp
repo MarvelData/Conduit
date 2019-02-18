@@ -282,25 +282,50 @@ void Database::DeleteMember()
     WriteDatabaseToFiles();
 }
 
-void Database::ApprovePost()
+vector<PostInfo> Database::GetPostsWithStatus(char status)
 {
     size_t counter = 0;
     vector<PostInfo> posts;
-    for (auto &member : data) {
-        vector<PostInfo> notApprovedPosts = member.second.GetNotApprovedPosts();
-        for (auto &post : notApprovedPosts) {
+    cout << endl;
+    for (auto &memberMetaPair : data) {
+        vector<PostInfo> postsWithSomeStatus = memberMetaPair.second.GetPostsWithStatus(status);
+        for (auto &post : postsWithSomeStatus) {
             cout << counter++ << ". " << post.ShortName << ' ' << post.Date << ' ' << post.Link << endl;
             posts.emplace_back(post);
         }
     }
+    cout << endl;
+    return posts;
+}
+
+void Database::ApprovePost()
+{
+    auto posts = GetPostsWithStatus('-');
 
     cout << "Input number of the post u are approving or -1 to avoid approving: " << endl;
+    size_t counter;
     cin >> counter;
 
     if (counter == -1)
         return;
 
-    data.at(posts.at(counter).ShortName).ApprovePost(posts.at(counter).Date, posts.at(counter).Index);
+    data.at(posts.at(counter).ShortName).SetPostStatus(posts.at(counter).Date, posts.at(counter).Index, '+');
+
+    WriteDatabaseToFiles();
+}
+
+void Database::RejectPost()
+{
+    auto posts = GetPostsWithStatus('-');
+
+    cout << "Input number of the post u are rejecting or -1 to avoid rejecting: " << endl;
+    size_t counter;
+    cin >> counter;
+
+    if (counter == -1)
+        return;
+
+    data.at(posts.at(counter).ShortName).SetPostStatus(posts.at(counter).Date, posts.at(counter).Index, '!');
 
     WriteDatabaseToFiles();
 }
@@ -309,6 +334,7 @@ void Database::UpdateDeepInfo()
 {
     for (auto &member : data)
         member.second.ForceDeepInfoUpdate();
+    WriteDatabaseToFiles();
 }
 
 void Database::CheckDuplicates()
