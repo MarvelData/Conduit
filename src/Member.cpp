@@ -313,6 +313,8 @@ void Member::ReadSpecificInfo(const string &path)
     file >> buf >> buf >> buf >> buf >> buf >> buf >> buf;
     file >> postsDatesAmount;
     file >> buf;
+    if (postsDatesAmount != this->postsDatesAmount)
+        cout << endl << "DATABASE HAS PROBLEMS!!! AT LEAST WITH DEEP DATA SYNCHRONIZATION!" << endl;
     for (int j = 0; j < postsDatesAmount; j++) {
         string date, link;
         int amount;

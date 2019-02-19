@@ -210,8 +210,8 @@ void Database::AddPost()
     PostInfo postInfo = communicator->CollectPostInfo(false);
     if (postInfo.Correct) {
         auto &member = data.at(postInfo.ShortName);
-        member.AddPost(postInfo.Date, postInfo.Link);
         member.ForceDeepInfoUpdate();
+        member.AddPost(postInfo.Date, postInfo.Link);
     }
     WriteDatabaseToFiles();
 }
