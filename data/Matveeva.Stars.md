@@ -1,7 +1,8 @@
-Matveeva.Stars	Editor Stars 6 2018.08.29\
+Matveeva.Stars	Editor Stars 5 2018.08.29\
 0 rubric switches:\
-1 frequency switches:\
+2 frequency switches:\
 2018.09.26 3 changed to 6 \
+2019.02.19 6 changed to 5 \
 3 vacations:\
 2018.12.01 2018.12.15 \
 2018.12.20 2019.01.15 \

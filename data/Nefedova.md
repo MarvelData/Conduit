@@ -1,7 +1,8 @@
-Nefedova	Editor History 7 2018.09.13\
+Nefedova	Editor History 5 2018.09.13\
 0 rubric switches:\
-1 frequency switches:\
+2 frequency switches:\
 2018.09.25 3 changed to 7 \
+2019.02.19 7 changed to 5 \
 4 vacations:\
 2018.10.01 2018.11.05 \
 2018.11.15 2018.11.25 \
