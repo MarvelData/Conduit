@@ -221,6 +221,8 @@ size_t Member::GetPostsDatesAmount() const
 {
     if (!posts.empty())
         return posts.size();
+    if (postsAmount == 0)
+        return 0;
     return size_t(postsDatesAmount);
 }
 
