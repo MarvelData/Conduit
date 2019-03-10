@@ -9,7 +9,7 @@ Nguen.Scenes	Editor Scenes 5 2018.09.01\
 2018.10.11 2018.11.06 \
 2018.11.25 2018.12.25 \
 2019.01.15 2019.02.15 \
-Total posts amount: 14	Posts dates amount: 13\
+Total posts amount: 28	Posts dates amount: 27\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 - \
 2018.11.07 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59050 - https://vk.com/mu_marveluniverse?w=wall-17592208_59051 - \
 2018.11.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59643 - \
@@ -23,3 +23,17 @@ Total posts amount: 14	Posts dates amount: 13\
 2019.02.18 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62027 - \
 2019.02.19 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62108 - \
 2019.02.20 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62083 - \
+2019.02.21 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61986 - \
+2019.02.23 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61993 - \
+2019.02.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61995 - \
+2019.02.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62010 - \
+2019.02.27 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62011 - \
+2019.02.28 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61945 - \
+2019.03.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61947 - \
+2019.03.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61948 - \
+2019.03.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61985 - \
+2019.03.04 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61989 - \
+2019.03.05 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61991 - \
+2019.03.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61992 - \
+2019.03.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62012 - \
+2019.03.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62013 - \
