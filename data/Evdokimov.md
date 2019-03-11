@@ -1,4 +1,4 @@
-Evdokimov.Scenes	Editor Scenes 3 2018.10.12\
+Evdokimov	Editor Scenes 3 2018.10.12\
 0 rubric switches:\
 2 frequency switches:\
 2018.10.13 2 changed to 1 \
