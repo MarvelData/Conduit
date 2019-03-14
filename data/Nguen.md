@@ -9,7 +9,7 @@ Nguen	Editor Scenes 5 2018.09.01\
 2018.10.11 2018.11.06 \
 2018.11.25 2018.12.25 \
 2019.01.15 2019.02.15 \
-Total posts amount: 28	Posts dates amount: 27\
+Total posts amount: 29	Posts dates amount: 28\
 2018.09.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56792 - \
 2018.11.07 2 https://vk.com/mu_marveluniverse?w=wall-17592208_59050 - https://vk.com/mu_marveluniverse?w=wall-17592208_59051 - \
 2018.11.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59643 - \
@@ -37,3 +37,4 @@ Total posts amount: 28	Posts dates amount: 27\
 2019.03.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61992 - \
 2019.03.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62012 - \
 2019.03.08 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62013 - \
+2019.03.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62070 - \
