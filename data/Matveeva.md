@@ -6,7 +6,7 @@ Matveeva	Editor Stars 5 2018.08.29\
 3 vacations:\
 2018.12.01 2018.12.15 \
 2018.12.20 2019.01.15 \
-2019.01.20 2019.02.10 \
+2019.01.20 2019.02.15 \
 Total posts amount: 26	Posts dates amount: 20\
 2018.08.29 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56558 - https://vk.com/mu_marveluniverse?w=wall-17592208_56559 + \
 2018.08.30 2 https://vk.com/mu_marveluniverse?w=wall-17592208_56560 - https://vk.com/mu_marveluniverse?w=wall-17592208_56561 - \
