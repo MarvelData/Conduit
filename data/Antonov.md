@@ -2,7 +2,7 @@ Antonov	Editor Humour 2 2019.02.23\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 11	Posts dates amount: 11\
+Total posts amount: 12	Posts dates amount: 12\
 2019.02.24 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61602 - \
 2019.02.25 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61603 - \
 2019.03.01 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61694 - \
@@ -14,3 +14,4 @@ Total posts amount: 11	Posts dates amount: 11\
 2019.03.11 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62180 - \
 2019.03.12 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62182 - \
 2019.03.13 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62267 - \
+2019.03.15 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62478 - \

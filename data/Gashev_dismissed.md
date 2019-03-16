@@ -2,6 +2,9 @@ Gashev	Editor Humour 2 2019.02.19\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.03.16\
+Actual posts amount: 9	Anticipated posts amount: 12	 Lag: 3
+\
 Total posts amount: 9	Posts dates amount: 7\
 2019.02.22 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61529 ! \
 2019.02.23 2 https://vk.com/mu_marveluniverse?w=wall-17592208_61553 - https://vk.com/mu_marveluniverse?w=wall-17592208_61554 - \
