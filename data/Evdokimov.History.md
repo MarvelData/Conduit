@@ -4,7 +4,7 @@ Evdokimov.History	Editor History 7 2018.12.01\
 2 vacations:\
 2019.01.10 2019.02.01 \
 2019.03.15 unlimited \
-Total posts amount: 11	Posts dates amount: 11\
+Total posts amount: 12	Posts dates amount: 12\
 2018.12.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59835 - \
 2018.12.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59857 - \
 2018.12.06 1 https://vk.com/mu_marveluniverse?w=wall-17592208_59924 - \
@@ -16,3 +16,4 @@ Total posts amount: 11	Posts dates amount: 11\
 2019.02.16 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61264 - \
 2019.03.02 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61686 - \
 2019.03.03 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61708 - \
+2019.03.07 1 https://vk.com/mu_marveluniverse?w=wall-17592208_62247 - \
