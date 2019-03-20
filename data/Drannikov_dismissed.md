@@ -6,4 +6,4 @@ Finished on 2019.02.23\
 Actual posts amount: 1	Anticipated posts amount: 3	 Lag: 2
 \
 Total posts amount: 1	Posts dates amount: 1\
-2019.02.17 1 https://vk.com/mu_marveluniverse?w=wall-17592208_61354 - \
+2019.02.17 1 https://vk.com/mu_marvel?w=wall-17592208_61354 - \

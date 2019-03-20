@@ -6,4 +6,4 @@ Finished on 2018.10.04\
 Actual posts amount: 1	Anticipated posts amount: 17	 Lag: 16
 \
 Total posts amount: 1	Posts dates amount: 1\
-2018.08.30 1 https://vk.com/mu_marveluniverse?w=wall-17592208_56577 +	\
+2018.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_56577 +	\
