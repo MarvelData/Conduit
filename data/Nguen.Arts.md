@@ -1,4 +1,5 @@
 Nguen.Arts	Editor Arts 2 2018.08.30\
+68497051\
 0 rubric switches:\
 0 frequency switches:\
 1 vacations:\
