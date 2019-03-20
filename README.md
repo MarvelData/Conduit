@@ -2,7 +2,6 @@
 
 Plans:\
 \
-V3.04 - add people counter, change links format & reorganize communication system\
 V3.05 - allow getting anticipated & actual posts amounts and dismission on specified date\
 V3.06 - implement approved post deletion confirmation\
 V3.07 - implement vacation insertion check, make rubric & frequency switch more careful and on specified date\
