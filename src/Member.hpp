@@ -12,6 +12,7 @@ typedef std::pair<std::string, std::string> TwoStrings;
 
 class Member {
     std::string shortName;
+    std::string id;
     std::string role;
     std::string rubric;
     int frequency;
@@ -27,7 +28,7 @@ class Member {
 public:
     Member();
 
-    Member(std::string &&shortName, std::string &&role, std::string &&rubric, int frequency, std::string &&start, std::string &&path);
+    Member(std::string &&shortName, std::string &&id, std::string &&role, std::string &&rubric, int frequency, std::string &&start, std::string &&path);
 
     bool AddPost(const std::string &date, const std::string &link = "", const std::string &status = "");
 

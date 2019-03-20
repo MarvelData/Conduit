@@ -1,7 +1,5 @@
 \.idea/
-
 cmake-build-debug/
-
 build/ConEmuPack\.180626/
-
 build/Terminal\.lnk
+build/VkManagement/main\.py

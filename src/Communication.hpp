@@ -15,6 +15,8 @@ class Communication
 
     void changeMemberDataDialog();
 
+    void managePostsStatusesDialog();
+
 public:
     explicit Communication(Database *database);
 

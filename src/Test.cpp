@@ -34,7 +34,7 @@ void Database::AddMember(string shortName, string role, string rubric, int frequ
     if (data.count(shortName))
         cout << endl << "This short name is already used :(" << endl;
     else {
-        Member member(move(shortName), move(role), move(rubric), frequency, move(startDate), GetPath());
+        Member member(move(shortName), "", move(role), move(rubric), frequency, move(startDate), GetPath());
         member.ForceDeepInfoUpdate();
         data[member.GetShortName()] = move(member);
     }

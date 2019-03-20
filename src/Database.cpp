@@ -64,6 +64,7 @@ Database::Database(string &&fileName) : fileName(fileName), communicator(nullptr
     int membersAmount;
     file >> buf >> buf;
     file >> membersAmount;
+    file >> buf >> buf;
     for (int i = 0; i < membersAmount; i++) {
         string shortName, role, rubric, startDate;
         int frequency, postsAmount, postsDatesAmount;
@@ -71,7 +72,7 @@ Database::Database(string &&fileName) : fileName(fileName), communicator(nullptr
         file >> shortName >> role >> rubric;
         file >> frequency;
         file >> startDate;
-        Member member(move(shortName), move(role), move(rubric), frequency, move(startDate), GetPath());
+        Member member(move(shortName), "", move(role), move(rubric), frequency, move(startDate), GetPath());
         file >> buf >> buf >> buf;
         file >> postsAmount;
         file >> buf >> buf >> buf;
@@ -100,7 +101,11 @@ void Database::WriteDatabaseToFiles(bool dismission, const string &shortNameDism
         memberMetaPair.second.GetPostsAmount();
     ofstream file(fileName);
 
-    file << "Members amount: " << data.size() << endl << endl << endl;
+    int peopleCounter = 0;
+    for (auto &memberMetaPair: data)
+        if (memberMetaPair.first.find('.') == -1)
+            peopleCounter++;
+    file << "Members amount: " << data.size() << ' ' << "People: " << peopleCounter << endl << endl << endl;
     for (auto &memberMetaPair : data) {
         auto shortName = memberMetaPair.first;
         auto &member = memberMetaPair.second;
@@ -186,6 +191,9 @@ void Database::AddMember()
     string shortName = communicator->CollectNewMemberName();
     if (shortName.empty())
         return;
+    cout << endl << "Input " << shortName << "'s id: " << endl;
+    string id;
+    cin >> id;
     cout << endl << "Input " << shortName << "'s role: " << endl;
     auto roles = getRoles();
     communicator->PrintRoles(roles);
@@ -198,7 +206,7 @@ void Database::AddMember()
     int frequency;
     cin >> frequency;
     string startDate = Date::CollectDate();
-    Member member(move(shortName), move(role), move(rubric), frequency, move(startDate), GetPath());
+    Member member(move(shortName), move(id), move(role), move(rubric), frequency, move(startDate), GetPath());
     member.ForceDeepInfoUpdate();
     data[member.GetShortName()] = move(member);
     cout << endl << "New member is successfully added!" << endl;

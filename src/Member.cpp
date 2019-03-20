@@ -9,8 +9,8 @@ using namespace std;
 
 Member::Member() : postsAmount(0), frequency(-1), start("0000.01.01"), changedDeepInfo(false), loadedDeepInfo(false) {}
 
-Member::Member(string &&shortName, string &&role, string &&rubric, int frequency, string &&start, string &&path) :
-shortName(shortName), role(role), rubric(rubric), frequency(frequency), start(start),
+Member::Member(string &&shortName, string &&id, string &&role, string &&rubric, int frequency, string &&start, string &&path) :
+shortName(shortName), id(id), role(role), rubric(rubric), frequency(frequency), start(start),
 postsAmount(0), postsDatesAmount(0), changedDeepInfo(false), loadedDeepInfo(false), path(path)
 {
     if (shortName.find(' ') != -1 || role.find(' ') != -1 || rubric.find(' ') != -1) {
@@ -284,6 +284,9 @@ void Member::ReadSpecificInfo(const string &path)
     int rubricSwitchesAmount, frequencySwitchesAmount, vacationsAmount, postsDatesAmount;
 
     file >> buf >> buf >> buf >> buf >> buf;
+    file >> id;
+    id = id.substr(0, id.size() - 1);
+
     file >> rubricSwitchesAmount;
     file >> buf >> buf;
     for (int i = 0; i < rubricSwitchesAmount; i++) {
@@ -343,6 +346,8 @@ void Member::ReadSpecificInfo(const string &path)
 
 void Member::PrintSpecificInfo(ostream &os, bool dismission) const
 {
+    os << id << "\\" << endl;
+
     os << rubricSwitches.size() << " rubric switches:" << "\\" << endl;
     for (auto &rubricSwitch : rubricSwitches)
         os << rubricSwitch.first << ' ' << rubricSwitch.second << " \\" << endl;

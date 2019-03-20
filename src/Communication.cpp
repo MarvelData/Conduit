@@ -47,6 +47,39 @@ void Communication::changeMemberDataDialog()
     }
 }
 
+void Communication::managePostsStatusesDialog()
+{
+    int i = 0;
+    string divider = ". ";
+    cout << endl << "What would u like to do?" << endl;
+    cout << i++ << divider << "I would like to approve post" << endl;
+    cout << i++ << divider << "I would like to reject post" << endl;
+    cout << i++ << divider << "I would like to see approved posts" << endl;
+    cout << i++ << divider << "I would like to see rejected posts" << endl;
+    cout << endl << "Input appropriate number or -1 to return =)" << endl;
+
+    cin >> i;
+    switch (i) {
+        case -1:
+            break;
+        case 0:
+            database->ApprovePost();
+            break;
+        case 1:
+            database->RejectPost();
+            break;
+        case 2:
+            database->GetPostsWithStatus('+');
+            break;
+        case 3:
+            database->GetPostsWithStatus('!');
+            break;
+        default:
+            cout << endl << "You made some mistake :(" << endl;
+            break;
+    }
+}
+
 Communication::Communication(Database *database) : database(database) {}
 
 void Communication::FileProblems()
@@ -68,12 +101,9 @@ bool Communication::TalkToUser()
     cout << i++ << divider << "I would like to delete a post from a member" << endl;
     cout << i++ << divider << "I would like to delete a member" << endl;
     cout << i++ << divider << "I would like to change member data" << endl;
-    cout << i++ << divider << "I would like to approve post" << endl;
-    cout << i++ << divider << "I would like to reject post" << endl;
-    divider = ". ";
-    cout << i++ << divider << "I would like to see approved posts" << endl;
-    cout << i++ << divider << "I would like to see rejected posts" << endl;
+    cout << i++ << divider << "I would like to manage posts statuses" << endl;
     cout << i++ << divider << "I would like to update deep data for all members" << endl;
+    divider = ". ";
     cout << i++ << divider << "I would like to check duplicates" << endl;
     cout << i++ << divider << "I would like to find post (posts)" << endl;
     cout << endl << "Input appropriate number or -1 to exit =)" << endl;
@@ -107,24 +137,15 @@ bool Communication::TalkToUser()
             changeMemberDataDialog();
             break;
         case 8:
-            database->ApprovePost();
+            managePostsStatusesDialog();
             break;
         case 9:
-            database->RejectPost();
-            break;
-        case 10:
-            database->GetPostsWithStatus('+');
-            break;
-        case 11:
-            database->GetPostsWithStatus('!');
-            break;
-        case 12:
             database->UpdateDeepInfo();
             break;
-        case 13:
+        case 10:
             database->CheckDuplicates();
             break;
-        case 14:
+        case 11:
             database->FindPosts();
             break;
         default:
@@ -235,8 +256,11 @@ string Communication::ProceedLink(const string &link)
     string finalLink = link;
     if (link.find("http") == -1)
         finalLink = "https://" + link;
-    if (finalLink.find("mu_marveluniverse") == -1)
-        finalLink = finalLink.substr(0, 15) + "mu_marveluniverse?w=" + finalLink.substr(15);
+    if (finalLink.find("mu_marvel") == -1)
+        if (link.size() > 25)
+            finalLink = finalLink.substr(0, 15) + "mu_marvel?w=" + finalLink.substr(15);
+        else
+            cout << endl << "Warning: your link seems to be incorrect!" << endl;
     return finalLink;
 }
 
