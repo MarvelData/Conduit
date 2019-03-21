@@ -1,7 +1,7 @@
-Grigoreva	Editor Arts 5 2018.08.27\
+Grigoreva	Editor Art 5 2018.08.27\
 210254664\
 1 rubric switches:\
-2019.03.02 FilmArt changed to Arts \
+2019.03.02 FilmArt changed to Art \
 1 frequency switches:\
 2018.09.14 2 changed to 5 \
 1 vacations:\

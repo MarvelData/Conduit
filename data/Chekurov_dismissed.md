@@ -1,6 +1,6 @@
 Chekurov	Editor OST 4 2018.08.30\
 2 rubric switches:\
-2018.09.08 Arts changed to History \
+2018.09.08 Art changed to History \
 2018.09.15 History changed to OST \
 1 frequency switches:\
 2018.09.15 2 changed to 4 \
