@@ -16,6 +16,8 @@ V4.0 - russian language support\
 \
 Other projects:\
 \
-Google sheets api + VK api integration\
+VK api integration is deployed\
+\
+Google sheets api is waiting for its turn\
 \
 Community application
