@@ -1,4 +1,4 @@
-Fog	Editor Stars 1 2019.03.29\
+DanielFog	Editor Stars 1 2019.03.29\
 361517286\
 0 rubric switches:\
 0 frequency switches:\
