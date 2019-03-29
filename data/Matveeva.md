@@ -1,9 +1,11 @@
-Matveeva	Editor Stars 5 2018.08.29\
+Matveeva	Editor News 1 2018.08.29\
 395285295\
-0 rubric switches:\
-2 frequency switches:\
+1 rubric switches:\
+2019.03.29 Stars changed to News \
+3 frequency switches:\
 2018.09.26 3 changed to 6 \
 2019.02.19 6 changed to 5 \
+2019.03.29 5 changed to 1 \
 3 vacations:\
 2018.12.01 2018.12.15 \
 2018.12.20 2019.01.15 \
