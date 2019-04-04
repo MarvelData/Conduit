@@ -236,7 +236,10 @@ class Tools:
         return datetime.fromtimestamp(date)
 
     def post_id_to_link(self, id):
-        return 'https://vk.com/wall-17592208_' + id
+        return 'https://vk.com/wall-17592208_' + str(id)
+
+    def post_id_to_cached_link(self, id):
+        return 'https://vk.com/mu_marvel?w=wall-17592208_' + str(id)
 
     def get_hashtag(self, post):
         hashtag = post['text'].split('\n')[0]
@@ -269,6 +272,7 @@ class Tools:
 
     def parse_member_data(self, data):
         member = {}
+        posts = []
         for line in data:
             if 'Short name:' in line:
                 member['name'] = self.clear_string(line.split(':')[1])
@@ -276,6 +280,12 @@ class Tools:
                 member['rubric'] = self.clear_string(line.split(':')[1])
             if len(line) > 5 and not ' ' in line:
                 member['id'] = self.clear_string(line.split('\\')[0])
+            if 'http' in line:
+                columns = line.split(' ')
+                amount = int(columns[1])
+                for i in range(0, amount):
+                    posts.append(self.clear_string(columns[2 + i * 2]))
+        member['posts'] = posts
         return member
 
     def get_members_mapping(self, regBook):
@@ -288,7 +298,7 @@ class Tools:
             id_to_members[member['id']].append(member['name'])
         return key_to_member, id_to_members
 
-    def get_member_posts(self, data):
+    def get_member_posts_dates(self, data):
         dates, days, amounts = [], [], []
         date_from = self.my_date_to_universal('2019.01.01')
         for line in data:
@@ -330,7 +340,7 @@ class Tools:
             if 'created_by' in post and str(post['created_by']) in id_to_members:
                 id = str(post['created_by'])
                 key = id + self.get_hashtag(post)
-                link = self.post_id_to_link(str(post['id']))
+                link = self.post_id_to_link(post['id'])
                 found, result = regBook.find(link)
                 if found:
                     counter += 1
@@ -384,13 +394,15 @@ class Tools:
                 date = self.vk_date_to_universal(post['date'])
                 if date < date_from:
                     break
-                if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post) == rubric:
+                if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post) == rubric\
+                or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in member['posts']:
                     print(date)
                     for stat_type in ['comments', 'likes', 'reposts', 'views']:
                         stats[stat_type].append(post[stat_type]['count'])
                     stats['efficiency'].append(post['likes']['count'] / post['views']['count'])
                     counter += 1
-        print('\nThis member has', counter, 'posts since', date_from.date())
+        print()
+        print(member['name'], 'has', counter, 'posts since', date_from.date())
         print('His average results are:')
         for stat_type, values in stats.items():
             sum = 0
@@ -405,7 +417,7 @@ class Tools:
             print('\nWarning: Silent RegBook did not exit correctly')
         if not member_data:
             return
-        dates, days, amounts = self.get_member_posts(member_data)
+        dates, days, amounts = self.get_member_posts_dates(member_data)
         pyplot.xlabel('Dates')
         pyplot.ylabel('Posts')
         pyplot.grid(True)
@@ -425,7 +437,7 @@ class Tools:
         all_days, all_dates, all_amounts = [], [], []
         for i in range(member_amount):
             member_data = regBook.get_member_data(i)
-            dates, days, amounts = self.get_member_posts(member_data)
+            dates, days, amounts = self.get_member_posts_dates(member_data)
             member = self.parse_member_data(member_data)
             all_days += days
             all_dates += dates
