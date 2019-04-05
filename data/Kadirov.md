@@ -1,6 +1,7 @@
-Kadirov	Editor Art 1 2019.04.02\
+Kadirov	Editor Gallery 1 2019.04.02\
 64471408\
-0 rubric switches:\
+1 rubric switches:\
+2019.04.06 Art changed to Gallery \
 0 frequency switches:\
 0 vacations:\
 Total posts amount: 5	Posts dates amount: 3\
