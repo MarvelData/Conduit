@@ -96,14 +96,14 @@ class RegBook:
                 return True
         return False
 
-    def add_extra_tools(self, lines):
+    def add_extra_tools(self, lines, tools):
         index = 0
         for i, line in enumerate(lines):
             if str(index) + '. ' in line:
                 index += 1
             elif index > 0:
                 indices = []
-                for j, tool_name in enumerate(self.tools_names):
+                for j, tool_name in enumerate(tools):
                     lines.insert(i + j, str(index + j) + '. ' + tool_name + '\n')
                     indices.append(str(index + j))
                 return indices
@@ -122,7 +122,7 @@ class RegBook:
                         self.remove_mistake(lines)
                         extra_call = False
                     if self.is_main_menu(lines):
-                        extra_tools = self.add_extra_tools(lines)
+                        extra_tools = self.add_extra_tools(lines, self.tools_names)
                     for line in lines:
                         sys.stdout.write(line)
                     if self.instance.poll() is not None:
@@ -309,12 +309,24 @@ class Tools:
                 amounts.append(int(self.clear_string(columns[1])))
         return dates, days, amounts
 
-    def choose_member(self, regBook, info=True):
+    def choose_member(self, regBook, info=True, stats=False):
         members = regBook.get_members_list(info)
+        extra_tools = None
+        if stats:
+            extra_tools = regBook.add_extra_tools(members, ['I would like to perform custom request'])
         for line in members:
             sys.stdout.write(line)
         while True:
             user_input = input()
+            if extra_tools is not None and user_input in extra_tools:
+                custom_data = []
+                print('\nInput short name\n')
+                custom_data.append('Short name: ' + input())
+                print('\nInput rubric\n')
+                custom_data.append('Rubric: ' + input())
+                print('\nInput id\n')
+                custom_data.append(input())
+                return custom_data, regBook
             if user_input == '-1':
                 return None, regBook
             member_data = regBook.get_member_data_safe(user_input)
@@ -373,7 +385,7 @@ class Tools:
         if not self.init_vk():
             return
         regBook = RegBook()
-        member_data, regBook = self.choose_member(regBook, info=True)
+        member_data, regBook = self.choose_member(regBook, info=True, stats=True)
         if regBook.ask('-1') != 0:
             print('\nWarning: Silent RegBook did not exit correctly')
         if not member_data:
@@ -403,7 +415,7 @@ class Tools:
                     counter += 1
         print()
         print(member['name'], 'has', counter, 'posts since', date_from.date())
-        print('His average results are:')
+        print(member['name'] + "'s", 'average results are:')
         for stat_type, values in stats.items():
             sum = 0
             for value in values:
