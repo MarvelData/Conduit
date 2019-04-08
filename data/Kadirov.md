@@ -3,7 +3,8 @@ Kadirov	Editor Gallery 1 2019.04.02\
 1 rubric switches:\
 2019.04.06 Art changed to Gallery \
 0 frequency switches:\
-0 vacations:\
+1 vacations:\
+2019.04.07 2019.04.08 \
 Total posts amount: 6	Posts dates amount: 4\
 2019.04.03 1 https://vk.com/mu_marvel?w=wall-17592208_63365 - \
 2019.04.04 2 https://vk.com/mu_marvel?w=wall-17592208_63418 - https://vk.com/mu_marvel?w=wall-17592208_63406 - \
