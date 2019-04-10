@@ -3,6 +3,9 @@ Antonov	Editor Humour 2 2019.02.23\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.04.10\
+Actual posts amount: 27	Anticipated posts amount: 23
+\
 Total posts amount: 27	Posts dates amount: 21\
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61602 - \
 2019.02.25 1 https://vk.com/mu_marvel?w=wall-17592208_61603 - \
