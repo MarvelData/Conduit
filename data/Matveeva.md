@@ -11,7 +11,7 @@ Matveeva	Editor News 1 2018.08.29\
 2018.12.20 2019.01.15 \
 2019.01.20 2019.02.15 \
 2019.03.15 2019.03.25 \
-Total posts amount: 31	Posts dates amount: 24\
+Total posts amount: 32	Posts dates amount: 25\
 2018.08.29 2 https://vk.com/mu_marvel?w=wall-17592208_56558 - https://vk.com/mu_marvel?w=wall-17592208_56559 + \
 2018.08.30 2 https://vk.com/mu_marvel?w=wall-17592208_56560 - https://vk.com/mu_marvel?w=wall-17592208_56561 - \
 2018.09.26 2 https://vk.com/mu_marvel?w=wall-17592208_57384 - https://vk.com/mu_marvel?w=wall-17592208_57392 - \
@@ -36,3 +36,4 @@ Total posts amount: 31	Posts dates amount: 24\
 2019.04.04 1 https://vk.com/mu_marvel?w=wall-17592208_63416 - \
 2019.04.05 1 https://vk.com/mu_marvel?w=wall-17592208_63444 - \
 2019.04.11 1 https://vk.com/mu_marvel?w=wall-17592208_63725 - \
+2019.04.12 1 https://vk.com/mu_marvel?w=wall-17592208_63800 - \
