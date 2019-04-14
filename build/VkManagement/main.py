@@ -118,6 +118,10 @@ class RegBook:
                 try:
                     line = self.queue.get(timeout=0.03)
                 except Empty:
+                    if self.instance.poll() is not None:
+                        exit()
+                    if len(lines) == 0:
+                        continue
                     if extra_call:
                         self.remove_mistake(lines)
                         extra_call = False
@@ -125,8 +129,6 @@ class RegBook:
                         extra_tools = self.add_extra_tools(lines, self.tools_names)
                     for line in lines:
                         sys.stdout.write(line)
-                    if self.instance.poll() is not None:
-                        exit()
                     break
                 else:
                     lines.append(line)
