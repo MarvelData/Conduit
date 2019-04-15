@@ -5,7 +5,7 @@ Kadirov	Editor Gallery 1 2019.04.02\
 0 frequency switches:\
 1 vacations:\
 2019.04.07 2019.04.08 \
-Total posts amount: 10	Posts dates amount: 7\
+Total posts amount: 11	Posts dates amount: 8\
 2019.04.03 1 https://vk.com/mu_marvel?w=wall-17592208_63365 - \
 2019.04.04 2 https://vk.com/mu_marvel?w=wall-17592208_63418 - https://vk.com/mu_marvel?w=wall-17592208_63406 - \
 2019.04.06 2 https://vk.com/mu_marvel?w=wall-17592208_63434 - https://vk.com/mu_marvel?w=wall-17592208_63433 - \
@@ -13,3 +13,4 @@ Total posts amount: 10	Posts dates amount: 7\
 2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63644 - \
 2019.04.11 2 https://vk.com/mu_marvel?w=wall-17592208_63750 - https://vk.com/mu_marvel?w=wall-17592208_63745 - \
 2019.04.13 1 https://vk.com/mu_marvel?w=wall-17592208_63809 - \
+2019.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_63875 - \
