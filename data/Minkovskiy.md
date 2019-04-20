@@ -4,7 +4,7 @@ Minkovskiy	Editor Scenes 2 2019.02.23\
 0 frequency switches:\
 1 vacations:\
 2019.03.01 2019.03.15 \
-Total posts amount: 20	Posts dates amount: 13\
+Total posts amount: 22	Posts dates amount: 14\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 - \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 - \
 2019.02.28 1 https://vk.com/mu_marvel?w=wall-17592208_61676 - \
@@ -18,3 +18,4 @@ Total posts amount: 20	Posts dates amount: 13\
 2019.04.06 2 https://vk.com/mu_marvel?w=wall-17592208_63539 - https://vk.com/mu_marvel?w=wall-17592208_63540 - \
 2019.04.07 3 https://vk.com/mu_marvel?w=wall-17592208_63537 - https://vk.com/mu_marvel?w=wall-17592208_63538 - https://vk.com/mu_marvel?w=wall-17592208_63542 - \
 2019.04.10 2 https://vk.com/mu_marvel?w=wall-17592208_63678 - https://vk.com/mu_marvel?w=wall-17592208_63679 - \
+2019.04.20 2 https://vk.com/mu_marvel?w=wall-17592208_64030 - https://vk.com/mu_marvel?w=wall-17592208_64031 - \
