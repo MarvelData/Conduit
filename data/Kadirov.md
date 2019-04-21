@@ -7,7 +7,7 @@ Kadirov	Editor Gallery 1 2019.04.02\
 2019.04.06 2019.04.07 \
 2019.04.11 2019.04.12 \
 2019.04.19 2019.04.20 \
-Total posts amount: 15	Posts dates amount: 11\
+Total posts amount: 17	Posts dates amount: 12\
 2019.04.03 1 https://vk.com/mu_marvel?w=wall-17592208_63365 - \
 2019.04.04 2 https://vk.com/mu_marvel?w=wall-17592208_63418 - https://vk.com/mu_marvel?w=wall-17592208_63406 - \
 2019.04.06 2 https://vk.com/mu_marvel?w=wall-17592208_63434 - https://vk.com/mu_marvel?w=wall-17592208_63433 - \
@@ -19,3 +19,4 @@ Total posts amount: 15	Posts dates amount: 11\
 2019.04.17 2 https://vk.com/mu_marvel?w=wall-17592208_63966 - https://vk.com/mu_marvel?w=wall-17592208_63983 - \
 2019.04.18 1 https://vk.com/mu_marvel?w=wall-17592208_64002 - \
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64018 - \
+2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64074 - https://vk.com/mu_marvel?w=wall-17592208_64075 - \
