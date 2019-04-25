@@ -11,6 +11,9 @@ Matveeva	Editor News 1 2018.08.29\
 2018.12.20 2019.01.15 \
 2019.01.20 2019.02.15 \
 2019.03.15 2019.03.25 \
+Finished on 2019.04.25\
+Actual posts amount: 34	Anticipated posts amount: 54	 Lag: 20
+\
 Total posts amount: 34	Posts dates amount: 27\
 2018.08.29 2 https://vk.com/mu_marvel?w=wall-17592208_56558 - https://vk.com/mu_marvel?w=wall-17592208_56559 + \
 2018.08.30 2 https://vk.com/mu_marvel?w=wall-17592208_56560 - https://vk.com/mu_marvel?w=wall-17592208_56561 - \

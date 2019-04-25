@@ -2,7 +2,8 @@ Hoang.Video	Editor Video 5 2019.03.14\
 97353724\
 0 rubric switches:\
 0 frequency switches:\
-0 vacations:\
+1 vacations:\
+2019.04.17 2019.04.24 \
 Total posts amount: 3	Posts dates amount: 3\
 2019.03.14 1 https://vk.com/mu_marvel?w=wall-17592208_62269 - \
 2019.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_62547 - \
