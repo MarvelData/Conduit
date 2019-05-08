@@ -62,6 +62,8 @@ public:
 
     void AddVacation(const std::string &startDate, const std::string &endDate);
 
+    void EditVacation(const std::string &startDate, const std::string &endDate);
+
     void ForceDeepInfoUpdate();
 
     std::string GetShortName() const;

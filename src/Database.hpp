@@ -77,6 +77,8 @@ public:
 
     void AddVacation();
 
+    void EditVacations();
+
     bool TalkToUser();
 
     std::string GetFileName() const;

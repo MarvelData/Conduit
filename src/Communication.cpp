@@ -20,6 +20,7 @@ void Communication::changeMemberDataDialog()
     cout << i++ << divider << "I would like to change member rubric" << endl;
     cout << i++ << divider << "I would like to change member frequency" << endl;
     cout << i++ << divider << "I would like to add vacation for member" << endl;
+    cout << i++ << divider << "I would like to edit vacations for member" << endl;
     cout << endl << "Input appropriate number or -1 to return =)" << endl;
 
     cin >> i;
@@ -40,6 +41,9 @@ void Communication::changeMemberDataDialog()
             break;
         case 4:
             database->AddVacation();
+            break;
+        case 5:
+            database->EditVacations();
             break;
         default:
             cout << endl << "You made some mistake :(" << endl;
@@ -256,11 +260,12 @@ string Communication::ProceedLink(const string &link)
     string finalLink = link;
     if (link.find("http") == -1)
         finalLink = "https://" + link;
-    if (finalLink.find("mu_marvel") == -1)
+    if (finalLink.find("mu_marvel") == -1) {
         if (link.size() > 25)
             finalLink = finalLink.substr(0, 15) + "mu_marvel?w=" + finalLink.substr(15);
         else
             cout << endl << "Warning: your link seems to be incorrect!" << endl;
+    }
     return finalLink;
 }
 

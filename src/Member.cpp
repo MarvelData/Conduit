@@ -193,7 +193,23 @@ void Member::ChangeFrequency(int newFrequency)
     ForceDeepInfoUpdate();
 }
 
-void Member::AddVacation(const string &startDate, const string &endDate) { vacations[startDate] = endDate; }
+void Member::AddVacation(const string &startDate, const string &endDate)
+{
+    if (vacations.count(startDate)) {
+        cout << endl << "This vacation already exists, you can only edit it!" << endl;
+        return;
+    }
+    vacations[startDate] = endDate;
+}
+
+void Member::EditVacation(const string &startDate, const string &endDate)
+{
+    if (!vacations.count(startDate)) {
+        cout << endl << "This vacation doesn't exist, but you can create it!" << endl;
+        return;
+    }
+    vacations[startDate] = endDate;
+}
 
 void Member::ForceDeepInfoUpdate()
 {
@@ -243,7 +259,7 @@ bool Member::OnVacation()
     ReadSpecificInfo(path);
     if (vacations.empty())
         return false;
-    else if (vacations.rbegin()->second >= Date::Now())
+    else if (vacations.rbegin()->first <= Date::Now() && vacations.rbegin()->second >= Date::Now())
         return true;
     return false;
 }

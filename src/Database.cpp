@@ -311,11 +311,28 @@ void Database::ApprovePost()
     auto posts = GetPostsWithStatus('-');
 
     cout << "Input number of the post u are approving or -1 to avoid approving: " << endl;
-    size_t counter;
-    cin >> counter;
+    string input;
+    cin >> input;
+    if (input == "-1")
+	    return;
 
-    if (counter == -1)
-        return;
+    bool number = true;
+    for (auto c : input)
+    	if (!isdigit(c)) {
+		    number = false;
+		    break;
+	    }
+
+    if (!number) {
+	    for (auto &post : posts)
+	    	if (post.Link == input) {
+                data.at(post.ShortName).SetPostStatus(post.Date, post.Index, '+');
+                WriteDatabaseToFiles();
+            }
+	    return;
+    }
+
+	auto counter = size_t(stoi(input));
 
     data.at(posts.at(counter).ShortName).SetPostStatus(posts.at(counter).Date, posts.at(counter).Index, '+');
 
@@ -327,11 +344,28 @@ void Database::RejectPost()
     auto posts = GetPostsWithStatus('-');
 
     cout << "Input number of the post u are rejecting or -1 to avoid rejecting: " << endl;
-    size_t counter;
-    cin >> counter;
-
-    if (counter == -1)
+    string input;
+    cin >> input;
+    if (input == "-1")
         return;
+
+    bool number = true;
+    for (auto c : input)
+        if (!isdigit(c)) {
+            number = false;
+            break;
+        }
+
+    if (!number) {
+        for (auto &post : posts)
+            if (post.Link == input) {
+                data.at(post.ShortName).SetPostStatus(post.Date, post.Index, '!');
+                WriteDatabaseToFiles();
+            }
+        return;
+    }
+
+    auto counter = size_t(stoi(input));
 
     data.at(posts.at(counter).ShortName).SetPostStatus(posts.at(counter).Date, posts.at(counter).Index, '!');
 
@@ -485,6 +519,25 @@ void Database::AddVacation()
     cout << endl << "Input vacation end date or \"unlimited\": " << endl;
     end = Date::CollectDate(true);
     member.AddVacation(start, end);
+    member.ForceDeepInfoUpdate();
+    WriteDatabaseToFiles();
+}
+
+void Database::EditVacations()
+{
+    string shortName = CollectMemberName();
+    if (shortName.empty())
+        return;
+    auto &member = data.at(shortName);
+    member.ReadSpecificInfo(GetPath());
+    member.PrintSpecificInfo(cout);
+    string start, end;
+    cout << endl << "NB: Input without spaces!" << endl;
+    cout << endl << "Input vacation you would like to edit start date: " << endl;
+    start = Date::CollectDate();
+    cout << endl << "Input new vacation end date or \"unlimited\": " << endl;
+    end = Date::CollectDate(true);
+    member.EditVacation(start, end);
     member.ForceDeepInfoUpdate();
     WriteDatabaseToFiles();
 }
