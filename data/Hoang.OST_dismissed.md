@@ -4,6 +4,9 @@ Hoang.OST	Editor OST 5 2019.03.12\
 0 frequency switches:\
 1 vacations:\
 2019.04.17 2019.04.24 \
+Finished on 2019.05.10\
+Actual posts amount: 7	Anticipated posts amount: 10	 Lag: 3
+\
 Total posts amount: 7	Posts dates amount: 7\
 2019.03.12 1 https://vk.com/mu_marvel?w=wall-17592208_62226 - \
 2019.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_62541 - \
