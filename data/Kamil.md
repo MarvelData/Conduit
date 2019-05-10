@@ -1,6 +1,7 @@
-Kamil	Editor Facts 2 2019.04.20\
+Kamil	Editor Gallery 2 2019.04.20\
 398504693\
-0 rubric switches:\
+1 rubric switches:\
+2019.05.10 Facts changed to Gallery \
 0 frequency switches:\
 0 vacations:\
 Total posts amount: 12	Posts dates amount: 6\
