@@ -31,5 +31,5 @@ Total posts amount: 32	Posts dates amount: 22\
 2019.05.02 3 https://vk.com/mu_marvel?w=wall-17592208_64300 - https://vk.com/mu_marvel?w=wall-17592208_64301 - https://vk.com/mu_marvel?w=wall-17592208_64303 - \
 2019.05.05 2 https://vk.com/mu_marvel?w=wall-17592208_64390 - https://vk.com/mu_marvel?w=wall-17592208_64401 - \
 2019.05.08 2 https://vk.com/mu_marvel?w=wall-17592208_64516 - https://vk.com/mu_marvel?w=wall-17592208_64517 - \
-2019.05.09 1 https://vk.com/mu_marvel?w=wall-17592208_64757 - \
+2019.05.09 1 https://vk.com/mu_marvel?w=wall-17592208_64757 ! \
 2019.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_64756 - \
