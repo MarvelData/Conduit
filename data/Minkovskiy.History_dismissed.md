@@ -3,6 +3,9 @@ Minkovskiy.History	Editor History 7 2019.02.28\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.05.10\
+Actual posts amount: 11	Anticipated posts amount: 10
+\
 Total posts amount: 11	Posts dates amount: 11\
 2019.02.28 1 https://vk.com/mu_marvel?w=wall-17592208_61587 - \
 2019.03.01 1 https://vk.com/mu_marvel?w=wall-17592208_62009 - \
