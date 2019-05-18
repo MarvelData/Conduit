@@ -4,7 +4,7 @@ Evdokimov.Fragments	Editor Fragments 7 2018.10.22\
 0 frequency switches:\
 1 vacations:\
 2019.01.10 2019.02.01 \
-Total posts amount: 29	Posts dates amount: 29\
+Total posts amount: 30	Posts dates amount: 30\
 2018.10.23 1 https://vk.com/mu_marvel?w=wall-17592208_58331 - \
 2018.10.30 1 https://vk.com/mu_marvel?w=wall-17592208_58711 - \
 2018.11.01 1 https://vk.com/mu_marvel?w=wall-17592208_58748 - \
@@ -34,3 +34,4 @@ Total posts amount: 29	Posts dates amount: 29\
 2019.04.17 1 https://vk.com/mu_marvel?w=wall-17592208_63976 - \
 2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64163 - \
 2019.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_64780 - \
+2019.05.19 1 https://vk.com/mu_marvel?w=wall-17592208_65260 - \
