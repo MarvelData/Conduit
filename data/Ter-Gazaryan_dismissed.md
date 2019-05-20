@@ -4,6 +4,9 @@ Ter-Gazaryan	Editor Humour 2 2019.03.15\
 0 frequency switches:\
 1 vacations:\
 2019.04.14 2019.04.21 \
+Finished on 2019.05.20\
+Actual posts amount: 19	Anticipated posts amount: 29	 Lag: 10
+\
 Total posts amount: 19	Posts dates amount: 12\
 2019.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_62488 - https://vk.com/mu_marvel?w=wall-17592208_62490 - \
 2019.03.16 3 https://vk.com/mu_marvel?w=wall-17592208_62491 - https://vk.com/mu_marvel?w=wall-17592208_62492 - https://vk.com/mu_marvel?w=wall-17592208_62516 - \
