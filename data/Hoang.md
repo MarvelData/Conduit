@@ -4,7 +4,7 @@ Hoang	Editor FilmArt 3 2019.02.18\
 1 frequency switches:\
 2019.03.04 2 changed to 3 \
 0 vacations:\
-Total posts amount: 40	Posts dates amount: 36\
+Total posts amount: 45	Posts dates amount: 38\
 2019.02.18 1 https://vk.com/mu_marvel?w=wall-17592208_61389 - \
 2019.02.20 1 https://vk.com/mu_marvel?w=wall-17592208_61434 - \
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61540 - \
@@ -41,3 +41,5 @@ Total posts amount: 40	Posts dates amount: 36\
 2019.05.11 1 https://vk.com/mu_marvel?w=wall-17592208_64851 - \
 2019.05.16 1 https://vk.com/mu_marvel?w=wall-17592208_65124 - \
 2019.05.19 3 https://vk.com/mu_marvel?w=wall-17592208_65308 - https://vk.com/mu_marvel?w=wall-17592208_65310 - https://vk.com/mu_marvel?w=wall-17592208_65311 - \
+2019.05.20 1 https://vk.com/mu_marvel?w=wall-17592208_65601 - \
+2019.05.26 4 https://vk.com/mu_marvel?w=wall-17592208_65595 - https://vk.com/mu_marvel?w=wall-17592208_65596 - https://vk.com/mu_marvel?w=wall-17592208_65597 - https://vk.com/mu_marvel?w=wall-17592208_65599 - \
