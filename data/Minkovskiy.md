@@ -2,8 +2,9 @@ Minkovskiy	Editor Scenes 2 2019.02.23\
 289674460\
 0 rubric switches:\
 0 frequency switches:\
-1 vacations:\
+2 vacations:\
 2019.03.01 2019.03.15 \
+2019.05.20 2019.05.27 \
 Total posts amount: 39	Posts dates amount: 25\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 - \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 - \
