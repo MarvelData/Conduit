@@ -3,7 +3,7 @@ Evdokimov.News	Editor News 3 2019.03.16\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 55	Posts dates amount: 42\
+Total posts amount: 61	Posts dates amount: 48\
 2019.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_62434 - \
 2019.03.17 1 https://vk.com/mu_marvel?w=wall-17592208_62574 - \
 2019.03.25 1 https://vk.com/mu_marvel?w=wall-17592208_62879 - \
@@ -46,3 +46,9 @@ Total posts amount: 55	Posts dates amount: 42\
 2019.06.01 1 https://vk.com/mu_marvel?w=wall-17592208_65940 - \
 2019.06.04 1 https://vk.com/mu_marvel?w=wall-17592208_65985 - \
 2019.06.05 1 https://vk.com/mu_marvel?w=wall-17592208_66069 - \
+2019.06.07 1 https://vk.com/mu_marvel?w=wall-17592208_66211 - \
+2019.06.08 1 https://vk.com/mu_marvel?w=wall-17592208_66307 - \
+2019.06.09 1 https://vk.com/mu_marvel?w=wall-17592208_66266 - \
+2019.06.10 1 https://vk.com/mu_marvel?w=wall-17592208_66268 - \
+2019.06.11 1 https://vk.com/mu_marvel?w=wall-17592208_66269 - \
+2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66267 - \

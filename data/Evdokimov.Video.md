@@ -5,7 +5,7 @@ Evdokimov.Video	Editor Video 5 2019.04.10\
 3 vacations:\
 2019.04.17 2019.04.24 \
 2019.05.01 2019.05.08 \
-2019.06.01 2019.06.06 \
+2019.06.01 2019.06.08 \
 Total posts amount: 6	Posts dates amount: 5\
 2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63669 - \
 2019.04.26 2 https://vk.com/mu_marvel?w=wall-17592208_64143 - https://vk.com/mu_marvel?w=wall-17592208_64145 - \
