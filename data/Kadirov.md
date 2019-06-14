@@ -1,7 +1,8 @@
-Kadirov	Editor Gallery 2 2019.04.02\
+Kadirov	Editor Art 2 2019.04.02\
 64471408\
-1 rubric switches:\
+2 rubric switches:\
 2019.04.06 Art changed to Gallery \
+2019.06.15 Gallery changed to Art \
 1 frequency switches:\
 2019.05.16 1 changed to 2 \
 10 vacations:\
@@ -15,7 +16,7 @@ Kadirov	Editor Gallery 2 2019.04.02\
 2019.05.11 2019.05.15 \
 2019.05.20 2019.05.21 \
 2019.06.01 2019.06.08 \
-Total posts amount: 42	Posts dates amount: 31\
+Total posts amount: 48	Posts dates amount: 32\
 2019.04.03 1 https://vk.com/mu_marvel?w=wall-17592208_63365 - \
 2019.04.04 2 https://vk.com/mu_marvel?w=wall-17592208_63418 - https://vk.com/mu_marvel?w=wall-17592208_63406 - \
 2019.04.06 2 https://vk.com/mu_marvel?w=wall-17592208_63434 - https://vk.com/mu_marvel?w=wall-17592208_63433 - \
@@ -47,3 +48,4 @@ Total posts amount: 42	Posts dates amount: 31\
 2019.05.31 1 https://vk.com/mu_marvel?w=wall-17592208_65857 - \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66340 - \
 2019.06.13 1 https://vk.com/mu_marvel?w=wall-17592208_66337 - \
+2019.06.15 6 https://vk.com/mu_marvel?w=wall-17592208_66410 - https://vk.com/mu_marvel?w=wall-17592208_66413 - https://vk.com/mu_marvel?w=wall-17592208_66415 - https://vk.com/mu_marvel?w=wall-17592208_66412 - https://vk.com/mu_marvel?w=wall-17592208_66414 - https://vk.com/mu_marvel?w=wall-17592208_66411 - \
