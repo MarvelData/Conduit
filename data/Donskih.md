@@ -3,8 +3,9 @@ Donskih	Editor OST 2 2019.04.20\
 0 rubric switches:\
 1 frequency switches:\
 2019.04.22 1 changed to 2 \
-0 vacations:\
-Total posts amount: 27	Posts dates amount: 19\
+1 vacations:\
+2019.06.01 2019.06.05 \
+Total posts amount: 28	Posts dates amount: 20\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 - https://vk.com/mu_marvel?w=wall-17592208_64023 - https://vk.com/mu_marvel?w=wall-17592208_64039 - https://vk.com/mu_marvel?w=wall-17592208_64038 - \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 - \
 2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 - \
@@ -24,3 +25,4 @@ Total posts amount: 27	Posts dates amount: 19\
 2019.05.29 1 https://vk.com/mu_marvel?w=wall-17592208_65706 - \
 2019.05.30 1 https://vk.com/mu_marvel?w=wall-17592208_65697 - \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66254 - \
+2019.06.15 1 https://vk.com/mu_marvel?w=wall-17592208_66439 - \
