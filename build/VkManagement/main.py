@@ -4,6 +4,7 @@ import vk
 
 from collections import defaultdict
 from datetime import datetime
+from datetime import timedelta
 from matplotlib import pyplot
 from subprocess import Popen, PIPE
 from threading import Thread
@@ -45,14 +46,21 @@ class Vk:
                 if 'admin_author_id' in message and message['admin_author_id'] == id:
                     print(message)
 
-    def get_posts(self, offset=0, count=100, filter='all'):
+    def get_posts(self, offset=0, count=100, filter='all', id=None):
         if not self.user_api:
             return None
+        if not id:
+            id = '-' + self.community_id
         try:
-            return self.user_api.wall.get(owner_id='-' + self.community_id, v=self.api_version, offset=offset, count=count, filter=filter)
+            return self.user_api.wall.get(owner_id=id, v=self.api_version, offset=offset, count=count, filter=filter)
         except:
             sleep(0.5)
             return self.get_posts(offset, count, filter)
+
+    def get_reposts(self, id):
+        if not self.user_api:
+            return None
+        return self.user_api.likes.getList(type='post', owner_id='-' + self.community_id, item_id=id, v=self.api_version, filter='copies')
 
     def get_post_info(self, offset = 0, amount = 1, filter = 'all', i = 0):
         if not self.user_api:
@@ -209,6 +217,25 @@ class RegBook:
         self.ask(link)
         self.ask('1')
 
+    def get_posts_with_default_status(self):
+        self.ask('8')
+        posts = self.ask('0')[1:-2]
+        self.ask('-1')
+        self.ask('1')
+        return posts
+
+    def approve_post(self, request):
+        self.ask('8')
+        self.ask('0')
+        self.ask(str(request))
+        self.ask('1')
+
+    def reject_post(self, request):
+        self.ask('8')
+        self.ask('1')
+        self.ask(str(request))
+        self.ask('1')
+
 
 class Tools:
     def __init__(self):
@@ -219,12 +246,14 @@ class Tools:
         self.funcs.append(self.get_member_stats)
         self.funcs.append(self.get_member_plot)
         self.funcs.append(self.get_members_plot)
+        self.funcs.append(self.find_posters)
         self.names = []
         self.names.append('I would like to autoadd posts for members')
         self.names.append('I would like to automanage posts')
         self.names.append('I would like to get stats for member')
         self.names.append('I would like to get plot for member')
         self.names.append('I would like to get plot for all members')
+        self.names.append('I would like to get posters')
 
     def init_vk(self):
         if not self.vk:
@@ -237,8 +266,8 @@ class Tools:
     def vk_date_to_universal(self, date):
         return datetime.fromtimestamp(date)
 
-    def post_id_to_link(self, id):
-        return 'https://vk.com/wall-17592208_' + str(id)
+    def post_id_to_link(self, id, prefix='https://vk.com/wall-17592208_'):
+        return prefix + str(id)
 
     def post_id_to_cached_link(self, id):
         return 'https://vk.com/mu_marvel?w=wall-17592208_' + str(id)
@@ -262,19 +291,19 @@ class Tools:
             string += elem + ', '
         return string[:-2]
 
-    def dates_list_to_plot_ticks(self, days, dates):
+    def days_list_to_plot_ticks(self, days):
         days_to_show, dates_to_show = [], []
         last_shown_day = -sys.maxsize
         for i, day_number in enumerate(days):
             if day_number - last_shown_day > (days[-1] - days[0]) / 9:
                 last_shown_day = day_number
                 days_to_show.append(days[i])
-                dates_to_show.append(dates[i].date())
+                dates_to_show.append((self.my_date_to_universal('2019.01.01') + timedelta(days=days[i])).date())
         return days_to_show, dates_to_show
 
     def parse_member_data(self, data):
         member = {}
-        posts = []
+        posts = {}
         for line in data:
             if 'Short name:' in line:
                 member['name'] = self.clear_string(line.split(':')[1])
@@ -286,7 +315,7 @@ class Tools:
                 columns = line.split(' ')
                 amount = int(columns[1])
                 for i in range(0, amount):
-                    posts.append(self.clear_string(columns[2 + i * 2]))
+                    posts[self.clear_string(columns[2 + i * 2])] = self.clear_string(columns[0])
         member['posts'] = posts
         return member
 
@@ -301,15 +330,14 @@ class Tools:
         return key_to_member, id_to_members
 
     def get_member_posts_dates(self, data):
-        dates, days, amounts = [], [], []
+        days, amounts = [], []
         date_from = self.my_date_to_universal('2019.01.01')
         for line in data:
             if 'http' in line:
                 columns = line.split(' ')
-                dates.append(self.my_date_to_universal(self.clear_string(columns[0])))
-                days.append((dates[-1] - date_from).days)
+                days.append((self.my_date_to_universal(self.clear_string(columns[0])) - date_from).days)
                 amounts.append(int(self.clear_string(columns[1])))
-        return dates, days, amounts
+        return days, amounts
 
     def choose_member(self, regBook, info=True, stats=False):
         members = regBook.get_members_list(info)
@@ -341,12 +369,35 @@ class Tools:
             sys.stdout.write(line)
         return member_data, regBook
 
+    def filter_Kamil(self, member, post):
+        banned_list = [398504693, -134362257]
+        fake_likes, fake_reposts, fake_views = 0, 0, 0
+        if 'Kamil' in member['name']:
+            sleep(0.5)
+            reposters = self.vk.get_reposts(post['id'])
+            for reposter in reposters['items']:
+                if reposter in banned_list:
+                    print(reposter)
+                    reposter_posts = self.vk.get_posts(id=reposter)
+                    for reposter_post in reposter_posts['items']:
+                        if 'copy_history' in reposter_post and reposter_post['copy_history'][0]['id'] == post['id']:
+                            print(self.post_id_to_link(reposter_post['id'], prefix='https://vk.com/wall' + str(reposter) + '_'),
+                                  reposter_post['likes']['count'], reposter_post['reposts']['count'])
+                            fake_likes += reposter_post['likes']['count']
+                            fake_reposts += reposter_post['reposts']['count']
+                            fake_views += reposter_post['views']['count']
+            print()
+        return fake_likes, fake_reposts, fake_views
+
     def process_postponed_posts(self):
         if not self.init_vk():
             return
         regBook = RegBook()
         key_to_member, id_to_members = self.get_members_mapping(regBook)
-        posts = self.vk.get_posts(0, 100, 'postponed ')
+        posts = self.vk.get_posts(filter='postponed')
+        if posts['count'] > 100:
+            new_posts = self.vk.get_posts(offset=100, filter='postponed')
+            posts['items'] += new_posts['items']
         print('\nThere are', posts['count'], 'postponed posts\n')
         counter = 0
         not_found, need_work = [], []
@@ -381,7 +432,36 @@ class Tools:
     def process_posts(self):
         if not self.init_vk():
             return
-        print('\nprocess_posts')
+        regBook = RegBook()
+        key_to_member, id_to_members = self.get_members_mapping(regBook)
+        posts_to_judge = regBook.get_posts_with_default_status()
+        mapped_posts = {}
+        for i, post in enumerate(posts_to_judge):
+            mapped_posts[self.clear_string(post.split(' ')[-1])] = i
+        date_from = self.my_date_to_universal('2018.08.01')
+        counter = 0
+        offset = -100
+        date = datetime.now()
+        while date >= date_from:
+            offset += 100
+            posts = self.vk.get_posts(offset, 100)
+            for post in posts['items']:
+                date = self.vk_date_to_universal(post['date'])
+                if date < date_from:
+                    break
+                if 'signer_id' in post and str(post['signer_id']) in id_to_members\
+                or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in mapped_posts\
+                or self.post_id_to_cached_link(post['id']) in mapped_posts:
+                    link = None
+                    if 'postponed_id' in post:
+                        link = self.post_id_to_cached_link(post['postponed_id'])
+                    if link and not link in mapped_posts and not self.post_id_to_cached_link(post['id']) in mapped_posts:
+                        print(self.post_id_to_link(post['id']))
+                        counter += 1
+                    regBook.approve_post(link)
+        print(counter)
+        if regBook.ask('-1') != 0:
+            print('\nWarning: Silent RegBook did not exit correctly')
 
     def get_member_stats(self):
         if not self.init_vk():
@@ -395,6 +475,10 @@ class Tools:
         member = self.parse_member_data(member_data)
         print('Input date to collect stats from in format YYYY.MM.DD\n')
         date_from = self.my_date_to_universal(input())
+        print()
+        print('Input date to collect stats to in format YYYY.MM.DD\n')
+        date_to = self.my_date_to_universal(input())
+        print()
         id = int(member['id'])
         rubric = self.rubric_to_hashtag(member['rubric'])
         stats = defaultdict(list)
@@ -406,17 +490,30 @@ class Tools:
             posts = self.vk.get_posts(offset, 100)
             for post in posts['items']:
                 date = self.vk_date_to_universal(post['date'])
+                if date >= date_to:
+                    continue
                 if date < date_from:
                     break
                 if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post) == rubric\
-                or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in member['posts']:
-                    print(date)
+                or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in member['posts']\
+                or self.post_id_to_cached_link(post['id']) in member['posts']:
+                    print(date, self.post_id_to_link(post['id']), post['likes']['count'], post['reposts']['count'])
+                    fake_likes, fake_reposts, fake_views = self.filter_Kamil(member, post)
                     for stat_type in ['comments', 'likes', 'reposts', 'views']:
                         stats[stat_type].append(post[stat_type]['count'])
-                    stats['efficiency'].append(post['likes']['count'] / post['views']['count'])
+                    stats['efficiency'].append((post['likes']['count'] - fake_likes) / (post['views']['count'] - fake_views))
+                    stats['likes'][-1] -= fake_likes
+                    stats['reposts'][-1] -= fake_reposts
+                    stats['views'][-1] -= fake_views
                     counter += 1
+        made_counter = 0
+        for post, date in member['posts'].items():
+            date = self.my_date_to_universal(date)
+            if date >= date_from and date < date_to:
+                made_counter += 1
         print()
-        print(member['name'], 'has', counter, 'posts since', date_from.date())
+        print(member['name'], 'made', made_counter, 'posts since', date_from.date())
+        print(member['name'], 'has', counter, 'released posts since', date_from.date())
         print(member['name'] + "'s", 'average results are:')
         for stat_type, values in stats.items():
             sum = 0
@@ -431,15 +528,23 @@ class Tools:
             print('\nWarning: Silent RegBook did not exit correctly')
         if not member_data:
             return
-        dates, days, amounts = self.get_member_posts_dates(member_data)
+        days, amounts = self.get_member_posts_dates(member_data)
+        new_days = [days[0]]
+        new_amounts = [0]
+        for i, day in enumerate(days):
+            if day >= new_days[-1] + 10:
+                new_days.append(new_days[-1] + 10)
+                new_amounts.append(0)
+            if day < new_days[-1] + 10:
+                new_amounts[len(new_days) - 1] += amounts[i]
         pyplot.xlabel('Dates')
         pyplot.ylabel('Posts')
         pyplot.grid(True)
-        pyplot.plot(days, amounts, 'g', linewidth='1')
-        pyplot.plot(days, amounts, 'bx', markersize='7')
-        days_to_show, dates_to_show = self.dates_list_to_plot_ticks(days, dates)
+        pyplot.plot(new_days, new_amounts, 'g', linewidth='1')
+        pyplot.plot(new_days, new_amounts, 'bx', markersize='7')
+        days_to_show, dates_to_show = self.days_list_to_plot_ticks(new_days)
         pyplot.xticks(days_to_show, dates_to_show)
-        pyplot.yticks(amounts, amounts)
+        pyplot.yticks(new_amounts, new_amounts)
         pyplot.show()
 
     def get_members_plot(self):
@@ -448,23 +553,57 @@ class Tools:
         pyplot.xlabel('Dates')
         pyplot.ylabel('Posts')
         pyplot.grid(True)
-        all_days, all_dates, all_amounts = [], [], []
+        all_days, all_amounts = [], []
+        members_posts = {}
+        member_days = {}
         for i in range(member_amount):
             member_data = regBook.get_member_data(i)
-            dates, days, amounts = self.get_member_posts_dates(member_data)
+            days, amounts = self.get_member_posts_dates(member_data)
             member = self.parse_member_data(member_data)
             all_days += days
-            all_dates += dates
-            all_amounts += amounts
-            pyplot.plot(days, amounts, marker='x', markerfacecolor=(0.01*i,0.02*i,0.03*i), linewidth=0.5, markersize='7', label=member['name'])
+            members_posts[member['name']] = amounts
+            member_days[member['name']] = days
+        all_days = sorted(all_days)
         if regBook.ask('-1') != 0:
             print('\nWarning: Silent RegBook did not exit correctly')
-        days_to_show, dates_to_show = self.dates_list_to_plot_ticks(sorted(all_days), sorted(all_dates))
+        saved_new_days = []
+        i = 0
+        for member, posts in members_posts.items():
+            new_days = [all_days[0]]
+            new_amounts = [0]
+            for i, day in enumerate(member_days[member]):
+                if day >= new_days[-1] + 10:
+                    new_days.append(new_days[-1] + 10)
+                    new_amounts.append(0)
+                if day < new_days[-1] + 10:
+                    new_amounts[len(new_days) - 1] += posts[i]
+            all_amounts += new_amounts
+            if len(new_days) > len(saved_new_days):
+                saved_new_days = new_days
+            pyplot.plot(new_days, new_amounts, marker='x', linewidth=0.5, markersize='7', label=member)
+            i += 1
+        days_to_show, dates_to_show = self.days_list_to_plot_ticks(saved_new_days)
         pyplot.xticks(days_to_show, dates_to_show)
         pyplot.yticks(all_amounts, all_amounts)
         pyplot.legend()
         pyplot.show()
 
+    def find_posters(self):
+        if not self.init_vk():
+            return
+        counter = 0
+        offset = -100
+        date = datetime.now()
+        date_from = self.my_date_to_universal('2019.01.01')
+        while date >= date_from:
+            offset += 100
+            posts = self.vk.get_posts(offset, 100)
+            for post in posts['items']:
+                date = self.vk_date_to_universal(post['date'])
+                if date < date_from:
+                    break
+                if not post['text'] or post['text'][0] != '#':
+                    print(self.post_id_to_link(post['id']))
 
 
 parser = argparse.ArgumentParser()
