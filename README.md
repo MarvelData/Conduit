@@ -2,7 +2,6 @@
 
 Plans:\
 \
-V3.06 - allow getting anticipated & actual posts amounts and dismission on specified date\
 V3.07 - implement approved post deletion confirmation\
 V3.08 - implement vacation insertion check, make rubric & frequency switch more careful and on specified date\
 V3.09 - implement bonus system & comments field for each member\
