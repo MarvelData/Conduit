@@ -270,7 +270,7 @@ void Member::EndVacation()
     ForceDeepInfoUpdate();
 }
 
-int Member::GetAnticipatedPostsAmount()
+int Member::GetAnticipatedPostsAmount(const string &date)
 {
     ReadSpecificInfo(path);
     int anticipatedPostsAmount = 0;
@@ -281,8 +281,11 @@ int Member::GetAnticipatedPostsAmount()
                                   / frequencySwitch.second.first;
         lastDate = Date(frequencySwitch.first);
     }
-    anticipatedPostsAmount += (Date(Date::Now()).Since(lastDate)
-                               - GetVacationLength(lastDate.GetAsString(), Date::Now()))
+    auto finalDate = date;
+    if (finalDate.empty())
+        finalDate = Date::Now();
+    anticipatedPostsAmount += (Date(finalDate).Since(lastDate)
+                               - GetVacationLength(lastDate.GetAsString(), finalDate))
                               / frequency;
     return anticipatedPostsAmount;
 }
@@ -360,7 +363,7 @@ void Member::ReadSpecificInfo(const string &path)
     loadedDeepInfo = true;
 }
 
-void Member::PrintSpecificInfo(ostream &os, bool dismission) const
+void Member::PrintSpecificInfo(ostream &os) const
 {
     os << id << "\\" << endl;
 
@@ -376,9 +379,6 @@ void Member::PrintSpecificInfo(ostream &os, bool dismission) const
     os << vacations.size() << " vacations:" << "\\" << endl;
     for (auto &vacation : vacations)
         os << vacation.first << ' ' << vacation.second << " \\" << endl;
-
-    if (dismission)
-        os << "Finished on " << Date::Now() << "\\" << endl;
 }
 
 bool Member::ChangedDeepInfo() const { return changedDeepInfo; }

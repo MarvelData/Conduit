@@ -92,11 +92,11 @@ public:
 
     void EndVacation();
 
-    int GetAnticipatedPostsAmount();
+    int GetAnticipatedPostsAmount(const std::string &date = "");
 
     void ReadSpecificInfo(const std::string &path);
 
-    void PrintSpecificInfo(std::ostream &os, bool dismission = false) const;
+    void PrintSpecificInfo(std::ostream &os) const;
 
     bool ChangedDeepInfo() const ;
 };

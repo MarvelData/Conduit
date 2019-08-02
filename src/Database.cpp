@@ -121,9 +121,11 @@ void Database::WriteDatabaseToFiles(bool dismission, const string &shortNameDism
             ofstream memberFile(GetPath() + shortName + ".md");
             memberFile << shortName << '\t' << member.GetRole() << ' ' << member.GetRubric()
                        << ' ' << member.GetFrequency() << ' ' << member.GetStartDate() << '\\' << endl;
-            member.PrintSpecificInfo(memberFile, dismission);
+            member.PrintSpecificInfo(memberFile);
             if (dismission & shortName == shortNameDismissed) {
-                PrintPostsAmounts(shortName, memberFile);
+                auto date = Date::CollectDate();
+                memberFile << "Finished on " << date << "\\" << endl;
+                PrintPostsAmounts(shortName, memberFile, date);
                 memberFile << "\\" << endl;
             }
             memberFile << "Total posts amount: " << member.GetPostsAmount() << '\t'
@@ -149,11 +151,11 @@ void Database::PrintMembers(bool moreInfo)
         communicator->PrintMember(memberMetaPair.second, counter++, moreInfo);
 }
 
-void Database::PrintPostsAmounts(const string &shortName, ostream &os)
+void Database::PrintPostsAmounts(const string &shortName, ostream &os, const string &date)
 {
     auto &member = data.at(shortName);
     int postsAmount = member.GetPostsAmount();
-    int anticipatedPostsAmount = member.GetAnticipatedPostsAmount();
+    int anticipatedPostsAmount = member.GetAnticipatedPostsAmount(date);
     string actualPosts =  "Actual posts amount: ";
     os << actualPosts << postsAmount;
     Communication::Tabulator(actualPosts + to_string(postsAmount), 24);
@@ -511,7 +513,8 @@ void Database::AddVacation()
     if (shortName.empty())
         return;
     auto &member = data.at(shortName);
-    member.PrintInfo();
+    member.ReadSpecificInfo(GetPath());
+    member.PrintSpecificInfo(cout);
     string start, end;
     cout << endl << "NB: Input without spaces!" << endl;
     cout << endl << "Input vacation start date: " << endl;

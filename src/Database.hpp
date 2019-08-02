@@ -29,7 +29,7 @@ public:
 
     void PrintMembers(bool moreInfo = false);
 
-    void PrintPostsAmounts(const std::string &shortName, std::ostream &os = std::cout);
+    void PrintPostsAmounts(const std::string &shortName, std::ostream &os = std::cout, const std::string &date = "");
 
     int GetPostsAmount(const std::string &shortName, const std::string &date);
 
