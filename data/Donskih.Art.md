@@ -3,7 +3,7 @@ Donskih.Art	Editor Art 2 2019.04.22\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 44	Posts dates amount: 20\
+Total posts amount: 65	Posts dates amount: 38\
 2019.04.22 3 https://vk.com/mu_marvel?w=wall-17592208_64086 - https://vk.com/mu_marvel?w=wall-17592208_64094 - https://vk.com/mu_marvel?w=wall-17592208_64096 - \
 2019.04.24 1 https://vk.com/mu_marvel?w=wall-17592208_64109 - \
 2019.04.25 1 https://vk.com/mu_marvel?w=wall-17592208_64127 - \
@@ -24,3 +24,21 @@ Total posts amount: 44	Posts dates amount: 20\
 2019.05.29 1 https://vk.com/mu_marvel?w=wall-17592208_65698 - \
 2019.05.30 7 https://vk.com/mu_marvel?w=wall-17592208_65700 - https://vk.com/mu_marvel?w=wall-17592208_65699 - https://vk.com/mu_marvel?w=wall-17592208_65702 - https://vk.com/mu_marvel?w=wall-17592208_65704 - https://vk.com/mu_marvel?w=wall-17592208_65703 - https://vk.com/mu_marvel?w=wall-17592208_65705 - https://vk.com/mu_marvel?w=wall-17592208_65735 - \
 2019.06.05 1 https://vk.com/mu_marvel?w=wall-17592208_66073 - \
+2019.07.04 1 https://vk.com/mu_marvel?w=wall-17592208_67120 - \
+2019.07.06 1 https://vk.com/mu_marvel?w=wall-17592208_67119 - \
+2019.07.09 1 https://vk.com/mu_marvel?w=wall-17592208_67375 - \
+2019.07.10 1 https://vk.com/mu_marvel?w=wall-17592208_67232 - \
+2019.07.11 2 https://vk.com/mu_marvel?w=wall-17592208_67475 - https://vk.com/mu_marvel?w=wall-17592208_67462 - \
+2019.07.12 1 https://vk.com/mu_marvel?w=wall-17592208_67474 - \
+2019.07.13 2 https://vk.com/mu_marvel?w=wall-17592208_67459 - https://vk.com/mu_marvel?w=wall-17592208_67445 - \
+2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67463 - \
+2019.07.15 2 https://vk.com/mu_marvel?w=wall-17592208_67460 - https://vk.com/mu_marvel?w=wall-17592208_67465 - \
+2019.07.16 1 https://vk.com/mu_marvel?w=wall-17592208_67472 - \
+2019.07.17 1 https://vk.com/mu_marvel?w=wall-17592208_67447 - \
+2019.07.18 1 https://vk.com/mu_marvel?w=wall-17592208_67458 - \
+2019.07.21 1 https://vk.com/mu_marvel?w=wall-17592208_67455 - \
+2019.07.26 1 https://vk.com/mu_marvel?w=wall-17592208_67457 - \
+2019.07.29 1 https://vk.com/mu_marvel?w=wall-17592208_67454 - \
+2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_67451 - \
+2019.08.01 1 https://vk.com/mu_marvel?w=wall-17592208_67469 - \
+2019.08.02 1 https://vk.com/mu_marvel?w=wall-17592208_67446 - \

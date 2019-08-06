@@ -4,7 +4,7 @@ Kamil	Editor Gallery 2 2019.04.20\
 2019.05.10 Facts changed to Gallery \
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 41	Posts dates amount: 19\
+Total posts amount: 60	Posts dates amount: 37\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 - https://vk.com/mu_marvel?w=wall-17592208_64071 - \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 - \
 2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64193 - https://vk.com/mu_marvel?w=wall-17592208_64212 - \
@@ -24,3 +24,21 @@ Total posts amount: 41	Posts dates amount: 19\
 2019.06.18 2 https://vk.com/mu_marvel?w=wall-17592208_66453 - https://vk.com/mu_marvel?w=wall-17592208_66454 - \
 2019.06.19 2 https://vk.com/mu_marvel?w=wall-17592208_66625 - https://vk.com/mu_marvel?w=wall-17592208_66626 - \
 2019.06.22 2 https://vk.com/mu_marvel?w=wall-17592208_66749 - https://vk.com/mu_marvel?w=wall-17592208_66750 - \
+2019.06.24 1 https://vk.com/mu_marvel?w=wall-17592208_66875 - \
+2019.06.25 1 https://vk.com/mu_marvel?w=wall-17592208_66876 - \
+2019.06.26 1 https://vk.com/mu_marvel?w=wall-17592208_66997 - \
+2019.07.05 1 https://vk.com/mu_marvel?w=wall-17592208_67265 - \
+2019.07.06 1 https://vk.com/mu_marvel?w=wall-17592208_67266 - \
+2019.07.08 1 https://vk.com/mu_marvel?w=wall-17592208_67327 - \
+2019.07.09 2 https://vk.com/mu_marvel?w=wall-17592208_67328 - https://vk.com/mu_marvel?w=wall-17592208_67401 - \
+2019.07.10 1 https://vk.com/mu_marvel?w=wall-17592208_67400 - \
+2019.07.12 1 https://vk.com/mu_marvel?w=wall-17592208_67519 - \
+2019.07.13 1 https://vk.com/mu_marvel?w=wall-17592208_67521 - \
+2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67520 - \
+2019.07.15 1 https://vk.com/mu_marvel?w=wall-17592208_67572 - \
+2019.07.16 1 https://vk.com/mu_marvel?w=wall-17592208_67640 - \
+2019.07.17 1 https://vk.com/mu_marvel?w=wall-17592208_67672 - \
+2019.07.19 1 https://vk.com/mu_marvel?w=wall-17592208_67671 - \
+2019.07.20 1 https://vk.com/mu_marvel?w=wall-17592208_67642 - \
+2019.07.21 1 https://vk.com/mu_marvel?w=wall-17592208_67641 - \
+2019.07.23 1 https://vk.com/mu_marvel?w=wall-17592208_67573 - \

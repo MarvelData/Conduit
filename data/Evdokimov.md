@@ -6,7 +6,7 @@ Evdokimov	Editor Scenes 3 2018.10.12\
 2019.01.11 1 changed to 3 \
 1 vacations:\
 2018.12.30 2019.01.10 \
-Total posts amount: 257	Posts dates amount: 128\
+Total posts amount: 275	Posts dates amount: 144\
 2018.10.12 2 https://vk.com/mu_marvel?w=wall-17592208_57944 - https://vk.com/mu_marvel?w=wall-17592208_57955 - \
 2018.10.13 1 https://vk.com/mu_marvel?w=wall-17592208_57969 - \
 2018.10.14 2 https://vk.com/mu_marvel?w=wall-17592208_58010 - https://vk.com/mu_marvel?w=wall-17592208_58012 - \
@@ -135,3 +135,19 @@ Total posts amount: 257	Posts dates amount: 128\
 2019.06.18 4 https://vk.com/mu_marvel?w=wall-17592208_66588 - https://vk.com/mu_marvel?w=wall-17592208_66590 - https://vk.com/mu_marvel?w=wall-17592208_66591 - https://vk.com/mu_marvel?w=wall-17592208_66592 - \
 2019.06.21 1 https://vk.com/mu_marvel?w=wall-17592208_66660 - \
 2019.06.22 1 https://vk.com/mu_marvel?w=wall-17592208_66763 - \
+2019.06.30 1 https://vk.com/mu_marvel?w=wall-17592208_66965 - \
+2019.07.01 1 https://vk.com/mu_marvel?w=wall-17592208_67147 - \
+2019.07.10 1 https://vk.com/mu_marvel?w=wall-17592208_67427 - \
+2019.07.11 1 https://vk.com/mu_marvel?w=wall-17592208_67428 - \
+2019.07.13 1 https://vk.com/mu_marvel?w=wall-17592208_67543 - \
+2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67546 - \
+2019.07.15 1 https://vk.com/mu_marvel?w=wall-17592208_67547 - \
+2019.07.16 1 https://vk.com/mu_marvel?w=wall-17592208_67548 - \
+2019.07.17 1 https://vk.com/mu_marvel?w=wall-17592208_67549 - \
+2019.07.18 1 https://vk.com/mu_marvel?w=wall-17592208_67550 - \
+2019.07.22 1 https://vk.com/mu_marvel?w=wall-17592208_67922 - \
+2019.07.28 2 https://vk.com/mu_marvel?w=wall-17592208_68139 - https://vk.com/mu_marvel?w=wall-17592208_67997 - \
+2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68137 - \
+2019.07.31 1 https://vk.com/mu_marvel?w=wall-17592208_67999 - \
+2019.08.01 1 https://vk.com/mu_marvel?w=wall-17592208_68143 - \
+2019.08.02 2 https://vk.com/mu_marvel?w=wall-17592208_68142 - https://vk.com/mu_marvel?w=wall-17592208_68000 - \

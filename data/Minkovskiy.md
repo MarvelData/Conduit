@@ -7,7 +7,7 @@ Minkovskiy	Editor Scenes 2 2019.02.23\
 2019.03.01 2019.03.15 \
 2019.05.20 2019.05.27 \
 2019.05.31 2019.06.07 \
-Total posts amount: 42	Posts dates amount: 28\
+Total posts amount: 57	Posts dates amount: 42\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 - \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 - \
 2019.02.28 1 https://vk.com/mu_marvel?w=wall-17592208_61676 - \
@@ -36,3 +36,17 @@ Total posts amount: 42	Posts dates amount: 28\
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66422 - \
 2019.06.19 1 https://vk.com/mu_marvel?w=wall-17592208_66657 - \
 2019.06.21 1 https://vk.com/mu_marvel?w=wall-17592208_66736 - \
+2019.06.26 1 https://vk.com/mu_marvel?w=wall-17592208_66834 - \
+2019.06.27 2 https://vk.com/mu_marvel?w=wall-17592208_66832 - https://vk.com/mu_marvel?w=wall-17592208_66833 - \
+2019.06.28 1 https://vk.com/mu_marvel?w=wall-17592208_66831 - \
+2019.07.02 1 https://vk.com/mu_marvel?w=wall-17592208_67144 - \
+2019.07.03 1 https://vk.com/mu_marvel?w=wall-17592208_67142 - \
+2019.07.04 1 https://vk.com/mu_marvel?w=wall-17592208_67143 - \
+2019.07.06 1 https://vk.com/mu_marvel?w=wall-17592208_67305 - \
+2019.07.07 1 https://vk.com/mu_marvel?w=wall-17592208_67306 - \
+2019.07.08 1 https://vk.com/mu_marvel?w=wall-17592208_67308 - \
+2019.07.19 1 https://vk.com/mu_marvel?w=wall-17592208_67605 - \
+2019.07.20 1 https://vk.com/mu_marvel?w=wall-17592208_67606 - \
+2019.07.21 1 https://vk.com/mu_marvel?w=wall-17592208_67604 - \
+2019.07.24 1 https://vk.com/mu_marvel?w=wall-17592208_68062 - \
+2019.07.31 1 https://vk.com/mu_marvel?w=wall-17592208_68060 - \

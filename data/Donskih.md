@@ -5,7 +5,7 @@ Donskih	Editor OST 2 2019.04.20\
 2019.04.22 1 changed to 2 \
 1 vacations:\
 2019.06.01 2019.06.05 \
-Total posts amount: 29	Posts dates amount: 21\
+Total posts amount: 39	Posts dates amount: 31\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 - https://vk.com/mu_marvel?w=wall-17592208_64023 - https://vk.com/mu_marvel?w=wall-17592208_64039 - https://vk.com/mu_marvel?w=wall-17592208_64038 - \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 - \
 2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 - \
@@ -27,3 +27,13 @@ Total posts amount: 29	Posts dates amount: 21\
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66254 - \
 2019.06.15 1 https://vk.com/mu_marvel?w=wall-17592208_66439 - \
 2019.06.20 1 https://vk.com/mu_marvel?w=wall-17592208_66755 - \
+2019.06.30 1 https://vk.com/mu_marvel?w=wall-17592208_66961 - \
+2019.07.01 1 https://vk.com/mu_marvel?w=wall-17592208_67118 - \
+2019.07.04 1 https://vk.com/mu_marvel?w=wall-17592208_67231 - \
+2019.07.07 1 https://vk.com/mu_marvel?w=wall-17592208_67314 - \
+2019.07.09 1 https://vk.com/mu_marvel?w=wall-17592208_67374 - \
+2019.07.11 1 https://vk.com/mu_marvel?w=wall-17592208_67470 - \
+2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67471 - \
+2019.07.23 1 https://vk.com/mu_marvel?w=wall-17592208_67992 - \
+2019.07.28 1 https://vk.com/mu_marvel?w=wall-17592208_68283 - \
+2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68282 - \
