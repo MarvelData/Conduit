@@ -9,6 +9,9 @@ DanielFog	Editor Stars 2 2019.03.29\
 2019.04.17 2019.04.24 \
 2019.05.01 2019.05.08 \
 2019.06.01 2019.06.08 \
+Finished on 2019.06.29\
+Actual posts amount: 20	Anticipated posts amount: 40	 Lag: 20
+\
 Total posts amount: 20	Posts dates amount: 7\
 2019.03.31 2 https://vk.com/mu_marvel?w=wall-17592208_63178 - https://vk.com/mu_marvel?w=wall-17592208_63180 - \
 2019.04.03 7 https://vk.com/mu_marvel?w=wall-17592208_63316 - https://vk.com/mu_marvel?w=wall-17592208_63309 - https://vk.com/mu_marvel?w=wall-17592208_63310 - https://vk.com/mu_marvel?w=wall-17592208_63312 - https://vk.com/mu_marvel?w=wall-17592208_63314 - https://vk.com/mu_marvel?w=wall-17592208_63317 - https://vk.com/mu_marvel?w=wall-17592208_63320 - \
