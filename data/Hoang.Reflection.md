@@ -3,7 +3,10 @@ Hoang.Reflection	Editor Reflection 3 2019.05.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 17	Posts dates amount: 12\
+Total posts amount: 20	Posts dates amount: 15\
+2019.03.24 1 https://vk.com/mu_marvel?w=wall-17592208_62960 - \
+2019.03.31 1 https://vk.com/mu_marvel?w=wall-17592208_63302 - \
+2019.04.07 1 https://vk.com/mu_marvel?w=wall-17592208_63716 - \
 2019.05.06 1 https://vk.com/mu_marvel?w=wall-17592208_64467 - \
 2019.05.07 2 https://vk.com/mu_marvel?w=wall-17592208_64532 - https://vk.com/mu_marvel?w=wall-17592208_64542 - \
 2019.05.08 1 https://vk.com/mu_marvel?w=wall-17592208_64637 - \
