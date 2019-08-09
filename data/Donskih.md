@@ -6,35 +6,35 @@ Donskih	Editor OST 2 2019.04.20\
 1 vacations:\
 2019.06.01 2019.06.05 \
 Total posts amount: 41	Posts dates amount: 32\
-2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 - https://vk.com/mu_marvel?w=wall-17592208_64023 - https://vk.com/mu_marvel?w=wall-17592208_64039 - https://vk.com/mu_marvel?w=wall-17592208_64038 - \
-2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 - \
-2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 - \
-2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64208 - https://vk.com/mu_marvel?w=wall-17592208_64226 - \
-2019.05.01 1 https://vk.com/mu_marvel?w=wall-17592208_64250 - \
-2019.05.02 3 https://vk.com/mu_marvel?w=wall-17592208_64269 - https://vk.com/mu_marvel?w=wall-17592208_64293 - https://vk.com/mu_marvel?w=wall-17592208_64309 - \
-2019.05.05 1 https://vk.com/mu_marvel?w=wall-17592208_64388 - \
-2019.05.09 2 https://vk.com/mu_marvel?w=wall-17592208_64720 - https://vk.com/mu_marvel?w=wall-17592208_64990 - \
-2019.05.12 2 https://vk.com/mu_marvel?w=wall-17592208_64867 - https://vk.com/mu_marvel?w=wall-17592208_64880 - \
-2019.05.14 2 https://vk.com/mu_marvel?w=wall-17592208_64931 - https://vk.com/mu_marvel?w=wall-17592208_65070 - \
-2019.05.18 1 https://vk.com/mu_marvel?w=wall-17592208_65279 - \
-2019.05.21 1 https://vk.com/mu_marvel?w=wall-17592208_65431 - \
-2019.05.22 1 https://vk.com/mu_marvel?w=wall-17592208_65535 - \
-2019.05.23 1 https://vk.com/mu_marvel?w=wall-17592208_65533 - \
-2019.05.24 1 https://vk.com/mu_marvel?w=wall-17592208_65543 - \
-2019.05.25 1 https://vk.com/mu_marvel?w=wall-17592208_65579 - \
-2019.05.29 1 https://vk.com/mu_marvel?w=wall-17592208_65706 - \
-2019.05.30 1 https://vk.com/mu_marvel?w=wall-17592208_65697 - \
-2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66254 - \
-2019.06.15 1 https://vk.com/mu_marvel?w=wall-17592208_66439 - \
-2019.06.20 1 https://vk.com/mu_marvel?w=wall-17592208_66755 - \
-2019.06.30 1 https://vk.com/mu_marvel?w=wall-17592208_66961 - \
-2019.07.01 1 https://vk.com/mu_marvel?w=wall-17592208_67118 - \
-2019.07.04 1 https://vk.com/mu_marvel?w=wall-17592208_67231 - \
-2019.07.07 1 https://vk.com/mu_marvel?w=wall-17592208_67314 - \
-2019.07.09 1 https://vk.com/mu_marvel?w=wall-17592208_67374 - \
-2019.07.11 1 https://vk.com/mu_marvel?w=wall-17592208_67470 - \
-2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67471 - \
-2019.07.23 1 https://vk.com/mu_marvel?w=wall-17592208_67992 - \
-2019.07.28 1 https://vk.com/mu_marvel?w=wall-17592208_68283 - \
-2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68282 - \
-2019.08.03 1 https://vk.com/mu_marvel?w=wall-17592208_68392 - \
+2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 + https://vk.com/mu_marvel?w=wall-17592208_64023 + https://vk.com/mu_marvel?w=wall-17592208_64039 + https://vk.com/mu_marvel?w=wall-17592208_64038 + \
+2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 + \
+2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 + \
+2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64208 + https://vk.com/mu_marvel?w=wall-17592208_64226 + \
+2019.05.01 1 https://vk.com/mu_marvel?w=wall-17592208_64250 + \
+2019.05.02 3 https://vk.com/mu_marvel?w=wall-17592208_64269 + https://vk.com/mu_marvel?w=wall-17592208_64293 + https://vk.com/mu_marvel?w=wall-17592208_64309 + \
+2019.05.05 1 https://vk.com/mu_marvel?w=wall-17592208_64388 + \
+2019.05.09 2 https://vk.com/mu_marvel?w=wall-17592208_64720 + https://vk.com/mu_marvel?w=wall-17592208_64990 + \
+2019.05.12 2 https://vk.com/mu_marvel?w=wall-17592208_64867 + https://vk.com/mu_marvel?w=wall-17592208_64880 + \
+2019.05.14 2 https://vk.com/mu_marvel?w=wall-17592208_64931 + https://vk.com/mu_marvel?w=wall-17592208_65070 + \
+2019.05.18 1 https://vk.com/mu_marvel?w=wall-17592208_65279 + \
+2019.05.21 1 https://vk.com/mu_marvel?w=wall-17592208_65431 + \
+2019.05.22 1 https://vk.com/mu_marvel?w=wall-17592208_65535 + \
+2019.05.23 1 https://vk.com/mu_marvel?w=wall-17592208_65533 + \
+2019.05.24 1 https://vk.com/mu_marvel?w=wall-17592208_65543 + \
+2019.05.25 1 https://vk.com/mu_marvel?w=wall-17592208_65579 + \
+2019.05.29 1 https://vk.com/mu_marvel?w=wall-17592208_65706 + \
+2019.05.30 1 https://vk.com/mu_marvel?w=wall-17592208_65697 + \
+2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66254 + \
+2019.06.15 1 https://vk.com/mu_marvel?w=wall-17592208_66439 + \
+2019.06.20 1 https://vk.com/mu_marvel?w=wall-17592208_66755 + \
+2019.06.30 1 https://vk.com/mu_marvel?w=wall-17592208_66961 + \
+2019.07.01 1 https://vk.com/mu_marvel?w=wall-17592208_67118 + \
+2019.07.04 1 https://vk.com/mu_marvel?w=wall-17592208_67231 + \
+2019.07.07 1 https://vk.com/mu_marvel?w=wall-17592208_67314 + \
+2019.07.09 1 https://vk.com/mu_marvel?w=wall-17592208_67374 + \
+2019.07.11 1 https://vk.com/mu_marvel?w=wall-17592208_67470 + \
+2019.07.14 1 https://vk.com/mu_marvel?w=wall-17592208_67471 + \
+2019.07.23 1 https://vk.com/mu_marvel?w=wall-17592208_67992 + \
+2019.07.28 1 https://vk.com/mu_marvel?w=wall-17592208_68283 + \
+2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68282 + \
+2019.08.03 1 https://vk.com/mu_marvel?w=wall-17592208_68392 + \
