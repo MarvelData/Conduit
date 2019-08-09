@@ -21,7 +21,7 @@ Total posts amount: 70	Posts dates amount: 52\
 2019.04.04 2 https://vk.com/mu_marvel?w=wall-17592208_63418 + https://vk.com/mu_marvel?w=wall-17592208_63406 + \
 2019.04.06 2 https://vk.com/mu_marvel?w=wall-17592208_63434 + https://vk.com/mu_marvel?w=wall-17592208_63433 + \
 2019.04.09 1 https://vk.com/mu_marvel?w=wall-17592208_63574 + \
-2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63644 - \
+2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63644 ! \
 2019.04.11 2 https://vk.com/mu_marvel?w=wall-17592208_63750 + https://vk.com/mu_marvel?w=wall-17592208_63745 + \
 2019.04.13 1 https://vk.com/mu_marvel?w=wall-17592208_63809 + \
 2019.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_63875 + \
@@ -45,7 +45,7 @@ Total posts amount: 70	Posts dates amount: 52\
 2019.05.24 2 https://vk.com/mu_marvel?w=wall-17592208_65567 + https://vk.com/mu_marvel?w=wall-17592208_65570 + \
 2019.05.26 1 https://vk.com/mu_marvel?w=wall-17592208_65647 + \
 2019.05.28 1 https://vk.com/mu_marvel?w=wall-17592208_65856 + \
-2019.05.31 1 https://vk.com/mu_marvel?w=wall-17592208_65857 - \
+2019.05.31 1 https://vk.com/mu_marvel?w=wall-17592208_65857 ! \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66340 + \
 2019.06.13 1 https://vk.com/mu_marvel?w=wall-17592208_66337 + \
 2019.06.15 6 https://vk.com/mu_marvel?w=wall-17592208_66410 + https://vk.com/mu_marvel?w=wall-17592208_66413 + https://vk.com/mu_marvel?w=wall-17592208_66415 + https://vk.com/mu_marvel?w=wall-17592208_66412 + https://vk.com/mu_marvel?w=wall-17592208_66414 + https://vk.com/mu_marvel?w=wall-17592208_66411 + \

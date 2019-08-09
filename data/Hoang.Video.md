@@ -11,7 +11,7 @@ Hoang.Video	Editor Video 5 2019.03.14\
 Total posts amount: 9	Posts dates amount: 9\
 2019.03.14 1 https://vk.com/mu_marvel?w=wall-17592208_62269 + \
 2019.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_62547 + \
-2019.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_63917 - \
+2019.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_63917 ! \
 2019.04.28 1 https://vk.com/mu_marvel?w=wall-17592208_64179 + \
 2019.05.11 1 https://vk.com/mu_marvel?w=wall-17592208_64846 + \
 2019.05.14 1 https://vk.com/mu_marvel?w=wall-17592208_64982 + \
