@@ -1,4 +1,5 @@
 import argparse
+import os
 import sys
 import vk
 
@@ -15,8 +16,9 @@ from queue import Queue, Empty
 class Vk:
     def __init__(self):
         print('\nInitializing vk api')
-        self.api_version = '5.92'
+        self.api_version = '5.101'
         self.community_id = '17592208'
+        self.admins = [5962550, 155003349, 151414919, 295683611]
         self.user_api = None
         self.community_api = None
         if command_args.login and command_args.password:
@@ -56,6 +58,16 @@ class Vk:
         except:
             sleep(0.5)
             return self.get_posts(offset, count, filter)
+
+    def get_post(self, id):
+        if not self.user_api:
+            return None
+        post_id = '-' + self.community_id + '_' + str(id)
+        try:
+            return self.user_api.wall.getById(posts=post_id, v=self.api_version)
+        except:
+            sleep(0.5)
+            return self.get_post(id)
 
     def get_reposts(self, id):
         if not self.user_api:
@@ -224,6 +236,12 @@ class RegBook:
         self.ask('1')
         return posts
 
+    def get_approved_posts(self):
+        self.ask('8')
+        posts = self.ask('2')[1:-2]
+        self.ask('1')
+        return posts
+
     def approve_post(self, request):
         self.ask('8')
         self.ask('0')
@@ -315,7 +333,8 @@ class Tools:
                 columns = line.split(' ')
                 amount = int(columns[1])
                 for i in range(0, amount):
-                    posts[self.clear_string(columns[2 + i * 2])] = self.clear_string(columns[0])
+                    posts[self.clear_string(columns[2 + i * 2])] = \
+                         [self.clear_string(columns[0]), self.clear_string(columns[3 + i * 2])]
         member['posts'] = posts
         return member
 
@@ -394,6 +413,24 @@ class Tools:
             return
         regBook = RegBook()
         key_to_member, id_to_members = self.get_members_mapping(regBook)
+        print('\nInput date to add posts from in format YYYY.MM.DD or "0" for basic option\n')
+        date_from = input()
+        print()
+        if date_from == '0':
+            date_from = datetime.now() - timedelta(days=1)
+            max_posts = 4
+            step = 1
+        else:
+            date_from = self.my_date_to_universal(date_from)
+            print('Input max posts amount per day\n')
+            max_posts = int(input())
+            print()
+            print('Input step\n')
+            step = int(input())
+            print()
+        member_to_posts = {}
+        for _, member in key_to_member.items():
+            member_to_posts[member] = [0, date_from]
         posts = self.vk.get_posts(filter='postponed')
         if posts['count'] > 100:
             new_posts = self.vk.get_posts(offset=100, filter='postponed')
@@ -404,17 +441,23 @@ class Tools:
         for post in posts['items']:
             if 'created_by' in post and str(post['created_by']) in id_to_members:
                 id = str(post['created_by'])
-                key = id + self.get_hashtag(post)
+                key = id + self.get_hashtag(post).replace(' ', '')
                 link = self.post_id_to_link(post['id'])
                 found, result = regBook.find(link)
                 if found:
                     counter += 1
                 if not found:
                     if key in key_to_member:
-                        regBook.add_post(key_to_member[key], link)
-                        not_found.append(key_to_member[key] + ' ' + link + '\nAdded to Conduit')
+                        member = key_to_member[key]
+                        member_to_posts[member][0] += 1
+                        if member_to_posts[member][0] > max_posts:
+                            member_to_posts[member][1] += timedelta(days=step)
+                            member_to_posts[member][0] = 0
+                        regBook.add_post(member, link, member_to_posts[member][1].strftime('%Y.%m.%d'))
+                        not_found.append(member + ' ' + link + '\nAdded to Conduit')
                     else:
-                        not_found.append('Incomplete key: ' + key + '\nPossible authors of ' + link + ' -- ' + self.list_to_string(id_to_members[id]))
+                        not_found.append('Incomplete hashtag: ' + self.get_hashtag(post) + '\nPossible authors of ' +
+                                         link + ' -- ' + self.list_to_string(id_to_members[id]))
                 elif not key in key_to_member:
                     need_work.append(result)
         print(len(not_found), 'posts not found in Conduit:\n')
@@ -435,10 +478,24 @@ class Tools:
         regBook = RegBook()
         key_to_member, id_to_members = self.get_members_mapping(regBook)
         posts_to_judge = regBook.get_posts_with_default_status()
+        approved_posts = regBook.get_approved_posts()
         mapped_posts = {}
-        for i, post in enumerate(posts_to_judge):
-            mapped_posts[self.clear_string(post.split(' ')[-1])] = i
-        date_from = self.my_date_to_universal('2018.08.01')
+        for post in posts_to_judge:
+            mapped_posts[self.clear_string(post.split(' ')[-1])] = False
+        for post in approved_posts:
+            mapped_posts[self.clear_string(post.split(' ')[-1])] = True
+        old_posts = {}
+        for file in os.listdir(os.fsencode('../data')):
+            filename = os.fsdecode(file)
+            if '_dismissed' in filename:
+                contents = open('../data/' + filename).readlines()
+                for line in contents:
+                    if 'https' in line:
+                        columns = line.replace('\t', ' ').split(' ')
+                        for text in columns:
+                            if 'https' in text:
+                                old_posts[self.clear_string(text)] = False
+        date_from = self.my_date_to_universal('2019.06.01')
         counter = 0
         offset = -100
         date = datetime.now()
@@ -449,17 +506,54 @@ class Tools:
                 date = self.vk_date_to_universal(post['date'])
                 if date < date_from:
                     break
-                if 'signer_id' in post and str(post['signer_id']) in id_to_members\
-                or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in mapped_posts\
-                or self.post_id_to_cached_link(post['id']) in mapped_posts:
-                    link = None
-                    if 'postponed_id' in post:
-                        link = self.post_id_to_cached_link(post['postponed_id'])
-                    if link and not link in mapped_posts and not self.post_id_to_cached_link(post['id']) in mapped_posts:
-                        print(self.post_id_to_link(post['id']))
-                        counter += 1
+                signer_id = None
+                link, actual_link = None, self.post_id_to_cached_link(post['id'])
+                easy_link = self.post_id_to_link(post['id'])
+                hashtag = self.get_hashtag(post)
+                if 'signer_id' in post and str(post['signer_id']) in id_to_members:
+                    signer_id = str(post['signer_id'])
+                if 'postponed_id' in post:
+                    link = self.post_id_to_cached_link(post['postponed_id'])
+                if link and link in old_posts or actual_link in old_posts:
+                    continue
+                if link and link in mapped_posts:
+                    if mapped_posts[link]:
+                        continue
                     regBook.approve_post(link)
-        print(counter)
+                    mapped_posts[link] = True
+                    continue
+                if actual_link in mapped_posts:
+                    if mapped_posts[actual_link]:
+                        continue
+                    regBook.approve_post(actual_link)
+                    mapped_posts[actual_link] = True
+                    continue
+                if '#MU_Paintings' in hashtag or '#MU_PartnersVideo' in hashtag\
+                or '#MU_Anouncements' in hashtag or '#MU_Special' in hashtag:
+                    continue
+                if not post['text'] or post['text'][0] != '#':
+                    print('Specific post', easy_link)
+                    continue
+                if not link:
+                    print('Not postponed', easy_link)
+                    continue
+                if signer_id:
+                    key = signer_id + hashtag.replace(' ', '')
+                    if key in key_to_member:
+                        print(key_to_member[key], 'posted', easy_link, '(key:', key + ')', date.strftime('%Y.%m.%d'))
+                        regBook.add_post(key_to_member[key], link, (date - timedelta(days=3)).strftime('%Y.%m.%d'))
+                        regBook.approve_post(link)
+                    else:
+                        print('One of', id_to_members[signer_id], 'posted', easy_link, hashtag)
+                else:
+                    if not 'signer_id' in post:
+                        counter += 1
+                    elif not post['signer_id'] in self.vk.admins:
+                        print('Unaccounted post by', 'https://vk.com/id' + str(post['signer_id']), easy_link, hashtag)
+        print(counter, 'unknown posts')
+        for link, found in mapped_posts.items():
+            if not found and len(self.vk.get_post(link.split('_')[-1])) == 0:
+                regBook.reject_post(link)
         if regBook.ask('-1') != 0:
             print('\nWarning: Silent RegBook did not exit correctly')
 
@@ -494,7 +588,7 @@ class Tools:
                     continue
                 if date < date_from:
                     break
-                if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post) == rubric\
+                if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post).replace(' ', '') == rubric\
                 or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in member['posts']\
                 or self.post_id_to_cached_link(post['id']) in member['posts']:
                     print(date, self.post_id_to_link(post['id']), post['likes']['count'], post['reposts']['count'])
@@ -507,9 +601,9 @@ class Tools:
                     stats['views'][-1] -= fake_views
                     counter += 1
         made_counter = 0
-        for post, date in member['posts'].items():
-            date = self.my_date_to_universal(date)
-            if date >= date_from and date < date_to:
+        for post, info in member['posts'].items():
+            date = self.my_date_to_universal(info[0])
+            if date >= date_from and date < date_to and info[1] != '!':
                 made_counter += 1
         print()
         print(member['name'], 'made', made_counter, 'posts since', date_from.date())
@@ -594,7 +688,7 @@ class Tools:
         counter = 0
         offset = -100
         date = datetime.now()
-        date_from = self.my_date_to_universal('2019.01.01')
+        date_from = self.my_date_to_universal('2019.06.01')
         while date >= date_from:
             offset += 100
             posts = self.vk.get_posts(offset, 100)
