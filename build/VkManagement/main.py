@@ -547,6 +547,7 @@ class Tools:
                         print('One of', id_to_members[signer_id], 'posted', easy_link, hashtag)
                 else:
                     if not 'signer_id' in post:
+                        print('Unknown post', easy_link, hashtag)
                         counter += 1
                     elif not post['signer_id'] in self.vk.admins:
                         print('Unaccounted post by', 'https://vk.com/id' + str(post['signer_id']), easy_link, hashtag)
