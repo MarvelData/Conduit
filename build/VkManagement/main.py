@@ -264,14 +264,18 @@ class Tools:
         self.funcs.append(self.get_member_stats)
         self.funcs.append(self.get_member_plot)
         self.funcs.append(self.get_members_plot)
-        self.funcs.append(self.find_posters)
+        self.funcs.append(self.get_specific_posts)
+        self.funcs.append(self.get_postponed_link_for_post)
+        self.funcs.append(self.get_actual_link_for_post)
         self.names = []
         self.names.append('I would like to autoadd posts for members')
         self.names.append('I would like to automanage posts')
         self.names.append('I would like to get stats for member')
         self.names.append('I would like to get plot for member')
         self.names.append('I would like to get plot for all members')
-        self.names.append('I would like to get posters')
+        self.names.append('I would like to get specific posts')
+        self.names.append('I would like to get postponed link for post')
+        self.names.append('I would like to get actual link for post')
 
     def init_vk(self):
         if not self.vk:
@@ -496,7 +500,9 @@ class Tools:
                             if 'https' in text:
                                 old_posts[self.clear_string(text)] = False
         date_from = self.my_date_to_universal('2019.06.01')
+        print()
         counter = 0
+        actual_links_counter = 0
         offset = -100
         date = datetime.now()
         while date >= date_from:
@@ -523,6 +529,8 @@ class Tools:
                     mapped_posts[link] = True
                     continue
                 if actual_link in mapped_posts:
+                    print('Actual link in conduit:', actual_link)
+                    actual_links_counter += 1
                     if mapped_posts[actual_link]:
                         continue
                     regBook.approve_post(actual_link)
@@ -551,7 +559,8 @@ class Tools:
                         counter += 1
                     elif not post['signer_id'] in self.vk.admins:
                         print('Unaccounted post by', 'https://vk.com/id' + str(post['signer_id']), easy_link, hashtag)
-        print(counter, 'unknown posts')
+        print()
+        print(counter, 'unknown posts,', actual_links_counter, 'actual links in conduit')
         for link, found in mapped_posts.items():
             if not found and len(self.vk.get_post(link.split('_')[-1])) == 0:
                 regBook.reject_post(link)
@@ -683,13 +692,13 @@ class Tools:
         pyplot.legend()
         pyplot.show()
 
-    def find_posters(self):
+    def get_specific_posts(self):
         if not self.init_vk():
             return
-        counter = 0
         offset = -100
         date = datetime.now()
         date_from = self.my_date_to_universal('2019.06.01')
+        print()
         while date >= date_from:
             offset += 100
             posts = self.vk.get_posts(offset, 100)
@@ -699,6 +708,46 @@ class Tools:
                     break
                 if not post['text'] or post['text'][0] != '#':
                     print(self.post_id_to_link(post['id']))
+
+    def get_postponed_link_for_post(self):
+        if not self.init_vk():
+            return
+        print('\nInput your link\n')
+        posts = self.vk.get_post(self.clear_string(input()).split('_')[-1])
+        if len(posts) == 0:
+            print('\nWrong link')
+            return
+        if len(posts) > 1:
+            print('\nSomething went wrong, you got a lot of posts:', len(posts))
+            return
+        post = posts[0]
+        if 'postponed_id' in post:
+            print()
+            print(self.post_id_to_cached_link(post['postponed_id']))
+        else:
+            print('\nThis post was not postponed!')
+
+    def get_actual_link_for_post(self):
+        if not self.init_vk():
+            return
+        print('\nInput your link\n')
+        postponed_id = int(self.clear_string(input()).split('_')[-1])
+        print('\nInput date to search back to in format YYYY.MM.DD\n')
+        date_from = self.my_date_to_universal(input())
+        print()
+        offset = -100
+        date = datetime.now()
+        while date >= date_from:
+            offset += 100
+            posts = self.vk.get_posts(offset, 100)
+            for post in posts['items']:
+                date = self.vk_date_to_universal(post['date'])
+                if date < date_from:
+                    break
+                if 'postponed_id' in post and post['postponed_id'] == postponed_id:
+                    print(self.post_id_to_link(post['id']))
+                    return
+        print('Post not found in time period since', date_from.strftime('%Y.%m.%d'))
 
 
 parser = argparse.ArgumentParser()
