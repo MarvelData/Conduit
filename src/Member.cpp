@@ -259,7 +259,7 @@ bool Member::OnVacation()
     ReadSpecificInfo(path);
     if (vacations.empty())
         return false;
-    else if (vacations.rbegin()->first <= Date::Now() && vacations.rbegin()->second >= Date::Now())
+    else if (vacations.rbegin()->first < Date::Now() && vacations.rbegin()->second >= Date::Now())
         return true;
     return false;
 }

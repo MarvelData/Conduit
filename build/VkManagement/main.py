@@ -217,7 +217,7 @@ class RegBook:
         search_result = self.ask(request)
         self.ask('1')
         for line in search_result:
-            if 'is posted by' in line:
+            if 'is made by' in line:
                 return True, line
             if 'Didn\'t find' in line:
                 return False, None

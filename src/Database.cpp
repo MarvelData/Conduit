@@ -417,14 +417,14 @@ void Database::FindPosts()
     cin >> search;
 
     if (posts.first.count(search)) {
-        cout << endl << search << " is posted by " << posts.first[search].back() << endl;
+        cout << endl << search << " is made by " << posts.first[search].back() << endl;
         return;
     }
 
     if (search.find("vk.com/wall") != -1) {
         string finalLink = Communication::ProceedLink(search);
         if (posts.first.count(finalLink)) {
-            cout << endl << finalLink << " is posted by " << posts.first[finalLink].back() << endl;
+            cout << endl << finalLink << " is made by " << posts.first[finalLink].back() << endl;
             return;
         }
     }
@@ -433,7 +433,7 @@ void Database::FindPosts()
     bool found = false;
     for (auto &post : posts.first)
         if (post.first.find(search) != -1) {
-            cout << post.first << " is posted by " << post.second.back() << endl;
+            cout << post.first << " is made by " << post.second.back() << endl;
             found = true;
         }
 
