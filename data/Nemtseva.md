@@ -1,8 +1,15 @@
 Nemtseva	Editor Opinion 2 2019.06.08\
 369914435\
 0 rubric switches:\
-0 frequency switches:\
-0 vacations:\
+2 frequency switches:\
+2019.06.20 2 changed to 5 \
+2019.08.10 5 changed to 2 \
+5 vacations:\
+2019.06.17 2019.06.20 \
+2019.06.26 2019.06.30 \
+2019.07.01 2019.07.06 \
+2019.07.16 2019.07.18 \
+2019.08.01 2019.08.08 \
 Total posts amount: 11	Posts dates amount: 10\
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66155 + https://vk.com/mu_marvel?w=wall-17592208_66157 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66315 + \

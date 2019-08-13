@@ -1,8 +1,15 @@
 Hoang.Reflection	Editor Reflection 3 2019.05.06\
 97353724\
 0 rubric switches:\
-0 frequency switches:\
-0 vacations:\
+2 frequency switches:\
+2019.06.10 3 changed to 5 \
+2019.08.12 5 changed to 3 \
+5 vacations:\
+2019.05.15 2019.05.18 \
+2019.05.21 2019.05.25 \
+2019.06.05 2019.06.12 \
+2019.07.14 2019.07.21 \
+2019.08.01 2019.08.08 \
 Total posts amount: 20	Posts dates amount: 15\
 2019.03.24 1 https://vk.com/mu_marvel?w=wall-17592208_62960 + \
 2019.03.31 1 https://vk.com/mu_marvel?w=wall-17592208_63302 + \

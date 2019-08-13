@@ -2,8 +2,10 @@ Kadirov.OST	Editor OST 2 2019.05.18\
 64471408\
 0 rubric switches:\
 0 frequency switches:\
-0 vacations:\
-Total posts amount: 28	Posts dates amount: 16\
+2 vacations:\
+2019.06.01 2019.06.08 \
+2019.07.10 2019.07.17 \
+Total posts amount: 36	Posts dates amount: 19\
 2019.05.18 1 https://vk.com/mu_marvel?w=wall-17592208_65271 + \
 2019.05.19 3 https://vk.com/mu_marvel?w=wall-17592208_65302 + https://vk.com/mu_marvel?w=wall-17592208_65303 + https://vk.com/mu_marvel?w=wall-17592208_65304 + \
 2019.05.22 4 https://vk.com/mu_marvel?w=wall-17592208_65423 + https://vk.com/mu_marvel?w=wall-17592208_65425 + https://vk.com/mu_marvel?w=wall-17592208_65426 + https://vk.com/mu_marvel?w=wall-17592208_65424 + \
@@ -17,6 +19,9 @@ Total posts amount: 28	Posts dates amount: 16\
 2019.06.19 1 https://vk.com/mu_marvel?w=wall-17592208_66652 + \
 2019.06.20 1 https://vk.com/mu_marvel?w=wall-17592208_66653 + \
 2019.06.21 1 https://vk.com/mu_marvel?w=wall-17592208_66654 + \
+2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68781 - https://vk.com/mu_marvel?w=wall-17592208_68782 - \
+2019.07.03 3 https://vk.com/mu_marvel?w=wall-17592208_68769 - https://vk.com/mu_marvel?w=wall-17592208_68772 - https://vk.com/mu_marvel?w=wall-17592208_68775 - \
+2019.07.05 3 https://vk.com/mu_marvel?w=wall-17592208_68776 - https://vk.com/mu_marvel?w=wall-17592208_68777 - https://vk.com/mu_marvel?w=wall-17592208_68778 - \
 2019.08.01 1 https://vk.com/mu_marvel?w=wall-17592208_68517 + \
 2019.08.07 2 https://vk.com/mu_marvel?w=wall-17592208_68515 + https://vk.com/mu_marvel?w=wall-17592208_68514 - \
 2019.08.10 1 https://vk.com/mu_marvel?w=wall-17592208_68779 + \

@@ -1,11 +1,19 @@
 Seredkin	Editor News 1 2019.04.20\
 156769728\
 0 rubric switches:\
-0 frequency switches:\
-3 vacations:\
+2 frequency switches:\
+2019.06.10 1 changed to 3 \
+2019.08.10 3 changed to 1 \
+9 vacations:\
 2019.04.25 2019.04.28 \
+2019.05.02 2019.05.06 \
 2019.05.22 2019.05.25 \
 2019.06.05 2019.06.12 \
+2019.07.05 2019.07.08 \
+2019.07.22 2019.07.26 \
+2019.08.01 2019.08.02 \
+2019.08.04 2019.08.06 \
+2019.08.11 2019.08.13 \
 Total posts amount: 67	Posts dates amount: 44\
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64022 + \
 2019.04.21 3 https://vk.com/mu_marvel?w=wall-17592208_64072 + https://vk.com/mu_marvel?w=wall-17592208_64079 + https://vk.com/mu_marvel?w=wall-17592208_64077 + \

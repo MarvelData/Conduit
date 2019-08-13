@@ -1,12 +1,16 @@
 Minkovskiy.Opinion	Editor Opinion 3 2019.05.10\
 289674460\
 0 rubric switches:\
-0 frequency switches:\
-4 vacations:\
+2 frequency switches:\
+2019.06.16 3 changed to 5 \
+2019.08.03 5 changed to 3 \
+6 vacations:\
 2019.05.17 2019.05.24 \
 2019.05.31 2019.06.01 \
 2019.06.03 2019.06.04 \
 2019.06.06 2019.06.11 \
+2019.07.01 2019.07.08 \
+2019.08.04 2019.08.11 \
 Total posts amount: 6	Posts dates amount: 6\
 2019.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_64861 ! \
 2019.05.15 1 https://vk.com/mu_marvel?w=wall-17592208_65410 + \
