@@ -4,7 +4,7 @@ Evdokimov.Screens	Editor Screen 3 2019.03.13\
 1 frequency switches:\
 2019.03.14 5 changed to 3 \
 0 vacations:\
-Total posts amount: 103	Posts dates amount: 24\
+Total posts amount: 120	Posts dates amount: 27\
 2019.03.13 4 https://vk.com/mu_marvel?w=wall-17592208_62241 + https://vk.com/mu_marvel?w=wall-17592208_62242 + https://vk.com/mu_marvel?w=wall-17592208_62243 + https://vk.com/mu_marvel?w=wall-17592208_62244 + \
 2019.03.14 2 https://vk.com/mu_marvel?w=wall-17592208_62286 + https://vk.com/mu_marvel?w=wall-17592208_62288 + \
 2019.03.24 1 https://vk.com/mu_marvel?w=wall-17592208_62824 ! \
@@ -29,3 +29,6 @@ Total posts amount: 103	Posts dates amount: 24\
 2019.08.08 2 https://vk.com/mu_marvel?w=wall-17592208_68664 + https://vk.com/mu_marvel?w=wall-17592208_68665 + \
 2019.08.09 2 https://vk.com/mu_marvel?w=wall-17592208_68666 + https://vk.com/mu_marvel?w=wall-17592208_68671 + \
 2019.08.10 2 https://vk.com/mu_marvel?w=wall-17592208_68670 + https://vk.com/mu_marvel?w=wall-17592208_68672 + \
+2019.08.11 8 https://vk.com/mu_marvel?w=wall-17592208_68674 - https://vk.com/mu_marvel?w=wall-17592208_68679 - https://vk.com/mu_marvel?w=wall-17592208_68668 - https://vk.com/mu_marvel?w=wall-17592208_68669 - https://vk.com/mu_marvel?w=wall-17592208_68675 - https://vk.com/mu_marvel?w=wall-17592208_68673 - https://vk.com/mu_marvel?w=wall-17592208_68676 - https://vk.com/mu_marvel?w=wall-17592208_68677 - \
+2019.08.12 8 https://vk.com/mu_marvel?w=wall-17592208_68682 - https://vk.com/mu_marvel?w=wall-17592208_68680 - https://vk.com/mu_marvel?w=wall-17592208_68678 - https://vk.com/mu_marvel?w=wall-17592208_68683 - https://vk.com/mu_marvel?w=wall-17592208_68684 - https://vk.com/mu_marvel?w=wall-17592208_68681 - https://vk.com/mu_marvel?w=wall-17592208_68685 - https://vk.com/mu_marvel?w=wall-17592208_68687 - \
+2019.08.13 1 https://vk.com/mu_marvel?w=wall-17592208_68686 - \
