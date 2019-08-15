@@ -1,7 +1,8 @@
-Parker.OST	Editor OST 2 2019.07.29\
+Parker.OST	Editor OST 1 2019.07.29\
 429989500\
 0 rubric switches:\
-0 frequency switches:\
+1 frequency switches:\
+2019.08.15 2 changed to 1 \
 0 vacations:\
 Total posts amount: 22	Posts dates amount: 14\
 2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68435 - https://vk.com/mu_marvel?w=wall-17592208_68312 - \
