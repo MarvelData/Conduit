@@ -499,7 +499,7 @@ class Tools:
                         for text in columns:
                             if 'https' in text:
                                 old_posts[self.clear_string(text)] = False
-        date_from = self.my_date_to_universal('2019.06.01')
+        date_from = self.my_date_to_universal('2019.07.01')
         print()
         counter = 0
         actual_links_counter = 0
@@ -511,7 +511,7 @@ class Tools:
             for post in posts['items']:
                 date = self.vk_date_to_universal(post['date'])
                 if date < date_from:
-                    break
+                    continue
                 signer_id = None
                 link, actual_link = None, self.post_id_to_cached_link(post['id'])
                 easy_link = self.post_id_to_link(post['id'])
@@ -597,7 +597,7 @@ class Tools:
                 if date >= date_to:
                     continue
                 if date < date_from:
-                    break
+                    continue
                 if 'signer_id' in post and post['signer_id'] == id and self.get_hashtag(post).replace(' ', '') == rubric\
                 or 'postponed_id' in post and self.post_id_to_cached_link(post['postponed_id']) in member['posts']\
                 or self.post_id_to_cached_link(post['id']) in member['posts']:
@@ -705,7 +705,7 @@ class Tools:
             for post in posts['items']:
                 date = self.vk_date_to_universal(post['date'])
                 if date < date_from:
-                    break
+                    continue
                 if not post['text'] or post['text'][0] != '#':
                     print(self.post_id_to_link(post['id']))
 
@@ -743,7 +743,7 @@ class Tools:
             for post in posts['items']:
                 date = self.vk_date_to_universal(post['date'])
                 if date < date_from:
-                    break
+                    continue
                 if 'postponed_id' in post and post['postponed_id'] == postponed_id:
                     print(self.post_id_to_link(post['id']))
                     return
