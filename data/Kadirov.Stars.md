@@ -4,5 +4,5 @@ Kadirov.Stars	Editor Stars 2 2019.08.14\
 0 frequency switches:\
 0 vacations:\
 Total posts amount: 9	Posts dates amount: 2\
-2019.08.14 4 https://vk.com/mu_marvel?w=wall-17592208_68945 + https://vk.com/mu_marvel?w=wall-17592208_68940 - https://vk.com/mu_marvel?w=wall-17592208_68937 - https://vk.com/mu_marvel?w=wall-17592208_68938 - \
+2019.08.14 4 https://vk.com/mu_marvel?w=wall-17592208_68945 + https://vk.com/mu_marvel?w=wall-17592208_68940 + https://vk.com/mu_marvel?w=wall-17592208_68937 - https://vk.com/mu_marvel?w=wall-17592208_68938 - \
 2019.08.15 5 https://vk.com/mu_marvel?w=wall-17592208_68962 - https://vk.com/mu_marvel?w=wall-17592208_68963 - https://vk.com/mu_marvel?w=wall-17592208_68966 - https://vk.com/mu_marvel?w=wall-17592208_68967 - https://vk.com/mu_marvel?w=wall-17592208_68968 - \
