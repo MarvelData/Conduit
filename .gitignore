@@ -3,3 +3,4 @@ cmake-build-debug/
 build/ConEmuPack\.180626/
 build/Terminal\.lnk
 *.bat
+build/VkManagement/__pycache__/
