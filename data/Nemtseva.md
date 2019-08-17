@@ -10,7 +10,7 @@ Nemtseva	Editor Opinion 2 2019.06.08\
 2019.07.01 2019.07.06 \
 2019.07.16 2019.07.18 \
 2019.08.01 2019.08.08 \
-Total posts amount: 13	Posts dates amount: 12\
+Total posts amount: 14	Posts dates amount: 13\
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66155 + https://vk.com/mu_marvel?w=wall-17592208_66157 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66315 + \
 2019.06.15 1 https://vk.com/mu_marvel?w=wall-17592208_66440 + \
@@ -23,3 +23,4 @@ Total posts amount: 13	Posts dates amount: 12\
 2019.07.29 1 https://vk.com/mu_marvel?w=wall-17592208_68259 + \
 2019.08.11 1 https://vk.com/mu_marvel?w=wall-17592208_68899 + \
 2019.08.13 1 https://vk.com/mu_marvel?w=wall-17592208_68900 + \
+2019.08.16 1 https://vk.com/mu_marvel?w=wall-17592208_69066 - \
