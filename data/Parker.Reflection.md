@@ -3,7 +3,7 @@ Parker.Reflection	Editor Reflection 2 2019.07.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 19	Posts dates amount: 15\
+Total posts amount: 22	Posts dates amount: 18\
 2019.07.26 1 https://vk.com/mu_marvel?w=wall-17592208_68157 + \
 2019.07.27 1 https://vk.com/mu_marvel?w=wall-17592208_68167 + \
 2019.07.28 1 https://vk.com/mu_marvel?w=wall-17592208_68162 + \
@@ -19,3 +19,6 @@ Total posts amount: 19	Posts dates amount: 15\
 2019.08.08 1 https://vk.com/mu_marvel?w=wall-17592208_68155 + \
 2019.08.09 1 https://vk.com/mu_marvel?w=wall-17592208_68165 + \
 2019.08.10 1 https://vk.com/mu_marvel?w=wall-17592208_68168 + \
+2019.08.21 1 https://vk.com/mu_marvel?w=wall-17592208_69426 + \
+2019.08.22 1 https://vk.com/mu_marvel?w=wall-17592208_69434 + \
+2019.08.23 1 https://vk.com/mu_marvel?w=wall-17592208_69438 + \
