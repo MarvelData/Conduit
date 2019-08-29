@@ -1,9 +1,9 @@
-Nemtseva	Editor Opinion 2 2019.06.08\
+Nemtseva	Editor Opinion 3 2019.06.08\
 369914435\
 0 rubric switches:\
 2 frequency switches:\
 2019.06.20 2 changed to 5 \
-2019.08.10 5 changed to 2 \
+2019.08.10 5 changed to 3 \
 5 vacations:\
 2019.06.17 2019.06.20 \
 2019.06.26 2019.06.30 \
