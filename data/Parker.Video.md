@@ -3,7 +3,7 @@ Parker.Video	Editor Video 3 2019.07.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 27	Posts dates amount: 17\
+Total posts amount: 31	Posts dates amount: 19\
 2019.07.19 1 https://vk.com/mu_marvel?w=wall-17592208_67678 + \
 2019.07.20 4 https://vk.com/mu_marvel?w=wall-17592208_67742 + https://vk.com/mu_marvel?w=wall-17592208_67679 + https://vk.com/mu_marvel?w=wall-17592208_67680 ! https://vk.com/mu_marvel?w=wall-17592208_67732 ! \
 2019.07.21 2 https://vk.com/mu_marvel?w=wall-17592208_67730 + https://vk.com/mu_marvel?w=wall-17592208_67741 + \
@@ -21,3 +21,5 @@ Total posts amount: 27	Posts dates amount: 17\
 2019.08.24 6 https://vk.com/mu_marvel?w=wall-17592208_69694 - https://vk.com/mu_marvel?w=wall-17592208_69695 - https://vk.com/mu_marvel?w=wall-17592208_69688 - https://vk.com/mu_marvel?w=wall-17592208_69690 - https://vk.com/mu_marvel?w=wall-17592208_69691 - https://vk.com/mu_marvel?w=wall-17592208_69692 - \
 2019.08.25 1 https://vk.com/mu_marvel?w=wall-17592208_69693 - \
 2019.08.27 1 https://vk.com/mu_marvel?w=wall-17592208_69689 + \
+2019.08.28 3 https://vk.com/mu_marvel?w=wall-17592208_69775 - https://vk.com/mu_marvel?w=wall-17592208_69777 - https://vk.com/mu_marvel?w=wall-17592208_69778 - \
+2019.08.29 1 https://vk.com/mu_marvel?w=wall-17592208_69779 - \
