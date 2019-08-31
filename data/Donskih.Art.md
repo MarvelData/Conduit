@@ -4,7 +4,7 @@ Donskih.Art	Editor Art 2 2019.04.22\
 0 frequency switches:\
 1 vacations:\
 2019.08.11 2019.08.25 \
-Total posts amount: 92	Posts dates amount: 52\
+Total posts amount: 95	Posts dates amount: 55\
 2019.04.22 3 https://vk.com/mu_marvel?w=wall-17592208_64086 ! https://vk.com/mu_marvel?w=wall-17592208_64094 + https://vk.com/mu_marvel?w=wall-17592208_64096 + \
 2019.04.24 1 https://vk.com/mu_marvel?w=wall-17592208_64109 + \
 2019.04.25 1 https://vk.com/mu_marvel?w=wall-17592208_64127 ! \
@@ -57,3 +57,6 @@ Total posts amount: 92	Posts dates amount: 52\
 2019.08.09 1 https://vk.com/mu_marvel?w=wall-17592208_68289 + \
 2019.08.10 1 https://vk.com/mu_marvel?w=wall-17592208_67448 + \
 2019.08.12 2 https://vk.com/mu_marvel?w=wall-17592208_68285 + https://vk.com/mu_marvel?w=wall-17592208_67449 + \
+2019.08.27 1 https://vk.com/mu_marvel?w=wall-17592208_69830 - \
+2019.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_69828 - \
+2019.08.31 1 https://vk.com/mu_marvel?w=wall-17592208_69827 - \

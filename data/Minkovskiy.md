@@ -1,9 +1,11 @@
-Minkovskiy	Editor Scenes 2 2019.02.23\
+Minkovskiy	Editor Reflection 3 2019.02.23\
 289674460\
-0 rubric switches:\
-2 frequency switches:\
+1 rubric switches:\
+2019.08.30 Scenes changed to Reflection \
+3 frequency switches:\
 2019.06.19 2 changed to 5 \
 2019.08.01 5 changed to 2 \
+2019.08.10 2 changed to 3 \
 6 vacations:\
 2019.02.25 2019.02.27 \
 2019.03.01 2019.03.15 \
@@ -11,7 +13,7 @@ Minkovskiy	Editor Scenes 2 2019.02.23\
 2019.05.31 2019.06.07 \
 2019.07.09 2019.07.16 \
 2019.08.04 2019.08.11 \
-Total posts amount: 58	Posts dates amount: 43\
+Total posts amount: 59	Posts dates amount: 44\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 + \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 + \
 2019.02.28 1 https://vk.com/mu_marvel?w=wall-17592208_61676 + \
@@ -55,3 +57,4 @@ Total posts amount: 58	Posts dates amount: 43\
 2019.07.24 1 https://vk.com/mu_marvel?w=wall-17592208_68062 + \
 2019.07.31 1 https://vk.com/mu_marvel?w=wall-17592208_68060 + \
 2019.08.01 1 https://vk.com/mu_marvel?w=wall-17592208_68061 + \
+2019.08.29 1 https://vk.com/mu_marvel?w=wall-17592208_69807 - \
