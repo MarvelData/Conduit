@@ -7,7 +7,7 @@ Parker.OST	Editor OST 1 2019.07.29\
 Total posts amount: 22	Posts dates amount: 14\
 2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68435 + https://vk.com/mu_marvel?w=wall-17592208_68312 - \
 2019.07.03 1 https://vk.com/mu_marvel?w=wall-17592208_68314 - \
-2019.07.29 2 https://vk.com/mu_marvel?w=wall-17592208_68315 + https://vk.com/mu_marvel?w=wall-17592208_68415 - \
+2019.07.29 2 https://vk.com/mu_marvel?w=wall-17592208_68315 + https://vk.com/mu_marvel?w=wall-17592208_68415 + \
 2019.07.30 2 https://vk.com/mu_marvel?w=wall-17592208_68405 + https://vk.com/mu_marvel?w=wall-17592208_68419 + \
 2019.07.31 2 https://vk.com/mu_marvel?w=wall-17592208_68311 + https://vk.com/mu_marvel?w=wall-17592208_68313 - \
 2019.08.01 2 https://vk.com/mu_marvel?w=wall-17592208_68437 + https://vk.com/mu_marvel?w=wall-17592208_68401 - \

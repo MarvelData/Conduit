@@ -1,10 +1,12 @@
-Donskih	Editor OST 2 2019.04.20\
+Donskih	Editor Opinion 4 2019.04.20\
 238156887\
-0 rubric switches:\
-3 frequency switches:\
+1 rubric switches:\
+2019.09.02 OST changed to Opinion \
+4 frequency switches:\
 2019.04.22 1 changed to 2 \
 2019.06.15 2 changed to 3 \
 2019.08.10 3 changed to 2 \
+2019.09.02 2 changed to 4 \
 9 vacations:\
 2019.04.23 2019.04.26 \
 2019.04.28 2019.04.29 \
@@ -15,7 +17,7 @@ Donskih	Editor OST 2 2019.04.20\
 2019.05.19 2019.05.20 \
 2019.06.01 2019.06.08 \
 2019.08.11 2019.08.25 \
-Total posts amount: 41	Posts dates amount: 32\
+Total posts amount: 42	Posts dates amount: 33\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 + https://vk.com/mu_marvel?w=wall-17592208_64023 + https://vk.com/mu_marvel?w=wall-17592208_64039 + https://vk.com/mu_marvel?w=wall-17592208_64038 + \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 + \
 2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 + \
@@ -48,3 +50,4 @@ Total posts amount: 41	Posts dates amount: 32\
 2019.07.28 1 https://vk.com/mu_marvel?w=wall-17592208_68283 + \
 2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68282 + \
 2019.08.03 1 https://vk.com/mu_marvel?w=wall-17592208_68392 + \
+2019.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_69903 + \
