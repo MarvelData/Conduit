@@ -17,7 +17,7 @@ Donskih	Editor Opinion 4 2019.04.20\
 2019.05.19 2019.05.20 \
 2019.06.01 2019.06.08 \
 2019.08.11 2019.08.25 \
-Total posts amount: 42	Posts dates amount: 33\
+Total posts amount: 43	Posts dates amount: 34\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 + https://vk.com/mu_marvel?w=wall-17592208_64023 + https://vk.com/mu_marvel?w=wall-17592208_64039 + https://vk.com/mu_marvel?w=wall-17592208_64038 + \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 + \
 2019.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_64156 + \
@@ -51,3 +51,4 @@ Total posts amount: 42	Posts dates amount: 33\
 2019.07.30 1 https://vk.com/mu_marvel?w=wall-17592208_68282 + \
 2019.08.03 1 https://vk.com/mu_marvel?w=wall-17592208_68392 + \
 2019.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_69903 + \
+2019.09.03 1 https://vk.com/mu_marvel?w=wall-17592208_69960 - \

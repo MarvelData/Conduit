@@ -3,7 +3,7 @@ Parker	Editor Facts 2 2019.07.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 21	Posts dates amount: 13\
+Total posts amount: 26	Posts dates amount: 16\
 2019.07.20 4 https://vk.com/mu_marvel?w=wall-17592208_67857 + https://vk.com/mu_marvel?w=wall-17592208_67871 + https://vk.com/mu_marvel?w=wall-17592208_67896 + https://vk.com/mu_marvel?w=wall-17592208_67860 ! \
 2019.07.21 1 https://vk.com/mu_marvel?w=wall-17592208_67865 ! \
 2019.07.22 2 https://vk.com/mu_marvel?w=wall-17592208_67858 + https://vk.com/mu_marvel?w=wall-17592208_67866 + \
@@ -17,3 +17,6 @@ Total posts amount: 21	Posts dates amount: 13\
 2019.08.01 2 https://vk.com/mu_marvel?w=wall-17592208_67863 + https://vk.com/mu_marvel?w=wall-17592208_67895 + \
 2019.08.02 1 https://vk.com/mu_marvel?w=wall-17592208_67861 + \
 2019.08.03 1 https://vk.com/mu_marvel?w=wall-17592208_67873 + \
+2019.09.01 2 https://vk.com/mu_marvel?w=wall-17592208_70014 - https://vk.com/mu_marvel?w=wall-17592208_70015 - \
+2019.09.02 1 https://vk.com/mu_marvel?w=wall-17592208_70016 - \
+2019.09.03 2 https://vk.com/mu_marvel?w=wall-17592208_70012 - https://vk.com/mu_marvel?w=wall-17592208_70013 - \
