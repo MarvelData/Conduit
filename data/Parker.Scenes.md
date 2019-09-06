@@ -4,7 +4,7 @@ Parker.Scenes	Editor Scenes 2 2019.07.06\
 0 frequency switches:\
 0 vacations:\
 Total posts amount: 61	Posts dates amount: 27\
-2019.07.20 3 https://vk.com/mu_marvel?w=wall-17592208_68010 + https://vk.com/mu_marvel?w=wall-17592208_67956 + https://vk.com/mu_marvel?w=wall-17592208_67952 - \
+2019.07.20 3 https://vk.com/mu_marvel?w=wall-17592208_68010 + https://vk.com/mu_marvel?w=wall-17592208_67956 + https://vk.com/mu_marvel?w=wall-17592208_67952 + \
 2019.07.21 1 https://vk.com/mu_marvel?w=wall-17592208_67945 - \
 2019.07.22 1 https://vk.com/mu_marvel?w=wall-17592208_67946 + \
 2019.07.23 2 https://vk.com/mu_marvel?w=wall-17592208_67941 + https://vk.com/mu_marvel?w=wall-17592208_67949 - \
