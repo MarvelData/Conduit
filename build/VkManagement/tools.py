@@ -20,7 +20,6 @@ class Tools:
         self.funcs.append(self.get_member_stats)
         self.funcs.append(self.get_member_plot)
         self.funcs.append(self.get_members_plot)
-        self.funcs.append(self.get_specific_posts)
         self.funcs.append(self.get_postponed_link_for_post)
         self.funcs.append(self.get_actual_link_for_post)
         self.names = []
@@ -29,7 +28,6 @@ class Tools:
         self.names.append('I would like to get stats for member')
         self.names.append('I would like to get plot for member')
         self.names.append('I would like to get plot for all members')
-        self.names.append('I would like to get specific posts')
         self.names.append('I would like to get postponed link for post')
         self.names.append('I would like to get actual link for post')
 
@@ -134,7 +132,8 @@ class Tools:
                         for text in columns:
                             if 'https' in text:
                                 old_posts[Utils.clear_string(text)] = False
-        date_from = Utils.my_date_to_universal('2019.07.01')
+        print('\nInput date to process posts from in format YYYY.MM.DD\n')
+        date_from = Utils.my_date_to_universal(input())
         print()
         counter = 0
         actual_links_counter = 0
@@ -172,7 +171,8 @@ class Tools:
                     mapped_posts[actual_link] = True
                     continue
                 if '#MU_Paintings' in hashtag or '#MU_PartnersVideo' in hashtag\
-                or '#MU_Anouncements' in hashtag or '#MU_Special' in hashtag:
+                or '#MU_Anouncements' in hashtag or '#MU_Announcements' in hashtag\
+				or '#MU_Special' in hashtag:
                     continue
                 if not post['text'] or post['text'][0] != '#':
                     print('Specific post', easy_link)
@@ -305,23 +305,6 @@ class Tools:
         pyplot.yticks(all_amounts, all_amounts)
         pyplot.legend()
         pyplot.show()
-
-    def get_specific_posts(self, _):
-        if not self.init_vk():
-            return
-        offset = -100
-        date = datetime.now()
-        date_from = Utils.my_date_to_universal('2019.06.01')
-        print()
-        while date >= date_from:
-            offset += 100
-            posts = self.vk.get_posts(offset, 100)
-            for post in posts['items']:
-                date = Utils.vk_date_to_universal(post['date'])
-                if date < date_from:
-                    continue
-                if not post['text'] or post['text'][0] != '#':
-                    print(Utils.post_id_to_link(post['id']))
 
     def get_postponed_link_for_post(self, _):
         if not self.init_vk():

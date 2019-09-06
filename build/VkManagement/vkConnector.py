@@ -8,7 +8,7 @@ class Vk:
         print('\nInitializing vk api')
         self.api_version = '5.101'
         self.community_id = '17592208'
-        self.admins = [5962550, 155003349, 151414919, 295683611]
+        self.admins = [5962550, 155003349, 151414919, 295683611, 328873069]
         self.user_api = None
         self.community_api = None
         if command_args.login and command_args.password:
