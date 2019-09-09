@@ -41,6 +41,17 @@ class Vk:
                 if 'admin_author_id' in message and message['admin_author_id'] == user_id:
                     print(message)
 
+    def get_poll(self, poll_id):
+        if not self.user_api:
+            return None
+        owner_id = '-' + self.community_id
+        try:
+            return self.user_api.polls.getById(owner_id=owner_id, poll_id=poll_id, v=self.api_version)
+        except:
+            sleep(0.5)
+            return self.get_poll(poll_id)
+
+
     def get_posts(self, offset=0, count=100, type_filter='all', owner_id=None):
         if not self.user_api:
             return None

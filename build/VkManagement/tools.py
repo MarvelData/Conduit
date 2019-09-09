@@ -18,6 +18,7 @@ class Tools:
         self.funcs.append(self.process_postponed_posts)
         self.funcs.append(self.process_posts)
         self.funcs.append(self.get_member_stats)
+        self.funcs.append(self.analyze_rubrics)
         self.funcs.append(self.get_member_plot)
         self.funcs.append(self.get_members_plot)
         self.funcs.append(self.get_postponed_link_for_post)
@@ -26,6 +27,7 @@ class Tools:
         self.names.append('I would like to autoadd posts for members')
         self.names.append('I would like to automanage posts')
         self.names.append('I would like to get stats for member')
+        self.names.append('I would like to analyze rubrics stats')
         self.names.append('I would like to get plot for member')
         self.names.append('I would like to get plot for all members')
         self.names.append('I would like to get postponed link for post')
@@ -232,7 +234,10 @@ class Tools:
                 if 'signer_id' in post and post['signer_id'] == editor_id and hashtag == rubric\
                 or 'postponed_id' in post and Utils.post_id_to_cached_link(post['postponed_id']) in member['posts']\
                 or Utils.post_id_to_cached_link(post['id']) in member['posts']:
-                    print(date, Utils.post_id_to_link(post['id']), post['likes']['count'], post['reposts']['count'])
+                    votes = -1
+                    if 'attachments' in post and 'poll' in post['attachments'][0]:
+                        votes = self.vk.get_poll(post['attachments'][0]['poll']['id'])['votes']
+                    print(date, Utils.post_id_to_link(post['id']), post['likes']['count'], post['reposts']['count'], votes)
                     fake_likes, fake_reposts, fake_views = Utils.filter_Kamil(member, post, self.vk)
                     for stat_type in ['comments', 'likes', 'reposts', 'views']:
                         stats[stat_type].append(post[stat_type]['count'])
@@ -241,6 +246,7 @@ class Tools:
                     stats['likes'][-1] -= fake_likes
                     stats['reposts'][-1] -= fake_reposts
                     stats['views'][-1] -= fake_views
+                    stats['votes'].append(votes)
                     counter += 1
         made_counter = 0
         for post, info in member['posts'].items():
@@ -251,6 +257,57 @@ class Tools:
         print(member['name'], 'made', made_counter, 'posts since', date_from.date())
         print(member['name'], 'has', counter, 'released posts since', date_from.date())
         print(member['name'] + "'s", 'average results are:')
+        for stat_type, values in stats.items():
+            summ = 0
+            for value in values:
+                summ += value
+            print(stat_type + ':', summ / counter)
+
+    def analyze_rubrics(self, regBook):
+        if not self.init_vk():
+            return
+        print('\nInput date to collect stats from in format YYYY.MM.DD\n')
+        date_from = Utils.my_date_to_universal(input())
+        print()
+        print('Input date to collect stats to in format YYYY.MM.DD\n')
+        date_to = Utils.my_date_to_universal(input())
+        print()
+        print('\nInput rubric\n')
+        rubric = input()
+        print()
+        news_posts = {}
+        if rubric == 'News':
+            member_amount = regBook.get_members_amount()
+            for i in range(member_amount):
+                member = Utils.parse_member_data(regBook.get_member_data(i))
+                if member['rubric'] == rubric:
+                    news_posts.update(member['posts'])
+        rubric = Utils.rubric_to_hashtag(rubric)
+        stats = defaultdict(list)
+        counter = 0
+        offset = -100
+        date = datetime.now()
+        while date >= date_from:
+            offset += 100
+            posts = self.vk.get_posts(offset, 100)
+            for post in posts['items']:
+                date = Utils.vk_date_to_universal(post['date'])
+                if date >= date_to:
+                    continue
+                if date < date_from:
+                    continue
+                hashtag = Utils.get_hashtag(post).replace(' ', '')
+                if hashtag == rubric or Utils.post_id_to_cached_link(post['id']) in news_posts\
+                or 'postponed_id' in post and Utils.post_id_to_cached_link(post['postponed_id']) in news_posts:
+                    votes = -1
+                    if 'attachments' in post and 'poll' in post['attachments'][0]:
+                        votes = self.vk.get_poll(post['attachments'][0]['poll']['id'])['votes']
+                    print(date, Utils.post_id_to_link(post['id']), post['likes']['count'], post['reposts']['count'], votes)
+                    for stat_type in ['comments', 'likes', 'reposts', 'views']:
+                        stats[stat_type].append(post[stat_type]['count'])
+                    stats['efficiency'].append((post['likes']['count']) / (post['views']['count']))
+                    stats['votes'].append(votes)
+                    counter += 1
         for stat_type, values in stats.items():
             summ = 0
             for value in values:
