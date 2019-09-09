@@ -5,7 +5,7 @@ Parker.OST	Editor OST 1 2019.07.29\
 2019.08.15 2 changed to 1 \
 0 vacations:\
 Total posts amount: 22	Posts dates amount: 14\
-2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68435 + https://vk.com/mu_marvel?w=wall-17592208_68312 - \
+2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68435 + https://vk.com/mu_marvel?w=wall-17592208_68312 + \
 2019.07.03 1 https://vk.com/mu_marvel?w=wall-17592208_68314 - \
 2019.07.29 2 https://vk.com/mu_marvel?w=wall-17592208_68315 + https://vk.com/mu_marvel?w=wall-17592208_68415 + \
 2019.07.30 2 https://vk.com/mu_marvel?w=wall-17592208_68405 + https://vk.com/mu_marvel?w=wall-17592208_68419 + \

@@ -24,8 +24,8 @@ Total posts amount: 61	Posts dates amount: 27\
 2019.08.10 5 https://vk.com/mu_marvel?w=wall-17592208_69164 + https://vk.com/mu_marvel?w=wall-17592208_69173 + https://vk.com/mu_marvel?w=wall-17592208_69169 + https://vk.com/mu_marvel?w=wall-17592208_69170 + https://vk.com/mu_marvel?w=wall-17592208_69171 + \
 2019.08.11 5 https://vk.com/mu_marvel?w=wall-17592208_69172 + https://vk.com/mu_marvel?w=wall-17592208_69174 + https://vk.com/mu_marvel?w=wall-17592208_69175 + https://vk.com/mu_marvel?w=wall-17592208_69176 + https://vk.com/mu_marvel?w=wall-17592208_69177 + \
 2019.08.12 5 https://vk.com/mu_marvel?w=wall-17592208_69178 + https://vk.com/mu_marvel?w=wall-17592208_69179 + https://vk.com/mu_marvel?w=wall-17592208_69180 + https://vk.com/mu_marvel?w=wall-17592208_69181 + https://vk.com/mu_marvel?w=wall-17592208_69182 + \
-2019.08.13 5 https://vk.com/mu_marvel?w=wall-17592208_69183 - https://vk.com/mu_marvel?w=wall-17592208_69184 + https://vk.com/mu_marvel?w=wall-17592208_69185 + https://vk.com/mu_marvel?w=wall-17592208_69186 + https://vk.com/mu_marvel?w=wall-17592208_69194 - \
-2019.08.14 5 https://vk.com/mu_marvel?w=wall-17592208_69188 - https://vk.com/mu_marvel?w=wall-17592208_69189 - https://vk.com/mu_marvel?w=wall-17592208_69190 - https://vk.com/mu_marvel?w=wall-17592208_69193 + https://vk.com/mu_marvel?w=wall-17592208_69195 - \
+2019.08.13 5 https://vk.com/mu_marvel?w=wall-17592208_69183 + https://vk.com/mu_marvel?w=wall-17592208_69184 + https://vk.com/mu_marvel?w=wall-17592208_69185 + https://vk.com/mu_marvel?w=wall-17592208_69186 + https://vk.com/mu_marvel?w=wall-17592208_69194 - \
+2019.08.14 5 https://vk.com/mu_marvel?w=wall-17592208_69188 + https://vk.com/mu_marvel?w=wall-17592208_69189 - https://vk.com/mu_marvel?w=wall-17592208_69190 - https://vk.com/mu_marvel?w=wall-17592208_69193 + https://vk.com/mu_marvel?w=wall-17592208_69195 - \
 2019.08.15 1 https://vk.com/mu_marvel?w=wall-17592208_69192 - \
 2019.08.17 1 https://vk.com/mu_marvel?w=wall-17592208_69157 - \
 2019.08.18 1 https://vk.com/mu_marvel?w=wall-17592208_69167 + \
