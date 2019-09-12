@@ -4,7 +4,7 @@ Kamil	Editor Gallery 2 2019.04.20\
 2019.05.10 Facts changed to Gallery \
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 84	Posts dates amount: 51\
+Total posts amount: 86	Posts dates amount: 53\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 + https://vk.com/mu_marvel?w=wall-17592208_64071 + \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 + \
 2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64193 + https://vk.com/mu_marvel?w=wall-17592208_64212 + \
@@ -54,5 +54,7 @@ Total posts amount: 84	Posts dates amount: 51\
 2019.09.01 1 https://vk.com/mu_marvel?w=wall-17592208_69988 + \
 2019.09.02 2 https://vk.com/mu_marvel?w=wall-17592208_69987 + https://vk.com/mu_marvel?w=wall-17592208_69911 - \
 2019.09.06 2 https://vk.com/mu_marvel?w=wall-17592208_70079 + https://vk.com/mu_marvel?w=wall-17592208_70080 + \
-2019.09.07 2 https://vk.com/mu_marvel?w=wall-17592208_70175 + https://vk.com/mu_marvel?w=wall-17592208_70176 - \
+2019.09.07 2 https://vk.com/mu_marvel?w=wall-17592208_70175 + https://vk.com/mu_marvel?w=wall-17592208_70176 + \
+2019.09.09 1 https://vk.com/mu_marvel?w=wall-17592208_70344 - \
+2019.09.10 1 https://vk.com/mu_marvel?w=wall-17592208_70345 - \
 2019.09.11 2 https://vk.com/mu_marvel?w=wall-17592208_70307 - https://vk.com/mu_marvel?w=wall-17592208_70308 - \

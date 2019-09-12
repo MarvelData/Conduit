@@ -10,7 +10,7 @@ Hoang.Reflection	Editor Reflection 3 2019.05.06\
 2019.06.05 2019.06.12 \
 2019.07.14 2019.07.21 \
 2019.08.01 2019.08.08 \
-Total posts amount: 22	Posts dates amount: 17\
+Total posts amount: 23	Posts dates amount: 18\
 2019.03.24 1 https://vk.com/mu_marvel?w=wall-17592208_62960 + \
 2019.03.31 1 https://vk.com/mu_marvel?w=wall-17592208_63302 + \
 2019.04.07 1 https://vk.com/mu_marvel?w=wall-17592208_63716 + \
@@ -28,3 +28,4 @@ Total posts amount: 22	Posts dates amount: 17\
 2019.07.12 1 https://vk.com/mu_marvel?w=wall-17592208_67507 + \
 2019.09.02 1 https://vk.com/mu_marvel?w=wall-17592208_69992 + \
 2019.09.06 1 https://vk.com/mu_marvel?w=wall-17592208_70120 + \
+2019.09.09 1 https://vk.com/mu_marvel?w=wall-17592208_70347 - \
