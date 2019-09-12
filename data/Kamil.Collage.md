@@ -3,7 +3,7 @@ Kamil.Collage	Editor Collage 4 2019.06.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 27	Posts dates amount: 23\
+Total posts amount: 28	Posts dates amount: 24\
 2019.06.06 2 https://vk.com/mu_marvel?w=wall-17592208_66129 + https://vk.com/mu_marvel?w=wall-17592208_66131 + \
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66162 + https://vk.com/mu_marvel?w=wall-17592208_66163 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66311 + \
@@ -26,4 +26,5 @@ Total posts amount: 27	Posts dates amount: 23\
 2019.09.01 1 https://vk.com/mu_marvel?w=wall-17592208_69915 + \
 2019.09.02 1 https://vk.com/mu_marvel?w=wall-17592208_69989 + \
 2019.09.06 1 https://vk.com/mu_marvel?w=wall-17592208_70081 + \
-2019.09.07 1 https://vk.com/mu_marvel?w=wall-17592208_70177 - \
+2019.09.07 1 https://vk.com/mu_marvel?w=wall-17592208_70177 + \
+2019.09.11 1 https://vk.com/mu_marvel?w=wall-17592208_70309 - \
