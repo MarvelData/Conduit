@@ -2,7 +2,8 @@ Kadirov.News	Editor News 2 2019.08.18\
 64471408\
 0 rubric switches:\
 0 frequency switches:\
-0 vacations:\
+1 vacations:\
+2019.09.01 2019.09.08 \
 Total posts amount: 11	Posts dates amount: 11\
 2019.08.17 1 https://vk.com/mu_marvel?w=wall-17592208_69198 + \
 2019.08.18 1 https://vk.com/mu_marvel?w=wall-17592208_69092 + \

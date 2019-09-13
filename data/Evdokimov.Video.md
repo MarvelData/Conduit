@@ -3,11 +3,13 @@ Evdokimov.Video	Editor Video 10 2019.04.10\
 0 rubric switches:\
 1 frequency switches:\
 2019.05.01 5 changed to 10 \
-4 vacations:\
+6 vacations:\
 2019.04.17 2019.04.24 \
 2019.05.01 2019.05.08 \
 2019.06.01 2019.06.08 \
 2019.07.01 2019.07.08 \
+2019.08.01 2019.08.08 \
+2019.09.01 2019.09.08 \
 Total posts amount: 11	Posts dates amount: 8\
 2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63669 + \
 2019.04.26 2 https://vk.com/mu_marvel?w=wall-17592208_64143 + https://vk.com/mu_marvel?w=wall-17592208_64145 + \

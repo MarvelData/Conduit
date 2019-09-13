@@ -2,10 +2,11 @@ Evdokimov.Fragments	Editor Fragments 7 2018.10.22\
 356508400\
 0 rubric switches:\
 0 frequency switches:\
-3 vacations:\
+4 vacations:\
 2019.01.10 2019.02.01 \
 2019.02.21 2019.03.01 \
 2019.07.01 2019.07.08 \
+2019.09.01 2019.09.08 \
 Total posts amount: 40	Posts dates amount: 39\
 2018.10.23 1 https://vk.com/mu_marvel?w=wall-17592208_58331 + \
 2018.10.30 1 https://vk.com/mu_marvel?w=wall-17592208_58711 + \

@@ -6,13 +6,15 @@ Minkovskiy	Editor Reflection 3 2019.02.23\
 2019.06.19 2 changed to 5 \
 2019.08.01 5 changed to 2 \
 2019.08.10 2 changed to 3 \
-6 vacations:\
+8 vacations:\
 2019.02.25 2019.02.27 \
 2019.03.01 2019.03.15 \
 2019.05.20 2019.05.27 \
 2019.05.31 2019.06.07 \
 2019.07.09 2019.07.16 \
 2019.08.04 2019.08.11 \
+2019.09.01 2019.09.06 \
+2019.09.08 2019.09.10 \
 Total posts amount: 60	Posts dates amount: 45\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 + \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 + \

@@ -7,7 +7,7 @@ Donskih	Editor Opinion 4 2019.04.20\
 2019.06.15 2 changed to 3 \
 2019.08.10 3 changed to 2 \
 2019.09.02 2 changed to 4 \
-9 vacations:\
+10 vacations:\
 2019.04.23 2019.04.26 \
 2019.04.28 2019.04.29 \
 2019.05.03 2019.05.04 \
@@ -17,6 +17,7 @@ Donskih	Editor Opinion 4 2019.04.20\
 2019.05.19 2019.05.20 \
 2019.06.01 2019.06.08 \
 2019.08.11 2019.08.25 \
+2019.09.04 2019.09.11 \
 Total posts amount: 43	Posts dates amount: 34\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 + https://vk.com/mu_marvel?w=wall-17592208_64023 + https://vk.com/mu_marvel?w=wall-17592208_64039 + https://vk.com/mu_marvel?w=wall-17592208_64038 + \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 + \

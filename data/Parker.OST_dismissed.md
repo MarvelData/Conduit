@@ -4,6 +4,9 @@ Parker.OST	Editor OST 1 2019.07.29\
 1 frequency switches:\
 2019.08.15 2 changed to 1 \
 0 vacations:\
+Finished on 2019.09.14\
+Actual posts amount: 22	Anticipated posts amount: 38	 Lag: 16
+\
 Total posts amount: 22	Posts dates amount: 14\
 2019.07.01 2 https://vk.com/mu_marvel?w=wall-17592208_68435 + https://vk.com/mu_marvel?w=wall-17592208_68312 + \
 2019.07.03 1 https://vk.com/mu_marvel?w=wall-17592208_68314 - \
