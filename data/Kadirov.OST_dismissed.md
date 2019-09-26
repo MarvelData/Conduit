@@ -5,6 +5,9 @@ Kadirov.OST	Editor OST 2 2019.05.18\
 2 vacations:\
 2019.06.01 2019.06.08 \
 2019.07.10 2019.07.17 \
+Finished on 2019.09.26\
+Actual posts amount: 63	Anticipated posts amount: 58
+\
 Total posts amount: 63	Posts dates amount: 26\
 2019.05.18 1 https://vk.com/mu_marvel?w=wall-17592208_65271 + \
 2019.05.19 3 https://vk.com/mu_marvel?w=wall-17592208_65302 + https://vk.com/mu_marvel?w=wall-17592208_65303 + https://vk.com/mu_marvel?w=wall-17592208_65304 + \

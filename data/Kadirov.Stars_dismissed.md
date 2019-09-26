@@ -3,6 +3,9 @@ Kadirov.Stars	Editor Stars 2 2019.08.14\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.09.26\
+Actual posts amount: 17	Anticipated posts amount: 21	 Lag: 4
+\
 Total posts amount: 17	Posts dates amount: 6\
 2019.08.10 1 https://vk.com/mu_marvel?w=wall-17592208_69236 + \
 2019.08.14 4 https://vk.com/mu_marvel?w=wall-17592208_68945 + https://vk.com/mu_marvel?w=wall-17592208_68940 + https://vk.com/mu_marvel?w=wall-17592208_68937 + https://vk.com/mu_marvel?w=wall-17592208_68938 ! \
