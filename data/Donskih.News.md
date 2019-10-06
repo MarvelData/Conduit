@@ -3,7 +3,7 @@ Donskih.News	Editor News 2 2019.09.02\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 37	Posts dates amount: 22\
+Total posts amount: 44	Posts dates amount: 26\
 2019.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_69939 + \
 2019.09.01 1 https://vk.com/mu_marvel?w=wall-17592208_70031 + \
 2019.09.02 3 https://vk.com/mu_marvel?w=wall-17592208_69941 + https://vk.com/mu_marvel?w=wall-17592208_69940 + https://vk.com/mu_marvel?w=wall-17592208_70028 + \
@@ -25,4 +25,8 @@ Total posts amount: 37	Posts dates amount: 22\
 2019.09.23 1 https://vk.com/mu_marvel?w=wall-17592208_70771 + \
 2019.09.24 1 https://vk.com/mu_marvel?w=wall-17592208_70822 + \
 2019.09.25 1 https://vk.com/mu_marvel?w=wall-17592208_70868 + \
-2019.09.26 1 https://vk.com/mu_marvel?w=wall-17592208_70848 - \
+2019.09.26 1 https://vk.com/mu_marvel?w=wall-17592208_70848 + \
+2019.09.28 1 https://vk.com/mu_marvel?w=wall-17592208_70992 + \
+2019.10.01 3 https://vk.com/mu_marvel?w=wall-17592208_71045 + https://vk.com/mu_marvel?w=wall-17592208_71081 + https://vk.com/mu_marvel?w=wall-17592208_71052 + \
+2019.10.02 2 https://vk.com/mu_marvel?w=wall-17592208_71050 + https://vk.com/mu_marvel?w=wall-17592208_71051 + \
+2019.10.03 1 https://vk.com/mu_marvel?w=wall-17592208_71105 + \

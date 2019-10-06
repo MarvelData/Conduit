@@ -4,7 +4,7 @@ Parker.Cosplay	Editor Cosplay 3 2019.07.06\
 0 frequency switches:\
 1 vacations:\
 2019.07.10 2019.07.17 \
-Total posts amount: 26	Posts dates amount: 18\
+Total posts amount: 39	Posts dates amount: 25\
 2019.07.20 1 https://vk.com/mu_marvel?w=wall-17592208_67931 + \
 2019.07.22 1 https://vk.com/mu_marvel?w=wall-17592208_67928 + \
 2019.07.23 1 https://vk.com/mu_marvel?w=wall-17592208_67939 + \
@@ -23,3 +23,10 @@ Total posts amount: 26	Posts dates amount: 18\
 2019.09.01 1 https://vk.com/mu_marvel?w=wall-17592208_69873 + \
 2019.09.03 3 https://vk.com/mu_marvel?w=wall-17592208_69874 + https://vk.com/mu_marvel?w=wall-17592208_69875 + https://vk.com/mu_marvel?w=wall-17592208_69876 ! \
 2019.09.04 1 https://vk.com/mu_marvel?w=wall-17592208_69877 + \
+2019.09.28 1 https://vk.com/mu_marvel?w=wall-17592208_70936 + \
+2019.09.29 2 https://vk.com/mu_marvel?w=wall-17592208_70930 + https://vk.com/mu_marvel?w=wall-17592208_70933 + \
+2019.09.30 2 https://vk.com/mu_marvel?w=wall-17592208_70929 - https://vk.com/mu_marvel?w=wall-17592208_70931 - \
+2019.10.01 2 https://vk.com/mu_marvel?w=wall-17592208_70928 + https://vk.com/mu_marvel?w=wall-17592208_70932 - \
+2019.10.02 2 https://vk.com/mu_marvel?w=wall-17592208_70939 + https://vk.com/mu_marvel?w=wall-17592208_70938 - \
+2019.10.04 2 https://vk.com/mu_marvel?w=wall-17592208_70927 + https://vk.com/mu_marvel?w=wall-17592208_70940 - \
+2019.10.05 2 https://vk.com/mu_marvel?w=wall-17592208_70926 - https://vk.com/mu_marvel?w=wall-17592208_70934 - \
