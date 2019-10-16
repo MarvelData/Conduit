@@ -3,6 +3,9 @@ Nemtseva.Feature	Editor FeatureOrMistake 4 2019.08.23\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.09.05\
+Actual posts amount: 5	Anticipated posts amount: 3
+\
 Total posts amount: 5	Posts dates amount: 5\
 2019.08.23 1 https://vk.com/mu_marvel?w=wall-17592208_69412 + \
 2019.08.26 1 https://vk.com/mu_marvel?w=wall-17592208_69657 + \
