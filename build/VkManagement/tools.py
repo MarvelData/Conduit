@@ -98,7 +98,10 @@ class Tools:
                 if found:
                     counter += 1
                     sys.stdout.write(result)
-                print(link, 'is posted by', 'https://vk.com/id' + str(post['created_by']))
+                if 'created_by' in post:
+                    print(link, 'is posted by', 'https://vk.com/id' + str(post['created_by']))
+                else:
+                    print(link, 'is posted by', '???')
                 print()
         print(len(not_found), 'posts not found in Conduit:\n')
         for post in not_found:
