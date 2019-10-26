@@ -15,6 +15,9 @@ Hoang	Editor FilmArt 3 2019.02.18\
 2019.08.01 2019.08.08 \
 2019.09.01 2019.09.05 \
 2019.09.11 2019.09.14 \
+Finished on 2019.09.15\
+Actual posts amount: 54	Anticipated posts amount: 57	 Lag: 3
+\
 Total posts amount: 54	Posts dates amount: 44\
 2019.02.18 1 https://vk.com/mu_marvel?w=wall-17592208_61389 + \
 2019.02.20 1 https://vk.com/mu_marvel?w=wall-17592208_61434 + \

@@ -11,6 +11,9 @@ Nemtseva	Editor Opinion 3 2019.06.08\
 2019.07.16 2019.07.18 \
 2019.08.01 2019.08.08 \
 2019.09.01 2019.09.08 \
+Finished on 2019.09.01\
+Actual posts amount: 15	Anticipated posts amount: 17	 Lag: 2
+\
 Total posts amount: 15	Posts dates amount: 14\
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66155 + https://vk.com/mu_marvel?w=wall-17592208_66157 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66315 + \

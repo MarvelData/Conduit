@@ -3,6 +3,9 @@ Parker.Reflection	Editor Reflection 2 2019.07.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.09.01\
+Actual posts amount: 38	Anticipated posts amount: 28
+\
 Total posts amount: 38	Posts dates amount: 22\
 2019.07.26 1 https://vk.com/mu_marvel?w=wall-17592208_68157 + \
 2019.07.27 1 https://vk.com/mu_marvel?w=wall-17592208_68167 + \

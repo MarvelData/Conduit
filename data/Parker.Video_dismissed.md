@@ -3,6 +3,9 @@ Parker.Video	Editor Video 3 2019.07.06\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.09.05\
+Actual posts amount: 34	Anticipated posts amount: 20
+\
 Total posts amount: 34	Posts dates amount: 21\
 2019.07.19 1 https://vk.com/mu_marvel?w=wall-17592208_67678 + \
 2019.07.20 4 https://vk.com/mu_marvel?w=wall-17592208_67742 + https://vk.com/mu_marvel?w=wall-17592208_67679 + https://vk.com/mu_marvel?w=wall-17592208_67680 ! https://vk.com/mu_marvel?w=wall-17592208_67732 ! \

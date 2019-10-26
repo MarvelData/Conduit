@@ -13,6 +13,9 @@ Hoang.Reflection	Editor Reflection 3 2019.05.06\
 2019.09.03 2019.09.05 \
 2019.09.07 2019.09.08 \
 2019.09.13 2019.09.14 \
+Finished on 2019.09.15\
+Actual posts amount: 24	Anticipated posts amount: 26	 Lag: 2
+\
 Total posts amount: 24	Posts dates amount: 19\
 2019.03.24 1 https://vk.com/mu_marvel?w=wall-17592208_62960 + \
 2019.03.31 1 https://vk.com/mu_marvel?w=wall-17592208_63302 + \
