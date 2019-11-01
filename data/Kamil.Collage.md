@@ -4,7 +4,7 @@ Kamil.Collage	Editor Collage 4 2019.06.06\
 0 frequency switches:\
 1 vacations:\
 2019.10.10 2019.10.17 \
-Total posts amount: 33	Posts dates amount: 29\
+Total posts amount: 34	Posts dates amount: 30\
 2019.06.06 2 https://vk.com/mu_marvel?w=wall-17592208_66129 + https://vk.com/mu_marvel?w=wall-17592208_66131 + \
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66162 + https://vk.com/mu_marvel?w=wall-17592208_66163 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66311 + \
@@ -34,3 +34,4 @@ Total posts amount: 33	Posts dates amount: 29\
 2019.09.13 1 https://vk.com/mu_marvel?w=wall-17592208_70468 + \
 2019.10.08 1 https://vk.com/mu_marvel?w=wall-17592208_71286 + \
 2019.10.19 1 https://vk.com/mu_marvel?w=wall-17592208_71476 + \
+2019.10.28 1 https://vk.com/mu_marvel?w=wall-17592208_71706 + \
