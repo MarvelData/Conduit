@@ -18,6 +18,9 @@ Donskih	Editor Opinion 4 2019.04.20\
 2019.06.01 2019.06.08 \
 2019.08.11 2019.08.25 \
 2019.09.04 2019.09.11 \
+Finished on 2019.11.08\
+Actual posts amount: 43	Anticipated posts amount: 57	 Lag: 14
+\
 Total posts amount: 43	Posts dates amount: 34\
 2019.04.20 4 https://vk.com/mu_marvel?w=wall-17592208_64021 + https://vk.com/mu_marvel?w=wall-17592208_64023 + https://vk.com/mu_marvel?w=wall-17592208_64039 + https://vk.com/mu_marvel?w=wall-17592208_64038 + \
 2019.04.21 1 https://vk.com/mu_marvel?w=wall-17592208_64066 + \

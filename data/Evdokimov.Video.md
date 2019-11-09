@@ -1,8 +1,9 @@
 Evdokimov.Video	Editor Video 10 2019.04.10\
 356508400\
 0 rubric switches:\
-1 frequency switches:\
-2019.05.01 5 changed to 10 \
+2 frequency switches:\
+2019.05.01 5 changed to 44 \
+2019.10.01 44 changed to 10 \
 6 vacations:\
 2019.04.17 2019.04.24 \
 2019.05.01 2019.05.08 \

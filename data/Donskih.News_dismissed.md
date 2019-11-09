@@ -3,6 +3,9 @@ Donskih.News	Editor News 2 2019.09.02\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2019.11.08\
+Actual posts amount: 48	Anticipated posts amount: 33
+\
 Total posts amount: 48	Posts dates amount: 30\
 2019.08.30 1 https://vk.com/mu_marvel?w=wall-17592208_69939 + \
 2019.09.01 1 https://vk.com/mu_marvel?w=wall-17592208_70031 + \

@@ -4,6 +4,9 @@ Donskih.Art	Editor Art 2 2019.04.22\
 0 frequency switches:\
 1 vacations:\
 2019.08.11 2019.08.25 \
+Finished on 2019.11.08\
+Actual posts amount: 130	Anticipated posts amount: 93
+\
 Total posts amount: 130	Posts dates amount: 80\
 2019.04.22 3 https://vk.com/mu_marvel?w=wall-17592208_64086 ! https://vk.com/mu_marvel?w=wall-17592208_64094 + https://vk.com/mu_marvel?w=wall-17592208_64096 + \
 2019.04.24 1 https://vk.com/mu_marvel?w=wall-17592208_64109 + \
