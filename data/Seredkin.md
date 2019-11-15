@@ -4,7 +4,7 @@ Seredkin	Editor News 1 2019.04.20\
 2 frequency switches:\
 2019.06.10 1 changed to 3 \
 2019.08.10 3 changed to 1 \
-11 vacations:\
+12 vacations:\
 2019.04.25 2019.04.28 \
 2019.05.02 2019.05.06 \
 2019.05.22 2019.05.25 \
@@ -16,6 +16,7 @@ Seredkin	Editor News 1 2019.04.20\
 2019.08.11 2019.08.13 \
 2019.08.31 2019.09.04 \
 2019.09.06 2019.09.09 \
+2019.11.09 2019.11.16 \
 Total posts amount: 137	Posts dates amount: 98\
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64022 + \
 2019.04.21 3 https://vk.com/mu_marvel?w=wall-17592208_64072 + https://vk.com/mu_marvel?w=wall-17592208_64079 + https://vk.com/mu_marvel?w=wall-17592208_64077 + \
@@ -113,5 +114,5 @@ Total posts amount: 137	Posts dates amount: 98\
 2019.11.02 1 https://vk.com/mu_marvel?w=wall-17592208_71748 + \
 2019.11.05 2 https://vk.com/mu_marvel?w=wall-17592208_71800 + https://vk.com/mu_marvel?w=wall-17592208_71799 + \
 2019.11.06 2 https://vk.com/mu_marvel?w=wall-17592208_71823 + https://vk.com/mu_marvel?w=wall-17592208_71815 + \
-2019.11.07 2 https://vk.com/mu_marvel?w=wall-17592208_71819 - https://vk.com/mu_marvel?w=wall-17592208_71824 - \
+2019.11.07 2 https://vk.com/mu_marvel?w=wall-17592208_71819 + https://vk.com/mu_marvel?w=wall-17592208_71824 + \
 2019.11.08 1 https://vk.com/mu_marvel?w=wall-17592208_71818 + \
