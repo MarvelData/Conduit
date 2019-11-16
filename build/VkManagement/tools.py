@@ -84,7 +84,7 @@ class Tools:
                         member_to_posts[member][0] += 1
                         if member_to_posts[member][0] > max_posts:
                             member_to_posts[member][1] += timedelta(days=step)
-                            member_to_posts[member][0] = 0
+                            member_to_posts[member][0] = 1
                         regBook.add_post(member, link, member_to_posts[member][1].strftime('%Y.%m.%d'))
                         not_found.append(member + ' ' + link + '\nAdded to Conduit')
                     else:
