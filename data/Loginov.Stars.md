@@ -6,9 +6,10 @@ Loginov.Stars	Editor Stars 4 2019.11.01\
 1 frequency switches:\
 2019.11.05 2 changed to 4 \
 0 vacations:\
-Total posts amount: 6	Posts dates amount: 5\
+Total posts amount: 7	Posts dates amount: 6\
 2019.11.01 1 https://vk.com/mu_marvel?w=wall-17592208_71714 + \
 2019.11.04 1 https://vk.com/mu_marvel?w=wall-17592208_71764 + \
 2019.11.05 1 https://vk.com/mu_marvel?w=wall-17592208_71852 + \
 2019.11.08 1 https://vk.com/mu_marvel?w=wall-17592208_71851 + \
 2019.11.17 2 https://vk.com/mu_marvel?w=wall-17592208_72022 - https://vk.com/mu_marvel?w=wall-17592208_72023 - \
+2019.11.18 1 https://vk.com/mu_marvel?w=wall-17592208_72041 - \
