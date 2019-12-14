@@ -17,7 +17,7 @@ Seredkin	Editor News 1 2019.04.20\
 2019.08.31 2019.09.04 \
 2019.09.06 2019.09.09 \
 2019.11.09 2019.11.16 \
-Total posts amount: 140	Posts dates amount: 101\
+Total posts amount: 147	Posts dates amount: 106\
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64022 + \
 2019.04.21 3 https://vk.com/mu_marvel?w=wall-17592208_64072 + https://vk.com/mu_marvel?w=wall-17592208_64079 + https://vk.com/mu_marvel?w=wall-17592208_64077 + \
 2019.04.22 1 https://vk.com/mu_marvel?w=wall-17592208_64099 + \
@@ -119,3 +119,8 @@ Total posts amount: 140	Posts dates amount: 101\
 2019.11.26 1 https://vk.com/mu_marvel?w=wall-17592208_72166 + \
 2019.11.27 1 https://vk.com/mu_marvel?w=wall-17592208_72171 + \
 2019.12.01 1 https://vk.com/mu_marvel?w=wall-17592208_72235 + \
+2019.12.06 2 https://vk.com/mu_marvel?w=wall-17592208_72280 + https://vk.com/mu_marvel?w=wall-17592208_72279 + \
+2019.12.08 1 https://vk.com/mu_marvel?w=wall-17592208_72323 - \
+2019.12.09 2 https://vk.com/mu_marvel?w=wall-17592208_72281 + https://vk.com/mu_marvel?w=wall-17592208_72320 + \
+2019.12.10 1 https://vk.com/mu_marvel?w=wall-17592208_72321 + \
+2019.12.13 1 https://vk.com/mu_marvel?w=wall-17592208_72322 - \

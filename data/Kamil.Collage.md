@@ -8,7 +8,7 @@ Kamil.Collage	Editor Collage 4 2019.06.06\
 2019.09.15 2019.09.22 \
 2019.10.10 2019.10.17 \
 2019.11.01 2019.11.08 \
-Total posts amount: 37	Posts dates amount: 33\
+Total posts amount: 38	Posts dates amount: 34\
 2019.06.06 2 https://vk.com/mu_marvel?w=wall-17592208_66129 + https://vk.com/mu_marvel?w=wall-17592208_66131 + \
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66162 + https://vk.com/mu_marvel?w=wall-17592208_66163 + \
 2019.06.12 1 https://vk.com/mu_marvel?w=wall-17592208_66311 + \
@@ -42,3 +42,4 @@ Total posts amount: 37	Posts dates amount: 33\
 2019.11.11 1 https://vk.com/mu_marvel?w=wall-17592208_71994 + \
 2019.11.12 1 https://vk.com/mu_marvel?w=wall-17592208_71995 + \
 2019.11.18 1 https://vk.com/mu_marvel?w=wall-17592208_72049 + \
+2019.12.04 1 https://vk.com/mu_marvel?w=wall-17592208_72256 + \
