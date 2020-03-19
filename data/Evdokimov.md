@@ -6,7 +6,7 @@ Evdokimov	Editor Scenes 3 2018.10.12\
 2019.01.11 1 changed to 3 \
 1 vacations:\
 2018.12.30 2019.01.10 \
-Total posts amount: 338	Posts dates amount: 191\
+Total posts amount: 353	Posts dates amount: 205\
 2018.10.12 2 https://vk.com/mu_marvel?w=wall-17592208_57944 + https://vk.com/mu_marvel?w=wall-17592208_57955 + \
 2018.10.13 1 https://vk.com/mu_marvel?w=wall-17592208_57969 + \
 2018.10.14 2 https://vk.com/mu_marvel?w=wall-17592208_58010 + https://vk.com/mu_marvel?w=wall-17592208_58012 + \
@@ -198,3 +198,17 @@ Total posts amount: 338	Posts dates amount: 191\
 2019.11.28 1 https://vk.com/mu_marvel?w=wall-17592208_72184 + \
 2019.11.29 1 https://vk.com/mu_marvel?w=wall-17592208_72193 + \
 2019.11.30 1 https://vk.com/mu_marvel?w=wall-17592208_72194 + \
+2019.12.22 1 https://vk.com/mu_marvel?w=wall-17592208_72428 + \
+2019.12.23 1 https://vk.com/mu_marvel?w=wall-17592208_72450 + \
+2019.12.24 1 https://vk.com/mu_marvel?w=wall-17592208_72429 + \
+2019.12.25 2 https://vk.com/mu_marvel?w=wall-17592208_72449 + https://vk.com/mu_marvel?w=wall-17592208_72448 + \
+2019.12.27 1 https://vk.com/mu_marvel?w=wall-17592208_72451 + \
+2019.12.29 1 https://vk.com/mu_marvel?w=wall-17592208_72484 + \
+2020.01.01 1 https://vk.com/mu_marvel?w=wall-17592208_72486 + \
+2020.01.16 1 https://vk.com/mu_marvel?w=wall-17592208_72581 + \
+2020.01.17 1 https://vk.com/mu_marvel?w=wall-17592208_72582 + \
+2020.02.01 1 https://vk.com/mu_marvel?w=wall-17592208_72771 + \
+2020.02.02 1 https://vk.com/mu_marvel?w=wall-17592208_72766 + \
+2020.02.04 1 https://vk.com/mu_marvel?w=wall-17592208_72772 + \
+2020.02.07 1 https://vk.com/mu_marvel?w=wall-17592208_72835 + \
+2020.02.12 1 https://vk.com/mu_marvel?w=wall-17592208_72837 + \

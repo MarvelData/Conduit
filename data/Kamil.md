@@ -3,8 +3,10 @@ Kamil	Editor Gallery 2 2019.04.20\
 1 rubric switches:\
 2019.05.10 Facts changed to Gallery \
 0 frequency switches:\
-0 vacations:\
-Total posts amount: 125	Posts dates amount: 79\
+2 vacations:\
+2020.02.25 2020.03.09 \
+2020.03.15 2020.03.20 \
+Total posts amount: 151	Posts dates amount: 104\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 + https://vk.com/mu_marvel?w=wall-17592208_64071 + \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 + \
 2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64193 + https://vk.com/mu_marvel?w=wall-17592208_64212 + \
@@ -81,6 +83,31 @@ Total posts amount: 125	Posts dates amount: 79\
 2019.12.01 1 https://vk.com/mu_marvel?w=wall-17592208_72214 + \
 2019.12.03 1 https://vk.com/mu_marvel?w=wall-17592208_72215 + \
 2019.12.06 1 https://vk.com/mu_marvel?w=wall-17592208_72253 + \
-2019.12.08 1 https://vk.com/mu_marvel?w=wall-17592208_72216 - \
-2019.12.09 1 https://vk.com/mu_marvel?w=wall-17592208_72254 - \
-2019.12.10 1 https://vk.com/mu_marvel?w=wall-17592208_72255 - \
+2019.12.08 1 https://vk.com/mu_marvel?w=wall-17592208_72216 ! \
+2019.12.09 1 https://vk.com/mu_marvel?w=wall-17592208_72254 + \
+2019.12.10 1 https://vk.com/mu_marvel?w=wall-17592208_72255 ! \
+2019.12.23 1 https://vk.com/mu_marvel?w=wall-17592208_72383 + \
+2019.12.24 1 https://vk.com/mu_marvel?w=wall-17592208_72384 + \
+2019.12.25 1 https://vk.com/mu_marvel?w=wall-17592208_72385 + \
+2019.12.27 1 https://vk.com/mu_marvel?w=wall-17592208_72386 + \
+2020.01.04 1 https://vk.com/mu_marvel?w=wall-17592208_72412 + \
+2020.01.09 2 https://vk.com/mu_marvel?w=wall-17592208_72550 + https://vk.com/mu_marvel?w=wall-17592208_72413 + \
+2020.01.16 1 https://vk.com/mu_marvel?w=wall-17592208_72414 + \
+2020.01.18 1 https://vk.com/mu_marvel?w=wall-17592208_72551 + \
+2020.01.19 1 https://vk.com/mu_marvel?w=wall-17592208_72552 + \
+2020.01.23 1 https://vk.com/mu_marvel?w=wall-17592208_72568 + \
+2020.01.26 1 https://vk.com/mu_marvel?w=wall-17592208_72569 + \
+2020.01.28 1 https://vk.com/mu_marvel?w=wall-17592208_72570 + \
+2020.01.30 1 https://vk.com/mu_marvel?w=wall-17592208_72571 + \
+2020.02.01 1 https://vk.com/mu_marvel?w=wall-17592208_72553 + \
+2020.02.02 1 https://vk.com/mu_marvel?w=wall-17592208_72475 + \
+2020.02.04 1 https://vk.com/mu_marvel?w=wall-17592208_72476 + \
+2020.02.06 1 https://vk.com/mu_marvel?w=wall-17592208_72720 + \
+2020.02.07 1 https://vk.com/mu_marvel?w=wall-17592208_72724 + \
+2020.02.14 1 https://vk.com/mu_marvel?w=wall-17592208_72726 + \
+2020.02.16 1 https://vk.com/mu_marvel?w=wall-17592208_72721 + \
+2020.02.19 1 https://vk.com/mu_marvel?w=wall-17592208_72722 + \
+2020.02.20 1 https://vk.com/mu_marvel?w=wall-17592208_72725 + \
+2020.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_72723 + \
+2020.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_73144 + \
+2020.03.12 1 https://vk.com/mu_marvel?w=wall-17592208_73143 + \

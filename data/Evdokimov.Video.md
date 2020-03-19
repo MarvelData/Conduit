@@ -11,7 +11,7 @@ Evdokimov.Video	Editor Video 10 2019.04.10\
 2019.07.01 2019.07.08 \
 2019.08.01 2019.08.08 \
 2019.09.01 2019.09.08 \
-Total posts amount: 13	Posts dates amount: 10\
+Total posts amount: 15	Posts dates amount: 12\
 2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63669 + \
 2019.04.26 2 https://vk.com/mu_marvel?w=wall-17592208_64143 + https://vk.com/mu_marvel?w=wall-17592208_64145 + \
 2019.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_64796 + \
@@ -22,3 +22,5 @@ Total posts amount: 13	Posts dates amount: 10\
 2019.08.28 2 https://vk.com/mu_marvel?w=wall-17592208_69755 + https://vk.com/mu_marvel?w=wall-17592208_69765 + \
 2019.09.28 1 https://vk.com/mu_marvel?w=wall-17592208_70919 + \
 2019.10.16 1 https://vk.com/mu_marvel?w=wall-17592208_71361 + \
+2019.12.19 1 https://vk.com/mu_marvel?w=wall-17592208_72393 + \
+2019.12.20 1 https://vk.com/mu_marvel?w=wall-17592208_72395 + \

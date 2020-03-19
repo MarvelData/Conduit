@@ -17,7 +17,7 @@ Seredkin	Editor News 1 2019.04.20\
 2019.08.31 2019.09.04 \
 2019.09.06 2019.09.09 \
 2019.11.09 2019.11.16 \
-Total posts amount: 147	Posts dates amount: 106\
+Total posts amount: 174	Posts dates amount: 127\
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64022 + \
 2019.04.21 3 https://vk.com/mu_marvel?w=wall-17592208_64072 + https://vk.com/mu_marvel?w=wall-17592208_64079 + https://vk.com/mu_marvel?w=wall-17592208_64077 + \
 2019.04.22 1 https://vk.com/mu_marvel?w=wall-17592208_64099 + \
@@ -120,7 +120,28 @@ Total posts amount: 147	Posts dates amount: 106\
 2019.11.27 1 https://vk.com/mu_marvel?w=wall-17592208_72171 + \
 2019.12.01 1 https://vk.com/mu_marvel?w=wall-17592208_72235 + \
 2019.12.06 2 https://vk.com/mu_marvel?w=wall-17592208_72280 + https://vk.com/mu_marvel?w=wall-17592208_72279 + \
-2019.12.08 1 https://vk.com/mu_marvel?w=wall-17592208_72323 - \
+2019.12.08 1 https://vk.com/mu_marvel?w=wall-17592208_72323 + \
 2019.12.09 2 https://vk.com/mu_marvel?w=wall-17592208_72281 + https://vk.com/mu_marvel?w=wall-17592208_72320 + \
 2019.12.10 1 https://vk.com/mu_marvel?w=wall-17592208_72321 + \
-2019.12.13 1 https://vk.com/mu_marvel?w=wall-17592208_72322 - \
+2019.12.13 1 https://vk.com/mu_marvel?w=wall-17592208_72322 + \
+2019.12.15 1 https://vk.com/mu_marvel?w=wall-17592208_72397 + \
+2019.12.18 1 https://vk.com/mu_marvel?w=wall-17592208_72398 + \
+2019.12.22 2 https://vk.com/mu_marvel?w=wall-17592208_72432 + https://vk.com/mu_marvel?w=wall-17592208_72431 + \
+2019.12.26 1 https://vk.com/mu_marvel?w=wall-17592208_72433 + \
+2019.12.29 2 https://vk.com/mu_marvel?w=wall-17592208_72489 + https://vk.com/mu_marvel?w=wall-17592208_72490 + \
+2020.01.01 1 https://vk.com/mu_marvel?w=wall-17592208_72499 + \
+2020.01.04 1 https://vk.com/mu_marvel?w=wall-17592208_72500 + \
+2020.01.10 1 https://vk.com/mu_marvel?w=wall-17592208_72539 + \
+2020.01.16 1 https://vk.com/mu_marvel?w=wall-17592208_72578 + \
+2020.01.25 2 https://vk.com/mu_marvel?w=wall-17592208_72712 + https://vk.com/mu_marvel?w=wall-17592208_72710 + \
+2020.01.26 1 https://vk.com/mu_marvel?w=wall-17592208_72715 + \
+2020.01.28 1 https://vk.com/mu_marvel?w=wall-17592208_72714 + \
+2020.02.01 1 https://vk.com/mu_marvel?w=wall-17592208_72767 + \
+2020.02.02 1 https://vk.com/mu_marvel?w=wall-17592208_72768 + \
+2020.02.16 1 https://vk.com/mu_marvel?w=wall-17592208_72937 + \
+2020.02.17 1 https://vk.com/mu_marvel?w=wall-17592208_72952 + \
+2020.02.18 2 https://vk.com/mu_marvel?w=wall-17592208_72961 + https://vk.com/mu_marvel?w=wall-17592208_72953 + \
+2020.02.19 1 https://vk.com/mu_marvel?w=wall-17592208_72965 + \
+2020.02.20 2 https://vk.com/mu_marvel?w=wall-17592208_72954 + https://vk.com/mu_marvel?w=wall-17592208_72938 + \
+2020.02.25 2 https://vk.com/mu_marvel?w=wall-17592208_73049 + https://vk.com/mu_marvel?w=wall-17592208_73048 + \
+2020.03.04 1 https://vk.com/mu_marvel?w=wall-17592208_73113 + \
