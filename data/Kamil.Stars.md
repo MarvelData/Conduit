@@ -3,7 +3,7 @@ Kamil.Stars	Editor Stars 5 2020.02.01\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 17	Posts dates amount: 17\
+Total posts amount: 20	Posts dates amount: 19\
 2020.02.06 1 https://vk.com/mu_marvel?w=wall-17592208_72817 + \
 2020.02.07 1 https://vk.com/mu_marvel?w=wall-17592208_72815 + \
 2020.02.10 1 https://vk.com/mu_marvel?w=wall-17592208_72856 + \
@@ -21,3 +21,5 @@ Total posts amount: 17	Posts dates amount: 17\
 2020.03.05 1 https://vk.com/mu_marvel?w=wall-17592208_72934 + \
 2020.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_72890 + \
 2020.03.12 1 https://vk.com/mu_marvel?w=wall-17592208_72891 + \
+2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_72931 - https://vk.com/mu_marvel?w=wall-17592208_72932 - \
+2020.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_72935 - \
