@@ -21,5 +21,5 @@ Total posts amount: 20	Posts dates amount: 19\
 2020.03.05 1 https://vk.com/mu_marvel?w=wall-17592208_72934 + \
 2020.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_72890 + \
 2020.03.12 1 https://vk.com/mu_marvel?w=wall-17592208_72891 + \
-2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_72931 - https://vk.com/mu_marvel?w=wall-17592208_72932 - \
-2020.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_72935 - \
+2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_72931 + https://vk.com/mu_marvel?w=wall-17592208_72932 + \
+2020.03.16 1 https://vk.com/mu_marvel?w=wall-17592208_72935 + \

@@ -3,6 +3,9 @@ Loginov.History	Editor History 2 2019.11.03\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
+Finished on 2020.04.02\
+Actual posts amount: 10	Anticipated posts amount: 75	 Lag: 65
+\
 Total posts amount: 10	Posts dates amount: 9\
 2019.11.03 1 https://vk.com/mu_marvel?w=wall-17592208_71730 + \
 2019.11.04 1 https://vk.com/mu_marvel?w=wall-17592208_71753 ! \

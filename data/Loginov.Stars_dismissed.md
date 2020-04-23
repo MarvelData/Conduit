@@ -6,6 +6,9 @@ Loginov.Stars	Editor Stars 4 2019.11.01\
 1 frequency switches:\
 2019.11.05 2 changed to 4 \
 0 vacations:\
+Finished on 2020.04.02\
+Actual posts amount: 14	Anticipated posts amount: 39	 Lag: 25
+\
 Total posts amount: 14	Posts dates amount: 13\
 2019.11.01 1 https://vk.com/mu_marvel?w=wall-17592208_71714 + \
 2019.11.04 1 https://vk.com/mu_marvel?w=wall-17592208_71764 + \

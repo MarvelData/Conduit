@@ -6,7 +6,7 @@ Kamil	Editor Gallery 2 2019.04.20\
 2 vacations:\
 2020.02.25 2020.03.09 \
 2020.03.15 2020.03.20 \
-Total posts amount: 159	Posts dates amount: 108\
+Total posts amount: 164	Posts dates amount: 113\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 + https://vk.com/mu_marvel?w=wall-17592208_64071 + \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 + \
 2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64193 + https://vk.com/mu_marvel?w=wall-17592208_64212 + \
@@ -111,7 +111,12 @@ Total posts amount: 159	Posts dates amount: 108\
 2020.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_72723 + \
 2020.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_73144 + \
 2020.03.12 1 https://vk.com/mu_marvel?w=wall-17592208_73143 + \
-2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_73145 - https://vk.com/mu_marvel?w=wall-17592208_73146 - \
-2020.03.16 2 https://vk.com/mu_marvel?w=wall-17592208_73147 - https://vk.com/mu_marvel?w=wall-17592208_73211 - \
-2020.03.17 2 https://vk.com/mu_marvel?w=wall-17592208_73212 - https://vk.com/mu_marvel?w=wall-17592208_73213 - \
-2020.03.18 2 https://vk.com/mu_marvel?w=wall-17592208_73214 - https://vk.com/mu_marvel?w=wall-17592208_73215 - \
+2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_73145 + https://vk.com/mu_marvel?w=wall-17592208_73146 + \
+2020.03.16 2 https://vk.com/mu_marvel?w=wall-17592208_73147 + https://vk.com/mu_marvel?w=wall-17592208_73211 + \
+2020.03.17 2 https://vk.com/mu_marvel?w=wall-17592208_73212 + https://vk.com/mu_marvel?w=wall-17592208_73213 + \
+2020.03.18 2 https://vk.com/mu_marvel?w=wall-17592208_73214 + https://vk.com/mu_marvel?w=wall-17592208_73215 + \
+2020.03.23 1 https://vk.com/mu_marvel?w=wall-17592208_73284 + \
+2020.04.05 1 https://vk.com/mu_marvel?w=wall-17592208_73282 + \
+2020.04.07 1 https://vk.com/mu_marvel?w=wall-17592208_73281 + \
+2020.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_73280 + \
+2020.04.11 1 https://vk.com/mu_marvel?w=wall-17592208_73283 + \
