@@ -1,11 +1,13 @@
-Kamil	Editor Gallery 2 2019.04.20\
+Kamil	Editor Gallery 5 2019.04.20\
 398504693\
 1 rubric switches:\
 2019.05.10 Facts changed to Gallery \
-0 frequency switches:\
-2 vacations:\
+1 frequency switches:\
+2020.01.01 2 changed to 5 \
+3 vacations:\
 2020.02.25 2020.03.09 \
 2020.03.15 2020.03.20 \
+2020.04.15 2020.04.25 \
 Total posts amount: 164	Posts dates amount: 113\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 + https://vk.com/mu_marvel?w=wall-17592208_64071 + \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 + \

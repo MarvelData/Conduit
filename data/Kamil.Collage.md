@@ -1,7 +1,8 @@
-Kamil.Collage	Editor Collage 4 2019.06.06\
+Kamil.Collage	Editor Collage 10 2019.06.06\
 398504693\
 0 rubric switches:\
-0 frequency switches:\
+1 frequency switches:\
+2019.10.01 4 changed to 10 \
 10 vacations:\
 2019.06.23 2019.06.30 \
 2019.07.21 2019.07.28 \
@@ -12,7 +13,7 @@ Kamil.Collage	Editor Collage 4 2019.06.06\
 2019.12.25 2020.01.04 \
 2020.01.20 2020.02.10 \
 2020.02.21 2020.03.01 \
-2020.03.10 2020.03.20 \
+2020.03.10 2020.04.25 \
 Total posts amount: 47	Posts dates amount: 43\
 2019.06.06 2 https://vk.com/mu_marvel?w=wall-17592208_66129 + https://vk.com/mu_marvel?w=wall-17592208_66131 + \
 2019.06.08 2 https://vk.com/mu_marvel?w=wall-17592208_66162 + https://vk.com/mu_marvel?w=wall-17592208_66163 + \

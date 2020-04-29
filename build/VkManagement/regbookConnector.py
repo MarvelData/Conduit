@@ -102,7 +102,7 @@ class RegBook:
         lines = []
         while True:
             try:
-                line = self.queue.get(timeout=0.03)
+                line = self.queue.get(timeout=0.05)
             except Empty:
                 if self.instance.poll() is not None:
                     return self.instance.returncode

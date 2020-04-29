@@ -11,6 +11,9 @@ Minkovskiy.Opinion	Editor Opinion 3 2019.05.10\
 2019.06.06 2019.06.11 \
 2019.07.01 2019.07.08 \
 2019.08.04 2019.08.11 \
+Finished on 2020.04.28\
+Actual posts amount: 8	Anticipated posts amount: 100	 Lag: 92
+\
 Total posts amount: 8	Posts dates amount: 8\
 2019.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_64861 ! \
 2019.05.15 1 https://vk.com/mu_marvel?w=wall-17592208_65410 + \

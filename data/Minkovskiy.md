@@ -1,11 +1,12 @@
-Minkovskiy	Editor Reflection 3 2019.02.23\
+Minkovskiy	Editor Reflection 5 2019.02.23\
 289674460\
 1 rubric switches:\
 2019.08.30 Scenes changed to Reflection \
-3 frequency switches:\
+4 frequency switches:\
 2019.06.19 2 changed to 5 \
 2019.08.01 5 changed to 2 \
 2019.08.10 2 changed to 3 \
+2020.04.29 3 changed to 5 \
 8 vacations:\
 2019.02.25 2019.02.27 \
 2019.03.01 2019.03.15 \

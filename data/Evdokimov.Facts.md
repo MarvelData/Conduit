@@ -1,9 +1,10 @@
-Evdokimov.Facts	Editor Facts 7 2019.03.06\
+Evdokimov.Facts	Editor Facts 5 2019.03.06\
 356508400\
 0 rubric switches:\
-0 frequency switches:\
+1 frequency switches:\
+2020.04.29 7 changed to 5 \
 0 vacations:\
-Total posts amount: 75	Posts dates amount: 51\
+Total posts amount: 77	Posts dates amount: 52\
 2019.03.06 1 https://vk.com/mu_marvel?w=wall-17592208_61919 + \
 2019.03.09 1 https://vk.com/mu_marvel?w=wall-17592208_62131 ! \
 2019.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_62155 + \
@@ -55,3 +56,4 @@ Total posts amount: 75	Posts dates amount: 51\
 2020.04.12 1 https://vk.com/mu_marvel?w=wall-17592208_73378 + \
 2020.04.14 1 https://vk.com/mu_marvel?w=wall-17592208_73375 + \
 2020.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_73379 + \
+2020.04.28 2 https://vk.com/mu_marvel?w=wall-17592208_73718 - https://vk.com/mu_marvel?w=wall-17592208_73720 - \

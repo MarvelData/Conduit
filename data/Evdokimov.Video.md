@@ -4,13 +4,15 @@ Evdokimov.Video	Editor Video 10 2019.04.10\
 2 frequency switches:\
 2019.05.01 5 changed to 44 \
 2019.10.01 44 changed to 10 \
-6 vacations:\
+8 vacations:\
 2019.04.17 2019.04.24 \
 2019.05.01 2019.05.08 \
 2019.06.01 2019.06.08 \
 2019.07.01 2019.07.08 \
 2019.08.01 2019.08.08 \
-2019.09.01 2019.09.08 \
+2019.09.01 2019.09.25 \
+2019.11.01 2019.11.30 \
+2019.12.25 2020.04.25 \
 Total posts amount: 15	Posts dates amount: 12\
 2019.04.10 1 https://vk.com/mu_marvel?w=wall-17592208_63669 + \
 2019.04.26 2 https://vk.com/mu_marvel?w=wall-17592208_64143 + https://vk.com/mu_marvel?w=wall-17592208_64145 + \
