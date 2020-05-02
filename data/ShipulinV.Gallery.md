@@ -3,5 +3,7 @@ ShipulinV.Gallery	Editor Gallery 3 2020.04.29\
 0 rubric switches:\
 0 frequency switches:\
 0 vacations:\
-Total posts amount: 1	Posts dates amount: 1\
-2020.04.28 1 https://vk.com/mu_marvel?w=wall-17592208_73658 - \
+Total posts amount: 3	Posts dates amount: 3\
+2020.04.28 1 https://vk.com/mu_marvel?w=wall-17592208_73658 + \
+2020.04.30 1 https://vk.com/mu_marvel?w=wall-17592208_73825 - \
+2020.05.01 1 https://vk.com/mu_marvel?w=wall-17592208_73824 - \
