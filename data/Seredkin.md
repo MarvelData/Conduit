@@ -17,7 +17,7 @@ Seredkin	Editor News 1 2019.04.20\
 2019.08.31 2019.09.04 \
 2019.09.06 2019.09.09 \
 2019.11.09 2019.11.16 \
-Total posts amount: 189	Posts dates amount: 139\
+Total posts amount: 199	Posts dates amount: 146\
 2019.04.20 1 https://vk.com/mu_marvel?w=wall-17592208_64022 + \
 2019.04.21 3 https://vk.com/mu_marvel?w=wall-17592208_64072 + https://vk.com/mu_marvel?w=wall-17592208_64079 + https://vk.com/mu_marvel?w=wall-17592208_64077 + \
 2019.04.22 1 https://vk.com/mu_marvel?w=wall-17592208_64099 + \
@@ -154,6 +154,13 @@ Total posts amount: 189	Posts dates amount: 139\
 2020.04.27 1 https://vk.com/mu_marvel?w=wall-17592208_73553 + \
 2020.04.28 2 https://vk.com/mu_marvel?w=wall-17592208_73791 + https://vk.com/mu_marvel?w=wall-17592208_73729 + \
 2020.04.29 1 https://vk.com/mu_marvel?w=wall-17592208_73800 + \
-2020.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_73810 + https://vk.com/mu_marvel?w=wall-17592208_73790 - \
-2020.05.01 2 https://vk.com/mu_marvel?w=wall-17592208_73821 - https://vk.com/mu_marvel?w=wall-17592208_73815 - \
-2020.05.02 1 https://vk.com/mu_marvel?w=wall-17592208_73809 - \
+2020.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_73810 + https://vk.com/mu_marvel?w=wall-17592208_73790 + \
+2020.05.01 2 https://vk.com/mu_marvel?w=wall-17592208_73821 + https://vk.com/mu_marvel?w=wall-17592208_73815 + \
+2020.05.02 1 https://vk.com/mu_marvel?w=wall-17592208_73809 + \
+2020.05.03 1 https://vk.com/mu_marvel?w=wall-17592208_73915 + \
+2020.05.04 1 https://vk.com/mu_marvel?w=wall-17592208_73914 + \
+2020.05.05 2 https://vk.com/mu_marvel?w=wall-17592208_73956 + https://vk.com/mu_marvel?w=wall-17592208_73955 + \
+2020.05.06 1 https://vk.com/mu_marvel?w=wall-17592208_74040 + \
+2020.05.07 2 https://vk.com/mu_marvel?w=wall-17592208_74041 + https://vk.com/mu_marvel?w=wall-17592208_73958 + \
+2020.05.12 2 https://vk.com/mu_marvel?w=wall-17592208_74267 + https://vk.com/mu_marvel?w=wall-17592208_74270 + \
+2020.05.13 1 https://vk.com/mu_marvel?w=wall-17592208_74269 + \

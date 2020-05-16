@@ -9,7 +9,7 @@ Evdokimov.Fragments	Editor Fragments 10 2018.10.22\
 2019.07.01 2019.07.08 \
 2019.09.01 2019.09.08 \
 2019.11.10 2020.04.20 \
-Total posts amount: 50	Posts dates amount: 48\
+Total posts amount: 51	Posts dates amount: 49\
 2018.10.23 1 https://vk.com/mu_marvel?w=wall-17592208_58331 + \
 2018.10.30 1 https://vk.com/mu_marvel?w=wall-17592208_58711 + \
 2018.11.01 1 https://vk.com/mu_marvel?w=wall-17592208_58748 + \
@@ -57,4 +57,5 @@ Total posts amount: 50	Posts dates amount: 48\
 2019.11.05 1 https://vk.com/mu_marvel?w=wall-17592208_71837 + \
 2019.11.06 1 https://vk.com/mu_marvel?w=wall-17592208_71838 + \
 2020.04.25 1 https://vk.com/mu_marvel?w=wall-17592208_73572 + \
-2020.04.28 1 https://vk.com/mu_marvel?w=wall-17592208_73759 - \
+2020.04.28 1 https://vk.com/mu_marvel?w=wall-17592208_73759 + \
+2020.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_74167 + \

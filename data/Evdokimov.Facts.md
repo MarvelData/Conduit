@@ -4,7 +4,7 @@ Evdokimov.Facts	Editor Facts 5 2019.03.06\
 1 frequency switches:\
 2020.04.29 7 changed to 5 \
 0 vacations:\
-Total posts amount: 77	Posts dates amount: 52\
+Total posts amount: 83	Posts dates amount: 57\
 2019.03.06 1 https://vk.com/mu_marvel?w=wall-17592208_61919 + \
 2019.03.09 1 https://vk.com/mu_marvel?w=wall-17592208_62131 ! \
 2019.03.10 1 https://vk.com/mu_marvel?w=wall-17592208_62155 + \
@@ -56,4 +56,9 @@ Total posts amount: 77	Posts dates amount: 52\
 2020.04.12 1 https://vk.com/mu_marvel?w=wall-17592208_73378 + \
 2020.04.14 1 https://vk.com/mu_marvel?w=wall-17592208_73375 + \
 2020.04.15 1 https://vk.com/mu_marvel?w=wall-17592208_73379 + \
-2020.04.28 2 https://vk.com/mu_marvel?w=wall-17592208_73718 - https://vk.com/mu_marvel?w=wall-17592208_73720 - \
+2020.04.28 2 https://vk.com/mu_marvel?w=wall-17592208_73718 + https://vk.com/mu_marvel?w=wall-17592208_73720 + \
+2020.05.01 2 https://vk.com/mu_marvel?w=wall-17592208_73852 + https://vk.com/mu_marvel?w=wall-17592208_73866 + \
+2020.05.03 1 https://vk.com/mu_marvel?w=wall-17592208_73867 + \
+2020.05.04 1 https://vk.com/mu_marvel?w=wall-17592208_73853 + \
+2020.05.05 1 https://vk.com/mu_marvel?w=wall-17592208_73868 + \
+2020.05.07 1 https://vk.com/mu_marvel?w=wall-17592208_73856 + \
