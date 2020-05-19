@@ -4,7 +4,7 @@ Kamil.Art	Editor Art 10 2020.02.20\
 1 frequency switches:\
 2020.04.29 20 changed to 10 \
 0 vacations:\
-Total posts amount: 19	Posts dates amount: 13\
+Total posts amount: 23	Posts dates amount: 15\
 2020.02.21 1 https://vk.com/mu_marvel?w=wall-17592208_72734 + \
 2020.02.26 1 https://vk.com/mu_marvel?w=wall-17592208_72736 + \
 2020.03.15 2 https://vk.com/mu_marvel?w=wall-17592208_73148 + https://vk.com/mu_marvel?w=wall-17592208_73149 + \
@@ -17,4 +17,6 @@ Total posts amount: 19	Posts dates amount: 13\
 2020.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_73917 + \
 2020.05.11 1 https://vk.com/mu_marvel?w=wall-17592208_74249 + \
 2020.05.12 1 https://vk.com/mu_marvel?w=wall-17592208_73919 + \
-2020.05.15 4 https://vk.com/mu_marvel?w=wall-17592208_74250 - https://vk.com/mu_marvel?w=wall-17592208_73918 - https://vk.com/mu_marvel?w=wall-17592208_73920 - https://vk.com/mu_marvel?w=wall-17592208_74251 - \
+2020.05.14 1 https://vk.com/mu_marvel?w=wall-17592208_74393 + \
+2020.05.15 4 https://vk.com/mu_marvel?w=wall-17592208_74250 + https://vk.com/mu_marvel?w=wall-17592208_73918 - https://vk.com/mu_marvel?w=wall-17592208_73920 - https://vk.com/mu_marvel?w=wall-17592208_74251 - \
+2020.05.17 3 https://vk.com/mu_marvel?w=wall-17592208_74392 - https://vk.com/mu_marvel?w=wall-17592208_74395 - https://vk.com/mu_marvel?w=wall-17592208_74396 - \

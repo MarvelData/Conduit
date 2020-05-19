@@ -8,7 +8,7 @@ Kamil	Editor Gallery 5 2019.04.20\
 2020.02.25 2020.03.09 \
 2020.03.15 2020.03.20 \
 2020.04.15 2020.04.25 \
-Total posts amount: 167	Posts dates amount: 116\
+Total posts amount: 172	Posts dates amount: 117\
 2019.04.21 2 https://vk.com/mu_marvel?w=wall-17592208_64051 + https://vk.com/mu_marvel?w=wall-17592208_64071 + \
 2019.04.23 1 https://vk.com/mu_marvel?w=wall-17592208_64100 + \
 2019.04.30 2 https://vk.com/mu_marvel?w=wall-17592208_64193 + https://vk.com/mu_marvel?w=wall-17592208_64212 + \
@@ -124,4 +124,5 @@ Total posts amount: 167	Posts dates amount: 116\
 2020.04.11 1 https://vk.com/mu_marvel?w=wall-17592208_73283 + \
 2020.05.11 1 https://vk.com/mu_marvel?w=wall-17592208_74246 + \
 2020.05.12 1 https://vk.com/mu_marvel?w=wall-17592208_74247 + \
-2020.05.15 1 https://vk.com/mu_marvel?w=wall-17592208_74248 - \
+2020.05.15 2 https://vk.com/mu_marvel?w=wall-17592208_74248 + https://vk.com/mu_marvel?w=wall-17592208_74403 + \
+2020.05.17 4 https://vk.com/mu_marvel?w=wall-17592208_74391 - https://vk.com/mu_marvel?w=wall-17592208_74401 - https://vk.com/mu_marvel?w=wall-17592208_74404 - https://vk.com/mu_marvel?w=wall-17592208_74406 - \

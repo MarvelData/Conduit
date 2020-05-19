@@ -6,7 +6,7 @@ Evdokimov	Editor Scenes 3 2018.10.12\
 2019.01.11 1 changed to 3 \
 1 vacations:\
 2018.12.30 2019.01.10 \
-Total posts amount: 378	Posts dates amount: 224\
+Total posts amount: 380	Posts dates amount: 225\
 2018.10.12 2 https://vk.com/mu_marvel?w=wall-17592208_57944 + https://vk.com/mu_marvel?w=wall-17592208_57955 + \
 2018.10.13 1 https://vk.com/mu_marvel?w=wall-17592208_57969 + \
 2018.10.14 2 https://vk.com/mu_marvel?w=wall-17592208_58010 + https://vk.com/mu_marvel?w=wall-17592208_58012 + \
@@ -231,3 +231,4 @@ Total posts amount: 378	Posts dates amount: 224\
 2020.04.30 1 https://vk.com/mu_marvel?w=wall-17592208_73760 + \
 2020.05.01 1 https://vk.com/mu_marvel?w=wall-17592208_73761 + \
 2020.05.10 1 https://vk.com/mu_marvel?w=wall-17592208_74164 + \
+2020.05.17 2 https://vk.com/mu_marvel?w=wall-17592208_74502 - https://vk.com/mu_marvel?w=wall-17592208_74501 - \

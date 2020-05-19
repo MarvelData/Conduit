@@ -16,7 +16,7 @@ Minkovskiy	Editor Reflection 5 2019.02.23\
 2019.08.04 2019.08.11 \
 2019.09.01 2019.09.06 \
 2019.09.08 2019.09.10 \
-Total posts amount: 61	Posts dates amount: 46\
+Total posts amount: 63	Posts dates amount: 48\
 2019.02.23 1 https://vk.com/mu_marvel?w=wall-17592208_61555 + \
 2019.02.24 1 https://vk.com/mu_marvel?w=wall-17592208_61574 + \
 2019.02.28 1 https://vk.com/mu_marvel?w=wall-17592208_61676 + \
@@ -63,3 +63,5 @@ Total posts amount: 61	Posts dates amount: 46\
 2019.08.29 1 https://vk.com/mu_marvel?w=wall-17592208_69807 + \
 2019.09.07 1 https://vk.com/mu_marvel?w=wall-17592208_70127 + \
 2019.09.19 1 https://vk.com/mu_marvel?w=wall-17592208_70637 + \
+2020.05.17 1 https://vk.com/mu_marvel?w=wall-17592208_74372 - \
+2020.05.18 1 https://vk.com/mu_marvel?w=wall-17592208_74507 + \
